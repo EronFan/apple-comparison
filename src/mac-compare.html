@@ -1718,7 +1718,15 @@
                 { key: 'storage', name: '存储容量', langKey: 'param.storage', icon: 'ri-hard-drive-line' },
 
                 // 连接和接口
-                { key: 'ports', name: '机身接口', langKey: 'param.ports', icon: 'ri-usb-line' },
+                { key: 'ports', name: '接口 · 雷电', langKey: 'param.mac.portTb', icon: 'ri-usb-line', formatter: val => splitPorts(val, 'tb') },
+                { key: 'ports', name: '接口 · USB', langKey: 'param.mac.portUsb', icon: 'ri-usb-line', formatter: val => splitPorts(val, 'usb') },
+                { key: 'ports', name: '接口 · 网络', langKey: 'param.mac.portNet', icon: 'ri-global-line', formatter: val => splitPorts(val, 'net') },
+                { key: 'ports', name: '接口 · 视频', langKey: 'param.mac.portVideo', icon: 'ri-tv-line', formatter: val => splitPorts(val, 'video') },
+                { key: 'ports', name: '接口 · 音频', langKey: 'param.mac.portAudio', icon: 'ri-headphone-line', formatter: val => splitPorts(val, 'audio') },
+                { key: 'ports', name: '接口 · 存储卡', langKey: 'param.mac.portCard', icon: 'ri-bank-card-line', formatter: val => splitPorts(val, 'card') },
+                { key: 'ports', name: '接口 · 扩展', langKey: 'param.mac.portExp', icon: 'ri-cpu-line', formatter: val => splitPorts(val, 'expansion') },
+                { key: 'ports', name: '接口 · 显示支持', langKey: 'param.mac.portDisp', icon: 'ri-monitor-line', formatter: val => splitPorts(val, 'display') },
+                { key: 'ports', name: '接口 · 其他', langKey: 'param.mac.portOther', icon: 'ri-more-line', formatter: val => splitPorts(val, 'other') },
                 { key: 'wirelessChip', name: '无线芯片', langKey: 'param.mac.wirelessChip', icon: 'ri-wifi-line' },
                 { key: 'wirelessSpec', name: '无线规格', langKey: 'param.mac.wirelessSpec', icon: 'ri-bluetooth-line' },
 
@@ -2142,7 +2150,46 @@
             generateMobileProductColumns();
             generateScrollIndicators();
             updateNavigationButtons();
+            syncMobileRowHeights();
             console.log('移动端表格生成完成');
+        }
+
+        // 移动端行高对齐：参数列与产品列按行取最大高度对齐（长文本自动换行时保持对齐）
+        function syncMobileRowHeights() {
+            const paramsColumn = document.getElementById('mobileParamsColumn');
+            const productsContainer = document.getElementById('mobileProductsContainer');
+            if (!paramsColumn || !productsContainer) return;
+            const paramRows = paramsColumn.querySelectorAll(':scope > .mobile-table-row');
+            const productColumns = productsContainer.querySelectorAll(':scope > .mobile-product-column');
+            // 先恢复自动高度再测量
+            paramsColumn.querySelectorAll('.mobile-table-row, .mobile-cell').forEach(el => { el.style.height = 'auto'; });
+            productColumns.forEach(col => {
+                col.querySelectorAll('.mobile-table-row, .mobile-cell').forEach(el => { el.style.height = 'auto'; });
+            });
+            for (let i = 0; i < paramRows.length; i++) {
+                const cells = [];
+                if (paramRows[i]) paramRows[i].querySelectorAll('.mobile-cell').forEach(c => cells.push(c));
+                productColumns.forEach(col => {
+                    if (col.style.display === 'none') return;
+                    const r = col.querySelectorAll(':scope > .mobile-table-row')[i];
+                    if (r) r.querySelectorAll('.mobile-cell').forEach(c => cells.push(c));
+                });
+                let maxH = 0;
+                cells.forEach(c => { const h = c.offsetHeight || 0; if (h > maxH) maxH = h; });
+                if (maxH > 0) {
+                    if (paramRows[i]) {
+                        paramRows[i].style.height = maxH + 'px';
+                        paramRows[i].querySelectorAll('.mobile-cell').forEach(c => c.style.height = maxH + 'px');
+                    }
+                    productColumns.forEach(col => {
+                        const r = col.querySelectorAll(':scope > .mobile-table-row')[i];
+                        if (r) {
+                            r.style.height = maxH + 'px';
+                            r.querySelectorAll('.mobile-cell').forEach(c => c.style.height = maxH + 'px');
+                        }
+                    });
+                }
+            }
         }
 
         // 获取完整的参数定义（与PC端保持一致）
@@ -2173,7 +2220,15 @@
                 { key: 'storage', name: { 'zh-CN': '存储容量', 'en-US': 'Storage' }, langKey: 'param.storage', icon: 'ri-hard-drive-line' },
 
                 // 连接和接口
-                { key: 'ports', name: { 'zh-CN': '机身接口', 'en-US': 'Ports' }, langKey: 'param.ports', icon: 'ri-usb-line' },
+                { key: 'ports', name: { 'zh-CN': '接口 · 雷电', 'en-US': 'Thunderbolt' }, langKey: 'param.mac.portTb', icon: 'ri-usb-line', formatter: val => splitPorts(val, 'tb') },
+                { key: 'ports', name: { 'zh-CN': '接口 · USB', 'en-US': 'USB' }, langKey: 'param.mac.portUsb', icon: 'ri-usb-line', formatter: val => splitPorts(val, 'usb') },
+                { key: 'ports', name: { 'zh-CN': '接口 · 网络', 'en-US': 'Network' }, langKey: 'param.mac.portNet', icon: 'ri-global-line', formatter: val => splitPorts(val, 'net') },
+                { key: 'ports', name: { 'zh-CN': '接口 · 视频', 'en-US': 'Video Out' }, langKey: 'param.mac.portVideo', icon: 'ri-tv-line', formatter: val => splitPorts(val, 'video') },
+                { key: 'ports', name: { 'zh-CN': '接口 · 音频', 'en-US': 'Audio' }, langKey: 'param.mac.portAudio', icon: 'ri-headphone-line', formatter: val => splitPorts(val, 'audio') },
+                { key: 'ports', name: { 'zh-CN': '接口 · 存储卡', 'en-US': 'Card Slot' }, langKey: 'param.mac.portCard', icon: 'ri-bank-card-line', formatter: val => splitPorts(val, 'card') },
+                { key: 'ports', name: { 'zh-CN': '接口 · 扩展', 'en-US': 'Expansion' }, langKey: 'param.mac.portExp', icon: 'ri-cpu-line', formatter: val => splitPorts(val, 'expansion') },
+                { key: 'ports', name: { 'zh-CN': '接口 · 显示支持', 'en-US': 'Display Support' }, langKey: 'param.mac.portDisp', icon: 'ri-monitor-line', formatter: val => splitPorts(val, 'display') },
+                { key: 'ports', name: { 'zh-CN': '接口 · 其他', 'en-US': 'Other Ports' }, langKey: 'param.mac.portOther', icon: 'ri-more-line', formatter: val => splitPorts(val, 'other') },
                 { key: 'wirelessChip', name: { 'zh-CN': '无线芯片', 'en-US': 'Wireless Chip' }, langKey: 'param.mac.wirelessChip', icon: 'ri-wifi-line' },
                 { key: 'wirelessSpec', name: { 'zh-CN': '无线规格', 'en-US': 'Wireless Spec' }, langKey: 'param.mac.wirelessSpec', icon: 'ri-bluetooth-line' },
 
@@ -2369,6 +2424,16 @@
                 } else if (param.key === 'displayPpi' && paramValue) {
                     // PPI格式化
                     paramValue = `${paramValue} PPI`;
+                } else if (param.formatter && typeof param.formatter === 'function') {
+                    // 自定义格式化函数（如接口分项拆分）
+                    try {
+                        paramValue = param.formatter(product[param.key]);
+                    } catch (e) {
+                        paramValue = 'N/A';
+                    }
+                    if (paramValue === undefined || paramValue === null || paramValue === '') {
+                        paramValue = 'N/A';
+                    }
                 } else if (paramValue === undefined || paramValue === null || paramValue === '') {
                     paramValue = 'N/A';
                 }
@@ -3429,6 +3494,47 @@
             return '';
         }
         
+        // 长参数拆分展示：把复合接口值按分隔符拆成独立分项
+        const PORT_ITEM_START = 'M\\d+\\s*机型\\s*[:：]|最多|雷雳|雷电|Thunderbolt|USB|Mini\\s*DP|Mini\\s*DVI|Micro\\s*DVI|FireWire|HDMI|DisplayPort|千兆|\\d+\\s*Gb\\s*以太网|3\\.5\\s*毫米|SDXC|PCI\\s*Express';
+        function splitPortSegments(val) {
+            if (!val || typeof val !== 'string') return [];
+            const out = [];
+            const re = new RegExp('\\s+(?=' + PORT_ITEM_START + ')');
+            // 注意：斜杠分隔符前后必须有空格，避免误切 10Gb/s 这类单位
+            val.split(/\s+\/\s+|；/).forEach(p => {
+                p.split(re).forEach(s => {
+                    s = s.trim();
+                    if (s) out.push(s);
+                });
+            });
+            // 合并被孤立的机型前缀（如“M6 机型:”与其后分项）
+            const fixed = [];
+            out.forEach(s => {
+                const prev = fixed[fixed.length - 1];
+                if (prev !== undefined && /机型\s*[:：]\s*$/.test(prev)) {
+                    fixed[fixed.length - 1] = prev + ' ' + s;
+                } else {
+                    fixed.push(s);
+                }
+            });
+            return fixed;
+        }
+        function classifyPort(seg) {
+            if (/最多|^\d+路/.test(seg)) return 'display';
+            if (/雷雳|雷电|Thunderbolt/i.test(seg)) return 'tb';
+            if (/USB/i.test(seg)) return 'usb';
+            if (/以太网|以太网|千兆|LAN|网口/i.test(seg)) return 'net';
+            if (/HDMI|DisplayPort|Mini\s*DP|Micro\s*DVI|DVI|\bDP\b/i.test(seg)) return 'video';
+            if (/耳机|音频|麦克风/i.test(seg)) return 'audio';
+            if (/SDXC|\bSD\b/i.test(seg)) return 'card';
+            if (/PCI/i.test(seg)) return 'expansion';
+            return 'other';
+        }
+        function splitPorts(val, cat) {
+            const r = splitPortSegments(val).filter(s => classifyPort(s) === cat).join('；');
+            return r || '-';
+        }
+
         // 参数名称翻译映射表
         const paramNameTranslations = {
             'param.releaseDate': { 'zh-CN': '发布日期', 'en-US': 'Release Date' },
@@ -3511,7 +3617,16 @@
             'param.mac.touchId': { 'zh-CN': '触控 ID', 'en-US': 'Touch ID' },
             'param.mac.keyboard': { 'zh-CN': '键盘', 'en-US': 'Keyboard' },
             'param.mac.chassisModel': { 'zh-CN': '模具型号', 'en-US': 'Chassis Model' },
-            'param.mac.techLinks': { 'zh-CN': '规格与手册', 'en-US': 'Specs & Manuals' }
+            'param.mac.techLinks': { 'zh-CN': '规格与手册', 'en-US': 'Specs & Manuals' },
+            'param.mac.portTb': { 'zh-CN': '接口 · 雷电', 'en-US': 'Thunderbolt' },
+            'param.mac.portUsb': { 'zh-CN': '接口 · USB', 'en-US': 'USB' },
+            'param.mac.portNet': { 'zh-CN': '接口 · 网络', 'en-US': 'Network' },
+            'param.mac.portVideo': { 'zh-CN': '接口 · 视频', 'en-US': 'Video Out' },
+            'param.mac.portAudio': { 'zh-CN': '接口 · 音频', 'en-US': 'Audio' },
+            'param.mac.portCard': { 'zh-CN': '接口 · 存储卡', 'en-US': 'Card Slot' },
+            'param.mac.portExp': { 'zh-CN': '接口 · 扩展', 'en-US': 'Expansion' },
+            'param.mac.portDisp': { 'zh-CN': '接口 · 显示支持', 'en-US': 'Display Support' },
+            'param.mac.portOther': { 'zh-CN': '接口 · 其他', 'en-US': 'Other Ports' }
         };
         
         // 获取本地化参数名称
@@ -3784,6 +3899,10 @@
                     column.style.display = '';
                 }
             });
+            // 筛选后重新对齐移动端行高
+            if (typeof syncMobileRowHeights === 'function') {
+                syncMobileRowHeights();
+            }
         }
 
         // 页面加载完成后执行进一步检查
