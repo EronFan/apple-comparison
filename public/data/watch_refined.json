@@ -1,6 +1,114 @@
 [
   {
     "name": {
+      "zh-CN": "Apple Watch Ultra 4",
+      "en-US": "Apple Watch Ultra 4"
+    },
+    "id": "watch-apple-watch-ultra-4",
+    "marketingSlogan": {
+      "zh-CN": "飙电力，联手野到底",
+      "en-US": "飙电力，联手野到底"
+    },
+    "releaseDate": {
+      "zh-CN": "2026.09.10",
+      "en-US": "September 10, 2026"
+    },
+    "os": {
+      "zh-CN": "watchOS 27 ~ 最新",
+      "en-US": "watchOS 27 ~ latest"
+    },
+    "model": "Watch8,1",
+    "arSupport": {
+      "zh-CN": "当前浏览器不支持",
+      "en-US": "Not supported in current browser"
+    },
+    "processor": "S11 SiP",
+    "storage": "64GB",
+    "wirelessChip": "W3",
+    "ultraWidebandChip": "U2",
+    "displayResolution": "422x514 (49mm)",
+    "displayTechnology": {
+      "zh-CN": "全天候 LTPO3 OLED",
+      "en-US": "Always-On LTPO3 OLED"
+    },
+    "displayBrightness": {
+      "zh-CN": "最高 3000 尼特",
+      "en-US": "Up to 3000 nits"
+    },
+    "displayGlass": {
+      "zh-CN": "蓝宝石玻璃",
+      "en-US": "Sapphire crystal"
+    },
+    "backMaterial": {
+      "zh-CN": "精密陶瓷 + 氧化锆",
+      "en-US": "Ceramic + Zirconia"
+    },
+    "baseband": "-",
+    "wifiStandard": "802.11n 2.4&5GHz",
+    "bluetoothVersion": "Bluetooth 5.3",
+    "batteryLife": {
+      "zh-CN": "50 小时",
+      "en-US": "50 hours"
+    },
+    "gps": {
+      "zh-CN": "双频 GPS (L1 + L5)",
+      "en-US": "Dual-frequency GPS (L1 + L5)"
+    },
+    "waterResistance": {
+      "zh-CN": "IP6X + WR100",
+      "en-US": "IP6X + WR100"
+    },
+    "price": {
+      "zh-CN": "¥5,799",
+      "en-US": "$5,799"
+    },
+    "accelerometer": {
+      "zh-CN": "加速度计(256 g-force)",
+      "en-US": "Accelerometer (up to 256 g-force)"
+    },
+    "gyroscope": {
+      "zh-CN": "高动态范围陀螺仪",
+      "en-US": "High-dynamic-range gyroscope"
+    },
+    "ambientLightSensor": {
+      "zh-CN": "环境光传感器",
+      "en-US": "Ambient light sensor"
+    },
+    "heartRateSensor": {
+      "zh-CN": "心率传感器(光学, 全天候)",
+      "en-US": "Heart rate sensor (optical, always-on)"
+    },
+    "ecgSensor": {
+      "zh-CN": "心率传感器(电极式，第三代)",
+      "en-US": "Heart rate sensor (electrical, 3rd gen)"
+    },
+    "barometer": {
+      "zh-CN": "气压高度计(全天候)",
+      "en-US": "Altimeter (always-on)"
+    },
+    "compass": {
+      "zh-CN": "磁力计",
+      "en-US": "Compass"
+    },
+    "bloodOxygenSensor": {
+      "zh-CN": "血氧传感器",
+      "en-US": "Blood oxygen sensor"
+    },
+    "temperatureSensor": {
+      "zh-CN": "体温传感器",
+      "en-US": "Temperature sensor"
+    },
+    "waterTemperatureSensor": {
+      "zh-CN": "水温传感器",
+      "en-US": "Water temperature sensor"
+    },
+    "depthGauge": {
+      "zh-CN": "深度计",
+      "en-US": "Depth gauge"
+    }
+  },
+  {
+    "name": {
       "zh-CN": "Apple Watch Ultra 3",
       "en-US": "Apple Watch Ultra 3"
     },
@@ -127,6 +235,114 @@
     "technicalSpecsLink": {
       "zh-CN": "https://support.apple.com/zh-cn/125095",
       "en-US": "https://support.apple.com/125095"
+    }
+  },
+  {
+    "name": {
+      "zh-CN": "Apple Watch Series 12",
+      "en-US": "Apple Watch Series 12"
+    },
+    "id": "watch-apple-watch-series-12",
+    "marketingSlogan": {
+      "zh-CN": "精心代表作",
+      "en-US": "精心代表作"
+    },
+    "releaseDate": {
+      "zh-CN": "2026.09.10",
+      "en-US": "September 10, 2026"
+    },
+    "os": {
+      "zh-CN": "watchOS 27 ~ 最新",
+      "en-US": "watchOS 27 ~ latest"
+    },
+    "model": "Watch8,2 / 8,3 / 8,4 / 8,5",
+    "arSupport": {
+      "zh-CN": "当前浏览器不支持",
+      "en-US": "Not supported in current browser"
+    },
+    "processor": "S11 SiP",
+    "storage": "64GB",
+    "wirelessChip": "W3",
+    "ultraWidebandChip": "U2",
+    "displayResolution": "374x446 (42mm) / 416x496 (46mm)",
+    "displayTechnology": {
+      "zh-CN": "全天候 LTPO3 OLED",
+      "en-US": "Always-On LTPO3 OLED"
+    },
+    "displayBrightness": {
+      "zh-CN": "最高 2000 尼特",
+      "en-US": "Up to 2000 nits"
+    },
+    "displayGlass": {
+      "zh-CN": "超瓷晶玻璃 2（铝）/ 蓝宝石玻璃（钛或陶瓷）",
+      "en-US": "Ceramic Shield 2 (Aluminum) / Sapphire (Titanium/Ceramic)"
+    },
+    "backMaterial": {
+      "zh-CN": "氧化锆",
+      "en-US": "Zirconia"
+    },
+    "baseband": "-",
+    "wifiStandard": "802.11n 2.4&5GHz",
+    "bluetoothVersion": "Bluetooth 5.3",
+    "batteryLife": {
+      "zh-CN": "24 小时",
+      "en-US": "24 hours"
+    },
+    "gps": {
+      "zh-CN": "单频 GPS",
+      "en-US": "Single-frequency GPS"
+    },
+    "waterResistance": {
+      "zh-CN": "IP6X + WR50",
+      "en-US": "IP6X + WR50"
+    },
+    "price": {
+      "zh-CN": "¥2,699 起",
+      "en-US": "from $2,699"
+    },
+    "accelerometer": {
+      "zh-CN": "加速度计(256 g-force)",
+      "en-US": "Accelerometer (up to 256 g-force)"
+    },
+    "gyroscope": {
+      "zh-CN": "高动态范围陀螺仪",
+      "en-US": "High-dynamic-range gyroscope"
+    },
+    "ambientLightSensor": {
+      "zh-CN": "环境光传感器",
+      "en-US": "Ambient light sensor"
+    },
+    "heartRateSensor": {
+      "zh-CN": "心率传感器(光学, 全天候)",
+      "en-US": "Heart rate sensor (optical, always-on)"
+    },
+    "ecgSensor": {
+      "zh-CN": "心率传感器(电极式，第三代)",
+      "en-US": "Heart rate sensor (electrical, 3rd gen)"
+    },
+    "barometer": {
+      "zh-CN": "气压高度计(全天候)",
+      "en-US": "Altimeter (always-on)"
+    },
+    "compass": {
+      "zh-CN": "磁力计",
+      "en-US": "Compass"
+    },
+    "bloodOxygenSensor": {
+      "zh-CN": "血氧传感器",
+      "en-US": "Blood oxygen sensor"
+    },
+    "temperatureSensor": {
+      "zh-CN": "体温传感器",
+      "en-US": "Temperature sensor"
+    },
+    "waterTemperatureSensor": {
+      "zh-CN": "水温传感器",
+      "en-US": "Water temperature sensor"
+    },
+    "depthGauge": {
+      "zh-CN": "深度计",
+      "en-US": "Depth gauge"
     }
   },
   {

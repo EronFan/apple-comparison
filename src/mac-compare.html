@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-lang-key="page.title">产品参数对比 - Apple参数大全</title>
+    <title data-lang-key="page.title">Mac 参数对比 - Apple参数大全</title>
     <!-- 使用iconfont图标库 -->
     <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4356459_zg5dh7jkzx.css">
     <!-- 使用Remix Icon图标库 -->
@@ -1255,10 +1255,10 @@
             </a>
             <div class="nav-links">
                 <a href="/src/index.html" class="nav-link" data-lang-key="nav.home">首页</a>
-                <a href="/src/iphone-compare.html" class="nav-link active" data-lang-key="nav.iphone">iPhone</a>
+                <a href="/src/iphone-compare.html" class="nav-link" data-lang-key="nav.iphone">iPhone</a>
                 <a href="/src/ipad-compare.html" class="nav-link" data-lang-key="nav.ipad">iPad</a>
                 <a href="/src/watch-compare.html" class="nav-link" data-lang-key="nav.watch">Apple Watch</a>
-                <a href="/src/mac-compare.html" class="nav-link" data-lang-key="nav.mac">Mac</a>
+                <a href="/src/mac-compare.html" class="nav-link active" data-lang-key="nav.mac">Mac</a>
                 <a href="/src/news.html" class="nav-link" data-lang-key="nav.news" style="display: none;">苹果资讯</a>
                 <a href="/src/feedback.html" class="nav-link" data-lang-key="nav.feedback">用户反馈</a>
                 <div class="language-switcher">
@@ -1274,7 +1274,7 @@
         <div class="container">
             <!-- 操作栏 -->
             <div class="action-bar">
-                <h1 data-lang-key="compare.title.iphone">iPhone 产品参数对比</h1>
+                <h1 data-lang-key="compare.title.mac">Mac 产品参数对比</h1>
                 <div class="action-buttons">
                     <button id="reset-button" class="btn btn-secondary" data-lang-key="compare.reset">
                         <i class="iconfont icon-refresh"></i>
@@ -1531,9 +1531,9 @@
                 };
                 
                 // 使用新的细化参数数据文件
-                // 开始加载iPhone数据
+                // 开始加载Mac数据
                 console.log('开始加载数据文件...');
-                const response = await fetch('../public/data/iphone_refined.json?v=' + new Date().getTime());
+                const response = await fetch('../public/data/mac_refined.json?v=' + new Date().getTime());
                 console.log('数据请求响应:', response.status, response.statusText);
                 
                 // 数据获取状态检查
@@ -1679,108 +1679,63 @@
             // 清空现有表格内容
             tbody.innerHTML = '';
             
-            // 定义要显示的参数列表
+            // 定义要显示的参数列表（Mac）
             const params = [
                 // 基本信息
+                { key: 'marketingSlogan', name: '宣传口号', langKey: 'param.marketingSlogan', icon: 'ri-advertisement-line' },
+                { key: 'series', name: '产品系列', langKey: 'param.mac.series', icon: 'ri-layout-grid-line' },
                 { key: 'releaseDate', name: '发布日期', langKey: 'param.releaseDate', icon: 'ri-calendar-line' },
+                { key: 'os', name: '支持系统', langKey: 'param.mac.os', icon: 'ri-apple-line' },
                 { key: 'model', name: '型号标识', langKey: 'param.model', icon: 'ri-barcode-line' },
                 { key: 'colors', name: '颜色', langKey: 'param.colors', formatter: val => {
                     if (!val || !Array.isArray(val)) return '-';
                     return val.map(c => {
                         const colorName = getLocalizedText(c.name, currentLanguage);
-                        // 使用色卡样式显示颜色
                         if (c.code) {
                             return `<span class="color-sample" style="background-color: ${c.code}" title="${colorName}"></span>`;
                         }
                         return colorName || '-';
                     }).join(' ');
                 }, icon: 'ri-palette-line' },
-                // { key: 'materials', name: '材料', langKey: 'param.materials' },
-                { key: 'frontPanel', name: '前面板', langKey: 'param.frontPanel', icon: 'ri-smartphone-line' },
-                { key: 'frameMaterial', name: '中框材质', langKey: 'param.frameMaterial', icon: 'ri-layout-right-line' },
-                { key: 'backPanelMaterial', name: '背板材质', langKey: 'param.backPanelMaterial', icon: 'ri-smartphone-line' },
-                { key: 'dimensions', name: '尺寸', langKey: 'param.dimensions', icon: 'ri-ruler-line' },
-                { key: 'weight', name: '重量', langKey: 'param.weight', icon: 'ri-scales-line' },
-                { key: 'waterResistance', name: '防水等级', langKey: 'param.waterResistance', icon: 'ri-water-flash-line' },
-                
-                // 屏幕参数（细分）
+                { key: 'dimensions', name: '尺寸重量', langKey: 'param.dimensions', icon: 'ri-ruler-line' },
+                { key: 'chassisModel', name: '模具型号', langKey: 'param.mac.chassisModel', icon: 'ri-fingerprint-line' },
+
+                // 屏幕
                 { key: 'displaySize', name: '屏幕尺寸', langKey: 'param.displaySize', icon: 'ri-fullscreen-line' },
                 { key: 'displayResolution', name: '屏幕分辨率', langKey: 'param.displayResolution', icon: 'ri-aspect-ratio-line' },
-                { key: 'displayPpi', name: '像素密度(PPI)', langKey: 'param.displayPpi', formatter: val => val ? `${val} PPI` : '-', icon: 'ri-focus-3-line' },
-                { key: 'displayPanelType', name: '面板类型', langKey: 'param.displayPanelType', icon: 'ri-tv-2-line' },
-                { key: 'displaySpecialTech', name: '特殊显示技术', langKey: 'param.displaySpecialTech', icon: 'ri-magic-line' },
-                { key: 'displayStandardBrightness', name: '标准亮度', langKey: 'param.displayStandardBrightness', icon: 'ri-sun-line' },
-                { key: 'displayHdrBrightness', name: 'HDR亮度', langKey: 'param.displayHdrBrightness', icon: 'ri-sun-foggy-line' },
-                // { key: 'displayOutdoorBrightness', name: '户外亮度', langKey: 'param.displayOutdoorBrightness' },
-                { key: 'displayRefreshRate', name: '屏幕刷新率', langKey: 'param.displayRefreshRate', icon: 'ri-refresh-line' },
-                { key: 'touchTechnology', name: '触控技术', langKey: 'param.touchTechnology', icon: 'ri-fingerprint-line' },
+                { key: 'displayBrightness', name: '亮度', langKey: 'param.mac.brightness', icon: 'ri-sun-line' },
                 { key: 'displayColorGamut', name: '显示色域', langKey: 'param.displayColorGamut', icon: 'ri-contrast-2-line' },
-                
-                // 处理器和性能（细分）
-                { key: 'processor', name: '处理器型号', langKey: 'param.processor', icon: 'ri-cpu-line' },
-                { key: 'processTechnology', name: '制程工艺', langKey: 'param.processTechnology', icon: 'ri-cpu-fill' },
+
+                // 芯片与性能
+                { key: 'processor', name: '芯片信息', langKey: 'param.processor', icon: 'ri-cpu-line' },
+                { key: 'processTechnology', name: '芯片工艺', langKey: 'param.processTechnology', icon: 'ri-cpu-fill' },
+                { key: 'gpu', name: '显卡信息', langKey: 'param.mac.gpu', icon: 'ri-gamepad-line' },
+                { key: 'neuralEngine', name: '神经网络引擎', langKey: 'param.mac.neuralEngine', icon: 'ri-brain-line' },
                 { key: 'ram', name: '内存容量', langKey: 'param.ram', icon: 'ri-database-2-line' },
-                { key: 'cpuPerformance.singleCore', name: 'CPU单核性能', langKey: 'param.cpuSingleCore', icon: 'ri-speed-up-line', formatter: val => {
-                    if (!val || val === null || val === undefined) return '-';
-                    return val;
-                } },
-                { key: 'cpuPerformance.multiCore', name: 'CPU多核性能', langKey: 'param.cpuMultiCore', icon: 'ri-dashboard-3-line', formatter: val => {
-                    if (!val || val === null || val === undefined) return '-';
-                    return val;
-                } },
-                { key: 'gpuPerformance', name: 'GPU性能', langKey: 'param.gpuPerformance', icon: 'ri-gamepad-line', formatter: val => {
-                    if (!val || val === null || val === undefined) return '-';
-                    return val;
-                } },
-                
-                // 存储
-                { key: 'storage', name: '存储容量', langKey: 'param.storage', formatter: val => Array.isArray(val) ? val.join(', ') : val, icon: 'ri-hard-drive-line' },
-                
-                // 摄像头系统（细分）
-                { key: 'mainCamera', name: '主摄像头', langKey: 'param.mainCamera', icon: 'ri-camera-line' },
-                { key: 'ultraWideCamera', name: '超广角摄像头', langKey: 'param.ultraWideCamera', icon: 'ri-camera-lens-line' },
-                { key: 'telephotoCamera', name: '长焦摄像头', langKey: 'param.telephotoCamera', icon: 'ri-zoom-in-line' },
-                { key: 'opticalZoom', name: '光学变焦', langKey: 'param.opticalZoom', icon: 'ri-focus-2-line' },
-                { key: 'frontCamera', name: '前置摄像头', langKey: 'param.frontCamera', icon: 'ri-camera-switch-line' },
-                // 移除摄像头特殊功能参数
-                
-                // 电池和充电（细分）
-                { key: 'batteryCapacityMah', name: '电池容量(mAh)', langKey: 'param.batteryCapacityMah', icon: 'ri-battery-2-line' },
-                { key: 'batteryCapacityWh', name: '电池容量(Wh)', langKey: 'param.batteryCapacityWh', icon: 'ri-battery-charge-line' },
-                { key: 'videoPlaybackTime', name: '视频播放时间', langKey: 'param.videoPlaybackTime', icon: 'ri-video-line' },
-                { key: 'audioPlaybackTime', name: '音频播放时间', langKey: 'param.audioPlaybackTime', icon: 'ri-music-line' },
-                // 移除通话时间参数
-                // 移除电池续航评分参数
-                { key: 'wiredChargingSpeed', name: '有线充电速度', langKey: 'param.wiredChargingSpeed', icon: 'ri-plug-line' },
-                { key: 'wirelessChargingSpeed', name: '无线充电', langKey: 'param.wirelessChargingSpeed', icon: 'ri-wireless-charging-line' },
-                
+                { key: 'storage', name: '存储容量', langKey: 'param.storage', icon: 'ri-hard-drive-line' },
+
                 // 连接和接口
-                { key: 'wifiStandard', name: 'Wi-Fi标准', langKey: 'param.wifiStandard', icon: 'ri-wifi-line' },
-                { key: 'bluetoothVersion', name: '蓝牙版本', langKey: 'param.bluetoothVersion', icon: 'ri-bluetooth-line' },
-                { key: 'ports', name: '接口类型', langKey: 'param.ports', icon: 'ri-usb-line' },
-                { key: 'simCardSupport', name: 'SIM卡', langKey: 'param.simCardSupport', icon: 'ri-sim-card-line' },
-                { key: 'cellularData', name: '蜂窝数据', langKey: 'param.cellularData', icon: 'ri-signal-tower-line' },
-                { key: 'baseband', name: '基带芯片', langKey: 'param.baseband', icon: 'ri-base-station-line' },
-                { key: 'satelliteFeatures', name: '卫星功能', langKey: 'param.satelliteFeatures', icon: 'ri-rocket-line' },
-                
-                // 音频系统
-                { key: 'speakers', name: '扬声器', langKey: 'param.speakers', icon: 'ri-speaker-line' },
-                { key: 'microphoneCount', name: '麦克风', langKey: 'param.microphones', icon: 'ri-mic-line' },
-                // { key: 'audioFeatures', name: '音频功能', langKey: 'param.audioFeatures' },
-                
-                // 软件和系统
-                { key: 'initialOS', name: '初始系统版本', langKey: 'param.initialOS', icon: 'ri-apple-line' },
-                { key: 'maxSupportedOS', name: '最高支持系统版本', langKey: 'param.maxSupportedOS', icon: 'ri-apple-fill' },
-                // 移除特色软件功能参数
-                
-                // 其他功能
-                { key: 'security', name: '安全功能', langKey: 'param.security', icon: 'ri-lock-line' },
-                // 移除传感器参数
-                { key: 'specialFeatures', name: '特色功能', langKey: 'param.specialFeatures', icon: 'ri-star-line' },
-                
-                // 附加信息
-                { key: 'technicalSpecsLink', name: '技术规格链接', langKey: 'param.technicalSpecsLink', formatter: val => val ? `<a href="${val}" target="_blank" rel="noopener noreferrer">查看详情</a>` : '-', icon: 'ri-links-line' },
-                { key: 'marketingSlogan', name: '宣传口号', langKey: 'param.marketingSlogan', icon: 'ri-advertisement-line' }
+                { key: 'ports', name: '机身接口', langKey: 'param.ports', icon: 'ri-usb-line' },
+                { key: 'wirelessChip', name: '无线芯片', langKey: 'param.mac.wirelessChip', icon: 'ri-wifi-line' },
+                { key: 'wirelessSpec', name: '无线规格', langKey: 'param.mac.wirelessSpec', icon: 'ri-bluetooth-line' },
+
+                // 电源
+                { key: 'batteryCapacity', name: '电池容量', langKey: 'param.battery', icon: 'ri-battery-2-line' },
+                { key: 'charging', name: '充电规格', langKey: 'param.mac.charging', icon: 'ri-plug-line' },
+                { key: 'batteryLife', name: '续航时间', langKey: 'param.mac.batteryLife', icon: 'ri-time-line' },
+
+                // 其他
+                { key: 'camera', name: '摄像头', langKey: 'param.mac.camera', icon: 'ri-camera-line' },
+                { key: 'touchID', name: '触控 ID', langKey: 'param.mac.touchId', icon: 'ri-fingerprint-2-line' },
+                { key: 'keyboard', name: '键盘', langKey: 'param.mac.keyboard', icon: 'ri-keyboard-line' },
+                { key: 'techLinks', name: '规格与手册', langKey: 'param.mac.techLinks', formatter: val => {
+                    if (!val || !Array.isArray(val)) return '-';
+                    const lang = window.currentLanguage || document.querySelector('.language-btn.active')?.dataset.lang || 'zh-CN';
+                    return val.map(l => {
+                        const t = getLocalizedText(l.text, lang);
+                        return l.url ? `<a href="${l.url}" target="_blank" rel="noopener noreferrer">${t}</a>` : (t || '-');
+                    }).join(' / ');
+                }, icon: 'ri-links-line' }
             ];
             
             // 检查特定参数的图标配置
@@ -2191,77 +2146,44 @@
         function getCompleteParamDefinitions() {
             return [
                 // 基本信息
+                { key: 'marketingSlogan', name: { 'zh-CN': '宣传口号', 'en-US': 'Marketing Slogan' }, langKey: 'param.marketingSlogan', icon: 'ri-advertisement-line' },
+                { key: 'series', name: { 'zh-CN': '产品系列', 'en-US': 'Series' }, langKey: 'param.mac.series', icon: 'ri-layout-grid-line' },
                 { key: 'releaseDate', name: { 'zh-CN': '发布日期', 'en-US': 'Release Date' }, langKey: 'param.releaseDate', icon: 'ri-calendar-line' },
+                { key: 'os', name: { 'zh-CN': '支持系统', 'en-US': 'Supported OS' }, langKey: 'param.mac.os', icon: 'ri-apple-line' },
                 { key: 'model', name: { 'zh-CN': '型号标识', 'en-US': 'Model' }, langKey: 'param.model', icon: 'ri-barcode-line' },
                 { key: 'colors', name: { 'zh-CN': '颜色', 'en-US': 'Colors' }, langKey: 'param.colors', icon: 'ri-palette-line' },
-                { key: 'frontPanel', name: { 'zh-CN': '前面板', 'en-US': 'Front Panel' }, langKey: 'param.frontPanel', icon: 'ri-smartphone-line' },
-                { key: 'frameMaterial', name: { 'zh-CN': '中框材质', 'en-US': 'Frame Material' }, langKey: 'param.frameMaterial', icon: 'ri-layout-right-line' },
-                { key: 'backPanelMaterial', name: { 'zh-CN': '背板材质', 'en-US': 'Back Panel' }, langKey: 'param.backPanelMaterial', icon: 'ri-smartphone-line' },
-                { key: 'dimensions', name: { 'zh-CN': '尺寸', 'en-US': 'Dimensions' }, langKey: 'param.dimensions', icon: 'ri-ruler-line' },
-                { key: 'weight', name: { 'zh-CN': '重量', 'en-US': 'Weight' }, langKey: 'param.weight', icon: 'ri-scales-line' },
-                { key: 'waterResistance', name: { 'zh-CN': '防水等级', 'en-US': 'Water Resistance' }, langKey: 'param.waterResistance', icon: 'ri-water-flash-line' },
-                
-                // 屏幕参数（细分）
+                { key: 'dimensions', name: { 'zh-CN': '尺寸重量', 'en-US': 'Dimensions & Weight' }, langKey: 'param.dimensions', icon: 'ri-ruler-line' },
+                { key: 'chassisModel', name: { 'zh-CN': '模具型号', 'en-US': 'Chassis Model' }, langKey: 'param.mac.chassisModel', icon: 'ri-fingerprint-line' },
+
+                // 屏幕
                 { key: 'displaySize', name: { 'zh-CN': '屏幕尺寸', 'en-US': 'Display Size' }, langKey: 'param.displaySize', icon: 'ri-fullscreen-line' },
                 { key: 'displayResolution', name: { 'zh-CN': '屏幕分辨率', 'en-US': 'Resolution' }, langKey: 'param.displayResolution', icon: 'ri-aspect-ratio-line' },
-                { key: 'displayPpi', name: { 'zh-CN': '像素密度(PPI)', 'en-US': 'PPI' }, langKey: 'param.displayPpi', icon: 'ri-focus-3-line' },
-                { key: 'displayPanelType', name: { 'zh-CN': '面板类型', 'en-US': 'Panel Type' }, langKey: 'param.displayPanelType', icon: 'ri-tv-2-line' },
-                { key: 'displaySpecialTech', name: { 'zh-CN': '特殊显示技术', 'en-US': 'Special Display Tech' }, langKey: 'param.displaySpecialTech', icon: 'ri-magic-line' },
-                { key: 'displayStandardBrightness', name: { 'zh-CN': '标准亮度', 'en-US': 'Standard Brightness' }, langKey: 'param.displayStandardBrightness', icon: 'ri-sun-line' },
-                { key: 'displayHdrBrightness', name: { 'zh-CN': 'HDR亮度', 'en-US': 'HDR Brightness' }, langKey: 'param.displayHdrBrightness', icon: 'ri-sun-foggy-line' },
-                { key: 'displayRefreshRate', name: { 'zh-CN': '屏幕刷新率', 'en-US': 'Refresh Rate' }, langKey: 'param.displayRefreshRate', icon: 'ri-refresh-line' },
-                { key: 'touchTechnology', name: { 'zh-CN': '触控技术', 'en-US': 'Touch Technology' }, langKey: 'param.touchTechnology', icon: 'ri-fingerprint-line' },
+                { key: 'displayBrightness', name: { 'zh-CN': '亮度', 'en-US': 'Brightness' }, langKey: 'param.mac.brightness', icon: 'ri-sun-line' },
                 { key: 'displayColorGamut', name: { 'zh-CN': '显示色域', 'en-US': 'Color Gamut' }, langKey: 'param.displayColorGamut', icon: 'ri-contrast-2-line' },
-                
-                // 处理器和性能（细分）
-                { key: 'processor', name: { 'zh-CN': '处理器型号', 'en-US': 'Processor' }, langKey: 'param.processor', icon: 'ri-cpu-line' },
-                { key: 'processTechnology', name: { 'zh-CN': '制程工艺', 'en-US': 'Process Technology' }, langKey: 'param.processTechnology', icon: 'ri-cpu-fill' },
+
+                // 芯片与性能
+                { key: 'processor', name: { 'zh-CN': '芯片信息', 'en-US': 'Chip' }, langKey: 'param.processor', icon: 'ri-cpu-line' },
+                { key: 'processTechnology', name: { 'zh-CN': '芯片工艺', 'en-US': 'Process Technology' }, langKey: 'param.processTechnology', icon: 'ri-cpu-fill' },
+                { key: 'gpu', name: { 'zh-CN': '显卡信息', 'en-US': 'GPU' }, langKey: 'param.mac.gpu', icon: 'ri-gamepad-line' },
+                { key: 'neuralEngine', name: { 'zh-CN': '神经网络引擎', 'en-US': 'Neural Engine' }, langKey: 'param.mac.neuralEngine', icon: 'ri-brain-line' },
                 { key: 'ram', name: { 'zh-CN': '内存容量', 'en-US': 'RAM' }, langKey: 'param.ram', icon: 'ri-database-2-line' },
-                { key: 'cpuPerformance.singleCore', name: { 'zh-CN': 'CPU单核性能', 'en-US': 'CPU Single Core' }, langKey: 'param.cpuSingleCore', icon: 'ri-speed-up-line' },
-                { key: 'cpuPerformance.multiCore', name: { 'zh-CN': 'CPU多核性能', 'en-US': 'CPU Multi Core' }, langKey: 'param.cpuMultiCore', icon: 'ri-dashboard-3-line' },
-                { key: 'gpuPerformance', name: { 'zh-CN': 'GPU性能', 'en-US': 'GPU Performance' }, langKey: 'param.gpuPerformance', icon: 'ri-gamepad-line' },
-                // 存储容量 - 移动端不显示存储容量信息
-                
-                // 摄像头系统
-                { key: 'camera', name: { 'zh-CN': '主摄像头', 'en-US': 'Main Camera' }, langKey: 'param.mainCamera', icon: 'ri-camera-3-line' },
-                { key: 'camera', name: { 'zh-CN': '长焦摄像头', 'en-US': 'Telephoto Camera' }, langKey: 'param.telephotoCamera', icon: 'ri-camera-line' },
-                { key: 'camera', name: { 'zh-CN': '广角摄像头', 'en-US': 'Ultra-wide Camera' }, langKey: 'param.ultraWideCamera', icon: 'ri-camera-2-line' },
-                { key: 'opticalZoom', name: { 'zh-CN': '光学变焦', 'en-US': 'Optical Zoom' }, langKey: 'param.opticalZoom', icon: 'ri-focus-2-line' },
-                { key: 'frontCamera', name: { 'zh-CN': '前置摄像头', 'en-US': 'Front Camera' }, langKey: 'param.frontCamera', icon: 'ri-camera-2-line' },
-                
-                // 电池和充电
-                { key: 'batteryCapacity', name: { 'zh-CN': '电池容量', 'en-US': 'Battery Capacity' }, langKey: 'param.batteryCapacity', icon: 'ri-battery-line' },
-                { key: 'batteryCapacityMah', name: { 'zh-CN': '电池容量(mAh)', 'en-US': 'Battery Capacity (mAh)' }, langKey: 'param.batteryCapacityMah', icon: 'ri-battery-2-line' },
-                { key: 'batteryCapacityWh', name: { 'zh-CN': '电池容量(Wh)', 'en-US': 'Battery Capacity (Wh)' }, langKey: 'param.batteryCapacityWh', icon: 'ri-battery-charge-line' },
-                { key: 'videoPlaybackTime', name: { 'zh-CN': '视频播放时间', 'en-US': 'Video Playback Time' }, langKey: 'param.videoPlaybackTime', icon: 'ri-video-line' },
-                { key: 'audioPlaybackTime', name: { 'zh-CN': '音频播放时间', 'en-US': 'Audio Playback Time' }, langKey: 'param.audioPlaybackTime', icon: 'ri-music-line' },
-                { key: 'wiredChargingSpeed', name: { 'zh-CN': '有线充电速度', 'en-US': 'Wired Charging Speed' }, langKey: 'param.wiredChargingSpeed', icon: 'ri-plug-line' },
-                { key: 'wirelessChargingSpeed', name: { 'zh-CN': '无线充电', 'en-US': 'Wireless Charging' }, langKey: 'param.wirelessChargingSpeed', icon: 'ri-wireless-charging-line' },
-                
+                { key: 'storage', name: { 'zh-CN': '存储容量', 'en-US': 'Storage' }, langKey: 'param.storage', icon: 'ri-hard-drive-line' },
+
                 // 连接和接口
-                { key: 'wifiStandard', name: { 'zh-CN': 'Wi-Fi标准', 'en-US': 'Wi-Fi Standard' }, langKey: 'param.wifiStandard', icon: 'ri-wifi-line' },
-                { key: 'bluetoothVersion', name: { 'zh-CN': '蓝牙版本', 'en-US': 'Bluetooth Version' }, langKey: 'param.bluetoothVersion', icon: 'ri-bluetooth-line' },
-                { key: 'ports', name: { 'zh-CN': '接口类型', 'en-US': 'Ports' }, langKey: 'param.ports', icon: 'ri-usb-line' },
-                { key: 'simCardSupport', name: { 'zh-CN': 'SIM卡', 'en-US': 'SIM Card' }, langKey: 'param.simCardSupport', icon: 'ri-sim-card-line' },
-                { key: 'cellularData', name: { 'zh-CN': '蜂窝数据', 'en-US': 'Cellular Data' }, langKey: 'param.cellularData', icon: 'ri-signal-tower-line' },
-                { key: 'baseband', name: { 'zh-CN': '基带芯片', 'en-US': 'Baseband' }, langKey: 'param.baseband', icon: 'ri-base-station-line' },
-                { key: 'satelliteFeatures', name: { 'zh-CN': '卫星功能', 'en-US': 'Satellite Features' }, langKey: 'param.satelliteFeatures', icon: 'ri-rocket-line' },
-                
-                // 音频系统
-                { key: 'speakers', name: { 'zh-CN': '扬声器', 'en-US': 'Speakers' }, langKey: 'param.speakers', icon: 'ri-speaker-line' },
-                { key: 'microphoneCount', name: { 'zh-CN': '麦克风', 'en-US': 'Microphones' }, langKey: 'param.microphones', icon: 'ri-mic-line' },
-                
-                // 软件和系统
-                { key: 'initialOS', name: { 'zh-CN': '初始系统版本', 'en-US': 'Initial OS' }, langKey: 'param.initialOS', icon: 'ri-apple-line' },
-                { key: 'maxSupportedOS', name: { 'zh-CN': '最高支持系统版本', 'en-US': 'Max Supported OS' }, langKey: 'param.maxSupportedOS', icon: 'ri-apple-fill' },
-                
-                // 其他功能
-                { key: 'security', name: { 'zh-CN': '安全功能', 'en-US': 'Security' }, langKey: 'param.security', icon: 'ri-lock-line' },
-                { key: 'specialFeatures', name: { 'zh-CN': '特色功能', 'en-US': 'Special Features' }, langKey: 'param.specialFeatures', icon: 'ri-star-line' },
-                { key: 'marketingSlogan', name: { 'zh-CN': '宣传口号', 'en-US': 'Marketing Slogan' }, langKey: 'param.marketingSlogan', icon: 'ri-advertisement-line' },
-                
-                // 价格 - 移动端不显示价格信息
-                { key: 'technicalSpecsLink', name: { 'zh-CN': '技术规格', 'en-US': 'Technical Specs' }, langKey: 'param.technicalSpecsLink', icon: 'ri-file-text-line' }
+                { key: 'ports', name: { 'zh-CN': '机身接口', 'en-US': 'Ports' }, langKey: 'param.ports', icon: 'ri-usb-line' },
+                { key: 'wirelessChip', name: { 'zh-CN': '无线芯片', 'en-US': 'Wireless Chip' }, langKey: 'param.mac.wirelessChip', icon: 'ri-wifi-line' },
+                { key: 'wirelessSpec', name: { 'zh-CN': '无线规格', 'en-US': 'Wireless Spec' }, langKey: 'param.mac.wirelessSpec', icon: 'ri-bluetooth-line' },
+
+                // 电源
+                { key: 'batteryCapacity', name: { 'zh-CN': '电池容量', 'en-US': 'Battery Capacity' }, langKey: 'param.battery', icon: 'ri-battery-2-line' },
+                { key: 'charging', name: { 'zh-CN': '充电规格', 'en-US': 'Charging' }, langKey: 'param.mac.charging', icon: 'ri-plug-line' },
+                { key: 'batteryLife', name: { 'zh-CN': '续航时间', 'en-US': 'Battery Life' }, langKey: 'param.mac.batteryLife', icon: 'ri-time-line' },
+
+                // 其他
+                { key: 'camera', name: { 'zh-CN': '摄像头', 'en-US': 'Camera' }, langKey: 'param.mac.camera', icon: 'ri-camera-line' },
+                { key: 'touchID', name: { 'zh-CN': '触控 ID', 'en-US': 'Touch ID' }, langKey: 'param.mac.touchId', icon: 'ri-fingerprint-2-line' },
+                { key: 'keyboard', name: { 'zh-CN': '键盘', 'en-US': 'Keyboard' }, langKey: 'param.mac.keyboard', icon: 'ri-keyboard-line' },
+                { key: 'techLinks', name: { 'zh-CN': '规格与手册', 'en-US': 'Specs & Manuals' }, langKey: 'param.mac.techLinks', icon: 'ri-links-line' }
             ];
         }
 
@@ -2435,6 +2357,12 @@
                 } else if (param.key === 'technicalSpecsLink' && product[param.key]) {
                     // 技术规格链接
                     paramValue = `<a href="${product[param.key]}" target="_blank" style="color: var(--color-text-primary); text-decoration: none;">查看详情</a>`;
+                } else if (param.key === 'techLinks' && Array.isArray(product[param.key])) {
+                    // Mac 规格与手册链接（数组）
+                    paramValue = product[param.key].map(l => {
+                        const t = getLocalizedValue(l.text, currentLang);
+                        return l.url ? `<a href="${l.url}" target="_blank" style="color: var(--color-text-primary); text-decoration: none;">${t}</a>` : (t || '-');
+                    }).join(' / ') || 'N/A';
                 } else if (param.key === 'displayPpi' && paramValue) {
                     // PPI格式化
                     paramValue = `${paramValue} PPI`;
@@ -3225,7 +3153,7 @@
                 
                 // 重新加载数据从原始源
                 // 重新从源加载数据文件
-                const response = await fetch('../public/data/iphone_refined.json?v=' + new Date().getTime()); // 添加缓存破坏参数
+                const response = await fetch('../public/data/mac_refined.json?v=' + new Date().getTime()); // 添加缓存破坏参数
                 
                 if (!response.ok) {
                     throw new Error('网络响应不正常');
@@ -3566,7 +3494,21 @@
             'param.specialFeatures': { 'zh-CN': '特色功能', 'en-US': 'Special Features' },
             'param.technicalSpecsLink': { 'zh-CN': '技术规格链接', 'en-US': 'Technical Specs Link' },
             'param.marketingSlogan': { 'zh-CN': '宣传口号', 'en-US': 'Marketing Slogan' },
-            'param.satelliteFeatures': { 'zh-CN': '卫星功能', 'en-US': 'Satellite Features' }
+            'param.satelliteFeatures': { 'zh-CN': '卫星功能', 'en-US': 'Satellite Features' },
+            'param.mac.series': { 'zh-CN': '产品系列', 'en-US': 'Series' },
+            'param.mac.os': { 'zh-CN': '支持系统', 'en-US': 'Supported OS' },
+            'param.mac.gpu': { 'zh-CN': '显卡信息', 'en-US': 'GPU' },
+            'param.mac.neuralEngine': { 'zh-CN': '神经网络引擎', 'en-US': 'Neural Engine' },
+            'param.mac.brightness': { 'zh-CN': '亮度', 'en-US': 'Brightness' },
+            'param.mac.wirelessChip': { 'zh-CN': '无线芯片', 'en-US': 'Wireless Chip' },
+            'param.mac.wirelessSpec': { 'zh-CN': '无线规格', 'en-US': 'Wireless Spec' },
+            'param.mac.charging': { 'zh-CN': '充电规格', 'en-US': 'Charging' },
+            'param.mac.batteryLife': { 'zh-CN': '续航时间', 'en-US': 'Battery Life' },
+            'param.mac.camera': { 'zh-CN': '摄像头', 'en-US': 'Camera' },
+            'param.mac.touchId': { 'zh-CN': '触控 ID', 'en-US': 'Touch ID' },
+            'param.mac.keyboard': { 'zh-CN': '键盘', 'en-US': 'Keyboard' },
+            'param.mac.chassisModel': { 'zh-CN': '模具型号', 'en-US': 'Chassis Model' },
+            'param.mac.techLinks': { 'zh-CN': '规格与手册', 'en-US': 'Specs & Manuals' }
         };
         
         // 获取本地化参数名称

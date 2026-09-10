@@ -183,8 +183,8 @@
         }
         .product-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
             margin: 30px 0 80px;
             max-width: 1080px;
             margin-left: auto;
@@ -381,7 +381,7 @@
         /* 响应式设计 */
         @media (max-width: 1024px) {
             .product-grid {
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(2, 1fr);
                 padding: 0 20px;
                 gap: 20px;
             }
@@ -455,7 +455,7 @@
                 <a href="/src/iphone-compare.html">iPhone</a>
                 <a href="/src/ipad-compare.html">iPad</a>
                 <a href="/src/watch-compare.html">Apple Watch</a>
-                <!-- Mac导航入口已移除 -->
+                <a href="/src/mac-compare.html">Mac</a>
                 <div class="language-switcher">
                     <button class="language-btn active" data-lang="zh-CN">中文</button>
                     <span>|</span>
@@ -502,7 +502,17 @@
                 <div class="compare-button" data-lang-key="compare.button">查看对比 <i class="fas fa-arrow-right"></i></div>
             </a>
             
-            <!-- Mac产品卡片暂时移除 -->
+            <!-- Mac产品卡片 -->
+            <a href="/src/mac-compare.html" class="product-category">
+                <div class="product-image">
+                    <svg class="product-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/>
+                    </svg>
+                </div>
+                <h2 class="product-title" data-lang-key="product.mac.title">Mac</h2>
+                <p class="product-description" data-lang-key="product.mac.description">对比MacBook Air、MacBook Pro、iMac和Mac mini的性能与规格</p>
+                <div class="compare-button" data-lang-key="compare.button">查看对比 <i class="fas fa-arrow-right"></i></div>
+            </a>
         </div>
         
 

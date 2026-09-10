@@ -26,6 +26,7 @@
     { "source": "/iphone-compare", "destination": "/src/iphone-compare.html" },
     { "source": "/ipad-compare", "destination": "/src/ipad-compare.html" },
     { "source": "/watch-compare", "destination": "/src/watch-compare.html" },
+    { "source": "/mac-compare", "destination": "/src/mac-compare.html" },
     { "source": "/privacy", "destination": "/public/privacy.html" },
     { "source": "/terms", "destination": "/public/terms.html" },
     { "source": "/sitemap.xml", "destination": "/public/sitemap.xml" },

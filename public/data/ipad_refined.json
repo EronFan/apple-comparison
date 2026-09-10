@@ -1,6 +1,306 @@
 [
   {
     "name": {
+      "zh-CN": "iPad Air 13 英寸(M4)",
+      "en-US": "iPad Air 13-inch (M4)"
+    },
+    "id": "ipad-ipad-air-13-inchm4",
+    "marketingSlogan": {
+      "zh-CN": "超拉风",
+      "en-US": "超拉风"
+    },
+    "releaseDate": {
+      "zh-CN": "2026.03.02",
+      "en-US": "March 2, 2026"
+    },
+    "os": {
+      "zh-CN": "iPadOS 26 ~ 最新",
+      "en-US": "iPadOS 26 ~ Latest"
+    },
+    "model": "iPad16,10 / iPad16,11",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "蓝色",
+          "en-US": "Blue"
+        },
+        "code": "#d7e5e6"
+      },
+      {
+        "name": {
+          "zh-CN": "紫色",
+          "en-US": "Purple"
+        },
+        "code": "#e3dee9"
+      },
+      {
+        "name": {
+          "zh-CN": "星光色",
+          "en-US": "Starlight"
+        },
+        "code": "#e3dcd1"
+      },
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#6b696e"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "当前浏览器不支持蓝色紫色星光色深空灰色",
+      "en-US": "Current browser does not support Blue, Purple, Starlight, Space Gray"
+    },
+    "processor": {
+      "zh-CN": "M4(3P+5E+9GPU)",
+      "en-US": "M4(3P+5E+9GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "13\" Liquid LED",
+      "en-US": "13\" Liquid LED"
+    },
+    "displayResolution": {
+      "zh-CN": "2732×2048, 264ppi",
+      "en-US": "2732×2048, 264ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "60Hz",
+      "en-US": "60Hz"
+    },
+    "displayBrightness": {
+      "zh-CN": "600(典型)",
+      "en-US": "600(typical)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "True Tone display, Wide color display (P3)"
+    },
+    "camera": {
+      "zh-CN": "1200W 像素 ƒ/1.8",
+      "en-US": "12MP ƒ/1.8"
+    },
+    "frontCamera": {
+      "zh-CN": "1200W 像素 ƒ/2.0",
+      "en-US": "12MP ƒ/2.0"
+    },
+    "pencilSupport": {
+      "zh-CN": "Apple Pencil ProApple Pencil (USB‑C)",
+      "en-US": "Apple Pencil Pro, Apple Pencil (USB‑C)"
+    },
+    "ports": {
+      "zh-CN": "USB-C (最高可达 10Gb/s)",
+      "en-US": "USB-C (up to 10Gb/s)"
+    },
+    "wifiStandard": {
+      "zh-CN": "802.11be 2x2 MIMO",
+      "en-US": "802.11be 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 6.0",
+      "en-US": "Bluetooth 6.0"
+    },
+    "security": {
+      "zh-CN": "触控 ID",
+      "en-US": "Touch ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "36.59Wh",
+      "en-US": "36.59Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×2 + 扬声器 ×2",
+      "en-US": "2 microphones + 2 speakers"
+    },
+    "dimensions": {
+      "zh-CN": "280.6×214.9×6.1, 616/617g",
+      "en-US": "280.6×214.9×6.1mm, 616/617g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/126472"
+    },
+    "series": {
+      "zh-CN": "Air",
+      "en-US": "Air"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11be 2x2 MIMO, 蓝牙 Bluetooth 6.0",
+      "en-US": "802.11be 2x2 MIMO, Bluetooth 6.0"
+    },
+    "ram": "12GB",
+    "storage": [
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "ramType": "LPDDR5X",
+    "baseband": "Apple C1X"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad Air 11 英寸(M4)",
+      "en-US": "iPad Air 11-inch (M4)"
+    },
+    "id": "ipad-ipad-air-11-inchm4",
+    "marketingSlogan": {
+      "zh-CN": "超拉风",
+      "en-US": "超拉风"
+    },
+    "releaseDate": {
+      "zh-CN": "2026.03.02",
+      "en-US": "March 2, 2026"
+    },
+    "os": {
+      "zh-CN": "iPadOS 26 ~ 最新",
+      "en-US": "iPadOS 26 ~ Latest"
+    },
+    "model": "iPad16,8 / iPad16,9",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "蓝色",
+          "en-US": "Blue"
+        },
+        "code": "#d7e5e6"
+      },
+      {
+        "name": {
+          "zh-CN": "紫色",
+          "en-US": "Purple"
+        },
+        "code": "#e3dee9"
+      },
+      {
+        "name": {
+          "zh-CN": "星光色",
+          "en-US": "Starlight"
+        },
+        "code": "#e3dcd1"
+      },
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#6b696e"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "当前浏览器不支持蓝色紫色星光色深空灰色",
+      "en-US": "Current browser does not support Blue, Purple, Starlight, Space Gray"
+    },
+    "processor": {
+      "zh-CN": "M4(3P+5E+9GPU)",
+      "en-US": "M4(3P+5E+9GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "11\" Liquid LED",
+      "en-US": "11\" Liquid LED"
+    },
+    "displayResolution": {
+      "zh-CN": "2360×1640, 264ppi",
+      "en-US": "2360×1640, 264ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "60Hz",
+      "en-US": "60Hz"
+    },
+    "displayBrightness": {
+      "zh-CN": "500(典型)",
+      "en-US": "500(typical)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "True Tone display, Wide color display (P3)"
+    },
+    "camera": {
+      "zh-CN": "1200W 像素 ƒ/1.8",
+      "en-US": "12MP ƒ/1.8"
+    },
+    "frontCamera": {
+      "zh-CN": "1200W 像素 ƒ/2.0",
+      "en-US": "12MP ƒ/2.0"
+    },
+    "pencilSupport": {
+      "zh-CN": "Apple Pencil ProApple Pencil (USB‑C)",
+      "en-US": "Apple Pencil Pro, Apple Pencil (USB‑C)"
+    },
+    "ports": {
+      "zh-CN": "USB-C (最高可达 10Gb/s)",
+      "en-US": "USB-C (up to 10Gb/s)"
+    },
+    "wifiStandard": {
+      "zh-CN": "802.11be 2x2 MIMO",
+      "en-US": "802.11be 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 6.0",
+      "en-US": "Bluetooth 6.0"
+    },
+    "security": {
+      "zh-CN": "触控 ID",
+      "en-US": "Touch ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "28.93Wh",
+      "en-US": "28.93Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×2 + 扬声器 ×2",
+      "en-US": "2 microphones + 2 speakers"
+    },
+    "dimensions": {
+      "zh-CN": "247.6×178.5×6.1, 464/465g",
+      "en-US": "247.6×178.5×6.1mm, 464/465g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/126471"
+    },
+    "series": {
+      "zh-CN": "Air",
+      "en-US": "Air"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11be 2x2 MIMO, 蓝牙 Bluetooth 6.0",
+      "en-US": "802.11be 2x2 MIMO, Bluetooth 6.0"
+    },
+    "ram": "12GB",
+    "storage": [
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "ramType": "LPDDR5X",
+    "baseband": "Apple C1X"
+  },
+  {
+    "name": {
       "zh-CN": "iPad Pro 13 英寸(M5)",
       "en-US": "iPad Pro 13-inch (M5)"
     },

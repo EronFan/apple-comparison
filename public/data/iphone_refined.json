@@ -101,7 +101,23 @@
     "batteryCapacityMah": 4883,
     "batteryCapacityWh": "19.073",
     "videoPlaybackTime": "最长44小时",
-    "simCardSupport": "双 eSIM"
+    "simCardSupport": "双 eSIM",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "星光白色",
+          "en-US": "星光白色"
+        },
+        "code": "#F7F6F5"
+      },
+      {
+        "name": {
+          "zh-CN": "夜空色",
+          "en-US": "夜空色"
+        },
+        "code": "#394452"
+      }
+    ]
   },
   {
     "releaseDate": {
@@ -207,7 +223,37 @@
     "batteryCapacityMah": 5391,
     "batteryCapacityWh": "21.063",
     "videoPlaybackTime": "最长43小时",
-    "simCardSupport": "双物理SIM"
+    "simCardSupport": "双物理SIM",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "勃艮第酒红色",
+          "en-US": "勃艮第酒红色"
+        },
+        "code": "#4D1821"
+      },
+      {
+        "name": {
+          "zh-CN": "冰川蓝色",
+          "en-US": "冰川蓝色"
+        },
+        "code": "#E8F2FF"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "银色"
+        },
+        "code": "#F7F7F7"
+      },
+      {
+        "name": {
+          "zh-CN": "黑色",
+          "en-US": "黑色"
+        },
+        "code": "#3C3C3C"
+      }
+    ]
   },
   {
     "releaseDate": {
@@ -313,7 +359,165 @@
     "batteryCapacityMah": 4056,
     "batteryCapacityWh": "15.855",
     "videoPlaybackTime": "最长34小时",
-    "simCardSupport": "双物理SIM"
+    "simCardSupport": "双物理SIM",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "勃艮第酒红色",
+          "en-US": "勃艮第酒红色"
+        },
+        "code": "#4D1821"
+      },
+      {
+        "name": {
+          "zh-CN": "冰川蓝色",
+          "en-US": "冰川蓝色"
+        },
+        "code": "#E8F2FF"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "银色"
+        },
+        "code": "#F7F7F7"
+      },
+      {
+        "name": {
+          "zh-CN": "黑色",
+          "en-US": "黑色"
+        },
+        "code": "#3C3C3C"
+      }
+    ]
+  },
+  {
+    "id": "iphone-17e",
+    "name": {
+      "zh-CN": "iPhone 17e",
+      "en-US": "iPhone 17e"
+    },
+    "marketingSlogan": {
+      "zh-CN": "本领叠满，超值加满",
+      "en-US": "本领叠满，超值加满"
+    },
+    "releaseDate": {
+      "zh-CN": "2026.03.02",
+      "en-US": "2026.03.02"
+    },
+    "os": {
+      "zh-CN": "iOS 26 ~ 最新",
+      "en-US": "iOS 26 ~ 最新"
+    },
+    "model": "iPhone18,5",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "黑色",
+          "en-US": "黑色"
+        },
+        "code": "#3C4042"
+      },
+      {
+        "name": {
+          "zh-CN": "白色",
+          "en-US": "白色"
+        },
+        "code": "#FAFAFA"
+      },
+      {
+        "name": {
+          "zh-CN": "浅粉色",
+          "en-US": "浅粉色"
+        },
+        "code": "#FCE7E6"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "当前浏览器不支持查看",
+      "en-US": "当前浏览器不支持查看"
+    },
+    "processor": {
+      "zh-CN": "A19(2P+4E+4GPU)",
+      "en-US": "A19(2P+4E+4GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "6.1\" XDR OLED",
+      "en-US": "6.1\" XDR OLED"
+    },
+    "displayResolution": "2532×1170,",
+    "displayRefreshRate": "60Hz",
+    "displayBrightness": {
+      "zh-CN": "800(典), 1200(HDR)",
+      "en-US": "800(典), 1200(HDR)"
+    },
+    "displayColorGamut": "P3广色域和原彩显示",
+    "camera": {
+      "zh-CN": "主摄：4800W 像素 ƒ/1.6",
+      "en-US": "主摄：4800W 像素 ƒ/1.6"
+    },
+    "frontCamera": "1200W 像素 ƒ/1.9",
+    "lidar": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "ports": "USB-C (最高可达 480Mb/s)",
+    "baseband": "Apple C1X",
+    "wifiStandard": "802.11ax 2x2 MIMO",
+    "bluetoothVersion": "Bluetooth 5.3",
+    "nfc": "支持读卡器模式 NFC",
+    "security": "面容 ID",
+    "batteryCapacity": {
+      "zh-CN": "15.556Wh (4005mAh)",
+      "en-US": "15.556Wh (4005mAh)"
+    },
+    "charging": "USB-C/MagSafe/Qi/Qi2",
+    "batteryLife": {
+      "zh-CN": "视频26小时 流媒体21小时",
+      "en-US": "视频26小时 流媒体21小时"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×4 + 扬声器 ×2",
+      "en-US": "麦克风 ×4 + 扬声器 ×2"
+    },
+    "dimensions": "71.5×146.7×7.8mm",
+    "weight": "170g",
+    "waterResistance": "IP68 防尘防水",
+    "price": {
+      "zh-CN": "256GB: ¥4,499512GB: ¥6,499",
+      "en-US": "256GB: ¥4,499512GB: ¥6,499"
+    },
+    "connectivity": {
+      "zh-CN": "5G, Wi-Fi, 蓝牙, NFC",
+      "en-US": "5G, Wi-Fi, Bluetooth, NFC"
+    },
+    "frontPanel": "超瓷晶面板二代",
+    "frameMaterial": "铝金属边框",
+    "backPanelMaterial": "玻璃",
+    "displaySize": "6.1英寸",
+    "displayPpi": "460PPI",
+    "displayPanelType": "OLED",
+    "displaySpecialTech": "Super Retina XDR",
+    "displayStandardBrightness": "800尼特",
+    "displayHdrBrightness": "1200尼特",
+    "touchTechnology": "Haptic Touch",
+    "ram": "8GB LPDDR5X",
+    "storage": "256GB / 512GB",
+    "mainCamera": "4800万像素主摄 (f/1.6光圈)",
+    "batteryCapacityMah": 4005,
+    "batteryCapacityWh": "15.556",
+    "videoPlaybackTime": "最长26小时",
+    "simCardSupport": "双 eSIM 或 nano-SIM+eSIM",
+    "cellularData": "5G",
+    "speakers": "2个扬声器",
+    "microphoneCount": "4个麦克风",
+    "initialOS": "iOS 26",
+    "maxSupportedOS": "最新",
+    "specialFeatures": {
+      "zh-CN": "碰撞检测，拍照按钮",
+      "en-US": "碰撞检测，拍照按钮"
+    },
+    "technicalSpecsLink": "https://support.apple.com/zh-cn/126470"
   },
   {
     "id": "iphone-17",
