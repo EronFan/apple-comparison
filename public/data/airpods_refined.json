@@ -1,0 +1,622 @@
+[
+  {
+    "id": "airpods-001",
+    "series": "airpods",
+    "name": {
+      "zh-CN": "AirPods 5",
+      "en-US": "AirPods 5"
+    },
+    "marketingSlogan": {
+      "zh-CN": "有请主动降噪，尽享美妙。",
+      "en-US": "有请主动降噪，尽享美妙。"
+    },
+    "releaseDate": {
+      "zh-CN": "2026.09.10",
+      "en-US": "September 10, 2026"
+    },
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "白色",
+          "en-US": "白色"
+        },
+        "code": "#ffffff"
+      }
+    ],
+    "chip": "H2 ×2",
+    "bluetooth": "Bluetooth 5.3",
+    "controls": "按压耳机柄",
+    "spatialAudio": "动态头部追踪的空间音频",
+    "noiseReduction": "支持",
+    "transparencyMode": "支持",
+    "listening": "4 小时 (配无线充电盒版为 5 小时)",
+    "withCase": "20 小时 (配无线充电盒版为 22 小时)",
+    "charging": "USB-C、无线充电 (配无线充电盒版)",
+    "dimensions": "单耳机: 30.2×18.3×18.1mm, 4.3g; 充电盒: 50.1×46.2×21.2mm, 32.3/34.7g",
+    "waterResistance": "IP54",
+    "sensors": "双波束成形麦克风、内向式麦克风、入耳检测传感器(光学)、运动加速感应器、语音加速感应器、力度感应器",
+    "price": "标准版 ¥999; 配无线充电盒版 ¥1,149"
+  },
+  {
+    "id": "airpods-002",
+    "series": "airpods",
+    "name": {
+      "zh-CN": "AirPods 4",
+      "en-US": "AirPods 4"
+    },
+    "marketingSlogan": {
+      "zh-CN": "耳上经典，音质再进化。",
+      "en-US": "耳上经典，音质再进化。"
+    },
+    "releaseDate": {
+      "zh-CN": "2024.09.10",
+      "en-US": "September 10, 2024"
+    },
+    "model": "AirPods1,4 / 3,2 / 3,3",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "白色",
+          "en-US": "白色"
+        },
+        "code": "#ffffff"
+      }
+    ],
+    "chip": "H2 ×2",
+    "bluetooth": "Bluetooth 5.3",
+    "controls": "按压耳机柄",
+    "spatialAudio": "动态头部追踪的空间音频",
+    "noiseReduction": "(仅主动降噪版支持)",
+    "transparencyMode": "(仅主动降噪版支持)",
+    "listening": "5 小时 (主动降噪模式为 4 小时)",
+    "withCase": "30 小时 (主动降噪模式为 20 小时)",
+    "earbudBattery": "0.123Wh (32.1mAh)",
+    "caseBattery": "1.329Wh (345mAh)",
+    "charging": "USB-C、无线充电 (无线充电仅主动降噪版)",
+    "dimensions": "单耳机: 30.2×18.3×18.1mm, 4.3g; 充电盒: 50.1×46.2×21.2mm, 32.3/34.7g",
+    "waterResistance": "IP54",
+    "sensors": "双波束成形麦克风、内向式麦克风、入耳检测传感器(光学)、运动加速感应器、语音加速感应器、力度感应器",
+    "price": "标准版 ¥999; 主动降噪版 ¥1,399",
+    "techLinks": [
+      {
+        "text": {
+          "zh-CN": "技术规格",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/zh-cn/121203"
+      },
+      {
+        "text": {
+          "zh-CN": "技术规格 (主动降噪版)",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/zh-cn/121204"
+      }
+    ]
+  },
+  {
+    "id": "airpods-003",
+    "series": "airpods",
+    "name": {
+      "zh-CN": "AirPods 3",
+      "en-US": "AirPods 3"
+    },
+    "marketingSlogan": {
+      "zh-CN": "全新支持空间音频",
+      "en-US": "全新支持空间音频"
+    },
+    "releaseDate": {
+      "zh-CN": "2021.10.19",
+      "en-US": "October 19, 2021"
+    },
+    "model": "AirPods1,3",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "白色",
+          "en-US": "白色"
+        },
+        "code": "#ffffff"
+      }
+    ],
+    "chip": "H1 ×2",
+    "bluetooth": "Bluetooth 5.0",
+    "controls": "按压耳机柄",
+    "spatialAudio": "动态头部追踪的空间音频",
+    "noiseReduction": "❌",
+    "transparencyMode": "❌",
+    "listening": "6 小时",
+    "withCase": "30 小时",
+    "earbudBattery": "0.133Wh (36.2mAh)",
+    "caseBattery": "1.327Wh (345mAh)",
+    "charging": "闪电接口 无线QI、MagSafe",
+    "dimensions": "单耳机: 30.79×18.26×19.21mm, 4.28g; 充电盒: 54.4×46.4×21.38mm, 37.91g",
+    "waterResistance": "IPX4",
+    "sensors": "双波束成形麦克风、内向式麦克风、皮肤识别传感器、运动加速感应器、语音加速感应器、力度感应器",
+    "price": "¥1,399",
+    "techLinks": [
+      {
+        "text": {
+          "zh-CN": "技术规格",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/zh-cn/111863"
+      }
+    ]
+  },
+  {
+    "id": "airpods-004",
+    "series": "airpods",
+    "name": {
+      "zh-CN": "AirPods 2",
+      "en-US": "AirPods 2"
+    },
+    "marketingSlogan": {
+      "zh-CN": "妙出新境界。",
+      "en-US": "妙出新境界。"
+    },
+    "releaseDate": {
+      "zh-CN": "2019.03.21",
+      "en-US": "March 21, 2019"
+    },
+    "model": "AirPods2,1",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "白色",
+          "en-US": "白色"
+        },
+        "code": "#ffffff"
+      }
+    ],
+    "chip": "H1 ×2",
+    "bluetooth": "Bluetooth 5.0",
+    "controls": "敲击耳机",
+    "spatialAudio": "❌",
+    "noiseReduction": "❌",
+    "transparencyMode": "❌",
+    "listening": "5 小时",
+    "withCase": "24 小时",
+    "earbudBattery": "93 mWh",
+    "caseBattery": "1.52Wh (398mAh)",
+    "charging": "闪电接口 无线QI(需购买充电盒)",
+    "dimensions": "单耳机: 40.5×16.5×18.0mm, 4g; 充电盒: 44.3×53.5×21.3mm, 38.2g",
+    "waterResistance": "❌",
+    "sensors": "双波束成形麦克风、双光学传感器、运动加速感应器、语音加速感应器",
+    "price": "闪电充电盒 ¥1,246; 无线充电盒 ¥1,558",
+    "techLinks": [
+      {
+        "text": {
+          "zh-CN": "技术规格",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/zh-cn/111856"
+      }
+    ]
+  },
+  {
+    "id": "airpods-005",
+    "series": "airpods",
+    "name": {
+      "zh-CN": "AirPods 1",
+      "en-US": "AirPods 1"
+    },
+    "marketingSlogan": {
+      "zh-CN": "无线，无繁琐，只有妙不可言。",
+      "en-US": "无线，无繁琐，只有妙不可言。"
+    },
+    "releaseDate": {
+      "zh-CN": "2016.12.08",
+      "en-US": "December 8, 2016"
+    },
+    "model": "AirPods1,1",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "白色",
+          "en-US": "白色"
+        },
+        "code": "#ffffff"
+      }
+    ],
+    "chip": "W1 ×2",
+    "bluetooth": "Bluetooth 4.2",
+    "controls": "敲击耳机",
+    "spatialAudio": "❌",
+    "noiseReduction": "❌",
+    "transparencyMode": "❌",
+    "listening": "5 小时",
+    "withCase": "24 小时",
+    "earbudBattery": "93 mWh",
+    "caseBattery": "1.52Wh (398mAh)",
+    "charging": "闪电接口",
+    "dimensions": "单耳机: 40.5×16.5×18.0mm, 4g; 充电盒: 44.3×53.5×21.3mm, 38g",
+    "waterResistance": "❌",
+    "sensors": "双波束成形麦克风、双光学传感器、运动加速感应器、语音加速感应器",
+    "price": "¥1,288",
+    "techLinks": [
+      {
+        "text": {
+          "zh-CN": "技术规格",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/zh-cn/111855"
+      }
+    ]
+  },
+  {
+    "id": "airpods-006",
+    "series": "airpods-pro",
+    "name": {
+      "zh-CN": "AirPods Pro 3",
+      "en-US": "AirPods Pro 3"
+    },
+    "marketingSlogan": {
+      "zh-CN": "主动降噪升至两倍，倍加悦耳。",
+      "en-US": "主动降噪升至两倍，倍加悦耳。"
+    },
+    "releaseDate": {
+      "zh-CN": "2025.09.10",
+      "en-US": "September 10, 2025"
+    },
+    "model": "AirPodsPro1,3 / 3,4",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "白色",
+          "en-US": "白色"
+        },
+        "code": "#ffffff"
+      }
+    ],
+    "chip": "H2 ×2 + U2 (MagSafe 充电盒)",
+    "bluetooth": "Bluetooth 5.3",
+    "controls": "按压耳机柄、上下轻扫",
+    "spatialAudio": "动态头部追踪的空间音频",
+    "noiseReduction": "主动降噪",
+    "transparencyMode": "自适应通透模式",
+    "listening": "8 小时",
+    "withCase": "24 小时",
+    "earbudBattery": "0.221Wh (58mAh)",
+    "caseBattery": "1.334Wh (344.53mAh)",
+    "charging": "USB-C/QI MagSafe/Watch充电器",
+    "dimensions": "单耳机: 30.9×19.2×27.0mm, 5.55g; 充电盒: 62.2×47.2×21.8mm, 43.99g",
+    "waterResistance": "IP57",
+    "sensors": "双波束成形麦克风、内向式麦克风、皮肤识别传感器、运动加速感应器、语音加速感应器、触控传感器、心率传感器",
+    "price": "¥1,899",
+    "techLinks": [
+      {
+        "text": {
+          "zh-CN": "技术规格",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/zh-cn/125135"
+      }
+    ]
+  },
+  {
+    "id": "airpods-007",
+    "series": "airpods-pro",
+    "name": {
+      "zh-CN": "AirPods Pro 2",
+      "en-US": "AirPods Pro 2"
+    },
+    "marketingSlogan": {
+      "zh-CN": "重塑新声",
+      "en-US": "重塑新声"
+    },
+    "releaseDate": {
+      "zh-CN": "2022.09.08",
+      "en-US": "September 8, 2022"
+    },
+    "model": "AirPodsPro1,2",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "白色",
+          "en-US": "白色"
+        },
+        "code": "#ffffff"
+      }
+    ],
+    "chip": "H2 ×2 + U1 (MagSafe 充电盒)",
+    "bluetooth": "Bluetooth 5.3",
+    "controls": "按压耳机柄、上下轻扫",
+    "spatialAudio": "动态头部追踪的空间音频",
+    "noiseReduction": "主动降噪",
+    "transparencyMode": "自适应通透模式",
+    "listening": "6 小时",
+    "withCase": "30 小时",
+    "earbudBattery": "0.182Wh (49.7mAh)",
+    "caseBattery": "1.997Wh (523mAh)",
+    "charging": "闪电接口(旧款)/USB-C(新款) QI/MagSafe/Watch充电器",
+    "dimensions": "单耳机: 30.9×21.8×24.0mm, 5.3g; 充电盒: 60.6×45.2×21.7mm, 50.8g",
+    "waterResistance": "IPX4",
+    "sensors": "双波束成形麦克风、内向式麦克风、皮肤识别传感器、运动加速感应器、语音加速感应器、触控传感器",
+    "price": "¥1,899",
+    "techLinks": [
+      {
+        "text": {
+          "zh-CN": "技术规格",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/zh-cn/111851"
+      }
+    ]
+  },
+  {
+    "id": "airpods-008",
+    "series": "airpods-pro",
+    "name": {
+      "zh-CN": "AirPods Pro 1",
+      "en-US": "AirPods Pro 1"
+    },
+    "marketingSlogan": {
+      "zh-CN": "妙得不同凡响。",
+      "en-US": "妙得不同凡响。"
+    },
+    "releaseDate": {
+      "zh-CN": "2019.10.29",
+      "en-US": "October 29, 2019"
+    },
+    "model": "iProd8,1",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "白色",
+          "en-US": "白色"
+        },
+        "code": "#ffffff"
+      }
+    ],
+    "chip": "H1 ×2",
+    "bluetooth": "Bluetooth 5.0",
+    "controls": "按压耳机柄",
+    "spatialAudio": "动态头部追踪的空间音频",
+    "noiseReduction": "主动降噪",
+    "transparencyMode": "通透模式",
+    "listening": "4.5 小时",
+    "withCase": "24 小时",
+    "earbudBattery": "0.16Wh",
+    "caseBattery": "1.98Wh (519mAh)",
+    "charging": "闪电接口 无线QI、MagSafe",
+    "dimensions": "单耳机: 30.9×21.8×24.0mm, 5.4g; 充电盒: 60.6×45.2×21.7mm, 45.6g",
+    "waterResistance": "IPX4",
+    "sensors": "双波束成形麦克风、内向式麦克风、双光学传感器、运动加速感应、语音加速感应器、力度感应器",
+    "price": "¥1,999",
+    "techLinks": [
+      {
+        "text": {
+          "zh-CN": "技术规格",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/zh-cn/111859"
+      }
+    ]
+  },
+  {
+    "id": "airpods-009",
+    "series": "airpods-max",
+    "name": {
+      "zh-CN": "AirPods Max 2",
+      "en-US": "AirPods Max 2"
+    },
+    "marketingSlogan": {
+      "zh-CN": "声声升华",
+      "en-US": "声声升华"
+    },
+    "releaseDate": {
+      "zh-CN": "2026.03.16",
+      "en-US": "March 16, 2026"
+    },
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "午夜色",
+          "en-US": "午夜色"
+        },
+        "code": "#1d1d1f"
+      },
+      {
+        "name": {
+          "zh-CN": "星光色",
+          "en-US": "星光色"
+        },
+        "code": "#e9e1d4"
+      },
+      {
+        "name": {
+          "zh-CN": "蓝色",
+          "en-US": "蓝色"
+        },
+        "code": "#91a9b5"
+      },
+      {
+        "name": {
+          "zh-CN": "紫色",
+          "en-US": "紫色"
+        },
+        "code": "#afa6bb"
+      },
+      {
+        "name": {
+          "zh-CN": "橙色",
+          "en-US": "橙色"
+        },
+        "code": "#e2a48d"
+      }
+    ],
+    "chip": "H2 ×2",
+    "bluetooth": "Bluetooth 5.3",
+    "controls": "按键",
+    "spatialAudio": "动态头部追踪的空间音频",
+    "noiseReduction": "主动降噪",
+    "transparencyMode": "通透模式",
+    "listening": "20 小时",
+    "charging": "USB-C",
+    "dimensions": "168.6×187.3×83.4mm, 386.2g",
+    "waterResistance": "❌",
+    "sensors": "主动降噪麦克风(八个)、语音拾取麦克风(一个)、光学传感器、佩戴位置感应器、耳机套感应器、加速感应器、陀螺仪",
+    "price": "¥3,999",
+    "techLinks": [
+      {
+        "text": {
+          "zh-CN": "技术规格",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/zh-cn/126620"
+      }
+    ]
+  },
+  {
+    "id": "airpods-010",
+    "series": "airpods-max",
+    "name": {
+      "zh-CN": "AirPods Max (2024)",
+      "en-US": "AirPods Max (2024)"
+    },
+    "marketingSlogan": {
+      "zh-CN": "澎湃贯耳",
+      "en-US": "澎湃贯耳"
+    },
+    "releaseDate": {
+      "zh-CN": "2024.09.10",
+      "en-US": "September 10, 2024"
+    },
+    "model": "AirPodsMax1,2",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "午夜色",
+          "en-US": "午夜色"
+        },
+        "code": "#1d1d1f"
+      },
+      {
+        "name": {
+          "zh-CN": "星光色",
+          "en-US": "星光色"
+        },
+        "code": "#e9e1d4"
+      },
+      {
+        "name": {
+          "zh-CN": "蓝色",
+          "en-US": "蓝色"
+        },
+        "code": "#91a9b5"
+      },
+      {
+        "name": {
+          "zh-CN": "紫色",
+          "en-US": "紫色"
+        },
+        "code": "#afa6bb"
+      },
+      {
+        "name": {
+          "zh-CN": "橙色",
+          "en-US": "橙色"
+        },
+        "code": "#e2a48d"
+      }
+    ],
+    "chip": "H1 ×2",
+    "bluetooth": "Bluetooth 5.0",
+    "controls": "按键",
+    "spatialAudio": "动态头部追踪的空间音频",
+    "noiseReduction": "主动降噪",
+    "transparencyMode": "通透模式",
+    "listening": "20 小时",
+    "charging": "USB-C",
+    "dimensions": "168.6×187.3×83.4mm, 386.2g",
+    "waterResistance": "❌",
+    "sensors": "主动降噪麦克风(八个)、语音拾取麦克风(一个)、光学传感器、佩戴位置感应器、耳机套感应器、加速感应器、陀螺仪",
+    "price": "¥3,999",
+    "techLinks": [
+      {
+        "text": {
+          "zh-CN": "技术规格",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/zh-cn/121205"
+      }
+    ]
+  },
+  {
+    "id": "airpods-011",
+    "series": "airpods-max",
+    "name": {
+      "zh-CN": "AirPods Max (2020)",
+      "en-US": "AirPods Max (2020)"
+    },
+    "marketingSlogan": {
+      "zh-CN": "AirPods Max 高调登场",
+      "en-US": "AirPods Max 高调登场"
+    },
+    "releaseDate": {
+      "zh-CN": "2020.12.09",
+      "en-US": "December 9, 2020"
+    },
+    "model": "iProd8,6",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "银色"
+        },
+        "code": "#d2d3d4"
+      },
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "深空灰色"
+        },
+        "code": "#595759"
+      },
+      {
+        "name": {
+          "zh-CN": "天蓝色",
+          "en-US": "天蓝色"
+        },
+        "code": "#91a6bb"
+      },
+      {
+        "name": {
+          "zh-CN": "粉色",
+          "en-US": "粉色"
+        },
+        "code": "#d8a097"
+      },
+      {
+        "name": {
+          "zh-CN": "绿色",
+          "en-US": "绿色"
+        },
+        "code": "#afbfab"
+      }
+    ],
+    "chip": "H1 ×2",
+    "bluetooth": "Bluetooth 5.0",
+    "controls": "按键",
+    "spatialAudio": "动态头部追踪的空间音频",
+    "noiseReduction": "主动降噪",
+    "transparencyMode": "通透模式",
+    "listening": "20 小时",
+    "earbudBattery": "2.53Wh (664mAh)",
+    "charging": "闪电接口",
+    "dimensions": "168.6×187.3×83.4mm, 384.8g",
+    "waterResistance": "❌",
+    "sensors": "主动降噪麦克风(八个)、语音拾取麦克风(一个)、光学传感器、佩戴位置感应器、耳机套感应器、加速感应器、陀螺仪",
+    "price": "¥4,399",
+    "techLinks": [
+      {
+        "text": {
+          "zh-CN": "技术规格",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/zh-cn/111858"
+      }
+    ]
+  }
+]

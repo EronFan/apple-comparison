@@ -1,0 +1,162 @@
+[
+  {
+    "id": "homepod-001",
+    "series": "homepod",
+    "name": {
+      "zh-CN": "HomePod (第 2 代)",
+      "en-US": "HomePod (第 2 代)"
+    },
+    "marketingSlogan": {
+      "zh-CN": "声声有天地",
+      "en-US": "声声有天地"
+    },
+    "releaseDate": {
+      "zh-CN": "2023.01.18",
+      "en-US": "January 18, 2023"
+    },
+    "model": "AudioAccessory6,1",
+    "chip": "S7",
+    "ramStorage": "1.5GB RAM 32GB ROM",
+    "wirelessChip": "Apple W3 + Apple U1",
+    "wirelessSpec": "802.11n 2.4&5GHz + 蓝牙 5.0",
+    "threadSupport": "✅",
+    "speakerCount": "1 个高振幅低音单元 5 个高音单元 (组成阵列)",
+    "microphones": "4 个麦克风 (组成阵列)",
+    "bassMicrophones": "1 个",
+    "spatialAwareness": "✅",
+    "handoff": "✅",
+    "sensors": "温湿度传感器 加速感应器",
+    "dimensions": "16.8×14.2×14.2cm, 2.3kg",
+    "price": "¥2,299",
+    "techLinks": [
+      {
+        "text": {
+          "zh-CN": "技术规格",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/zh-cn/111843"
+      }
+    ]
+  },
+  {
+    "id": "homepod-002",
+    "series": "homepod",
+    "name": {
+      "zh-CN": "HomePod mini",
+      "en-US": "HomePod mini"
+    },
+    "marketingSlogan": {
+      "zh-CN": "小宇宙爆发。",
+      "en-US": "小宇宙爆发。"
+    },
+    "releaseDate": {
+      "zh-CN": "2020.10.14",
+      "en-US": "October 14, 2020"
+    },
+    "model": "AudioAccessory5,1",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "白色",
+          "en-US": "白色"
+        },
+        "code": null
+      },
+      {
+        "name": {
+          "zh-CN": "蓝色",
+          "en-US": "蓝色"
+        },
+        "code": null
+      },
+      {
+        "name": {
+          "zh-CN": "橙色",
+          "en-US": "橙色"
+        },
+        "code": null
+      },
+      {
+        "name": {
+          "zh-CN": "黄色",
+          "en-US": "黄色"
+        },
+        "code": null
+      },
+      {
+        "name": {
+          "zh-CN": "午夜色",
+          "en-US": "午夜色"
+        },
+        "code": null
+      },
+      {
+        "name": {
+          "zh-CN": "深空灰",
+          "en-US": "深空灰"
+        },
+        "code": null
+      }
+    ],
+    "chip": "S5",
+    "ramStorage": "1GB RAM 32GB ROM",
+    "wirelessChip": "Apple W3 + Apple U1",
+    "wirelessSpec": "802.11n 2.4&5GHz + 蓝牙 5.0",
+    "threadSupport": "✅",
+    "speakerCount": "1 个全频驱动单元 2 个无源辐射器",
+    "microphones": "4 个麦克风 (组成阵列)",
+    "bassMicrophones": "❌",
+    "spatialAwareness": "❌",
+    "handoff": "✅",
+    "sensors": "温湿度传感器 加速感应器",
+    "dimensions": "8.43×9.79×9.79cm, 345g",
+    "price": "¥749",
+    "techLinks": [
+      {
+        "text": {
+          "zh-CN": "技术规格",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/zh-cn/111914"
+      }
+    ]
+  },
+  {
+    "id": "homepod-003",
+    "series": "homepod",
+    "name": {
+      "zh-CN": "HomePod (第 1 代)",
+      "en-US": "HomePod (第 1 代)"
+    },
+    "marketingSlogan": {
+      "zh-CN": "家的新声。",
+      "en-US": "家的新声。"
+    },
+    "releaseDate": {
+      "zh-CN": "2017.06.06",
+      "en-US": "June 6, 2017"
+    },
+    "model": "AudioAccessory1,1 / 1,2",
+    "chip": "A8",
+    "ramStorage": "1GB RAM 16GB ROM",
+    "wirelessChip": "BCM4357",
+    "wirelessSpec": "802.11ac MIMO + 蓝牙 5.0",
+    "threadSupport": "❌",
+    "speakerCount": "1 个高振幅低音单元 7 个高音单元 (组成阵列)",
+    "microphones": "6 个麦克风 (组成阵列)",
+    "bassMicrophones": "1 个",
+    "spatialAwareness": "✅",
+    "handoff": "✅ (需更新系统)",
+    "dimensions": "17.2×14.2×14.2cm, 2.5kg",
+    "price": "¥2,799",
+    "techLinks": [
+      {
+        "text": {
+          "zh-CN": "技术规格",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/zh-cn/111994"
+      }
+    ]
+  }
+]

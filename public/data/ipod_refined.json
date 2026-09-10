@@ -1,0 +1,309 @@
+[
+  {
+    "id": "ipod-001",
+    "series": "ipod",
+    "name": {
+      "zh-CN": "iPod touch (第 7 代)",
+      "en-US": "iPod touch (第 7 代)"
+    },
+    "marketingSlogan": {
+      "zh-CN": "够快，够快乐。",
+      "en-US": "够快，够快乐。"
+    },
+    "releaseDate": {
+      "zh-CN": "2019.05.29",
+      "en-US": "May 29, 2019"
+    },
+    "os": {
+      "zh-CN": "iOS 12 ~ iOS 15",
+      "en-US": "iOS 12 ~ iOS 15"
+    },
+    "model": "iPod9,1",
+    "chip": "A10 Fusion (2P+2E+6GPU)",
+    "ramStorage": "2GB LPDDR4 32G、128G、256G",
+    "displaySize": "4\"",
+    "displayResolution": "1136×640, 326ppi",
+    "displayContrast": "800:1",
+    "displayBrightness": "500 尼特",
+    "rearCamera": "800W 像素 ƒ/2.4",
+    "frontCamera": "120W 像素 ƒ/2.2",
+    "batteryCapacity": "1043mAh",
+    "charging": "闪电接口",
+    "wifi": "802.11 a/b/g/n/ac",
+    "bluetooth": "Bluetooth 4.1",
+    "ioPorts": "麦克风 ×1 + 扬声器 ×1",
+    "dimensions": "123.4×58.6×6.1mm, 88g",
+    "chassisModel": "A2178",
+    "price": "32GB: ¥1,599 128GB: ¥2,499 256GB: ¥3,399",
+    "techLinks": [
+      {
+        "text": {
+          "zh-CN": "技术规格",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/zh-cn/111961"
+      }
+    ]
+  },
+  {
+    "id": "ipod-002",
+    "series": "ipod",
+    "name": {
+      "zh-CN": "iPod touch (第 6 代)",
+      "en-US": "iPod touch (第 6 代)"
+    },
+    "marketingSlogan": {
+      "zh-CN": "新鲜色彩，全系列都出彩。",
+      "en-US": "新鲜色彩，全系列都出彩。"
+    },
+    "releaseDate": {
+      "zh-CN": "2015.07.16",
+      "en-US": "July 16, 2015"
+    },
+    "os": {
+      "zh-CN": "iOS 8 ~ iOS 12",
+      "en-US": "iOS 8 ~ iOS 12"
+    },
+    "model": "iPod7,1",
+    "chip": "A8 (2P+4GPU)",
+    "ramStorage": "1GB LPDDR3 16G、32G、64G、128G",
+    "audioChip": "Cirrus Logic 338S1116",
+    "displaySize": "4\"",
+    "displayResolution": "1136×640, 326ppi",
+    "displayContrast": "800:1",
+    "displayBrightness": "500 尼特",
+    "rearCamera": "800W 像素 ƒ/2.4",
+    "frontCamera": "120W 像素 ƒ/2.2",
+    "batteryCapacity": "1043mAh",
+    "charging": "闪电接口",
+    "wifi": "802.11 a/b/g/n/ac",
+    "bluetooth": "Bluetooth 4.1",
+    "ioPorts": "麦克风 ×1 + 扬声器 ×1",
+    "dimensions": "123.4×58.6×6.1mm, 88g",
+    "chassisModel": "A1574",
+    "price": "16GB: ¥1,498 32GB: ¥1,898 64GB: ¥2,298 128GB: ¥2,988",
+    "techLinks": [
+      {
+        "text": {
+          "zh-CN": "技术规格",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/zh-cn/112023"
+      }
+    ]
+  },
+  {
+    "id": "ipod-003",
+    "series": "ipod",
+    "name": {
+      "zh-CN": "iPod touch (第 5 代)",
+      "en-US": "iPod touch (第 5 代)"
+    },
+    "marketingSlogan": {
+      "zh-CN": "精工细作，尽情享乐之作。",
+      "en-US": "精工细作，尽情享乐之作。"
+    },
+    "releaseDate": {
+      "zh-CN": "2012.09.13",
+      "en-US": "September 13, 2012"
+    },
+    "os": {
+      "zh-CN": "iOS 6 ~ iOS 9",
+      "en-US": "iOS 6 ~ iOS 9"
+    },
+    "model": "iPod5,1",
+    "chip": "A5 (2P+2GPU)",
+    "ramStorage": "512MB LPDDR2 16G、32G、64G",
+    "audioChip": "Cirrus Logic 338S1077",
+    "displaySize": "4\"",
+    "displayResolution": "1136×640, 326ppi",
+    "displayContrast": "800:1",
+    "displayBrightness": "500 尼特",
+    "rearCamera": "500W 像素 ƒ/2.4",
+    "frontCamera": "120W 像素 ƒ/2.2",
+    "batteryCapacity": "1030mAh",
+    "charging": "闪电接口",
+    "wifi": "802.11 a/b/g/n",
+    "bluetooth": "Bluetooth 4.0",
+    "ioPorts": "麦克风 ×1 + 扬声器 ×1",
+    "dimensions": "123.4×58.6×6.1mm, 88g",
+    "chassisModel": "A1421,A1509",
+    "price": "16GB: ¥1,698 32GB: ¥2,298 64GB: ¥2,998",
+    "techLinks": [
+      {
+        "text": {
+          "zh-CN": "技术规格",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/zh-cn/112021"
+      }
+    ]
+  },
+  {
+    "id": "ipod-004",
+    "series": "ipod",
+    "name": {
+      "zh-CN": "iPod touch (第 4 代)",
+      "en-US": "iPod touch (第 4 代)"
+    },
+    "marketingSlogan": {
+      "zh-CN": "介绍全新 iPod touch",
+      "en-US": "介绍全新 iPod touch"
+    },
+    "releaseDate": {
+      "zh-CN": "2010.09.02",
+      "en-US": "September 2, 2010"
+    },
+    "os": {
+      "zh-CN": "iOS 4 ~ iOS 6",
+      "en-US": "iOS 4 ~ iOS 6"
+    },
+    "model": "iPod4,1",
+    "chip": "A4 (1P+1GPU)",
+    "ramStorage": "256MB LPDDR 8G、16G、32G、64G",
+    "audioChip": "Cirrus Logic 338S0589",
+    "displaySize": "3.5\"",
+    "displayResolution": "960×640, 326ppi",
+    "displayContrast": "800:1",
+    "displayBrightness": "500 尼特",
+    "rearCamera": "70W 像素",
+    "frontCamera": "30W 像素",
+    "batteryCapacity": "930mAh",
+    "charging": "30 针接口",
+    "wifi": "802.11 b/g/n",
+    "bluetooth": "Bluetooth 2.1",
+    "ioPorts": "麦克风 ×1 + 扬声器 ×1",
+    "dimensions": "111×58.6×7.2mm, 101g",
+    "chassisModel": "A1367",
+    "price": "8GB: ¥1,798 32GB: ¥2,398 64GB: ¥3,198",
+    "techLinks": [
+      {
+        "text": {
+          "zh-CN": "技术规格",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/zh-cn/112431"
+      }
+    ]
+  },
+  {
+    "id": "ipod-005",
+    "series": "ipod",
+    "name": {
+      "zh-CN": "iPod touch (第 3 代)",
+      "en-US": "iPod touch (第 3 代)"
+    },
+    "marketingSlogan": {
+      "zh-CN": "音乐、视频及应用，尽在指点之间",
+      "en-US": "音乐、视频及应用，尽在指点之间"
+    },
+    "releaseDate": {
+      "zh-CN": "2009.09.10",
+      "en-US": "September 10, 2009"
+    },
+    "os": {
+      "zh-CN": "iPhone OS 3 ~ iOS 4/5",
+      "en-US": "iPhone OS 3 ~ iOS 4/5"
+    },
+    "model": "iPod3,1",
+    "chip": "S5L8720 (1P+1GPU) S5L8922 (1P+1GPU)",
+    "ramStorage": "128MB LPDDR 8G 256MB LPDDR 32G、64G",
+    "audioChip": "Cirrus Logic 338S0559",
+    "displaySize": "3.5\"",
+    "displayResolution": "480×320, 163ppi",
+    "displayContrast": "200:1",
+    "batteryCapacity": "789mAh",
+    "charging": "30 针接口",
+    "wifi": "802.11 b/g",
+    "bluetooth": "Bluetooth 2.1",
+    "dimensions": "110×61.8×8.5mm, 115g",
+    "chassisModel": "A1318",
+    "price": "8GB: ¥1,598 32GB: ¥2,398 64GB: ¥3,198",
+    "techLinks": [
+      {
+        "text": {
+          "zh-CN": "技术规格",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/zh-cn/112461"
+      }
+    ]
+  },
+  {
+    "id": "ipod-006",
+    "series": "ipod",
+    "name": {
+      "zh-CN": "iPod touch (第 2 代)",
+      "en-US": "iPod touch (第 2 代)"
+    },
+    "releaseDate": {
+      "zh-CN": "2008.09.10",
+      "en-US": "September 10, 2008"
+    },
+    "os": {
+      "zh-CN": "iPhone OS 2 ~ iOS 4",
+      "en-US": "iPhone OS 2 ~ iOS 4"
+    },
+    "model": "iPod2,1",
+    "chip": "Samsung S5L8720 (1P+1GPU)",
+    "ramStorage": "128MB LPDDR 8G、16G、32G",
+    "audioChip": "Cirrus Logic 338S0559",
+    "displaySize": "3.5\"",
+    "displayResolution": "480×320, 163ppi",
+    "displayContrast": "200:1",
+    "batteryCapacity": "739mAh",
+    "charging": "30 针接口",
+    "wifi": "802.11 b/g",
+    "bluetooth": "Bluetooth 2.1",
+    "dimensions": "110×61.8×8.5mm, 115g",
+    "chassisModel": "全球版 A1288 国内版 A1319",
+    "price": "8GB: ¥1,998 16GB: ¥2,598 32GB: ¥3,498",
+    "techLinks": [
+      {
+        "text": {
+          "zh-CN": "技术规格",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/zh-cn/112319"
+      }
+    ]
+  },
+  {
+    "id": "ipod-007",
+    "series": "ipod",
+    "name": {
+      "zh-CN": "iPod touch",
+      "en-US": "iPod touch"
+    },
+    "releaseDate": {
+      "zh-CN": "2007.09.05",
+      "en-US": "September 5, 2007"
+    },
+    "os": {
+      "zh-CN": "iPhone OS 1 ~ iPhone OS 3",
+      "en-US": "iPhone OS 1 ~ iPhone OS 3"
+    },
+    "model": "iPod1,1",
+    "chip": "Samsung S5L8900 (1P+1GPU)",
+    "ramStorage": "128MB LPDDR 8G、16G、32G",
+    "audioChip": "WM8758BG",
+    "displaySize": "3.5\"",
+    "displayResolution": "480×320, 163ppi",
+    "displayContrast": "200:1",
+    "batteryCapacity": "580mAh",
+    "charging": "30 针接口",
+    "wifi": "802.11 b/g",
+    "dimensions": "110×61.8×8mm, 120g",
+    "chassisModel": "A1213",
+    "price": "8GB: $299 16GB: $399",
+    "techLinks": [
+      {
+        "text": {
+          "zh-CN": "技术规格",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/zh-cn/112532"
+      }
+    ]
+  }
+]

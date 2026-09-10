@@ -1,0 +1,291 @@
+[
+  {
+    "id": "tv-001",
+    "series": "tv",
+    "name": {
+      "zh-CN": "Apple TV 4K (第 3 代)",
+      "en-US": "Apple TV 4K (第 3 代)"
+    },
+    "marketingSlogan": {
+      "zh-CN": "The Apple experience. Cinematic in every sense.",
+      "en-US": "The Apple experience. Cinematic in every sense."
+    },
+    "releaseDate": {
+      "zh-CN": "2022.10.18",
+      "en-US": "October 18, 2022"
+    },
+    "os": {
+      "zh-CN": "tvOS 16 ~ 最新",
+      "en-US": "tvOS 16 ~ Latest"
+    },
+    "model": "AppleTV14,1",
+    "chip": "A15 Bionic (2P+3E+5GPU)",
+    "ramStorage": "4GB LPDDR4X 64G、128G",
+    "remote": "Siri Remote (3rd Gen)",
+    "powerSupply": "USB-C",
+    "airPlay": "✅",
+    "audioVideo": "HDMI2.1 ×1",
+    "ethernet": "千兆以太网 (仅以太网版)",
+    "wirelessChip": "BCM4378",
+    "wirelessSpec": "802.11ax 2×2 MIMO + 蓝牙 5.0",
+    "dimensionsHost": "31×93×93mm, 208/214g",
+    "dimensionsRemote": "136×35×9.25mm, 66g",
+    "price": "Wi-Fi 版 64GB: $129 / Wi-Fi + 以太网 128GB: $149",
+    "techLinks": [
+      {
+        "text": {
+          "zh-CN": "技术规格",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/en-us/111839"
+      }
+    ]
+  },
+  {
+    "id": "tv-002",
+    "series": "tv",
+    "name": {
+      "zh-CN": "Apple TV 4K (第 2 代)",
+      "en-US": "Apple TV 4K (第 2 代)"
+    },
+    "marketingSlogan": {
+      "zh-CN": "A higher definition of TV.",
+      "en-US": "A higher definition of TV."
+    },
+    "releaseDate": {
+      "zh-CN": "2021.04.21",
+      "en-US": "April 21, 2021"
+    },
+    "os": {
+      "zh-CN": "tvOS 14 ~ 最新",
+      "en-US": "tvOS 14 ~ Latest"
+    },
+    "model": "AppleTV11,1",
+    "chip": "A12 Bionic (2P+4E+4GPU)",
+    "ramStorage": "3GB LPDDR4X 32G、64G",
+    "remote": "Siri Remote (2nd Gen)",
+    "powerSupply": "Lightning",
+    "airPlay": "✅",
+    "audioVideo": "HDMI2.1 ×1",
+    "ethernet": "千兆以太网",
+    "wirelessChip": "BCM4378",
+    "wirelessSpec": "802.11ax 2×2 MIMO + 蓝牙 5.0",
+    "dimensionsHost": "35×98×98mm, 425g",
+    "dimensionsRemote": "136×35×9.25mm, 63g",
+    "price": "Wi-Fi + 以太网 32GB: $179 64GB: $199",
+    "techLinks": [
+      {
+        "text": {
+          "zh-CN": "技术规格",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/en-us/111922"
+      }
+    ]
+  },
+  {
+    "id": "tv-003",
+    "series": "tv",
+    "name": {
+      "zh-CN": "Apple TV 4K (第 1 代)",
+      "en-US": "Apple TV 4K (第 1 代)"
+    },
+    "marketingSlogan": {
+      "zh-CN": "The 4K HDR era. Now playing.",
+      "en-US": "The 4K HDR era. Now playing."
+    },
+    "releaseDate": {
+      "zh-CN": "2017.09.13",
+      "en-US": "September 13, 2017"
+    },
+    "os": {
+      "zh-CN": "tvOS 11 ~ tvOS 26",
+      "en-US": "tvOS 11 ~ tvOS 26"
+    },
+    "model": "AppleTV6,2",
+    "chip": "A10X Fusion (3P+3E+12GPU)",
+    "ramStorage": "3GB LPDDR4 32G、64G",
+    "remote": "Siri Remote (1st Gen)",
+    "powerSupply": "Lightning",
+    "airPlay": "✅",
+    "audioVideo": "HDMI2.0a ×1",
+    "ethernet": "千兆以太网",
+    "wirelessChip": "BCM4357",
+    "wirelessSpec": "802.11ac 2×2 MIMO + 蓝牙 5.0",
+    "dimensionsHost": "35×98×98mm, 425g",
+    "dimensionsRemote": "124×38×6.3mm, 45g",
+    "price": "Wi-Fi + 以太网 32GB: $179 64GB: $199",
+    "techLinks": [
+      {
+        "text": {
+          "zh-CN": "技术规格",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/en-us/111929"
+      }
+    ]
+  },
+  {
+    "id": "tv-004",
+    "series": "tv",
+    "name": {
+      "zh-CN": "Apple TV HD",
+      "en-US": "Apple TV HD"
+    },
+    "marketingSlogan": {
+      "zh-CN": "The future of televion.",
+      "en-US": "The future of televion."
+    },
+    "releaseDate": {
+      "zh-CN": "2015.09.10",
+      "en-US": "September 10, 2015"
+    },
+    "os": {
+      "zh-CN": "tvOS 9 ~ tvOS 26",
+      "en-US": "tvOS 9 ~ tvOS 26"
+    },
+    "model": "AppleTV5,3",
+    "chip": "A8 (2P+4GPU)",
+    "ramStorage": "2GB LPDDR3 32G、64G",
+    "remote": "Siri Remote (1st or 2nd)",
+    "powerSupply": "Lightning",
+    "airPlay": "✅",
+    "audioVideo": "HDMI1.4 ×1",
+    "ethernet": "百兆以太网",
+    "wirelessChip": "BCM4350",
+    "wirelessSpec": "802.11ac 2×2 MIMO + 蓝牙 4.0",
+    "dimensionsHost": "35×98×98mm, 425g",
+    "dimensionsRemote": "124×38×6.3mm,45g (1st) 136×35×9.25mm,63g (2nd)",
+    "price": "Wi-Fi + 以太网 32GB: $149 64GB: $199",
+    "techLinks": [
+      {
+        "text": {
+          "zh-CN": "技术规格",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/en-us/111928"
+      }
+    ]
+  },
+  {
+    "id": "tv-005",
+    "series": "tv",
+    "name": {
+      "zh-CN": "Apple TV (第 3 代)",
+      "en-US": "Apple TV (第 3 代)"
+    },
+    "marketingSlogan": {
+      "zh-CN": "Great HD content. AirPlay.",
+      "en-US": "Great HD content. AirPlay."
+    },
+    "releaseDate": {
+      "zh-CN": "2012.03.08 / 2013.01.29",
+      "en-US": "2012.03.08 / 2013.01.29"
+    },
+    "os": {
+      "zh-CN": "iOS 5 ~ iOS 8",
+      "en-US": "iOS 5 ~ iOS 8"
+    },
+    "model": "AppleTV3,1 / 3,2",
+    "chip": "A5 (1P+1GPU) / A5 (2P+2GPU)",
+    "ramStorage": "512MB LPDDR2 8G",
+    "remote": "Apple Remote",
+    "powerSupply": "3V CR2032",
+    "airPlay": "✅",
+    "audioVideo": "HDMI × 1",
+    "ethernet": "百兆以太网",
+    "wirelessChip": "BCM4330/BCM4334",
+    "wirelessSpec": "802.11n + 蓝牙 4.0",
+    "dimensionsHost": "23×98×98mm, 0.6磅",
+    "price": "Wi-Fi + 以太网 8GB: $99",
+    "techLinks": [
+      {
+        "text": {
+          "zh-CN": "技术规格",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/en-us/112429"
+      }
+    ]
+  },
+  {
+    "id": "tv-006",
+    "series": "tv",
+    "name": {
+      "zh-CN": "Apple TV (第 2 代)",
+      "en-US": "Apple TV (第 2 代)"
+    },
+    "marketingSlogan": {
+      "zh-CN": "The all-new tv",
+      "en-US": "The all-new tv"
+    },
+    "releaseDate": {
+      "zh-CN": "2010.09.02",
+      "en-US": "September 2, 2010"
+    },
+    "os": {
+      "zh-CN": "iOS 4 ~ iOS 7",
+      "en-US": "iOS 4 ~ iOS 7"
+    },
+    "model": "AppleTV2,1",
+    "chip": "A4 (1P+1GPU)",
+    "ramStorage": "256MB LPDDR 8G",
+    "remote": "Apple Remote",
+    "powerSupply": "3V CR2032",
+    "airPlay": "✅",
+    "audioVideo": "HDMI × 1",
+    "ethernet": "百兆以太网",
+    "wirelessChip": "BCM4329",
+    "wirelessSpec": "802.11n + 蓝牙 2.1",
+    "dimensionsHost": "23×98×98mm, 0.6磅",
+    "price": "Wi-Fi + 以太网 8GB: $99",
+    "techLinks": [
+      {
+        "text": {
+          "zh-CN": "技术规格",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/en-us/112428"
+      }
+    ]
+  },
+  {
+    "id": "tv-007",
+    "series": "tv",
+    "name": {
+      "zh-CN": "Apple TV (第 1 代)",
+      "en-US": "Apple TV (第 1 代)"
+    },
+    "marketingSlogan": {
+      "zh-CN": "If it's on iTunes, it's on TV. Introducing Apple TV.",
+      "en-US": "If it's on iTunes, it's on TV. Introducing Apple TV."
+    },
+    "releaseDate": {
+      "zh-CN": "2006.09.12",
+      "en-US": "September 12, 2006"
+    },
+    "os": {
+      "zh-CN": "Apple TV 1 ~ Apple TV 3",
+      "en-US": "Apple TV 1 ~ Apple TV 3"
+    },
+    "model": "AppleTV1,1",
+    "chip": "Intel Pentium M (1P)",
+    "ramStorage": "256MB DDR2 40G、160G",
+    "remote": "Apple Remote",
+    "airPlay": "❌",
+    "audioVideo": "HDMI × 1",
+    "ethernet": "百兆以太网",
+    "wirelessSpec": "802.11b/g/n",
+    "dimensionsHost": "28×197×197mm, 2.4磅",
+    "price": "Wi-Fi + 以太网 40GB: $299 160GB: $399",
+    "techLinks": [
+      {
+        "text": {
+          "zh-CN": "技术规格",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/en-us/112555"
+      }
+    ]
+  }
+]

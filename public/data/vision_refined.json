@@ -1,0 +1,98 @@
+[
+  {
+    "id": "vision-001",
+    "series": "vision",
+    "name": {
+      "zh-CN": "Apple Vision Pro (M5)",
+      "en-US": "Apple Vision Pro (M5)"
+    },
+    "marketingSlogan": {
+      "zh-CN": "全新 M5 芯片加新头带, 强劲与舒适兼备",
+      "en-US": "全新 M5 芯片加新头带, 强劲与舒适兼备"
+    },
+    "releaseDate": {
+      "zh-CN": "2025.10.15",
+      "en-US": "October 15, 2025"
+    },
+    "os": {
+      "zh-CN": "visionOS 26 ~ 最新",
+      "en-US": "visionOS 26 ~ Latest"
+    },
+    "model": "RealityDevice17,1",
+    "chip": "M5 + R1",
+    "ramStorage": "16GB LPDDR5X 256G、512G、1T",
+    "audioChip": "H2",
+    "displaySize": "Micro‑OLED",
+    "displayResolution": "2300万像素",
+    "displayColorGamut": "92% DCI‑P3",
+    "displayRefreshRate": "90Hz、96Hz、100Hz、120Hz",
+    "displayFeatures": "空间照片和视频捕获",
+    "displaySpecs": "18毫米，ƒ/2.0",
+    "spatialAudio": "动态头部追踪的空间音频",
+    "security": "Optic ID",
+    "sensors": "高分辨率主摄 (两个) 外界追踪摄像头 (六个) 眼动追踪摄像头 (四个) 原深感相机 激光雷达扫描仪 惯性测量单元 IMU (四个) 防闪烁传感器 环境光传感器",
+    "wirelessChip": "BCM4387",
+    "wirelessSpec": "Wi‑Fi 6 (802.11ax) + 蓝牙 5.3",
+    "batteryLife": "一般使用时长 2.5h 视频观看时长 3h",
+    "ipd": "51~75mm",
+    "weight": "750~800g",
+    "price": "256GB: ¥29,999 512GB: ¥31,499 1TB: ¥32,999",
+    "techLinks": [
+      {
+        "text": {
+          "zh-CN": "技术规格",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/zh-cn/125436"
+      }
+    ]
+  },
+  {
+    "id": "vision-002",
+    "series": "vision",
+    "name": {
+      "zh-CN": "Apple Vision Pro",
+      "en-US": "Apple Vision Pro"
+    },
+    "marketingSlogan": {
+      "zh-CN": "眼前的世界，从此大开眼界。",
+      "en-US": "眼前的世界，从此大开眼界。"
+    },
+    "releaseDate": {
+      "zh-CN": "2023.06.06",
+      "en-US": "June 6, 2023"
+    },
+    "os": {
+      "zh-CN": "visionOS 1 ~ 最新",
+      "en-US": "visionOS 1 ~ Latest"
+    },
+    "model": "RealityDevice14,1",
+    "chip": "M2 + R1",
+    "ramStorage": "16GB LPDDR5 256G、512G、1T",
+    "audioChip": "H2",
+    "displaySize": "Micro‑OLED",
+    "displayResolution": "2300万像素",
+    "displayColorGamut": "92% DCI‑P3",
+    "displayRefreshRate": "90Hz、96Hz、100Hz",
+    "displayFeatures": "空间照片和视频捕获",
+    "displaySpecs": "18毫米，ƒ/2.0",
+    "spatialAudio": "动态头部追踪的空间音频",
+    "security": "Optic ID",
+    "sensors": "高分辨率主摄 (两个) 外界追踪摄像头 (六个) 眼动追踪摄像头 (四个) 原深感相机 激光雷达扫描仪 惯性测量单元 IMU (四个) 防闪烁传感器 环境光传感器",
+    "wirelessChip": "BCM4387",
+    "wirelessSpec": "Wi‑Fi 6 (802.11ax) + 蓝牙 5.3",
+    "batteryLife": "一般使用时长 2h 视频观看时长 2.5h",
+    "ipd": "51~75mm",
+    "weight": "600~650g",
+    "price": "256GB: ¥29,999 512GB: ¥31,499 1TB: ¥32,999",
+    "techLinks": [
+      {
+        "text": {
+          "zh-CN": "技术规格",
+          "en-US": "Technical Specifications"
+        },
+        "url": "https://support.apple.com/zh-cn/117810"
+      }
+    ]
+  }
+]
