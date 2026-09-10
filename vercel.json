@@ -1,6 +1,6 @@
 {
   "redirects": [
-    { "source": "/", "destination": "/src/index.html", "permanent": true }
+    { "source": "/", "destination": "/src/index.html", "permanent": false }
   ],
   "headers": [
     {
@@ -8,7 +8,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
+          "value": "public, max-age=0, must-revalidate"
         }
       ]
     },
@@ -17,7 +17,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
+          "value": "public, max-age=0, must-revalidate"
         }
       ]
     }
