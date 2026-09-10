@@ -1370,6 +1370,17 @@
         window.currentLanguage = 'zh-CN';
 
         // 参数名称翻译映射表
+
+        function pencilItems(val, lang) {
+            let s = '';
+            if (val && typeof val === 'object') {
+                s = val[lang] || val['zh-CN'] || val['en-US'] || '';
+            } else {
+                s = val || '';
+            }
+            return String(s).split(/(?=Apple Pencil)/).map(x => x.replace(/^[、，,／/\s]+/, '').trim()).filter(x => x && !/^[\/、，,\s]+$/.test(x));
+        }
+
         const paramNameTranslations = {
             'param.marketingSlogan': { 'zh-CN': '宣传口号', 'en-US': 'Marketing Slogan' },
             'param.releaseDate': { 'zh-CN': '发布日期', 'en-US': 'Release Date' },
@@ -1794,31 +1805,8 @@
                 
                 // iPad特有功能
                 { key: 'pencilSupport', name: 'Apple Pencil支持', langKey: 'param.pencilSupport', icon: 'ri-pencil-line', formatter: val => {
-                    if (!val || val === '/') return val;
-                    
-                    // 获取当前语言的文本
-                    let textValue = typeof val === 'object' ? getLocalizedText(val, currentLanguage) : val;
-                    if (!textValue) return '/';
-                    
-                    // 处理所有可能的情况
-                    if (textValue.includes('Apple Pencil ProApple Pencil (USB‑C)')) {
-                        return 'Apple Pencil Pro<br>Apple Pencil (USB‑C)';
-                    } else if (textValue.includes('Apple Pencil ProApple Pencil 2')) {
-                        return 'Apple Pencil Pro<br>Apple Pencil 2';
-                    } else if (textValue.includes('Apple Pencil (第 2 代)Apple Pencil (USB‑C)')) {
-                        return 'Apple Pencil (第 2 代)<br>Apple Pencil (USB‑C)';
-                    } else if (textValue.includes('Apple Pencil (第 1 代)Apple Pencil (USB‑C)')) {
-                        return 'Apple Pencil (第 1 代)<br>Apple Pencil (USB‑C)';
-                    } else if (textValue.includes('Pencil（第1代）(')) {
-                        return textValue.replace('Pencil（第1代）(', 'Pencil（第1代）<br>(');
-                    } else if (textValue.includes('Pencil（第1代）Apple Pencil (USB‑C)')) {
-                        return 'Pencil（第1代）<br>Apple Pencil (USB‑C)';
-                    } else if (textValue.includes('Apple Pencil (USB‑C)')) {
-                        return 'Apple Pencil (USB‑C)';
-                    }
-                    
-                    // 如果是其他情况，直接返回原值
-                    return textValue;
+                    const items = pencilItems(val, currentLanguage);
+                    return items.length ? items.join('<br>') : '/';
                 } },
                 { key: 'keyboardSupport', name: '键盘支持', langKey: 'param.keyboardSupport', icon: 'ri-keyboard-box-line', hidden: true },
                 
@@ -2305,7 +2293,45 @@
             generateMobileProductColumns();
             generateScrollIndicators();
             updateNavigationButtons();
+            syncMobileRowHeights();
             console.log('移动端表格生成完成');
+        }
+
+        // 移动端行高对齐：参数列与产品列按行取最大高度对齐
+        function syncMobileRowHeights() {
+            const paramsColumn = document.getElementById('mobileParamsColumn');
+            const productsContainer = document.getElementById('mobileProductsContainer') || document.querySelector('.mobile-products-container');
+            if (!paramsColumn || !productsContainer) return;
+            const paramRows = paramsColumn.querySelectorAll(':scope > .mobile-table-row');
+            const productColumns = productsContainer.querySelectorAll(':scope > .mobile-product-column');
+            paramsColumn.querySelectorAll('.mobile-table-row, .mobile-cell').forEach(el => { el.style.height = 'auto'; });
+            productColumns.forEach(col => {
+                col.querySelectorAll('.mobile-table-row, .mobile-cell').forEach(el => { el.style.height = 'auto'; });
+            });
+            for (let i = 0; i < paramRows.length; i++) {
+                const cells = [];
+                if (paramRows[i]) paramRows[i].querySelectorAll('.mobile-cell').forEach(c => cells.push(c));
+                productColumns.forEach(col => {
+                    if (col.style.display === 'none') return;
+                    const r = col.querySelectorAll(':scope > .mobile-table-row')[i];
+                    if (r) r.querySelectorAll('.mobile-cell').forEach(c => cells.push(c));
+                });
+                let maxH = 0;
+                cells.forEach(c => { const h = c.offsetHeight || 0; if (h > maxH) maxH = h; });
+                if (maxH > 0) {
+                    if (paramRows[i]) {
+                        paramRows[i].style.height = maxH + 'px';
+                        paramRows[i].querySelectorAll('.mobile-cell').forEach(c => c.style.height = maxH + 'px');
+                    }
+                    productColumns.forEach(col => {
+                        const r = col.querySelectorAll(':scope > .mobile-table-row')[i];
+                        if (r) {
+                            r.style.height = maxH + 'px';
+                            r.querySelectorAll('.mobile-cell').forEach(c => c.style.height = maxH + 'px');
+                        }
+                    });
+                }
+            }
         }
 
         // 获取完整的参数定义（与PC端保持一致）
@@ -2548,6 +2574,12 @@
             // 处理PPI参数
             if (paramKey === 'displayPpi' && value) {
                 return `${value} PPI`;
+            }
+
+            // Apple Pencil分项换行（与桌面端一致）
+            if (paramKey === 'pencilSupport' && value) {
+                const items = pencilItems(value, language);
+                return items.length ? items.join('<br>') : '/';
             }
             
             // 处理多语言值
@@ -2943,6 +2975,9 @@
                     column.style.display = '';
                 }
             });
+            if (typeof syncMobileRowHeights === 'function') {
+                syncMobileRowHeights();
+            }
         }
 
         // 页面加载完成后执行初始化

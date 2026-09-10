@@ -1699,13 +1699,15 @@
                 { key: 'displaySpecs', name: '规格信息', langKey: 'param.vision.specs', icon: 'ri-file-list-line' },
                 { key: 'spatialAudio', name: '空间音频', langKey: 'param.ap.spatialAudio', icon: 'ri-surround-sound-line' },
                 { key: 'security', name: '解锁方式', langKey: 'param.security', icon: 'ri-lock-line' },
-                { key: 'sensors', name: '传感器', langKey: 'param.c.sensors', icon: 'ri-sensor-line' },
+                { key: 'sensors', name: '感应器 · 摄像头', langKey: 'param.vision.senCam', icon: 'ri-camera-line', formatter: val => visionSensors(val, 'cam') },
+                { key: 'sensors', name: '感应器 · 雷达惯性', langKey: 'param.vision.senRadar', icon: 'ri-radar-line', formatter: val => visionSensors(val, 'radar') },
+                { key: 'sensors', name: '感应器 · 环境', langKey: 'param.vision.senEnv', icon: 'ri-sensor-line', formatter: val => visionSensors(val, 'env') },
                 { key: 'wirelessChip', name: '无线芯片', langKey: 'param.mac.wirelessChip', icon: 'ri-wifi-line' },
                 { key: 'wirelessSpec', name: '无线规格', langKey: 'param.mac.wirelessSpec', icon: 'ri-bluetooth-line' },
                 { key: 'batteryLife', name: '续航时间', langKey: 'param.mac.batteryLife', icon: 'ri-time-line' },
                 { key: 'ipd', name: '瞳孔间距', langKey: 'param.vision.ipd', icon: 'ri-eye-line' },
                 { key: 'weight', name: '重量', langKey: 'param.weight', icon: 'ri-scales-line' },
-                { key: 'price', name: '首发价格', langKey: 'param.c.price', icon: 'ri-price-tag-3-line' },
+                { key: 'price', name: '首发价格', langKey: 'param.c.price', icon: 'ri-price-tag-3-line', formatter: val => splitPriceTiers(val) },
                 { key: 'techLinks', name: '规格与手册', langKey: 'param.c.techLinks', formatter: val => {
                     if (!val || !Array.isArray(val)) return '-';
                     const lang = window.currentLanguage || document.querySelector('.language-btn.active')?.dataset.lang || 'zh-CN';
@@ -2117,7 +2119,45 @@
             generateMobileProductColumns();
             generateScrollIndicators();
             updateNavigationButtons();
+            syncMobileRowHeights();
             console.log('移动端表格生成完成');
+        }
+
+        // 移动端行高对齐：参数列与产品列按行取最大高度对齐
+        function syncMobileRowHeights() {
+            const paramsColumn = document.getElementById('mobileParamsColumn');
+            const productsContainer = document.getElementById('mobileProductsContainer') || document.querySelector('.mobile-products-container');
+            if (!paramsColumn || !productsContainer) return;
+            const paramRows = paramsColumn.querySelectorAll(':scope > .mobile-table-row');
+            const productColumns = productsContainer.querySelectorAll(':scope > .mobile-product-column');
+            paramsColumn.querySelectorAll('.mobile-table-row, .mobile-cell').forEach(el => { el.style.height = 'auto'; });
+            productColumns.forEach(col => {
+                col.querySelectorAll('.mobile-table-row, .mobile-cell').forEach(el => { el.style.height = 'auto'; });
+            });
+            for (let i = 0; i < paramRows.length; i++) {
+                const cells = [];
+                if (paramRows[i]) paramRows[i].querySelectorAll('.mobile-cell').forEach(c => cells.push(c));
+                productColumns.forEach(col => {
+                    if (col.style.display === 'none') return;
+                    const r = col.querySelectorAll(':scope > .mobile-table-row')[i];
+                    if (r) r.querySelectorAll('.mobile-cell').forEach(c => cells.push(c));
+                });
+                let maxH = 0;
+                cells.forEach(c => { const h = c.offsetHeight || 0; if (h > maxH) maxH = h; });
+                if (maxH > 0) {
+                    if (paramRows[i]) {
+                        paramRows[i].style.height = maxH + 'px';
+                        paramRows[i].querySelectorAll('.mobile-cell').forEach(c => c.style.height = maxH + 'px');
+                    }
+                    productColumns.forEach(col => {
+                        const r = col.querySelectorAll(':scope > .mobile-table-row')[i];
+                        if (r) {
+                            r.style.height = maxH + 'px';
+                            r.querySelectorAll('.mobile-cell').forEach(c => c.style.height = maxH + 'px');
+                        }
+                    });
+                }
+            }
         }
 
         // 获取完整的参数定义（与PC端保持一致）
@@ -2138,7 +2178,9 @@
                 { key: 'displaySpecs', name: { 'zh-CN': '规格信息', 'en-US': 'Spec Info' }, langKey: 'param.vision.specs', icon: 'ri-file-list-line' },
                 { key: 'spatialAudio', name: { 'zh-CN': '空间音频', 'en-US': 'Spatial Audio' }, langKey: 'param.ap.spatialAudio', icon: 'ri-surround-sound-line' },
                 { key: 'security', name: { 'zh-CN': '解锁方式', 'en-US': 'Security' }, langKey: 'param.security', icon: 'ri-lock-line' },
-                { key: 'sensors', name: { 'zh-CN': '传感器', 'en-US': 'Sensors' }, langKey: 'param.c.sensors', icon: 'ri-sensor-line' },
+                { key: 'sensors', name: { 'zh-CN': '感应器 · 摄像头', 'en-US': 'Cameras' }, langKey: 'param.vision.senCam', icon: 'ri-camera-line', formatter: val => visionSensors(val, 'cam') },
+                { key: 'sensors', name: { 'zh-CN': '感应器 · 雷达惯性', 'en-US': 'Radar & IMU' }, langKey: 'param.vision.senRadar', icon: 'ri-radar-line', formatter: val => visionSensors(val, 'radar') },
+                { key: 'sensors', name: { 'zh-CN': '感应器 · 环境', 'en-US': 'Ambient Sensors' }, langKey: 'param.vision.senEnv', icon: 'ri-sensor-line', formatter: val => visionSensors(val, 'env') },
                 { key: 'wirelessChip', name: { 'zh-CN': '无线芯片', 'en-US': 'Wireless Chip' }, langKey: 'param.mac.wirelessChip', icon: 'ri-wifi-line' },
                 { key: 'wirelessSpec', name: { 'zh-CN': '无线规格', 'en-US': 'Wireless Spec' }, langKey: 'param.mac.wirelessSpec', icon: 'ri-bluetooth-line' },
                 { key: 'batteryLife', name: { 'zh-CN': '续航时间', 'en-US': 'Battery Life' }, langKey: 'param.mac.batteryLife', icon: 'ri-time-line' },
@@ -2328,6 +2370,17 @@
                 } else if (param.key === 'displayPpi' && paramValue) {
                     // PPI格式化
                     paramValue = `${paramValue} PPI`;
+                } else if (param.formatter && typeof param.formatter === 'function') {
+                    // 自定义格式化函数（如分项换行展示）
+                    try {
+                        const _raw = (paramValue !== undefined && paramValue !== null) ? paramValue : product[param.key];
+                        paramValue = param.formatter(_raw);
+                    } catch (e) {
+                        paramValue = 'N/A';
+                    }
+                    if (paramValue === undefined || paramValue === null || paramValue === '') {
+                        paramValue = 'N/A';
+                    }
                 } else if (paramValue === undefined || paramValue === null || paramValue === '') {
                     paramValue = 'N/A';
                 }
@@ -3389,6 +3442,26 @@
         }
         
         // 参数名称翻译映射表
+function normZh(val) {
+            let s = (val && typeof val === 'object') ? (val['zh-CN'] || val['en-US'] || '') : (val || '');
+            return String(s);
+        }
+        function splitPriceTiers(val) {
+            const s = normZh(val);
+            const parts = s.split(/\s+(?=\d+\s*(?:GB|TB|G|T|MB)\s*:)/).map(x => x.trim()).filter(Boolean);
+            return parts.length ? parts.join('<br>') : '-';
+        }
+
+        const VISION_START = '高分辨率|外界|眼动|原深感|激光|惯性|防闪烁|环境光';
+        function visionSensors(val, which) {
+            const s = normZh(val);
+            const parts = s.split(new RegExp('\\s+(?=' + VISION_START + ')')).map(x => x.trim()).filter(Boolean);
+            const isCam = x => /主摄|追踪|原深感/.test(x);
+            const isRadar = x => /激光|惯性|IMU/.test(x);
+            const pick = parts.filter(x => which === 'cam' ? isCam(x) : which === 'radar' ? isRadar(x) : (!isCam(x) && !isRadar(x)));
+            return pick.length ? pick.join(' ') : '-';
+        }
+
         const paramNameTranslations = {
             'param.releaseDate': { 'zh-CN': '发布日期', 'en-US': 'Release Date' },
             'param.model': { 'zh-CN': '型号标识', 'en-US': 'Model' },
@@ -3476,6 +3549,9 @@
             'param.c.sensors': { 'zh-CN': '传感器', 'en-US': 'Sensors' },
             'param.c.price': { 'zh-CN': '首发价格', 'en-US': 'Launch Price' },
             'param.c.techLinks': { 'zh-CN': '规格与手册', 'en-US': 'Specs & Manuals' },
+            'param.vision.senCam': { 'zh-CN': '感应器 · 摄像头', 'en-US': 'Cameras' },
+            'param.vision.senRadar': { 'zh-CN': '感应器 · 雷达惯性', 'en-US': 'Radar & IMU' },
+            'param.vision.senEnv': { 'zh-CN': '感应器 · 环境', 'en-US': 'Ambient Sensors' },
             'param.c.ram': { 'zh-CN': '内存存储', 'en-US': 'Memory & Storage' },
             'param.vision.audioChip': { 'zh-CN': '音频芯片', 'en-US': 'Audio Chip' },
             'param.vision.features': { 'zh-CN': '支持特性', 'en-US': 'Features' },
@@ -3754,6 +3830,9 @@
                     column.style.display = '';
                 }
             });
+            if (typeof syncMobileRowHeights === 'function') {
+                syncMobileRowHeights();
+            }
         }
 
         // 页面加载完成后执行进一步检查

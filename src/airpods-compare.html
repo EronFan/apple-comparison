@@ -1707,8 +1707,10 @@
                 { key: 'withCase', name: '搭配充电盒', langKey: 'param.ap.withCase', icon: 'ri-archive-line' },
                 { key: 'earbudBattery', name: '耳机电量', langKey: 'param.ap.earbudBattery', icon: 'ri-battery-2-line' },
                 { key: 'caseBattery', name: '充电盒电量', langKey: 'param.ap.caseBattery', icon: 'ri-battery-charge-line' },
-                { key: 'charging', name: '充电方式', langKey: 'param.ap.charging', icon: 'ri-plug-line' },
-                { key: 'dimensions', name: '尺寸重量', langKey: 'param.dimensions', icon: 'ri-ruler-line' },
+                { key: 'charging', name: '充电 · 有线', langKey: 'param.ap.chargeWired', icon: 'ri-plug-line', formatter: val => podCharge(val, 'wired') },
+                { key: 'charging', name: '充电 · 无线', langKey: 'param.ap.chargeWireless', icon: 'ri-wireless-charging-line', formatter: val => podCharge(val, 'wireless') },
+                { key: 'dimensions', name: '尺寸 · 单耳机', langKey: 'param.ap.dimEar', icon: 'ri-ruler-line', formatter: val => podDim(val, 'ear') },
+                { key: 'dimensions', name: '尺寸 · 充电盒', langKey: 'param.ap.dimCase', icon: 'ri-archive-line', formatter: val => podDim(val, 'case') },
                 { key: 'waterResistance', name: '抗汗抗水', langKey: 'param.waterResistance', icon: 'ri-drop-line' },
                 { key: 'sensors', name: '传感器', langKey: 'param.c.sensors', icon: 'ri-sensor-line' },
                 { key: 'price', name: '首发价格', langKey: 'param.c.price', icon: 'ri-price-tag-3-line' },
@@ -2123,7 +2125,45 @@
             generateMobileProductColumns();
             generateScrollIndicators();
             updateNavigationButtons();
+            syncMobileRowHeights();
             console.log('移动端表格生成完成');
+        }
+
+        // 移动端行高对齐：参数列与产品列按行取最大高度对齐
+        function syncMobileRowHeights() {
+            const paramsColumn = document.getElementById('mobileParamsColumn');
+            const productsContainer = document.getElementById('mobileProductsContainer') || document.querySelector('.mobile-products-container');
+            if (!paramsColumn || !productsContainer) return;
+            const paramRows = paramsColumn.querySelectorAll(':scope > .mobile-table-row');
+            const productColumns = productsContainer.querySelectorAll(':scope > .mobile-product-column');
+            paramsColumn.querySelectorAll('.mobile-table-row, .mobile-cell').forEach(el => { el.style.height = 'auto'; });
+            productColumns.forEach(col => {
+                col.querySelectorAll('.mobile-table-row, .mobile-cell').forEach(el => { el.style.height = 'auto'; });
+            });
+            for (let i = 0; i < paramRows.length; i++) {
+                const cells = [];
+                if (paramRows[i]) paramRows[i].querySelectorAll('.mobile-cell').forEach(c => cells.push(c));
+                productColumns.forEach(col => {
+                    if (col.style.display === 'none') return;
+                    const r = col.querySelectorAll(':scope > .mobile-table-row')[i];
+                    if (r) r.querySelectorAll('.mobile-cell').forEach(c => cells.push(c));
+                });
+                let maxH = 0;
+                cells.forEach(c => { const h = c.offsetHeight || 0; if (h > maxH) maxH = h; });
+                if (maxH > 0) {
+                    if (paramRows[i]) {
+                        paramRows[i].style.height = maxH + 'px';
+                        paramRows[i].querySelectorAll('.mobile-cell').forEach(c => c.style.height = maxH + 'px');
+                    }
+                    productColumns.forEach(col => {
+                        const r = col.querySelectorAll(':scope > .mobile-table-row')[i];
+                        if (r) {
+                            r.style.height = maxH + 'px';
+                            r.querySelectorAll('.mobile-cell').forEach(c => c.style.height = maxH + 'px');
+                        }
+                    });
+                }
+            }
         }
 
         // 获取完整的参数定义（与PC端保持一致）
@@ -2143,8 +2183,10 @@
                 { key: 'withCase', name: { 'zh-CN': '搭配充电盒', 'en-US': 'With Charging Case' }, langKey: 'param.ap.withCase', icon: 'ri-archive-line' },
                 { key: 'earbudBattery', name: { 'zh-CN': '耳机电量', 'en-US': 'Earbud Battery' }, langKey: 'param.ap.earbudBattery', icon: 'ri-battery-2-line' },
                 { key: 'caseBattery', name: { 'zh-CN': '充电盒电量', 'en-US': 'Case Battery' }, langKey: 'param.ap.caseBattery', icon: 'ri-battery-charge-line' },
-                { key: 'charging', name: { 'zh-CN': '充电方式', 'en-US': 'Charging' }, langKey: 'param.ap.charging', icon: 'ri-plug-line' },
-                { key: 'dimensions', name: { 'zh-CN': '尺寸重量', 'en-US': 'Dimensions' }, langKey: 'param.dimensions', icon: 'ri-ruler-line' },
+                { key: 'charging', name: { 'zh-CN': '充电 · 有线', 'en-US': 'Wired Charging' }, langKey: 'param.ap.chargeWired', icon: 'ri-plug-line', formatter: val => podCharge(val, 'wired') },
+                { key: 'charging', name: { 'zh-CN': '充电 · 无线', 'en-US': 'Wireless Charging' }, langKey: 'param.ap.chargeWireless', icon: 'ri-wireless-charging-line', formatter: val => podCharge(val, 'wireless') },
+                { key: 'dimensions', name: { 'zh-CN': '尺寸 · 单耳机', 'en-US': 'Earbud Size' }, langKey: 'param.ap.dimEar', icon: 'ri-ruler-line', formatter: val => podDim(val, 'ear') },
+                { key: 'dimensions', name: { 'zh-CN': '尺寸 · 充电盒', 'en-US': 'Charging Case' }, langKey: 'param.ap.dimCase', icon: 'ri-archive-line', formatter: val => podDim(val, 'case') },
                 { key: 'waterResistance', name: { 'zh-CN': '抗汗抗水', 'en-US': 'Water Resistance' }, langKey: 'param.waterResistance', icon: 'ri-drop-line' },
                 { key: 'sensors', name: { 'zh-CN': '传感器', 'en-US': 'Sensors' }, langKey: 'param.c.sensors', icon: 'ri-sensor-line' },
                 { key: 'price', name: { 'zh-CN': '首发价格', 'en-US': 'Launch Price' }, langKey: 'param.c.price', icon: 'ri-price-tag-3-line' },
@@ -2331,6 +2373,17 @@
                 } else if (param.key === 'displayPpi' && paramValue) {
                     // PPI格式化
                     paramValue = `${paramValue} PPI`;
+                } else if (param.formatter && typeof param.formatter === 'function') {
+                    // 自定义格式化函数（如分项换行展示）
+                    try {
+                        const _raw = (paramValue !== undefined && paramValue !== null) ? paramValue : product[param.key];
+                        paramValue = param.formatter(_raw);
+                    } catch (e) {
+                        paramValue = 'N/A';
+                    }
+                    if (paramValue === undefined || paramValue === null || paramValue === '') {
+                        paramValue = 'N/A';
+                    }
                 } else if (paramValue === undefined || paramValue === null || paramValue === '') {
                     paramValue = 'N/A';
                 }
@@ -3392,6 +3445,31 @@
         }
         
         // 参数名称翻译映射表
+function normZh(val) {
+            let s = (val && typeof val === 'object') ? (val['zh-CN'] || val['en-US'] || '') : (val || '');
+            return String(s);
+        }
+        function podDim(val, which) {
+            const s = normZh(val);
+            const parts = s.split(/[;；]/).map(x => x.trim()).filter(Boolean);
+            if (!parts.length) return '-';
+            if (which === 'case') return parts.find(p => /充电盒/.test(p)) || '-';
+            return parts.find(p => !/充电盒/.test(p)) || '-';
+        }
+        function podCharge(val, which) {
+            const s = normZh(val);
+            const m = s.search(/QI|MagSafe|Watch|无线/);
+            let wired = '-';
+            let wireless = '-';
+            if (m < 0) {
+                wired = s.trim() || '-';
+            } else {
+                wired = s.slice(0, m).replace(/[、，,\/\s]+$/, '').trim() || '-';
+                wireless = s.slice(m).trim() || '-';
+            }
+            return which === 'wireless' ? wireless : wired;
+        }
+
         const paramNameTranslations = {
             'param.releaseDate': { 'zh-CN': '发布日期', 'en-US': 'Release Date' },
             'param.model': { 'zh-CN': '型号标识', 'en-US': 'Model' },
@@ -3479,6 +3557,10 @@
             'param.c.sensors': { 'zh-CN': '传感器', 'en-US': 'Sensors' },
             'param.c.price': { 'zh-CN': '首发价格', 'en-US': 'Launch Price' },
             'param.c.techLinks': { 'zh-CN': '规格与手册', 'en-US': 'Specs & Manuals' },
+            'param.ap.chargeWired': { 'zh-CN': '充电 · 有线', 'en-US': 'Wired Charging' },
+            'param.ap.chargeWireless': { 'zh-CN': '充电 · 无线', 'en-US': 'Wireless Charging' },
+            'param.ap.dimEar': { 'zh-CN': '尺寸 · 单耳机', 'en-US': 'Earbud Size' },
+            'param.ap.dimCase': { 'zh-CN': '尺寸 · 充电盒', 'en-US': 'Charging Case' },
             'param.c.ram': { 'zh-CN': '内存存储', 'en-US': 'Memory & Storage' },
             'param.ap.controls': { 'zh-CN': '操控方式', 'en-US': 'Controls' },
             'param.ap.spatialAudio': { 'zh-CN': '空间音频', 'en-US': 'Spatial Audio' },
@@ -3762,6 +3844,9 @@
                     column.style.display = '';
                 }
             });
+            if (typeof syncMobileRowHeights === 'function') {
+                syncMobileRowHeights();
+            }
         }
 
         // 页面加载完成后执行进一步检查

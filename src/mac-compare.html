@@ -1701,7 +1701,7 @@
                     }).join(' ');
                 }, icon: 'ri-palette-line' },
                 { key: 'dimensions', name: '尺寸重量', langKey: 'param.dimensions', icon: 'ri-ruler-line' },
-                { key: 'chassisModel', name: '模具型号', langKey: 'param.mac.chassisModel', icon: 'ri-fingerprint-line' },
+                { key: 'chassisModel', name: '模具型号', langKey: 'param.mac.chassisModel', icon: 'ri-fingerprint-line', formatter: val => variantLines(val) },
 
                 // 屏幕
                 { key: 'displaySize', name: '屏幕尺寸', langKey: 'param.displaySize', icon: 'ri-fullscreen-line' },
@@ -1710,10 +1710,10 @@
                 { key: 'displayColorGamut', name: '显示色域', langKey: 'param.displayColorGamut', icon: 'ri-contrast-2-line' },
 
                 // 芯片与性能
-                { key: 'processor', name: '芯片信息', langKey: 'param.processor', icon: 'ri-cpu-line' },
-                { key: 'processTechnology', name: '芯片工艺', langKey: 'param.processTechnology', icon: 'ri-cpu-fill' },
-                { key: 'gpu', name: '显卡信息', langKey: 'param.mac.gpu', icon: 'ri-gamepad-line' },
-                { key: 'neuralEngine', name: '神经网络引擎', langKey: 'param.mac.neuralEngine', icon: 'ri-brain-line' },
+                { key: 'processor', name: '芯片信息', langKey: 'param.processor', icon: 'ri-cpu-line', formatter: val => variantLines(val) },
+                { key: 'processTechnology', name: '芯片工艺', langKey: 'param.processTechnology', icon: 'ri-cpu-fill', formatter: val => variantLines(val) },
+                { key: 'gpu', name: '显卡信息', langKey: 'param.mac.gpu', icon: 'ri-gamepad-line', formatter: val => variantLines(val) },
+                { key: 'neuralEngine', name: '神经网络引擎', langKey: 'param.mac.neuralEngine', icon: 'ri-brain-line', formatter: val => variantLines(val) },
                 { key: 'ram', name: '内存容量', langKey: 'param.ram', icon: 'ri-database-2-line' },
                 { key: 'storage', name: '存储容量', langKey: 'param.storage', icon: 'ri-hard-drive-line' },
 
@@ -3494,6 +3494,13 @@
             return '';
         }
         
+
+        function variantLines(val) {
+            if (!val || typeof val !== 'string') return '-';
+            const parts = val.split(/\s+\/\s+/).map(s => s.trim()).filter(Boolean);
+            return parts.length ? parts.join('<br>') : '-';
+        }
+
         // 长参数拆分展示：把复合接口值按分隔符拆成独立分项
         const PORT_ITEM_START = 'M\\d+\\s*机型\\s*[:：]|最多|雷雳|雷电|Thunderbolt|USB|Mini\\s*DP|Mini\\s*DVI|Micro\\s*DVI|FireWire|HDMI|DisplayPort|千兆|\\d+\\s*Gb\\s*以太网|3\\.5\\s*毫米|SDXC|PCI\\s*Express';
         function splitPortSegments(val) {

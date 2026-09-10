@@ -1698,8 +1698,8 @@
                 { key: 'wirelessChip', name: '无线芯片', langKey: 'param.mac.wirelessChip', icon: 'ri-wifi-line' },
                 { key: 'wirelessSpec', name: '无线规格', langKey: 'param.mac.wirelessSpec', icon: 'ri-bluetooth-line' },
                 { key: 'dimensionsHost', name: '主机尺寸', langKey: 'param.tv.host', icon: 'ri-ruler-line' },
-                { key: 'dimensionsRemote', name: '遥控器尺寸', langKey: 'param.tv.remoteSize', icon: 'ri-ruler-2-line' },
-                { key: 'price', name: '首发价格', langKey: 'param.c.price', icon: 'ri-price-tag-3-line' },
+                { key: 'dimensionsRemote', name: '遥控器尺寸', langKey: 'param.tv.remoteSize', icon: 'ri-ruler-2-line', formatter: val => tvRemoteLines(val) },
+                { key: 'price', name: '首发价格', langKey: 'param.c.price', icon: 'ri-price-tag-3-line', formatter: val => splitPriceTiers(val) },
                 { key: 'techLinks', name: '规格与手册', langKey: 'param.c.techLinks', formatter: val => {
                     if (!val || !Array.isArray(val)) return '-';
                     const lang = window.currentLanguage || document.querySelector('.language-btn.active')?.dataset.lang || 'zh-CN';
@@ -2111,7 +2111,45 @@
             generateMobileProductColumns();
             generateScrollIndicators();
             updateNavigationButtons();
+            syncMobileRowHeights();
             console.log('移动端表格生成完成');
+        }
+
+        // 移动端行高对齐：参数列与产品列按行取最大高度对齐
+        function syncMobileRowHeights() {
+            const paramsColumn = document.getElementById('mobileParamsColumn');
+            const productsContainer = document.getElementById('mobileProductsContainer') || document.querySelector('.mobile-products-container');
+            if (!paramsColumn || !productsContainer) return;
+            const paramRows = paramsColumn.querySelectorAll(':scope > .mobile-table-row');
+            const productColumns = productsContainer.querySelectorAll(':scope > .mobile-product-column');
+            paramsColumn.querySelectorAll('.mobile-table-row, .mobile-cell').forEach(el => { el.style.height = 'auto'; });
+            productColumns.forEach(col => {
+                col.querySelectorAll('.mobile-table-row, .mobile-cell').forEach(el => { el.style.height = 'auto'; });
+            });
+            for (let i = 0; i < paramRows.length; i++) {
+                const cells = [];
+                if (paramRows[i]) paramRows[i].querySelectorAll('.mobile-cell').forEach(c => cells.push(c));
+                productColumns.forEach(col => {
+                    if (col.style.display === 'none') return;
+                    const r = col.querySelectorAll(':scope > .mobile-table-row')[i];
+                    if (r) r.querySelectorAll('.mobile-cell').forEach(c => cells.push(c));
+                });
+                let maxH = 0;
+                cells.forEach(c => { const h = c.offsetHeight || 0; if (h > maxH) maxH = h; });
+                if (maxH > 0) {
+                    if (paramRows[i]) {
+                        paramRows[i].style.height = maxH + 'px';
+                        paramRows[i].querySelectorAll('.mobile-cell').forEach(c => c.style.height = maxH + 'px');
+                    }
+                    productColumns.forEach(col => {
+                        const r = col.querySelectorAll(':scope > .mobile-table-row')[i];
+                        if (r) {
+                            r.style.height = maxH + 'px';
+                            r.querySelectorAll('.mobile-cell').forEach(c => c.style.height = maxH + 'px');
+                        }
+                    });
+                }
+            }
         }
 
         // 获取完整的参数定义（与PC端保持一致）
@@ -2316,6 +2354,17 @@
                 } else if (param.key === 'displayPpi' && paramValue) {
                     // PPI格式化
                     paramValue = `${paramValue} PPI`;
+                } else if (param.formatter && typeof param.formatter === 'function') {
+                    // 自定义格式化函数（如分项换行展示）
+                    try {
+                        const _raw = (paramValue !== undefined && paramValue !== null) ? paramValue : product[param.key];
+                        paramValue = param.formatter(_raw);
+                    } catch (e) {
+                        paramValue = 'N/A';
+                    }
+                    if (paramValue === undefined || paramValue === null || paramValue === '') {
+                        paramValue = 'N/A';
+                    }
                 } else if (paramValue === undefined || paramValue === null || paramValue === '') {
                     paramValue = 'N/A';
                 }
@@ -3377,6 +3426,22 @@
         }
         
         // 参数名称翻译映射表
+function normZh(val) {
+            let s = (val && typeof val === 'object') ? (val['zh-CN'] || val['en-US'] || '') : (val || '');
+            return String(s);
+        }
+        function splitPriceTiers(val) {
+            const s = normZh(val);
+            const parts = s.split(/\s+(?=\d+\s*(?:GB|TB|G|T|MB)\s*:)/).map(x => x.trim()).filter(Boolean);
+            return parts.length ? parts.join('<br>') : '-';
+        }
+
+        function tvRemoteLines(val) {
+            const s = normZh(val);
+            const parts = s.split(/\s+(?=\d+\.?\d*×)/).map(x => x.trim()).filter(Boolean);
+            return parts.length ? parts.join('<br>') : '-';
+        }
+
         const paramNameTranslations = {
             'param.releaseDate': { 'zh-CN': '发布日期', 'en-US': 'Release Date' },
             'param.model': { 'zh-CN': '型号标识', 'en-US': 'Model' },
@@ -3745,6 +3810,9 @@
                     column.style.display = '';
                 }
             });
+            if (typeof syncMobileRowHeights === 'function') {
+                syncMobileRowHeights();
+            }
         }
 
         // 页面加载完成后执行进一步检查
