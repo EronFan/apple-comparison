@@ -1,5 +1,321 @@
 [
   {
+    "releaseDate": {
+      "zh-CN": "2026.09.10",
+      "en-US": "2026.09.10"
+    },
+    "os": {
+      "zh-CN": "iOS 27 ~ 最新",
+      "en-US": "iOS 27 ~ 最新"
+    },
+    "arSupport": {
+      "zh-CN": "当前浏览器不支持查看",
+      "en-US": "当前浏览器不支持查看"
+    },
+    "processor": {
+      "zh-CN": "A20 Pro(2P+4E+7GPU)",
+      "en-US": "A20 Pro(2P+4E+7GPU)"
+    },
+    "displayRefreshRate": "1-120Hz ProMotion",
+    "displayBrightness": {
+      "zh-CN": "1000(典), 1600(HDR), 3000(外)",
+      "en-US": "1000(典), 1600(HDR), 3000(外)"
+    },
+    "displayColorGamut": "P3广色域和原彩显示",
+    "ports": "USB-C (最高可达 10Gb/s)",
+    "wifiStandard": "802.11be 2x2 MIMO",
+    "bluetoothVersion": "Bluetooth 6.0",
+    "nfc": "支持读卡器模式 NFC",
+    "charging": "USB-C/MagSafe/Qi/Qi2",
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×4 + 扬声器 ×2",
+      "en-US": "麦克风 ×4 + 扬声器 ×2"
+    },
+    "waterResistance": "IP68 防尘防水",
+    "connectivity": {
+      "zh-CN": "5G, Wi-Fi, 蓝牙, NFC",
+      "en-US": "5G, Wi-Fi, Bluetooth, NFC"
+    },
+    "frontPanel": "超瓷晶面板二代",
+    "displayPanelType": "OLED",
+    "displaySpecialTech": "Super Retina XDR",
+    "displayStandardBrightness": "1000尼特",
+    "displayHdrBrightness": "1600尼特",
+    "touchTechnology": "Haptic Touch",
+    "ram": "12GB LPDDR5X",
+    "storage": "256GB / 512GB / 1TB / 2TB",
+    "cellularData": "5G",
+    "speakers": "2个扬声器",
+    "microphoneCount": "4个麦克风",
+    "initialOS": "iOS 27",
+    "maxSupportedOS": "最新",
+    "specialFeatures": {
+      "zh-CN": "碰撞检测，拍照按钮",
+      "en-US": "碰撞检测，拍照按钮"
+    },
+    "id": "iphone-duo",
+    "name": {
+      "zh-CN": "iPhone Duo",
+      "en-US": "iPhone Duo"
+    },
+    "marketingSlogan": {
+      "zh-CN": "Hello，hello",
+      "en-US": "Hello，hello"
+    },
+    "model": "iPhone19,4",
+    "displayTechnology": {
+      "zh-CN": "5.4\" + 7.6\" XDR OLED",
+      "en-US": "5.4\" + 7.6\" XDR OLED"
+    },
+    "displayResolution": "2034×1398 + 2670×1878",
+    "displaySize": "5.4英寸（外屏）+ 7.6英寸（内屏）",
+    "camera": {
+      "zh-CN": "主摄：4800W 像素 ƒ/1.6超广角：4800W 像素 ƒ/2.2",
+      "en-US": "主摄：4800W 像素 ƒ/1.6超广角：4800W 像素 ƒ/2.2"
+    },
+    "frontCamera": "1200W 像素 ƒ/2.2",
+    "lidar": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "baseband": "Apple C2",
+    "security": "触控 ID",
+    "batteryCapacity": {
+      "zh-CN": "19.073Wh (4883mAh)",
+      "en-US": "19.073Wh (4883mAh)"
+    },
+    "batteryLife": {
+      "zh-CN": "视频44小时 流媒体37小时",
+      "en-US": "视频44小时 流媒体37小时"
+    },
+    "dimensions": "117.8×164.6×5.2mm",
+    "weight": "254g",
+    "price": {
+      "zh-CN": "256GB: ¥15,999512GB: ¥17,9991TB: ¥21,4992TB: ¥26,499",
+      "en-US": "256GB: ¥15,999512GB: ¥17,9991TB: ¥21,4992TB: ¥26,499"
+    },
+    "frameMaterial": "五级钛金属边框",
+    "backPanelMaterial": "超瓷晶面板",
+    "mainCamera": "4800万像素主摄 (f/1.6光圈)",
+    "ultraWideCamera": "4800万像素超广角 (f/2.2光圈)",
+    "batteryCapacityMah": 4883,
+    "batteryCapacityWh": "19.073",
+    "videoPlaybackTime": "最长44小时",
+    "simCardSupport": "双 eSIM"
+  },
+  {
+    "releaseDate": {
+      "zh-CN": "2026.09.10",
+      "en-US": "2026.09.10"
+    },
+    "os": {
+      "zh-CN": "iOS 27 ~ 最新",
+      "en-US": "iOS 27 ~ 最新"
+    },
+    "arSupport": {
+      "zh-CN": "当前浏览器不支持查看",
+      "en-US": "当前浏览器不支持查看"
+    },
+    "processor": {
+      "zh-CN": "A20 Pro(2P+4E+7GPU)",
+      "en-US": "A20 Pro(2P+4E+7GPU)"
+    },
+    "displayRefreshRate": "1-120Hz ProMotion",
+    "displayBrightness": {
+      "zh-CN": "1000(典), 1600(HDR), 3000(外)",
+      "en-US": "1000(典), 1600(HDR), 3000(外)"
+    },
+    "displayColorGamut": "P3广色域和原彩显示",
+    "ports": "USB-C (最高可达 10Gb/s)",
+    "wifiStandard": "802.11be 2x2 MIMO",
+    "bluetoothVersion": "Bluetooth 6.0",
+    "nfc": "支持读卡器模式 NFC",
+    "charging": "USB-C/MagSafe/Qi/Qi2",
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×4 + 扬声器 ×2",
+      "en-US": "麦克风 ×4 + 扬声器 ×2"
+    },
+    "waterResistance": "IP68 防尘防水",
+    "connectivity": {
+      "zh-CN": "5G, Wi-Fi, 蓝牙, NFC",
+      "en-US": "5G, Wi-Fi, Bluetooth, NFC"
+    },
+    "frontPanel": "超瓷晶面板二代",
+    "displayPanelType": "OLED",
+    "displaySpecialTech": "Super Retina XDR",
+    "displayStandardBrightness": "1000尼特",
+    "displayHdrBrightness": "1600尼特",
+    "touchTechnology": "Haptic Touch",
+    "ram": "12GB LPDDR5X",
+    "storage": "256GB / 512GB / 1TB / 2TB",
+    "cellularData": "5G",
+    "speakers": "2个扬声器",
+    "microphoneCount": "4个麦克风",
+    "initialOS": "iOS 27",
+    "maxSupportedOS": "最新",
+    "specialFeatures": {
+      "zh-CN": "碰撞检测，拍照按钮",
+      "en-US": "碰撞检测，拍照按钮"
+    },
+    "id": "iphone-18-pro-max",
+    "name": {
+      "zh-CN": "iPhone 18 Pro Max",
+      "en-US": "iPhone 18 Pro Max"
+    },
+    "marketingSlogan": {
+      "zh-CN": "Pro 再超前",
+      "en-US": "Pro 再超前"
+    },
+    "model": "iPhone19,3 / iPhone19,7",
+    "displayTechnology": {
+      "zh-CN": "6.9\" XDR OLED",
+      "en-US": "6.9\" XDR OLED"
+    },
+    "displayResolution": "2868×1320,",
+    "displaySize": "6.9英寸",
+    "displayPpi": "460PPI",
+    "camera": {
+      "zh-CN": "主摄：4800W 像素 ƒ/1.48~4.0超广角：4800W 像素 ƒ/2.2长焦：4800W 像素 ƒ/2.8",
+      "en-US": "主摄：4800W 像素 ƒ/1.48~4.0超广角：4800W 像素 ƒ/2.2长焦：4800W 像素 ƒ/2.8"
+    },
+    "frontCamera": "1800W 像素 ƒ/1.9",
+    "lidar": {
+      "zh-CN": "dToF 距离感应",
+      "en-US": "dToF 距离感应"
+    },
+    "baseband": "Apple C2 / Qualcomm X80M",
+    "security": "面容 ID",
+    "batteryCapacity": {
+      "zh-CN": "21.063Wh (5391mAh)",
+      "en-US": "21.063Wh (5391mAh)"
+    },
+    "batteryLife": {
+      "zh-CN": "视频43小时 流媒体38小时",
+      "en-US": "视频43小时 流媒体38小时"
+    },
+    "dimensions": "78.0×163.4×8.75mm",
+    "weight": "249g",
+    "price": {
+      "zh-CN": "256GB: ¥10,999512GB: ¥12,9991TB: ¥16,4992TB: ¥21,499",
+      "en-US": "256GB: ¥10,999512GB: ¥12,9991TB: ¥16,4992TB: ¥21,499"
+    },
+    "frameMaterial": "7000系铝金属一体成型机身",
+    "backPanelMaterial": "超瓷晶面板二代",
+    "mainCamera": "4800万像素主摄 (f/1.48~4.0可变光圈)",
+    "ultraWideCamera": "4800万像素超广角 (f/2.2光圈)",
+    "telephotoCamera": "4800万像素长焦 (f/2.8光圈)",
+    "batteryCapacityMah": 5391,
+    "batteryCapacityWh": "21.063",
+    "videoPlaybackTime": "最长43小时",
+    "simCardSupport": "双物理SIM"
+  },
+  {
+    "releaseDate": {
+      "zh-CN": "2026.09.10",
+      "en-US": "2026.09.10"
+    },
+    "os": {
+      "zh-CN": "iOS 27 ~ 最新",
+      "en-US": "iOS 27 ~ 最新"
+    },
+    "arSupport": {
+      "zh-CN": "当前浏览器不支持查看",
+      "en-US": "当前浏览器不支持查看"
+    },
+    "processor": {
+      "zh-CN": "A20 Pro(2P+4E+7GPU)",
+      "en-US": "A20 Pro(2P+4E+7GPU)"
+    },
+    "displayRefreshRate": "1-120Hz ProMotion",
+    "displayBrightness": {
+      "zh-CN": "1000(典), 1600(HDR), 3000(外)",
+      "en-US": "1000(典), 1600(HDR), 3000(外)"
+    },
+    "displayColorGamut": "P3广色域和原彩显示",
+    "ports": "USB-C (最高可达 10Gb/s)",
+    "wifiStandard": "802.11be 2x2 MIMO",
+    "bluetoothVersion": "Bluetooth 6.0",
+    "nfc": "支持读卡器模式 NFC",
+    "charging": "USB-C/MagSafe/Qi/Qi2",
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×4 + 扬声器 ×2",
+      "en-US": "麦克风 ×4 + 扬声器 ×2"
+    },
+    "waterResistance": "IP68 防尘防水",
+    "connectivity": {
+      "zh-CN": "5G, Wi-Fi, 蓝牙, NFC",
+      "en-US": "5G, Wi-Fi, Bluetooth, NFC"
+    },
+    "frontPanel": "超瓷晶面板二代",
+    "displayPanelType": "OLED",
+    "displaySpecialTech": "Super Retina XDR",
+    "displayStandardBrightness": "1000尼特",
+    "displayHdrBrightness": "1600尼特",
+    "touchTechnology": "Haptic Touch",
+    "ram": "12GB LPDDR5X",
+    "storage": "256GB / 512GB / 1TB / 2TB",
+    "cellularData": "5G",
+    "speakers": "2个扬声器",
+    "microphoneCount": "4个麦克风",
+    "initialOS": "iOS 27",
+    "maxSupportedOS": "最新",
+    "specialFeatures": {
+      "zh-CN": "碰撞检测，拍照按钮",
+      "en-US": "碰撞检测，拍照按钮"
+    },
+    "id": "iphone-18-pro",
+    "name": {
+      "zh-CN": "iPhone 18 Pro",
+      "en-US": "iPhone 18 Pro"
+    },
+    "marketingSlogan": {
+      "zh-CN": "Pro 再超前",
+      "en-US": "Pro 再超前"
+    },
+    "model": "iPhone19,2",
+    "displayTechnology": {
+      "zh-CN": "6.3\" XDR OLED",
+      "en-US": "6.3\" XDR OLED"
+    },
+    "displayResolution": "2622×1206,",
+    "displaySize": "6.3英寸",
+    "displayPpi": "460PPI",
+    "camera": {
+      "zh-CN": "主摄：4800W 像素 ƒ/1.48~4.0超广角：4800W 像素 ƒ/2.2长焦：4800W 像素 ƒ/2.8",
+      "en-US": "主摄：4800W 像素 ƒ/1.48~4.0超广角：4800W 像素 ƒ/2.2长焦：4800W 像素 ƒ/2.8"
+    },
+    "frontCamera": "1800W 像素 ƒ/1.9",
+    "lidar": {
+      "zh-CN": "dToF 距离感应",
+      "en-US": "dToF 距离感应"
+    },
+    "baseband": "Apple C2",
+    "security": "面容 ID",
+    "batteryCapacity": {
+      "zh-CN": "15.855Wh (4056mAh)",
+      "en-US": "15.855Wh (4056mAh)"
+    },
+    "batteryLife": {
+      "zh-CN": "视频34小时 流媒体31小时",
+      "en-US": "视频34小时 流媒体31小时"
+    },
+    "dimensions": "71.9×150.0×8.75mm",
+    "weight": "211g",
+    "price": {
+      "zh-CN": "256GB: ¥9,999512GB: ¥11,9991TB: ¥15,4992TB: ¥20,499",
+      "en-US": "256GB: ¥9,999512GB: ¥11,9991TB: ¥15,4992TB: ¥20,499"
+    },
+    "frameMaterial": "7000系铝金属一体成型机身",
+    "backPanelMaterial": "超瓷晶面板二代",
+    "mainCamera": "4800万像素主摄 (f/1.48~4.0可变光圈)",
+    "ultraWideCamera": "4800万像素超广角 (f/2.2光圈)",
+    "telephotoCamera": "4800万像素长焦 (f/2.8光圈)",
+    "batteryCapacityMah": 4056,
+    "batteryCapacityWh": "15.855",
+    "videoPlaybackTime": "最长34小时",
+    "simCardSupport": "双物理SIM"
+  },
+  {
     "id": "iphone-17",
     "name": {
       "zh-CN": "iPhone 17",
