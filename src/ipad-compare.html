@@ -1727,7 +1727,7 @@
                     const thumb = document.createElement('img');
                     thumb.className = 'product-thumb';
                     thumb.src = '../public/images/products/' + product.image;
-                    thumb.alt = localizedName;
+                    thumb.alt = (product.name && product.name['zh-CN']) || product.name || '';
                     thumb.loading = 'lazy';
                     thumb.onerror = function() { this.remove(); };
                     productSelector.appendChild(thumb);
