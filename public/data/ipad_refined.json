@@ -5196,7 +5196,14 @@
       "256GB"
     ],
     "ram": "3GB",
-    "ramType": "LPDDR4X"
+    "ramType": "LPDDR4X",
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/111898"
+    }
   },
   {
     "name": {
