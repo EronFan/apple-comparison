@@ -331,7 +331,8 @@
         }
 
         table {
-            width: 100%;
+            width: max-content; /* 列宽总和决定总宽，超容器即横滑 */
+            min-width: 100%;    /* 列少时铺满容器 */
             border-collapse: separate;
             border-spacing: 0;
             text-align: left;
@@ -481,9 +482,11 @@
         thead th:first-child {
             width: 150px;
         }
+
         thead th:not(:first-child) {
-            min-width: 150px;
+            width: 150px; /* fixed 布局读取首行 width，产品列严格等宽 */
         }
+
 
         /* 参数名称列 - 增强视觉区分 */
         .param-name {
