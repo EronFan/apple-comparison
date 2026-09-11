@@ -1605,6 +1605,9 @@
                 
                 // 更新性能图表
                 updatePerformanceCharts();
+
+                // 无跑分数据时隐藏图表区
+                updateChartVisibility();
             } catch (error) {
                 console.error('加载产品数据失败:', error);
                 console.error(error.stack); // 显示完整错误堆栈
@@ -3143,6 +3146,35 @@
         }
         
         // 更新性能图表（页面底部的固定图表，独立于产品选择状态）
+        // 无跑分数据时隐藏性能图表区（避免全零柱状图）
+        function getMaxBenchmarkScore() {
+            let max = 0;
+            (window.allProducts || []).forEach(p => {
+                const nums = [];
+                if (p.cpuPerformance && typeof p.cpuPerformance === 'object') {
+                    nums.push(parseInt(p.cpuPerformance.singleCore, 10) || 0);
+                    nums.push(parseInt(p.cpuPerformance.multiCore, 10) || 0);
+                }
+                ['cpuSingleCore', 'cpuMultiCore'].forEach(k => {
+                    if (typeof p[k] === 'number') nums.push(p[k]);
+                });
+                if (p.gpuPerformance !== undefined && p.gpuPerformance !== null) {
+                    nums.push(typeof p.gpuPerformance === 'number' ? p.gpuPerformance : parseInt(p.gpuPerformance, 10) || 0);
+                }
+                if (p.benchmarks && typeof p.benchmarks === 'object') {
+                    ['singleCore', 'multiCore', 'gpu'].forEach(k => nums.push(parseInt(p.benchmarks[k], 10) || 0));
+                }
+                nums.forEach(n => { if (n > max) max = n; });
+            });
+            return max;
+        }
+        function updateChartVisibility() {
+            if (getMaxBenchmarkScore() > 0) return;
+            document.querySelectorAll('.performance-charts-section, #performance-chart-modal').forEach(el => {
+                el.style.display = 'none';
+            });
+        }
+
         function updatePerformanceCharts() {
             // 检查Chart对象是否已定义
             if (typeof Chart === 'undefined') {

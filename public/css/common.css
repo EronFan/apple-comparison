@@ -251,3 +251,37 @@ footer {
         right: 20px;
     }
 }
+
+/* 产品对比下拉菜单 */
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown > a .fa-caret-down {
+    font-size: 12px;
+}
+
+.nav-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 170px;
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    padding: 6px;
+    z-index: 200;
+}
+
+.nav-dropdown-menu a {
+    display: flex;
+    padding: 8px 14px;
+    white-space: nowrap;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown.open .nav-dropdown-menu {
+    display: block;
+}

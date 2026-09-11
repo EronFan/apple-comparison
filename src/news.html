@@ -18,7 +18,20 @@
             <div class="logo"><i class="fas fa-apple-alt"></i> Apple Compare</div>
             <div class="nav">
                 <a href="index.html" data-lang-key="nav.home"><i class="fas fa-home"></i> 首页</a>
-                <a href="iphone-compare.html" data-lang-key="nav.compare"><i class="fas fa-exchange-alt"></i> 产品对比</a>
+                <div class="nav-dropdown">
+                    <a href="index.html" data-lang-key="nav.compare"><i class="fas fa-exchange-alt"></i> 产品对比 <i class="fas fa-caret-down"></i></a>
+                    <div class="nav-dropdown-menu">
+                        <a href="iphone-compare.html" data-lang-key="product.iphone.title">iPhone</a>
+                        <a href="ipad-compare.html" data-lang-key="product.ipad.title">iPad</a>
+                        <a href="watch-compare.html" data-lang-key="product.watch.title">Apple Watch</a>
+                        <a href="mac-compare.html" data-lang-key="product.mac.title">Mac</a>
+                        <a href="airpods-compare.html" data-lang-key="product.airpods.title">AirPods</a>
+                        <a href="tv-compare.html" data-lang-key="product.tv.title">Apple TV</a>
+                        <a href="vision-compare.html" data-lang-key="product.vision.title">Vision</a>
+                        <a href="homepod-compare.html" data-lang-key="product.homepod.title">HomePod</a>
+                        <a href="ipod-compare.html" data-lang-key="product.ipod.title">iPod</a>
+                    </div>
+                </div>
                 <a href="news.html" class="active" data-lang-key="nav.news"><i class="fas fa-newspaper"></i> 苹果资讯</a>
                 <a href="feedback.html" data-lang-key="nav.feedback"><i class="fas fa-comment"></i> 用户反馈</a>
                 <div class="language-switcher">
@@ -229,5 +242,22 @@
     <script src="../public/js/languages.js"></script>
     <script src="../public/js/language-switcher.js"></script>
     <script src="../public/js/news.js"></script>
+    <script>
+        // 产品对比下拉菜单：触屏点开，桌面端悬停即开；已展开时再点则进入首页
+        document.querySelectorAll('.nav-dropdown').forEach(function(dd) {
+            dd.querySelector(':scope > a').addEventListener('click', function(e) {
+                if (!dd.classList.contains('open')) {
+                    e.preventDefault();
+                    document.querySelectorAll('.nav-dropdown.open').forEach(function(o) { o.classList.remove('open'); });
+                    dd.classList.add('open');
+                }
+            });
+        });
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.nav-dropdown')) {
+                document.querySelectorAll('.nav-dropdown.open').forEach(function(o) { o.classList.remove('open'); });
+            }
+        });
+    </script>
 </body>
 </html>
