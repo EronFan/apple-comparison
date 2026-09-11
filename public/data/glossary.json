@@ -1,0 +1,1909 @@
+[
+ {
+  "key": "param.ap.caseBattery",
+  "zh": "充电盒电量",
+  "en": "Case Battery",
+  "lines": [
+   "airpods"
+  ]
+ },
+ {
+  "key": "param.ap.chargeWired",
+  "zh": "充电 · 有线",
+  "en": "Wired Charging",
+  "lines": [
+   "airpods"
+  ]
+ },
+ {
+  "key": "param.ap.chargeWireless",
+  "zh": "充电 · 无线",
+  "en": "Wireless Charging",
+  "lines": [
+   "airpods"
+  ]
+ },
+ {
+  "key": "param.ap.charging",
+  "zh": "充电方式",
+  "en": "Charging",
+  "lines": [
+   "airpods"
+  ]
+ },
+ {
+  "key": "param.ap.controls",
+  "zh": "操控方式",
+  "en": "Controls",
+  "lines": [
+   "airpods"
+  ]
+ },
+ {
+  "key": "param.ap.dimCase",
+  "zh": "尺寸 · 充电盒",
+  "en": "Charging Case",
+  "lines": [
+   "airpods"
+  ]
+ },
+ {
+  "key": "param.ap.dimEar",
+  "zh": "尺寸 · 单耳机",
+  "en": "Earbud Size",
+  "lines": [
+   "airpods"
+  ]
+ },
+ {
+  "key": "param.ap.earbudBattery",
+  "zh": "耳机电量",
+  "en": "Earbud Battery",
+  "lines": [
+   "airpods"
+  ]
+ },
+ {
+  "key": "param.ap.listening",
+  "zh": "聆听模式",
+  "en": "Listening",
+  "lines": [
+   "airpods"
+  ]
+ },
+ {
+  "key": "param.ap.noiseReduction",
+  "zh": "降噪模式",
+  "en": "Noise Cancellation",
+  "lines": [
+   "airpods"
+  ]
+ },
+ {
+  "key": "param.ap.spatialAudio",
+  "zh": "空间音频",
+  "en": "Spatial Audio",
+  "lines": [
+   "airpods",
+   "homepod",
+   "ipod",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.ap.transparencyMode",
+  "zh": "通透模式",
+  "en": "Transparency Mode",
+  "lines": [
+   "airpods"
+  ]
+ },
+ {
+  "key": "param.ap.withCase",
+  "zh": "搭配充电盒",
+  "en": "With Charging Case",
+  "lines": [
+   "airpods"
+  ]
+ },
+ {
+  "key": "param.arSupport",
+  "zh": "增强现实",
+  "en": "AR Support",
+  "lines": [
+   "ipad"
+  ]
+ },
+ {
+  "key": "param.audioFeatures",
+  "zh": "音频功能",
+  "en": "Audio Features",
+  "lines": [
+   "ipad"
+  ]
+ },
+ {
+  "key": "param.audioFormat",
+  "zh": "音频格式",
+  "en": "Audio Format",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.audioPlaybackTime",
+  "zh": "音频播放时间",
+  "en": "Audio Playback Time",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.backPanelMaterial",
+  "zh": "背板材质",
+  "en": "Back Panel Material",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.baseband",
+  "zh": "基带芯片",
+  "en": "Baseband Chip",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipad",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.battery",
+  "zh": "电池容量",
+  "en": "Battery Capacity",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.batteryCapacity",
+  "zh": "电池容量",
+  "en": "Battery Capacity",
+  "lines": [
+   "ipad"
+  ]
+ },
+ {
+  "key": "param.batteryCapacityMah",
+  "zh": "电池容量(mAh)",
+  "en": "Battery Capacity (mAh)",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.batteryCapacityWh",
+  "zh": "电池容量(Wh)",
+  "en": "Battery Capacity (Wh)",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.batteryLife",
+  "zh": "电池续航",
+  "en": "Battery Life",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipad",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.benchmarks.gpu",
+  "zh": "Geekbench GPU跑分",
+  "en": "Geekbench GPU Score",
+  "lines": [
+   "ipad"
+  ]
+ },
+ {
+  "key": "param.benchmarks.multiCore",
+  "zh": "Geekbench 多核跑分",
+  "en": "Geekbench Multi-Core",
+  "lines": [
+   "ipad"
+  ]
+ },
+ {
+  "key": "param.benchmarks.singleCore",
+  "zh": "Geekbench 单核跑分",
+  "en": "Geekbench Single-Core",
+  "lines": [
+   "ipad"
+  ]
+ },
+ {
+  "key": "param.bluetoothVersion",
+  "zh": "蓝牙版本",
+  "en": "Bluetooth Version",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipad",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.c.chip",
+  "zh": "芯片",
+  "en": "Chip",
+  "lines": [
+   "airpods",
+   "homepod",
+   "ipod",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.c.os",
+  "zh": "支持系统",
+  "en": "Supported OS",
+  "lines": [
+   "airpods",
+   "homepod",
+   "ipod",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.c.price",
+  "zh": "首发价格",
+  "en": "Launch Price",
+  "lines": [
+   "airpods",
+   "homepod",
+   "ipod",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.c.ram",
+  "zh": "内存存储",
+  "en": "Memory & Storage",
+  "lines": [
+   "airpods",
+   "homepod",
+   "ipod",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.c.sensors",
+  "zh": "传感器",
+  "en": "Sensors",
+  "lines": [
+   "airpods",
+   "homepod",
+   "ipod",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.c.techLinks",
+  "zh": "规格与手册",
+  "en": "Specs & Manuals",
+  "lines": [
+   "airpods",
+   "homepod",
+   "ipod",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.camera",
+  "zh": "后置摄像头",
+  "en": "Rear Camera",
+  "lines": [
+   "ipad"
+  ]
+ },
+ {
+  "key": "param.cellularData",
+  "zh": "蜂窝数据",
+  "en": "Cellular Data",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.chargingSpeed",
+  "zh": "充电速度",
+  "en": "Charging Speed",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipad",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.chip.ane",
+  "zh": "神经网络引擎",
+  "en": "Neural Engine",
+  "lines": [
+   "chip"
+  ]
+ },
+ {
+  "key": "param.chip.arch",
+  "zh": "内核架构",
+  "en": "Architecture",
+  "lines": [
+   "chip"
+  ]
+ },
+ {
+  "key": "param.chip.cache",
+  "zh": "三级缓存",
+  "en": "L3 Cache",
+  "lines": [
+   "chip"
+  ]
+ },
+ {
+  "key": "param.chip.cpu",
+  "zh": "CPU 规格",
+  "en": "CPU",
+  "lines": [
+   "chip"
+  ]
+ },
+ {
+  "key": "param.chip.devices",
+  "zh": "搭载设备",
+  "en": "Used In Devices",
+  "lines": [
+   "chip"
+  ]
+ },
+ {
+  "key": "param.chip.die",
+  "zh": "裸片尺寸",
+  "en": "Die Size",
+  "lines": [
+   "chip"
+  ]
+ },
+ {
+  "key": "param.chip.gpu",
+  "zh": "GPU 规格",
+  "en": "GPU",
+  "lines": [
+   "chip"
+  ]
+ },
+ {
+  "key": "param.chip.gpuModel",
+  "zh": "GPU 型号",
+  "en": "GPU Model",
+  "lines": [
+   "chip"
+  ]
+ },
+ {
+  "key": "param.chip.memory",
+  "zh": "内存规格",
+  "en": "Memory",
+  "lines": [
+   "chip"
+  ]
+ },
+ {
+  "key": "param.chip.micro",
+  "zh": "微架构",
+  "en": "Microarchitecture",
+  "lines": [
+   "chip"
+  ]
+ },
+ {
+  "key": "param.chip.process",
+  "zh": "芯片工艺",
+  "en": "Process",
+  "lines": [
+   "chip"
+  ]
+ },
+ {
+  "key": "param.chip.series",
+  "zh": "产品系列",
+  "en": "Series",
+  "lines": [
+   "chip"
+  ]
+ },
+ {
+  "key": "param.chip.transistors",
+  "zh": "晶体管数",
+  "en": "Transistors",
+  "lines": [
+   "chip"
+  ]
+ },
+ {
+  "key": "param.chipset",
+  "zh": "芯片组",
+  "en": "Chipset",
+  "lines": [
+   "ipad"
+  ]
+ },
+ {
+  "key": "param.colors",
+  "zh": "颜色",
+  "en": "Colors",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipad",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.cpuMultiCore",
+  "zh": "CPU多核性能",
+  "en": "CPU Multi-Core",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.cpuSingleCore",
+  "zh": "CPU单核性能",
+  "en": "CPU Single-Core",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.dimensions",
+  "zh": "尺寸",
+  "en": "Dimensions",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipad",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.displayBrightness",
+  "zh": "亮度",
+  "en": "Brightness",
+  "lines": [
+   "ipad"
+  ]
+ },
+ {
+  "key": "param.displayColorGamut",
+  "zh": "显示色域",
+  "en": "Color Gamut",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipad",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.displayHdrBrightness",
+  "zh": "HDR亮度",
+  "en": "HDR Brightness",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.displayPanelType",
+  "zh": "面板类型",
+  "en": "Panel Type",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.displayPpi",
+  "zh": "像素密度(PPI)",
+  "en": "Pixel Density (PPI)",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.displayRefreshRate",
+  "zh": "屏幕刷新率",
+  "en": "Refresh Rate",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipad",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.displayResolution",
+  "zh": "屏幕分辨率",
+  "en": "Display Resolution",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipad",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.displaySize",
+  "zh": "屏幕尺寸",
+  "en": "Display Size",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.displaySpecialTech",
+  "zh": "特殊显示技术",
+  "en": "Display Technology",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.displayStandardBrightness",
+  "zh": "标准亮度",
+  "en": "Standard Brightness",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.displayTechnology",
+  "zh": "屏幕参数",
+  "en": "Display Technology",
+  "lines": [
+   "ipad"
+  ]
+ },
+ {
+  "key": "param.emergencySos",
+  "zh": "紧急SOS",
+  "en": "Emergency SOS",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.faceId",
+  "zh": "Face ID",
+  "en": "Face ID",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.fingerprint",
+  "zh": "指纹解锁",
+  "en": "Fingerprint",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.frameMaterial",
+  "zh": "中框材质",
+  "en": "Frame Material",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.frontCamera",
+  "zh": "前置摄像头",
+  "en": "Front Camera",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipad",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.frontPanel",
+  "zh": "前面板",
+  "en": "Front Panel",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.gpuPerformance",
+  "zh": "GPU性能",
+  "en": "GPU Performance",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.hp.bass",
+  "zh": "低音麦克风",
+  "en": "Bass Microphones",
+  "lines": [
+   "homepod"
+  ]
+ },
+ {
+  "key": "param.hp.handoff",
+  "zh": "靠近接力",
+  "en": "Handoff",
+  "lines": [
+   "homepod"
+  ]
+ },
+ {
+  "key": "param.hp.mics",
+  "zh": "麦克风",
+  "en": "Microphones",
+  "lines": [
+   "homepod"
+  ]
+ },
+ {
+  "key": "param.hp.spatial",
+  "zh": "空间感知",
+  "en": "Spatial Awareness",
+  "lines": [
+   "homepod"
+  ]
+ },
+ {
+  "key": "param.hp.speakers",
+  "zh": "喇叭数量",
+  "en": "Speakers",
+  "lines": [
+   "homepod"
+  ]
+ },
+ {
+  "key": "param.hp.thread",
+  "zh": "Thread 协议",
+  "en": "Thread",
+  "lines": [
+   "homepod"
+  ]
+ },
+ {
+  "key": "param.initialOS",
+  "zh": "初始系统版本",
+  "en": "Initial OS",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.ip.audio",
+  "zh": "音频处理器",
+  "en": "Audio Chip",
+  "lines": [
+   "ipod"
+  ]
+ },
+ {
+  "key": "param.ip.brightness",
+  "zh": "最大亮度",
+  "en": "Max Brightness",
+  "lines": [
+   "ipod"
+  ]
+ },
+ {
+  "key": "param.ip.contrast",
+  "zh": "对比度",
+  "en": "Contrast",
+  "lines": [
+   "ipod"
+  ]
+ },
+ {
+  "key": "param.ip.io",
+  "zh": "输入输出",
+  "en": "Input & Output",
+  "lines": [
+   "ipod"
+  ]
+ },
+ {
+  "key": "param.keyboardSupport",
+  "zh": "键盘支持",
+  "en": "Keyboard Support",
+  "lines": [
+   "ipad"
+  ]
+ },
+ {
+  "key": "param.lidar",
+  "zh": "激光雷达",
+  "en": "LiDAR Scanner",
+  "lines": [
+   "ipad"
+  ]
+ },
+ {
+  "key": "param.lidarScanner",
+  "zh": "LiDAR激光扫描仪",
+  "en": "LiDAR Scanner",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.mac.batteryLife",
+  "zh": "续航时间",
+  "en": "Battery Life",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.mac.brightness",
+  "zh": "亮度",
+  "en": "Brightness",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.mac.camera",
+  "zh": "摄像头",
+  "en": "Camera",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.mac.charging",
+  "zh": "充电规格",
+  "en": "Charging",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.mac.chassisModel",
+  "zh": "模具型号",
+  "en": "Chassis Model",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.mac.gpu",
+  "zh": "显卡信息",
+  "en": "GPU",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.mac.keyboard",
+  "zh": "键盘",
+  "en": "Keyboard",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.mac.neuralEngine",
+  "zh": "神经网络引擎",
+  "en": "Neural Engine",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.mac.os",
+  "zh": "支持系统",
+  "en": "Supported OS",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.mac.portAudio",
+  "zh": "接口 · 音频",
+  "en": "Audio",
+  "lines": [
+   "chip",
+   "mac"
+  ]
+ },
+ {
+  "key": "param.mac.portCard",
+  "zh": "接口 · 存储卡",
+  "en": "Card Slot",
+  "lines": [
+   "chip",
+   "mac"
+  ]
+ },
+ {
+  "key": "param.mac.portDisp",
+  "zh": "接口 · 显示支持",
+  "en": "Display Support",
+  "lines": [
+   "chip",
+   "mac"
+  ]
+ },
+ {
+  "key": "param.mac.portExp",
+  "zh": "接口 · 扩展",
+  "en": "Expansion",
+  "lines": [
+   "chip",
+   "mac"
+  ]
+ },
+ {
+  "key": "param.mac.portNet",
+  "zh": "接口 · 网络",
+  "en": "Network",
+  "lines": [
+   "chip",
+   "mac"
+  ]
+ },
+ {
+  "key": "param.mac.portOther",
+  "zh": "接口 · 其他",
+  "en": "Other Ports",
+  "lines": [
+   "chip",
+   "mac"
+  ]
+ },
+ {
+  "key": "param.mac.portTb",
+  "zh": "接口 · 雷电",
+  "en": "Thunderbolt",
+  "lines": [
+   "chip",
+   "mac"
+  ]
+ },
+ {
+  "key": "param.mac.portUsb",
+  "zh": "接口 · USB",
+  "en": "USB",
+  "lines": [
+   "chip",
+   "mac"
+  ]
+ },
+ {
+  "key": "param.mac.portVideo",
+  "zh": "接口 · 视频",
+  "en": "Video Out",
+  "lines": [
+   "chip",
+   "mac"
+  ]
+ },
+ {
+  "key": "param.mac.series",
+  "zh": "产品系列",
+  "en": "Series",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.mac.techLinks",
+  "zh": "规格与手册",
+  "en": "Specs & Manuals",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.mac.touchId",
+  "zh": "触控 ID",
+  "en": "Touch ID",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.mac.wirelessChip",
+  "zh": "无线芯片",
+  "en": "Wireless Chip",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.mac.wirelessSpec",
+  "zh": "无线规格",
+  "en": "Wireless Spec",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.mainCamera",
+  "zh": "主摄像头",
+  "en": "Main Camera",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.marketingSlogan",
+  "zh": "宣传口号",
+  "en": "Marketing Slogan",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipad",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.maxSupportedOS",
+  "zh": "最高支持系统版本",
+  "en": "Max Supported OS",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.microphones",
+  "zh": "麦克风",
+  "en": "Microphones",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.model",
+  "zh": "型号标识",
+  "en": "Model",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipad",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.nfc",
+  "zh": "NFC功能",
+  "en": "NFC",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.opticalZoom",
+  "zh": "光学变焦",
+  "en": "Optical Zoom",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.os",
+  "zh": "系统版本",
+  "en": "OS Version",
+  "lines": [
+   "ipad"
+  ]
+ },
+ {
+  "key": "param.pencilSupport",
+  "zh": "Apple Pencil支持",
+  "en": "Apple Pencil Support",
+  "lines": [
+   "ipad"
+  ]
+ },
+ {
+  "key": "param.ports",
+  "zh": "接口类型",
+  "en": "Ports",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipad",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.processTechnology",
+  "zh": "制程工艺",
+  "en": "Process Technology",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.processor",
+  "zh": "处理器型号",
+  "en": "Processor",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipad",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.ram",
+  "zh": "内存容量",
+  "en": "RAM",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipad",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.ramType",
+  "zh": "内存规格",
+  "en": "RAM Type",
+  "lines": [
+   "ipad"
+  ]
+ },
+ {
+  "key": "param.rearCameraSystem",
+  "zh": "后置摄像头",
+  "en": "Rear Camera System",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.releaseDate",
+  "zh": "发布日期",
+  "en": "Release Date",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipad",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.satelliteConnectivity",
+  "zh": "卫星连接",
+  "en": "Satellite Connectivity",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.satelliteFeatures",
+  "zh": "卫星功能",
+  "en": "Satellite Features",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.security",
+  "zh": "安全功能",
+  "en": "Security Features",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipad",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.series",
+  "zh": "产品系列",
+  "en": "Product Series",
+  "lines": [
+   "ipad"
+  ]
+ },
+ {
+  "key": "param.simCardSupport",
+  "zh": "SIM卡",
+  "en": "SIM Card",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.speakers",
+  "zh": "扬声器",
+  "en": "Speakers",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.specialFeatures",
+  "zh": "特色功能",
+  "en": "Special Features",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.storage",
+  "zh": "存储容量",
+  "en": "Storage",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipad",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.technicalSpecsLink",
+  "zh": "技术规格链接",
+  "en": "Technical Specs Link",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.telephotoCamera",
+  "zh": "长焦摄像头",
+  "en": "Telephoto Camera",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.touchTechnology",
+  "zh": "触控技术",
+  "en": "Touch Technology",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.tv.airplay",
+  "zh": "隔空播放",
+  "en": "AirPlay",
+  "lines": [
+   "tv"
+  ]
+ },
+ {
+  "key": "param.tv.av",
+  "zh": "音频视频",
+  "en": "Audio & Video",
+  "lines": [
+   "tv"
+  ]
+ },
+ {
+  "key": "param.tv.ethernet",
+  "zh": "以太网",
+  "en": "Ethernet",
+  "lines": [
+   "tv"
+  ]
+ },
+ {
+  "key": "param.tv.host",
+  "zh": "主机尺寸",
+  "en": "Host Size",
+  "lines": [
+   "tv"
+  ]
+ },
+ {
+  "key": "param.tv.power",
+  "zh": "充电供电",
+  "en": "Power",
+  "lines": [
+   "tv"
+  ]
+ },
+ {
+  "key": "param.tv.remote",
+  "zh": "遥控器",
+  "en": "Remote",
+  "lines": [
+   "tv"
+  ]
+ },
+ {
+  "key": "param.tv.remoteSize",
+  "zh": "遥控器尺寸",
+  "en": "Remote Size",
+  "lines": [
+   "tv"
+  ]
+ },
+ {
+  "key": "param.ultraWideCamera",
+  "zh": "超广角摄像头",
+  "en": "Ultra Wide Camera",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.usbSpeed",
+  "zh": "USB速度",
+  "en": "USB Speed",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.videoFormat",
+  "zh": "视频格式",
+  "en": "Video Format",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.videoPlaybackTime",
+  "zh": "视频播放时间",
+  "en": "Video Playback Time",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.videoRecording",
+  "zh": "视频录制",
+  "en": "Video Recording",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.vision.audioChip",
+  "zh": "音频芯片",
+  "en": "Audio Chip",
+  "lines": [
+   "vision"
+  ]
+ },
+ {
+  "key": "param.vision.features",
+  "zh": "支持特性",
+  "en": "Features",
+  "lines": [
+   "vision"
+  ]
+ },
+ {
+  "key": "param.vision.ipd",
+  "zh": "瞳孔间距",
+  "en": "IPD",
+  "lines": [
+   "vision"
+  ]
+ },
+ {
+  "key": "param.vision.senCam",
+  "zh": "感应器 · 摄像头",
+  "en": "Cameras",
+  "lines": [
+   "vision"
+  ]
+ },
+ {
+  "key": "param.vision.senEnv",
+  "zh": "感应器 · 环境",
+  "en": "Ambient Sensors",
+  "lines": [
+   "vision"
+  ]
+ },
+ {
+  "key": "param.vision.senRadar",
+  "zh": "感应器 · 雷达惯性",
+  "en": "Radar & IMU",
+  "lines": [
+   "vision"
+  ]
+ },
+ {
+  "key": "param.vision.specs",
+  "zh": "规格信息",
+  "en": "Spec Info",
+  "lines": [
+   "vision"
+  ]
+ },
+ {
+  "key": "param.waterResistance",
+  "zh": "防水等级",
+  "en": "Water Resistance",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.weight",
+  "zh": "重量",
+  "en": "Weight",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipad",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.wifiStandard",
+  "zh": "Wi-Fi标准",
+  "en": "Wi-Fi Standard",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipad",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.wiredChargingSpeed",
+  "zh": "有线充电速度",
+  "en": "Wired Charging Speed",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.wirelessCharging",
+  "zh": "无线充电",
+  "en": "Wireless Charging",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "ipad",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ },
+ {
+  "key": "param.wirelessChargingSpeed",
+  "zh": "无线充电速度",
+  "en": "Wireless Charging Speed",
+  "lines": [
+   "airpods",
+   "chip",
+   "homepod",
+   "iphone",
+   "ipod",
+   "mac",
+   "tv",
+   "vision"
+  ]
+ }
+]

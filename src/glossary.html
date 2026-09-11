@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-key="page.title">名词解读 - Apple参数大全</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 名词解读页样式 */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f5f5f7; color: #1d1d1f; line-height: 1.5; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; border-bottom: 1px solid #d2d2d7; position: sticky; top: 0; background: rgba(245,245,247,0.9); backdrop-filter: blur(10px); z-index: 100; }
+        .logo { font-size: 20px; font-weight: 700; color: #1d1d1f; text-decoration: none; }
+        .logo i { color: #0071e3; margin-right: 6px; }
+        .nav { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+        .nav a { text-decoration: none; color: #1d1d1f; font-size: 14px; padding: 6px 10px; border-radius: 8px; }
+        .nav a:hover { background: rgba(0,0,0,0.05); }
+        .nav a.active { color: #0071e3; font-weight: 600; }
+        h1 { font-size: 32px; margin: 28px 0 6px; }
+        .subtitle { color: #86868b; margin-bottom: 20px; font-size: 15px; }
+        .search { width: 100%; padding: 12px 16px; font-size: 15px; border: 1px solid #d2d2d7; border-radius: 12px; margin-bottom: 20px; background: #fff; }
+        table { width: 100%; background: #fff; border-radius: 12px; overflow: hidden; border-collapse: collapse; box-shadow: 0 4px 12px rgba(0,0,0,0.08); font-size: 14px; margin-bottom: 40px; }
+        th, td { padding: 10px 14px; text-align: left; border-bottom: 1px solid #f0f0f0; }
+        th { background: #fafafc; color: #86868b; font-weight: 600; }
+        tr:last-child td { border-bottom: none; }
+        .tag { display: inline-block; background: #f0f0f5; border-radius: 10px; padding: 1px 8px; font-size: 12px; color: #555; margin-right: 4px; }
+        footer { text-align: center; padding: 24px; font-size: 13px; color: #86868b; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a class="logo" href="/src/index.html"><i class="fas fa-apple-alt"></i> <span data-lang-key="site.name">Apple参数大全</span></a>
+            <div class="nav">
+                <a href="/src/index.html" data-lang-key="nav.home">首页</a>
+                <a href="/src/chip-compare.html" data-lang-key="nav.chip">芯片库</a>
+                <a href="/src/benchmarks.html" data-lang-key="nav.benchmarks">跑分榜</a>
+                <a href="/src/support.html" data-lang-key="nav.support">系统兼容</a>
+                <a href="/src/glossary.html" class="active" data-lang-key="nav.glossary">名词解读</a>
+            </div>
+        </header>
+        <h1 data-lang-key="compare.title.glossary">名词解读</h1>
+        <p class="subtitle" data-lang-key="glossary.subtitle">本站对比页出现的参数名称中英对照及覆盖产品线</p>
+        <input class="search" id="searchBox" data-lang-key="glossary.search" placeholder="搜索参数名，如：续航 / Battery">
+        <table>
+            <thead><tr>
+                <th data-lang-key="glossary.col.term">参数</th>
+                <th data-lang-key="glossary.col.en">英文</th>
+                <th data-lang-key="glossary.col.lines">产品线</th>
+            </tr></thead>
+            <tbody id="termBody"></tbody>
+        </table>
+        <footer data-lang-key="footer.copyright">&copy; 2025 Apple参数大全</footer>
+    </div>
+    <script src="../public/js/languages.js"></script>
+    <script src="../public/js/language-switcher.js"></script>
+    <script>
+        // 名词解读：术语库由构建脚本从各对比页翻译表自动提取
+        let allTerms = [];
+
+        // 渲染
+        function render(filter) {
+            const q = (filter || '').toLowerCase();
+            const rows = allTerms.filter(t =>
+                !q || t.zh.toLowerCase().includes(q) || t.en.toLowerCase().includes(q)
+            ).map(t => `<tr><td>${t.zh}</td><td>${t.en}</td><td>${t.lines.map(l => `<span class="tag">${l}</span>`).join('')}</td></tr>`).join('');
+            document.getElementById('termBody').innerHTML = rows;
+        }
+
+        document.getElementById('searchBox').addEventListener('input', e => render(e.target.value));
+
+        fetch('../public/data/glossary.json?v=' + Date.now())
+            .then(r => r.json())
+            .then(d => { allTerms = d; render(''); })
+            .catch(e => console.error('术语库加载失败', e));
+    </script>
+</body>
+</html>

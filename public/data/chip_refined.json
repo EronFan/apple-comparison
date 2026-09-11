@@ -1,0 +1,2307 @@
+[
+  {
+    "id": "chip-a-001",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A20 Pro",
+      "en-US": "A20 Pro"
+    },
+    "releaseDate": {
+      "zh-CN": "2026.09",
+      "en-US": "2026.09"
+    },
+    "processTech": "TSMC N2",
+    "cpu": "≈4.92GHz ×2 / ≈2.6GHz ×4",
+    "cpuArch": "64-bit ARMv9.2-A",
+    "microArch": "Borneo P + E Core (9-wide + 6-wide)",
+    "l1i": "2×？KB + 4×160KB",
+    "l1d": "2×？KB + 4×96KB",
+    "l2shared": "大核 16MB + 小核 8MB",
+    "gpu": "Apple ×7 112 EUs 896 ALUs @≈1.6GHz",
+    "gpuModel": "Apple G19P",
+    "ane": "- 双 16 核 @ ≈80TOPS (FP16 稀疏化) @?MHz",
+    "cacheL3": "36MB System Level Cache",
+    "memory": "LPDDR5X-9600 / 12GB 总位宽 96-bit 115.20GB/s",
+    "devices": "iPhone Duo、iPhone 18 Pro、iPhone 18 Pro Max"
+  },
+  {
+    "id": "chip-a-002",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A19 Pro",
+      "en-US": "A19 Pro"
+    },
+    "releaseDate": {
+      "zh-CN": "2025.09",
+      "en-US": "2025.09"
+    },
+    "processTech": "TSMC N3P",
+    "transistors": "≈17 billion",
+    "dieSize": "8.03×12.29 (98.69mm²)",
+    "cpu": "4.26GHz ×1 2.59GHz ×4 / 4.26GHz ×2 2.59GHz ×4",
+    "cpuArch": "64-bit ARMv9.2-A",
+    "microArch": "Thera P + E Core (10-wide + 6-wide)",
+    "l1i": "2×192KB + 4×128KB",
+    "l1d": "2×128KB + 4×64KB",
+    "l2shared": "大核 16MB + 小核 6MB",
+    "gpu": "Apple ×4 64 EUs 512 ALUs @988MHz / Apple ×5 80 EUs 640 ALUs @1470MHz / Apple ×6 96 EUs 768 ALUs @1620MHz",
+    "gpuModel": "Apple10 家族, Apple G18P",
+    "ane": "H18_Apollo_V5x 16 核 @ 35TOPS (FP16 稀疏化) @2172MHz",
+    "cacheL3": "32MB System Level Cache",
+    "memory": "LPDDR5X-8533/9600 / 12GB 总位宽 64-bit 68.26GB/s / 12GB 总位宽 64-bit 76.80GB/s",
+    "devices": "iPhone Air、iPhone 17 Pro、iPhone 17 Pro Max、Studio Display XDR"
+  },
+  {
+    "id": "chip-a-003",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A19",
+      "en-US": "A19"
+    },
+    "releaseDate": {
+      "zh-CN": "2025.09",
+      "en-US": "2025.09"
+    },
+    "processTech": "TSMC N3P",
+    "dieSize": "7.45×11.35 (84.56mm²)",
+    "cpu": "4.26GHz ×1 2.59GHz ×4 / 4.26GHz ×2 2.59GHz ×4",
+    "cpuArch": "64-bit ARMv9.2-A",
+    "microArch": "Tilos P + E Core (10-wide + 6-wide)",
+    "l1i": "2×192KB + 4×128KB",
+    "l1d": "2×128KB + 4×64KB",
+    "l2shared": "大核 8MB + 小核 4MB",
+    "gpu": "Apple ×4 64 EUs 512 ALUs @988MHz / Apple ×4 64 EUs 512 ALUs @1470MHz / Apple ×5 80 EUs 640 ALUs @1470MHz",
+    "gpuModel": "Apple10 家族, Apple G18P",
+    "ane": "H18_Apollo_V5x 16 核 @ 35TOPS (FP16 稀疏化) @2172MHz",
+    "cacheL3": "12MB System Level Cache",
+    "memory": "LPDDR5X-8533 / 8GB 总位宽 64-bit 68.26GB/s",
+    "devices": "iPhone 17、iPhone 17e、Studio Display (2026)"
+  },
+  {
+    "id": "chip-a-004",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A18 Pro",
+      "en-US": "A18 Pro"
+    },
+    "releaseDate": {
+      "zh-CN": "2024.09",
+      "en-US": "2024.09"
+    },
+    "processTech": "TSMC N3E",
+    "transistors": "≈18.4 billion",
+    "dieSize": "8.44×13.00 (109.72mm²)",
+    "cpu": "4.04GHz ×2 2.42GHz ×4",
+    "cpuArch": "64-bit ARMv9.2-A",
+    "microArch": "Tahiti P + E Core (10-wide + 5-wide)",
+    "l1i": "2×192KB + 4×128KB",
+    "l1d": "2×128KB + 4×64KB",
+    "l2shared": "大核 16MB + 小核 4MB",
+    "gpu": "Apple ×5 80 EUs 640 ALUs @1470MHz / Apple ×6 96 EUs 768 ALUs @1470MHz",
+    "gpuModel": "Apple9 家族, Apple G17P",
+    "ane": "H17_Theia_D9x 16 核 @ 35TOPS (FP16 稀疏化) @2172MHz",
+    "cacheL3": "24MB System Level Cache",
+    "memory": "LPDDR5X-7500 / 8GB 总位宽 64-bit 60GB/s",
+    "devices": "iPhone 16 Pro、iPhone 16 Pro Max、MacBook Neo (13 英寸, A18 Pro)"
+  },
+  {
+    "id": "chip-a-005",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A18",
+      "en-US": "A18"
+    },
+    "releaseDate": {
+      "zh-CN": "2024.09",
+      "en-US": "2024.09"
+    },
+    "processTech": "TSMC N3E",
+    "transistors": "≈15.5 billion",
+    "dieSize": "7.84×11.79 (92.43mm²)",
+    "cpu": "4.04GHz ×2 2.42GHz ×4",
+    "cpuArch": "64-bit ARMv9.2-A",
+    "microArch": "Tupai P + E Core (10-wide + 5-wide)",
+    "l1i": "2×192KB + 4×128KB",
+    "l1d": "2×128KB + 4×64KB",
+    "l2shared": "大核 8MB + 小核 4MB",
+    "gpu": "Apple ×4 64 EUs 512 ALUs @1338MHz / Apple ×5 80 EUs 640 ALUs @1338MHz",
+    "gpuModel": "Apple9 家族, Apple G17P",
+    "ane": "H17_Theia_D9x 16 核 @ 35TOPS (FP16 稀疏化) @2172MHz",
+    "cacheL3": "12MB System Level Cache",
+    "memory": "LPDDR5X-7500 / 8GB 总位宽 64-bit 60GB/s",
+    "devices": "iPhone 16、iPhone 16 Plus、iPhone 16e"
+  },
+  {
+    "id": "chip-a-006",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A17 Pro",
+      "en-US": "A17 Pro"
+    },
+    "releaseDate": {
+      "zh-CN": "2023.09",
+      "en-US": "2023.09"
+    },
+    "processTech": "TSMC N3B",
+    "transistors": "19.0 billion",
+    "dieSize": "8.58×13.26 (113.77mm²)",
+    "cpu": "3.78GHz ×2 2.11GHz ×4",
+    "cpuArch": "64-bit ARMv8.6-A",
+    "microArch": "Coll P + E Core (9-wide + 5-wide)",
+    "l1i": "2×192KB + 4×128KB",
+    "l1d": "2×128KB + 4×64KB",
+    "l2shared": "大核 16MB + 小核 4MB",
+    "gpu": "Apple ×5 80 EUs 640 ALUs @1338MHz / Apple ×6 96 EUs 768 ALUs @1338MHz",
+    "gpuModel": "Apple9 家族, Apple G16P",
+    "ane": "H16x_Iaso_D8x 16 核 @ 35TOPS (FP16 稀疏化) @2160MHz",
+    "cacheL3": "24MB System Level Cache",
+    "memory": "LPDDR5-6400 / 8GB 总位宽 64-bit 51.2GB/s",
+    "devices": "iPhone 15 Pro、iPhone 15 Pro Max、iPad mini (A17 Pro)"
+  },
+  {
+    "id": "chip-a-007",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A16 Bionic",
+      "en-US": "A16 Bionic"
+    },
+    "releaseDate": {
+      "zh-CN": "2022.09",
+      "en-US": "2022.09"
+    },
+    "processTech": "TSMC N4",
+    "transistors": "16.0 billion",
+    "dieSize": "8.47×13.62 (115.36mm²)",
+    "cpu": "3.46GHz ×2 2.02GHz ×3 / 3.46GHz ×2 2.02GHz ×4",
+    "cpuArch": "64-bit ARMv8.6-A",
+    "microArch": "Everest + Sawtooth (8-wide + 5-wide)",
+    "l1i": "2×192KB + 3/4×128KB",
+    "l1d": "2×128KB + 3/4×64KB",
+    "l2shared": "大核 16MB + 小核 4MB",
+    "gpu": "Apple ×4 64 EUs 512 ALUs @1338MHz / Apple ×5 80 EUs 640 ALUs @1338MHz",
+    "gpuModel": "Apple8 家族, Apple G15P",
+    "ane": "H15_Themis_D7x 16 核 @ 17TOPS (FP16) @2064MHz",
+    "cacheL3": "24MB System Level Cache",
+    "memory": "LPDDR5-6400 / 6GB 总位宽 64-bit 51.2GB/s",
+    "devices": "iPhone 14 Pro、iPhone 14 Pro Max、iPhone 15、iPhone 15 Plus、iPad (A16)"
+  },
+  {
+    "id": "chip-a-008",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A15 Bionic",
+      "en-US": "A15 Bionic"
+    },
+    "releaseDate": {
+      "zh-CN": "2021.09",
+      "en-US": "2021.09"
+    },
+    "processTech": "TSMC N5P",
+    "transistors": "15.0 billion",
+    "dieSize": "8.62×12.77 (110.08mm²)",
+    "cpu": "2.92G ×2 2.02G ×3 / 2.92G ×2 2.02G ×4 / 3.23G ×2 2.02G ×4",
+    "cpuArch": "64-bit ARMv8.6-A",
+    "microArch": "Avalanche + Blizzard (8-wide + 5-wide)",
+    "l1i": "2×192KB + 3/4×128KB",
+    "l1d": "2×128KB + 3/4×64KB",
+    "l2shared": "大核 12MB + 小核 4MB",
+    "gpu": "Apple ×4 64 EUs 512 ALUs @1338MHz / Apple ×5 80 EUs 640 ALUs @1272MHz / Apple ×5 80 EUs 640 ALUs @1338MHz",
+    "gpuModel": "Apple8 家族, Apple G14P",
+    "ane": "H14_Bia_D6x 16 核 @ 15.8TOPS (FP16) @1938MHz",
+    "cacheL3": "32MB System Level Cache",
+    "memory": "LPDDR4X-4266 / 4/6GB 总位宽 64-bit 34.13GB/s",
+    "devices": "iPhone 13 mini、iPhone 13、iPhone 13 Pro、iPhone 13 Pro Max、iPhone 14、iPhone 14 Plus、iPhone SE (第 3 代)、iPad mini (第 6 代)、Apple TV 4K (第 3 代)"
+  },
+  {
+    "id": "chip-a-009",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A14 Bionic",
+      "en-US": "A14 Bionic"
+    },
+    "releaseDate": {
+      "zh-CN": "2020.09",
+      "en-US": "2020.09"
+    },
+    "processTech": "TSMC N5",
+    "transistors": "11.8 billion",
+    "dieSize": "8.63×10.40 (89.75mm²)",
+    "cpu": "2.99GHz ×2 1.82GHz ×4",
+    "cpuArch": "64-bit ARMv8.5-A",
+    "microArch": "Firestorm + Icestorm (8-wide + 4-wide)",
+    "l1i": "2×192KB + 4×128KB",
+    "l1d": "2×128KB + 4×64KB",
+    "l2shared": "大核 8MB + 小核 4MB",
+    "gpu": "Apple ×4 64 EUs 512 ALUs @1278MHz",
+    "gpuModel": "Apple7 家族, Apple G13P",
+    "ane": "H13_Styx_D5x 16 核 @ 11TOPS (FP16) @1428MHz",
+    "cacheL3": "16MB System Level Cache",
+    "memory": "LPDDR4X-4266 / 4/6GB 总位宽 64-bit 34.13GB/s",
+    "devices": "iPhone 12 mini、iPhone 12、iPhone 12 Pro、iPhone 12 Pro Max、iPad (第 10 代)、iPad Air (第 4 代)"
+  },
+  {
+    "id": "chip-a-010",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A13 Bionic",
+      "en-US": "A13 Bionic"
+    },
+    "releaseDate": {
+      "zh-CN": "2019.09",
+      "en-US": "2019.09"
+    },
+    "processTech": "TSMC N7P",
+    "transistors": "8.5 billion",
+    "dieSize": "9.23×10.67 (98.48mm²)",
+    "cpu": "1.86GHz ×2 1.44GHz ×4 / 2.67GHz ×2 1.73GHz ×4",
+    "cpuArch": "64-bit ARMv8.4-A",
+    "microArch": "Lightning + Thunder (8-wide + 3-wide)",
+    "l1i": "2×128KB + 4×96KB",
+    "l1d": "2×128KB + 4×48KB",
+    "l2shared": "大核 8MB + 小核 4MB",
+    "gpu": "Apple ×4 64 EUs 512 ALUs @804MHz / Apple ×4 64 EUs 512 ALUs @1194MHz",
+    "gpuModel": "Apple6 家族, Apple G12P",
+    "ane": "H12_Metis 8 核 @ 6TOPS (FP16) @1398MHz",
+    "cacheL3": "16MB System Level Cache",
+    "memory": "LPDDR4X-4266 / 3/4GB 总位宽 64-bit 34.13GB/s",
+    "devices": "iPhone 11、iPhone 11 Pro、iPhone 11 Pro Max、iPhone SE (第 2 代)、iPad (第 9 代)、Studio Display"
+  },
+  {
+    "id": "chip-a-011",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A12Z Bionic",
+      "en-US": "A12Z Bionic"
+    },
+    "releaseDate": {
+      "zh-CN": "2020.03",
+      "en-US": "2020.03"
+    },
+    "processTech": "TSMC N7",
+    "transistors": "10 billion",
+    "dieSize": "10.27×12.70 (130.43mm²)",
+    "cpu": "2.50GHz ×4 1.57GHz ×4",
+    "cpuArch": "64-bit ARMv8.3-A",
+    "microArch": "Vortex + Tempest (7-wide + 3-wide)",
+    "l1i": "4×128KB + 4×48KB",
+    "l1d": "4×128KB + 4×32KB",
+    "l2shared": "大核 8MB + 小核 2MB",
+    "gpu": "Apple ×8 128 EUs 1024 ALUs @1098MHz",
+    "gpuModel": "Apple5 家族, Apple G11G",
+    "ane": "H11_Pontus 8 核 @ 5TOPS (FP16) @1260MHz",
+    "cacheL3": "8MB System Level Cache",
+    "memory": "LPDDR4X-4266 / 6/16GB 总位宽 128-bit 68.26GB/s",
+    "devices": "iPad Pro 11 英寸 (第 2 代)、iPad Pro 12.9 英寸 (第 4 代)、Developer Transition Kit"
+  },
+  {
+    "id": "chip-a-012",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A12X Bionic",
+      "en-US": "A12X Bionic"
+    },
+    "releaseDate": {
+      "zh-CN": "2018.10",
+      "en-US": "2018.10"
+    },
+    "processTech": "TSMC N7",
+    "transistors": "10 billion",
+    "dieSize": "10.27×12.70 (130.43mm²)",
+    "cpu": "2.50GHz ×4 1.57GHz ×4",
+    "cpuArch": "64-bit ARMv8.3-A",
+    "microArch": "Vortex + Tempest (7-wide + 3-wide)",
+    "l1i": "4×128KB + 4×48KB",
+    "l1d": "4×128KB + 4×32KB",
+    "l2shared": "大核 8MB + 小核 2MB",
+    "gpu": "Apple ×7 112 EUs 896 ALUs @1098MHz",
+    "gpuModel": "Apple5 家族, Apple G11G",
+    "ane": "H11_Pontus 8 核 @ 5TOPS (FP16) @1260MHz",
+    "cacheL3": "8MB System Level Cache",
+    "memory": "LPDDR4X-4266 / 4/6GB 总位宽 128-bit 68.26GB/s",
+    "devices": "iPad Pro 11 英寸 (第 1 代)、iPad Pro 12.9 英寸 (第 3 代)"
+  },
+  {
+    "id": "chip-a-013",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A12 Bionic",
+      "en-US": "A12 Bionic"
+    },
+    "releaseDate": {
+      "zh-CN": "2018.09",
+      "en-US": "2018.09"
+    },
+    "processTech": "TSMC N7",
+    "transistors": "6.9 billion",
+    "dieSize": "8.42×9.89 (83.27mm²)",
+    "cpu": "2.13GHz ×2 1.57GHz ×4 / 2.50GHz ×2 1.57GHz ×4",
+    "cpuArch": "64-bit ARMv8.3-A",
+    "microArch": "Vortex + Tempest (7-wide + 3-wide)",
+    "l1i": "2×128KB + 4×48KB",
+    "l1d": "2×128KB + 4×32KB",
+    "l2shared": "大核 8MB + 小核 2MB",
+    "gpu": "Apple ×4 64 EUs 512 ALUs @1098MHz",
+    "gpuModel": "Apple5 家族, Apple G11P",
+    "ane": "H11_Quin 8 核 @ 5TOPS (FP16) @1260MHz",
+    "cacheL3": "8MB System Level Cache",
+    "memory": "LPDDR4X-4266 / 3/4GB 总位宽 64-bit 34.13GB/s",
+    "devices": "iPhone XR、iPhone XS、iPhone XS Max、iPad (第 8 代)、iPad mini (第 5 代)、iPad Air (第 3 代)、Apple TV 4K (第 2 代)"
+  },
+  {
+    "id": "chip-a-014",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A11 Bionic",
+      "en-US": "A11 Bionic"
+    },
+    "releaseDate": {
+      "zh-CN": "2017.09",
+      "en-US": "2017.09"
+    },
+    "processTech": "TSMC N10",
+    "transistors": "4.3 billion",
+    "dieSize": "8.33×10.76 (89.63mm²)",
+    "cpu": "2.38GHz ×2 1.68GHz ×4",
+    "cpuArch": "64-bit ARMv8.2-A",
+    "microArch": "Monsoon + Mistral (7-wide + 3-wide)",
+    "l1i": "2×64KB + 4×32KB",
+    "l1d": "2×64KB + 4×32KB",
+    "l2shared": "大核 8MB + 小核 1MB",
+    "gpu": "Apple ×3 48 EUs 384 ALUs @1140MHz",
+    "gpuModel": "Apple4 家族, Apple G10P",
+    "ane": "2 核 @ 0.6TOPS (FP16)",
+    "cacheL3": "4MB System Level Cache",
+    "memory": "LPDDR4X-4266 / 2/3GB 总位宽 64-bit 34.13GB/s",
+    "devices": "iPhone 8、iPhone 8 Plus、iPhone X"
+  },
+  {
+    "id": "chip-a-015",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A10X Fusion",
+      "en-US": "A10X Fusion"
+    },
+    "releaseDate": {
+      "zh-CN": "2017.06",
+      "en-US": "2017.06"
+    },
+    "processTech": "TSMC N10",
+    "transistors": ">4 billion",
+    "dieSize": "96.4mm²",
+    "cpu": "2.40GHz ×3 1.15GHz ×3",
+    "cpuArch": "64-bit ARMv8.0-A",
+    "microArch": "Hurricane + Zephyr (6-wide + 3-wide)",
+    "l1i": "3×64KB + 3×32KB",
+    "l1d": "3×64KB + 3×32KB",
+    "l2shared": "大核 8MB + 小核 1MB",
+    "gpu": "IT PowerVR GT7600 Plus 48 EUs 384 ALUs @1086MHz",
+    "gpuModel": "Apple3 家族, GT7600 Plus",
+    "cacheL3": "4MB System Level Cache",
+    "memory": "LPDDR4-3200 / 3/4GB 总位宽 128-bit 51.2GB/s",
+    "devices": "iPad Pro 10.5 英寸、iPad Pro 12.9 英寸 (第 2 代)、Apple TV 4K (第 1 代)"
+  },
+  {
+    "id": "chip-a-016",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A10 Fusion",
+      "en-US": "A10 Fusion"
+    },
+    "releaseDate": {
+      "zh-CN": "2016.09",
+      "en-US": "2016.09"
+    },
+    "processTech": "TSMC N16+",
+    "transistors": "3.3 billion",
+    "dieSize": "10.93×11.58 (126.57mm²)",
+    "cpu": "1.64GHz ×2 1.09GHz ×2 / 2.34GHz ×2 1.09GHz ×2",
+    "cpuArch": "64-bit ARMv8.0-A",
+    "microArch": "Hurricane + Zephyr (6-wide + 3-wide)",
+    "l1i": "2×64KB + 2×32KB",
+    "l1d": "2×64KB + 2×32KB",
+    "l2shared": "大核 3MB + 小核 1MB",
+    "gpu": "IT PowerVR GT7600 Plus 24 EUs 192 ALUs @1008MHz",
+    "gpuModel": "Apple3 家族, GT7600 Plus",
+    "cacheL3": "4MB L3 Cache",
+    "memory": "LPDDR4-3200 / 2/3GB 总位宽 64-bit 25.6GB/s",
+    "devices": "iPhone 7、iPhone 7 Plus、iPad (第 6 代)、iPad (第 7 代)、iPod Touch (第 7 代)"
+  },
+  {
+    "id": "chip-a-017",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A9X",
+      "en-US": "A9X"
+    },
+    "releaseDate": {
+      "zh-CN": "2015.09",
+      "en-US": "2015.09"
+    },
+    "processTech": "TSMC N16",
+    "transistors": ">3 billion",
+    "dieSize": "143.9mm²",
+    "cpu": "2.16GHz ×2 / 2.26GHz ×2",
+    "cpuArch": "64-bit ARMv8.0-A",
+    "microArch": "Twister (6-wide)",
+    "l1i": "2×64KB",
+    "l1d": "2×64KB",
+    "l2shared": "3MB",
+    "gpu": "IT PowerVR GT7600+ 48 EUs 384 ALUs @650MHz",
+    "gpuModel": "Apple3 家族, GT7600+",
+    "memory": "LPDDR4-3200 / 2/4GB 总位宽 128-bit 51.2GB/s",
+    "devices": "iPad Pro 9.7 英寸、iPad Pro 12.9 英寸"
+  },
+  {
+    "id": "chip-a-018",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A9（TSMC）",
+      "en-US": "A9（TSMC）"
+    },
+    "releaseDate": {
+      "zh-CN": "2015.09",
+      "en-US": "2015.09"
+    },
+    "processTech": "TSMC N16",
+    "transistors": ">2 billion",
+    "dieSize": "9.28×11.28 (104.68mm²)",
+    "cpu": "1.85GHz ×2",
+    "cpuArch": "64-bit ARMv8.0-A",
+    "microArch": "Twister (6-wide)",
+    "l1i": "2×64KB",
+    "l1d": "2×64KB",
+    "l2shared": "3MB",
+    "gpu": "IT PowerVR GT7600 24 EUs 192 ALUs @650MHz",
+    "gpuModel": "Apple3 家族, GT7600",
+    "cacheL3": "4MB L3 Cache",
+    "memory": "LPDDR4-3200 / 2GB 总位宽 64-bit 25.6GB/s",
+    "devices": "iPhone 6s、iPhone 6s Plus、iPhone SE、iPad (第 5 代)"
+  },
+  {
+    "id": "chip-a-019",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A9（Samsung）",
+      "en-US": "A9（Samsung）"
+    },
+    "releaseDate": {
+      "zh-CN": "2015.09",
+      "en-US": "2015.09"
+    },
+    "processTech": "Samsung S.LSI 14LPE",
+    "transistors": ">2 billion",
+    "dieSize": "8.93×10.8 (96.44mm²)",
+    "cpu": "1.85GHz ×2",
+    "cpuArch": "64-bit ARMv8.0-A",
+    "microArch": "Twister (6-wide)",
+    "l1i": "2×64KB",
+    "l1d": "2×64KB",
+    "l2shared": "3MB",
+    "gpu": "IT PowerVR GT7600 24 EUs 192 ALUs @650MHz",
+    "gpuModel": "Apple3 家族, GT7600",
+    "cacheL3": "4MB L3 Cache",
+    "memory": "LPDDR4-3200 / 2GB 总位宽 64-bit 25.6GB/s",
+    "devices": "iPhone 6s、iPhone 6s Plus、iPhone SE、iPad (第 5 代)"
+  },
+  {
+    "id": "chip-a-020",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A8X",
+      "en-US": "A8X"
+    },
+    "releaseDate": {
+      "zh-CN": "2014.10",
+      "en-US": "2014.10"
+    },
+    "processTech": "TSMC 20nm",
+    "transistors": "≈3 billion",
+    "dieSize": "128mm²",
+    "cpu": "1.51GHz ×3",
+    "cpuArch": "64-bit ARMv8.0-A",
+    "microArch": "Typhoon (6-wide)",
+    "l1i": "3×64KB",
+    "l1d": "3×64KB",
+    "l2shared": "2MB",
+    "gpu": "IT PowerVR GX6850 32 EUs 256 ALUs @475MHz",
+    "gpuModel": "Apple2 家族, GX6850",
+    "cacheL3": "4MB L3 Cache",
+    "memory": "LPDDR3-1600 / 2GB 总位宽 128-bit 25.6GB/s",
+    "devices": "iPad Air 2"
+  },
+  {
+    "id": "chip-a-021",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A8",
+      "en-US": "A8"
+    },
+    "releaseDate": {
+      "zh-CN": "2014.09",
+      "en-US": "2014.09"
+    },
+    "processTech": "TSMC 20nm",
+    "transistors": "≈2 billion",
+    "dieSize": "8.51×10.51 (89.44mm²)",
+    "cpu": "1.10GHz ×2 / 1.40GHz ×2 / 1.51GHz ×2",
+    "cpuArch": "64-bit ARMv8.0-A",
+    "microArch": "Typhoon (6-wide)",
+    "l1i": "2×64KB",
+    "l1d": "2×64KB",
+    "l2shared": "1MB",
+    "gpu": "GX6450 16 EUs 128 ALUs @430MHz / GX6450 16 EUs 128 ALUs @475MHz",
+    "gpuModel": "Apple2 家族, GX6450",
+    "cacheL3": "4MB L3 Cache",
+    "memory": "LPDDR3-1600 / 1/2GB 总位宽 64-bit 12.8GB/s",
+    "devices": "iPhone 6、iPhone 6 Plus、iPad mini 4、iPod Touch (第 6 代)、Apple TV HD、HomePod (第 1 代)"
+  },
+  {
+    "id": "chip-a-022",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A7（APL5698）",
+      "en-US": "A7（APL5698）"
+    },
+    "releaseDate": {
+      "zh-CN": "2013.10",
+      "en-US": "2013.10"
+    },
+    "processTech": "Samsung S.LSI 28nm HKMG",
+    "transistors": "≈1 billion",
+    "dieSize": "9.83×10.45 (102.72mm²)",
+    "cpu": "1.40GHz ×2",
+    "cpuArch": "64-bit ARMv8.0-A",
+    "microArch": "Cyclone (6-wide)",
+    "l1i": "2×64KB",
+    "l1d": "2×64KB",
+    "l2shared": "1MB",
+    "gpu": "IT PowerVR G6430 16 EUs 128 ALUs @375MHz",
+    "gpuModel": "Apple1 家族, G6430",
+    "cacheL3": "4MB L3 Cache",
+    "memory": "LPDDR3-1600 / 1GB 总位宽 64-bit 12.8GB/s",
+    "devices": "iPad Air"
+  },
+  {
+    "id": "chip-a-023",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A7（APL0698）",
+      "en-US": "A7（APL0698）"
+    },
+    "releaseDate": {
+      "zh-CN": "2013.09",
+      "en-US": "2013.09"
+    },
+    "processTech": "Samsung S.LSI 28nm HKMG",
+    "transistors": "≈1 billion",
+    "dieSize": "9.83×10.45 (102.72mm²)",
+    "cpu": "1.30GHz ×2",
+    "cpuArch": "64-bit ARMv8.0-A",
+    "microArch": "Cyclone (6-wide)",
+    "l1i": "2×64KB",
+    "l1d": "2×64KB",
+    "l2shared": "1MB",
+    "gpu": "IT PowerVR G6430 16 EUs 128 ALUs @375MHz",
+    "gpuModel": "Apple1 家族, G6430",
+    "cacheL3": "4MB L3 Cache",
+    "memory": "LPDDR3-1600 / 1GB 总位宽 64-bit 12.8GB/s",
+    "devices": "iPhone 5s、iPad mini 2、iPad mini 3"
+  },
+  {
+    "id": "chip-a-024",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A6X",
+      "en-US": "A6X"
+    },
+    "releaseDate": {
+      "zh-CN": "2012.10",
+      "en-US": "2012.10"
+    },
+    "processTech": "Samsung S.LSI 32nm HKMG",
+    "dieSize": "10.4×11.9 (123mm²)",
+    "cpu": "1.40GHz ×2",
+    "cpuArch": "32-bit ARMv7s",
+    "microArch": "Swift (3-wide)",
+    "l1i": "2×32KB",
+    "l1d": "2×32KB",
+    "l2shared": "1MB",
+    "gpu": "IT PowerVR SGX554 16 EUs 128 ALUs @300MHz",
+    "gpuModel": "SGX554",
+    "memory": "LPDDR2-1066 / 1GB 总位宽 64-bit 8.53GB/s",
+    "devices": "iPad (第 4 代)"
+  },
+  {
+    "id": "chip-a-025",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A6",
+      "en-US": "A6"
+    },
+    "releaseDate": {
+      "zh-CN": "2012.09",
+      "en-US": "2012.09"
+    },
+    "processTech": "Samsung S.LSI 32nm HKMG",
+    "dieSize": "9.70×9.97 (96.71mm²)",
+    "cpu": "1.30GHz ×2",
+    "cpuArch": "32-bit ARMv7s",
+    "microArch": "Swift (3-wide)",
+    "l1i": "2×32KB",
+    "l1d": "2×32KB",
+    "l2shared": "1MB",
+    "gpu": "IT PowerVR SGX543 6 EUs 48 ALUs @430MHz",
+    "gpuModel": "SGX543",
+    "memory": "LPDDR2-1066 / 1GB 总位宽 32-bit 4.26GB/s",
+    "devices": "iPhone 5、iPhone 5c"
+  },
+  {
+    "id": "chip-a-026",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A5X",
+      "en-US": "A5X"
+    },
+    "releaseDate": {
+      "zh-CN": "2012.03",
+      "en-US": "2012.03"
+    },
+    "processTech": "Samsung S.LSI 45nm",
+    "dieSize": "12.90×12.79 (165mm²)",
+    "cpu": "1.00GHz ×2",
+    "cpuArch": "32-bit ARMv7",
+    "microArch": "Cortex-A9 (2-wide)",
+    "l1i": "2×32KB",
+    "l1d": "2×32KB",
+    "l2shared": "1MB",
+    "gpu": "IT PowerVR SGX543 8 EUs 64 ALUs @333MHz",
+    "gpuModel": "SGX543",
+    "memory": "LPDDR2-800 / 1GB 总位宽 64-bit 6.4GB/s",
+    "devices": "iPad (第 3 代)"
+  },
+  {
+    "id": "chip-a-027",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A5（APL7498）",
+      "en-US": "A5（APL7498）"
+    },
+    "releaseDate": {
+      "zh-CN": "2013.01",
+      "en-US": "2013.01"
+    },
+    "processTech": "Samsung S.LSI 32nm HKMG",
+    "dieSize": "6.1×6.2 (37.8mm²)",
+    "cpu": "1.00GHz ×1",
+    "cpuArch": "32-bit ARMv7",
+    "microArch": "Cortex-A9 (2-wide)",
+    "l1i": "32KB",
+    "l1d": "32KB",
+    "l2shared": "512KB",
+    "gpu": "IT PowerVR SGX543 2 EUs 16 ALUs @266MHz",
+    "gpuModel": "SGX543",
+    "memory": "LPDDR2-1066 / 512MB 总位宽 32-bit 4.26GB/s",
+    "devices": "Apple TV (第 3 代)"
+  },
+  {
+    "id": "chip-a-028",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A5（APL2498）",
+      "en-US": "A5（APL2498）"
+    },
+    "releaseDate": {
+      "zh-CN": "2012.03",
+      "en-US": "2012.03"
+    },
+    "processTech": "Samsung S.LSI 32nm HKMG",
+    "dieSize": "8.19×8.68 (71.1mm²)",
+    "cpu": "800MHz ×2 / 1.00GHz ×2",
+    "cpuArch": "32-bit ARMv7",
+    "microArch": "Cortex-A9 (2-wide)",
+    "l1i": "2×32KB",
+    "l1d": "2×32KB",
+    "l2shared": "1MB",
+    "gpu": "SGX543 4 EUs 32 ALUs @266MHz / SGX543 4 EUs 32 ALUs @333MHz",
+    "gpuModel": "SGX543",
+    "memory": "LPDDR2-800 / 512MB 总位宽 32-bit 3.2GB/s",
+    "devices": "iPad 2、iPad mini、iPod Touch (第 5 代)、Apple TV (第 3 代)"
+  },
+  {
+    "id": "chip-a-029",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A5（APL0498）",
+      "en-US": "A5（APL0498）"
+    },
+    "releaseDate": {
+      "zh-CN": "2011.03",
+      "en-US": "2011.03"
+    },
+    "processTech": "Samsung S.LSI 45nm",
+    "dieSize": "10.09×12.15 (122.6mm²)",
+    "cpu": "800MHz ×2 / 1.00GHz ×2",
+    "cpuArch": "32-bit ARMv7",
+    "microArch": "Cortex-A9 (2-wide)",
+    "l1i": "2×32KB",
+    "l1d": "2×32KB",
+    "l2shared": "1MB",
+    "gpu": "SGX543 4 EUs 32 ALUs @266MHz / SGX543 4 EUs 32 ALUs @333MHz",
+    "gpuModel": "SGX543",
+    "memory": "LPDDR2-800 / 512MB 总位宽 32-bit 3.2GB/s",
+    "devices": "iPhone 4S、iPad 2"
+  },
+  {
+    "id": "chip-a-030",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "A4",
+      "en-US": "A4"
+    },
+    "releaseDate": {
+      "zh-CN": "2010.01",
+      "en-US": "2010.01"
+    },
+    "processTech": "Samsung 45nm",
+    "transistors": "190 million",
+    "dieSize": "7.3×7.3 (53.3mm²)",
+    "cpu": "800MHz ×1 / 1.00GHz ×1",
+    "cpuArch": "32-bit ARMv7",
+    "microArch": "Cortex-A8 (2发射顺序架构)",
+    "l1i": "32KB",
+    "l1d": "32KB",
+    "l2shared": "576KB",
+    "gpu": "IT PowerVR SGX535 2 EUs 16 ALUs @266MHz",
+    "gpuModel": "SGX535",
+    "memory": "LPDDR-400 / 256/512MB 总位宽 32-bit 1.6GB/s",
+    "devices": "iPhone 4、iPad 1、iPod Touch (第 4 代)、Apple TV (第 2 代)"
+  },
+  {
+    "id": "chip-a-031",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "APL2298",
+      "en-US": "APL2298"
+    },
+    "releaseDate": {
+      "zh-CN": "2009.09",
+      "en-US": "2009.09"
+    },
+    "processTech": "Samsung 45nm",
+    "dieSize": "41.6mm²",
+    "cpu": "600MHz ×1",
+    "cpuArch": "32-bit ARMv7",
+    "microArch": "Cortex-A8 (2发射顺序架构)",
+    "l1i": "32KB",
+    "l1d": "32KB",
+    "l2shared": "256KB",
+    "gpu": "IT PowerVR SGX535 2 EUs 16 ALUs @200MHz",
+    "gpuModel": "SGX535",
+    "memory": "LPDDR-400 / 256MB 总位宽 32-bit 1.6GB/s",
+    "devices": "iPod Touch (第 3 代)"
+  },
+  {
+    "id": "chip-a-032",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "APL0298",
+      "en-US": "APL0298"
+    },
+    "releaseDate": {
+      "zh-CN": "2009.06",
+      "en-US": "2009.06"
+    },
+    "processTech": "Samsung 65nm",
+    "dieSize": "71.8mm²",
+    "cpu": "600MHz ×1",
+    "cpuArch": "32-bit ARMv7",
+    "microArch": "Cortex-A8 (2发射顺序架构)",
+    "l1i": "32KB",
+    "l1d": "32KB",
+    "l2shared": "256KB",
+    "gpu": "IT PowerVR SGX535 2 EUs 16 ALUs @200MHz",
+    "gpuModel": "SGX535",
+    "memory": "LPDDR-400 / 256MB 总位宽 32-bit 1.6GB/s",
+    "devices": "iPhone 3GS"
+  },
+  {
+    "id": "chip-a-033",
+    "series": {
+      "zh-CN": "A 系列",
+      "en-US": "A 系列"
+    },
+    "seriesCode": "a",
+    "name": {
+      "zh-CN": "APL0278",
+      "en-US": "APL0278"
+    },
+    "releaseDate": {
+      "zh-CN": "2008.09",
+      "en-US": "2008.09"
+    },
+    "processTech": "Samsung 65nm",
+    "dieSize": "36mm²",
+    "cpu": "533MHz ×1",
+    "cpuArch": "32-bit ARMv6",
+    "microArch": "ARM11 (2发射顺序架构)"
+  },
+  {
+    "id": "chip-m-001",
+    "series": {
+      "zh-CN": "M 系列",
+      "en-US": "M 系列"
+    },
+    "seriesCode": "m",
+    "name": {
+      "zh-CN": "M6",
+      "en-US": "M6"
+    },
+    "releaseDate": {
+      "zh-CN": "2026.08",
+      "en-US": "2026.08"
+    },
+    "processTech": "TSMC N2",
+    "cpu": "4.8GHz×2 + 4.5GHz×4 + 3.2GHz×6",
+    "cpuArch": "64-bit ARMv9.2-A",
+    "microArch": "Komodo P + M + E Core (10-wide + 7-wide + 6-wide)",
+    "l1i": "2×192KB + 4×128KB + 6×128KB",
+    "l1d": "2×128KB + 4×64KB + 6×64KB",
+    "l2shared": "大中核 20MB + 小核 8MB",
+    "l2private": "每颗大核 Private 1MB",
+    "gpu": "Apple ×12 192 EUs 1536 ALUs @≈1.7GHz",
+    "gpuModel": "Apple G18G",
+    "ane": "双 16 核 @ 80TOPS (FP16 稀疏化) @?MHz",
+    "cacheL3": "16MB System Level Cache",
+    "memory": "LPDDR5X-9600/10667 16GB 总位宽 128-bit 153.6GB/s; 24/32GB 总位宽 128-bit 170.6GB/s",
+    "devices": "Mac mini (2026)"
+  },
+  {
+    "id": "chip-m-002",
+    "series": {
+      "zh-CN": "M 系列",
+      "en-US": "M 系列"
+    },
+    "seriesCode": "m",
+    "name": {
+      "zh-CN": "M5 Ultra",
+      "en-US": "M5 Ultra"
+    },
+    "releaseDate": {
+      "zh-CN": "2026.08",
+      "en-US": "2026.08"
+    },
+    "processTech": "TSMC N3P",
+    "dieSize": "(166.85mm² + 320.95mm²) ×2",
+    "cpu": "4.60GHz ×10 4.38GHz ×20 / 4.60GHz ×12 4.38GHz ×24",
+    "cpuArch": "64-bit ARMv9.2-A",
+    "microArch": "Sotra P + M Core (10-wide + 7-wide)",
+    "l1i": "10/12×192KB + 20/24×128KB",
+    "l1d": "10/12×128KB + 20/24×64KB",
+    "l2shared": "大核 32MB + 中核 32MB",
+    "l2private": "每颗大核 Private 1MB",
+    "gpu": "Apple ×64 1024 EUs 8192 ALUs @1620MHz / Apple ×80 1280 EUs 10240 ALUs @1620MHz",
+    "gpuModel": "Apple10 家族, Apple G17D",
+    "ane": "H17_Hyperion_J71y 32 核 @ 80TOPS (FP16 稀疏化) @2472MHz",
+    "cacheL3": "96MB System Level Cache",
+    "memory": "LPDDR5X-9600 96/256/512GB 总位宽 1024-bit 1228.8GB/s",
+    "devices": "Mac Studio (2026)"
+  },
+  {
+    "id": "chip-m-003",
+    "series": {
+      "zh-CN": "M 系列",
+      "en-US": "M 系列"
+    },
+    "seriesCode": "m",
+    "name": {
+      "zh-CN": "M5 Max",
+      "en-US": "M5 Max"
+    },
+    "releaseDate": {
+      "zh-CN": "2026.03",
+      "en-US": "2026.03"
+    },
+    "processTech": "TSMC N3P",
+    "dieSize": "CPU 9.28×17.98, GPU 16.4×19.57",
+    "cpu": "4.60GHz ×6 4.38GHz ×12",
+    "cpuArch": "64-bit ARMv9.2-A",
+    "microArch": "Sotra P + M Core (10-wide + 7-wide)",
+    "l1i": "6×192KB + 12×128KB",
+    "l1d": "6×128KB + 12×64KB",
+    "l2shared": "大核 16MB + 中核 16MB",
+    "l2private": "每颗大核 Private 1MB",
+    "gpu": "Apple ×32 512 EUs 4096 ALUs @1620MHz / Apple ×40 640 EUs 5120 ALUs @1620MHz",
+    "gpuModel": "Apple10 家族, Apple G17C",
+    "ane": "H17_Hyperion_J71y 16 核 @ 40TOPS (FP16 稀疏化) @2472MHz",
+    "cacheL3": "48MB System Level Cache",
+    "memory": "LPDDR5X-9600 36GB 总位宽 384-bit 460.8GB/s; 48/64/128GB 总位宽 512-bit 614.4GB/s",
+    "devices": "MacBook Pro (14 英寸, 2026)、MacBook Pro (16 英寸, 2026)、Mac Studio (2026)"
+  },
+  {
+    "id": "chip-m-004",
+    "series": {
+      "zh-CN": "M 系列",
+      "en-US": "M 系列"
+    },
+    "seriesCode": "m",
+    "name": {
+      "zh-CN": "M5 Pro",
+      "en-US": "M5 Pro"
+    },
+    "releaseDate": {
+      "zh-CN": "2026.03",
+      "en-US": "2026.03"
+    },
+    "processTech": "TSMC N3P",
+    "dieSize": "CPU 9.28×17.98, GPU 8.2×19.57",
+    "cpu": "4.60GHz ×5 4.38GHz ×10 / 4.60GHz ×6 4.38GHz ×12",
+    "cpuArch": "64-bit ARMv9.2-A",
+    "microArch": "Sotra P + M Core (10-wide + 7-wide)",
+    "l1i": "5/6×192KB + 10/12×128KB",
+    "l1d": "5/6×128KB + 10/12×64KB",
+    "l2shared": "大核 16MB + 中核 16MB",
+    "l2private": "每颗大核 Private 1MB",
+    "gpu": "Apple ×16 256 EUs 2048 ALUs @1620MHz / Apple ×20 320 EUs 2560 ALUs @1620MHz",
+    "gpuModel": "Apple10 家族, Apple G17S",
+    "ane": "H17_Hyperion_J71y 16 核 @ 40TOPS (FP16 稀疏化) @2472MHz",
+    "cacheL3": "24MB System Level Cache",
+    "memory": "LPDDR5X-9600 24/48/64GB 总位宽 256-bit 307.2GB/s",
+    "devices": "MacBook Pro (14 英寸, 2026)、MacBook Pro (16 英寸, 2026)、Mac mini (2026)"
+  },
+  {
+    "id": "chip-m-005",
+    "series": {
+      "zh-CN": "M 系列",
+      "en-US": "M 系列"
+    },
+    "seriesCode": "m",
+    "name": {
+      "zh-CN": "M5",
+      "en-US": "M5"
+    },
+    "releaseDate": {
+      "zh-CN": "2025.10",
+      "en-US": "2025.10"
+    },
+    "processTech": "TSMC N3P",
+    "dieSize": "12.70×12.40 (157.48mm²)",
+    "cpu": "4.46G ×3 3.04G ×6 / 4.46G ×4 3.04G ×6 / 4.60G ×4 3.04G ×6",
+    "cpuArch": "64-bit ARMv9.2-A",
+    "microArch": "Hidra P + E Core (10-wide + 6-wide)",
+    "l1i": "3/4×192KB + 6×128KB",
+    "l1d": "3/4×128KB + 6×64KB",
+    "l2shared": "大核 16MB + 小核 6MB",
+    "l2private": "每颗大核 Private 1MB",
+    "gpu": "Apple ×8 128 EUs 1024 ALUs @1620MHz / Apple ×10 160 EUs 1280 ALUs @1578MHz / Apple ×10 160 EUs 1280 ALUs @1620MHz",
+    "gpuModel": "Apple10 家族, Apple G17G",
+    "ane": "H17_Theia_J73y 16 核 @ 40TOPS (FP16 稀疏化) @2448MHz",
+    "cacheL3": "16MB System Level Cache",
+    "memory": "LPDDR5X-9600 12/16/24/32GB 总位宽 128-bit 153.6GB/s",
+    "devices": "iPad Pro 11 英寸 (M5)、iPad Pro 13 英寸 (M5)、MacBook Air (13 英寸, M5, 2026)、MacBook Air (15 英寸, M5, 2026)、MacBook Pro (14 英寸, M5)、Apple Vision Pro (M5)"
+  },
+  {
+    "id": "chip-m-006",
+    "series": {
+      "zh-CN": "M 系列",
+      "en-US": "M 系列"
+    },
+    "seriesCode": "m",
+    "name": {
+      "zh-CN": "M4 Max",
+      "en-US": "M4 Max"
+    },
+    "releaseDate": {
+      "zh-CN": "2024.10",
+      "en-US": "2024.10"
+    },
+    "processTech": "TSMC N3E",
+    "transistors": "≈76 billion",
+    "dieSize": "20.28×22.40 (454.27mm²)",
+    "cpu": "4.51GHz ×10 2.59GHz ×4 / 4.51GHz ×12 2.59GHz ×4",
+    "cpuArch": "64-bit ARMv9.2-A",
+    "microArch": "Brava P + E Core (10-wide + 5-wide)",
+    "l1i": "10/12×192KB + 4×128KB",
+    "l1d": "10/12×128KB + 4×64KB",
+    "l2shared": "大核 32MB + 小核 4MB",
+    "gpu": "Apple ×32 512 EUs 4096 ALUs @1578MHz / Apple ×40 640 EUs 5120 ALUs @1578MHz",
+    "gpuModel": "Apple9 家族, Apple G16C",
+    "ane": "T604x_Aether_Brvx 16 核 @ 38TOPS (FP16 稀疏化) @2364MHz",
+    "cacheL3": "48MB System Level Cache",
+    "memory": "LPDDR5X-8533 36GB 总位宽 384-bit 410GB/s; 48/64/128GB 总位宽 512-bit 546GB/s",
+    "devices": "MacBook Pro (14 英寸, 2024)、MacBook Pro (16 英寸, 2024)、Mac Studio (2025)"
+  },
+  {
+    "id": "chip-m-007",
+    "series": {
+      "zh-CN": "M 系列",
+      "en-US": "M 系列"
+    },
+    "seriesCode": "m",
+    "name": {
+      "zh-CN": "M4 Pro",
+      "en-US": "M4 Pro"
+    },
+    "releaseDate": {
+      "zh-CN": "2024.10",
+      "en-US": "2024.10"
+    },
+    "processTech": "TSMC N3E",
+    "dieSize": "320~330mm²",
+    "cpu": "4.51GHz ×8 2.59GHz ×4 / 4.51GHz ×10 2.59GHz ×4",
+    "cpuArch": "64-bit ARMv9.2-A",
+    "microArch": "Brava P + E Core (10-wide + 5-wide)",
+    "l1i": "8/10×192KB + 4×128KB",
+    "l1d": "8/10×128KB + 4×64KB",
+    "l2shared": "大核 32MB + 小核 4MB",
+    "gpu": "Apple ×16 256 EUs 2048 ALUs @1578MHz / Apple ×20 320 EUs 2560 ALUs @1578MHz",
+    "gpuModel": "Apple9 家族, Apple G16S",
+    "ane": "T604x_Aether_Brvx 16 核 @ 38TOPS (FP16 稀疏化) @2364MHz",
+    "cacheL3": "24MB System Level Cache",
+    "memory": "LPDDR5X-8533 24/48/64GB 总位宽 256-bit 273GB/s",
+    "devices": "Mac mini (2024)、MacBook Pro (14 英寸, 2024)、MacBook Pro (16 英寸, 2024)"
+  },
+  {
+    "id": "chip-m-008",
+    "series": {
+      "zh-CN": "M 系列",
+      "en-US": "M 系列"
+    },
+    "seriesCode": "m",
+    "name": {
+      "zh-CN": "M4",
+      "en-US": "M4"
+    },
+    "releaseDate": {
+      "zh-CN": "2024.05",
+      "en-US": "2024.05"
+    },
+    "processTech": "TSMC N3E",
+    "transistors": "28.0 billion",
+    "dieSize": "13.21×12.82 (169.35mm²)",
+    "cpu": "4.10 ×3 2.89 ×5 / 4.41 ×3 2.89 ×6 / 4.41 ×4 2.89 ×4 / 4.41 ×4 2.89 ×6",
+    "cpuArch": "64-bit ARMv9.2-A",
+    "microArch": "Donan P + E Core (10-wide + 5-wide)",
+    "l1i": "3/4×192KB + 4/5/6×128KB",
+    "l1d": "3/4×128KB + 4/5/6×64KB",
+    "l2shared": "大核 16MB + 小核 4MB",
+    "gpu": "Apple ×8 128 EUs 1024 ALUs @1470MHz / Apple ×9 144 EUs 1152 ALUs @1578MHz / Apple ×10 160 EUs 1280 ALUs @1578MHz",
+    "gpuModel": "Apple9 家族, Apple G16G",
+    "ane": "H16_Leto_J7x 16 核 @ 38TOPS (FP16 稀疏化) @2364MHz",
+    "cacheL3": "8MB System Level Cache",
+    "memory": "LPDDR5X-7500 8/12/16/24/32GB 总位宽 128-bit 120GB/s",
+    "devices": "iPad Air 11 英寸 (M4)、iPad Air 13 英寸 (M4)、iPad Pro 11 英寸 (M4)、iPad Pro 13 英寸 (M4)、iMac (24 英寸, 2024)、Mac mini (2024)、MacBook Pro (14 英寸, 2024)、MacBook Air (13 英寸, M4, 2025)、MacBook Air (15 英寸, M4, 2025)"
+  },
+  {
+    "id": "chip-m-009",
+    "series": {
+      "zh-CN": "M 系列",
+      "en-US": "M 系列"
+    },
+    "seriesCode": "m",
+    "name": {
+      "zh-CN": "M3 Ultra",
+      "en-US": "M3 Ultra"
+    },
+    "releaseDate": {
+      "zh-CN": "2025.03",
+      "en-US": "2025.03"
+    },
+    "processTech": "TSMC N3B",
+    "transistors": "184.0 billion",
+    "dieSize": "≈954mm²",
+    "cpu": "4.05GHz ×20 2.57GHz ×8 / 4.05GHz ×24 2.57GHz ×8",
+    "cpuArch": "64-bit ARMv8.6-A",
+    "microArch": "Palma P + E Core (9-wide + 5-wide)",
+    "l1i": "20/24×192KB + 8×128KB",
+    "l1d": "20/24×128KB + 8×64KB",
+    "l2shared": "大核 64MB + 小核 8MB",
+    "gpu": "Apple ×60 960 EUs 7680 ALUs @1380MHz / Apple ×80 1280 EUs 10240 ALUs @1380MHz",
+    "gpuModel": "Apple9 家族, Apple G15D",
+    "ane": "T603x_Erebus_Pc5x 32 核 @ 36TOPS (FP16) @2364MHz",
+    "cacheL3": "96MB System Level Cache",
+    "memory": "LPDDR5-6400 96/256/512GB 总位宽 1024-bit 819.2GB/s",
+    "devices": "Mac Studio (2025)"
+  },
+  {
+    "id": "chip-m-010",
+    "series": {
+      "zh-CN": "M 系列",
+      "en-US": "M 系列"
+    },
+    "seriesCode": "m",
+    "name": {
+      "zh-CN": "M3 Max",
+      "en-US": "M3 Max"
+    },
+    "releaseDate": {
+      "zh-CN": "2023.10",
+      "en-US": "2023.10"
+    },
+    "processTech": "TSMC N3B",
+    "transistors": "92.0 billion",
+    "dieSize": "477.09mm²",
+    "cpu": "4.05GHz ×10 2.57GHz ×4 / 4.05GHz ×12 2.57GHz ×4",
+    "cpuArch": "64-bit ARMv8.6-A",
+    "microArch": "Palma P + E Core (9-wide + 5-wide)",
+    "l1i": "10/12×192KB + 4×128KB",
+    "l1d": "10/12×128KB + 4×64KB",
+    "l2shared": "大核 32MB + 小核 4MB",
+    "gpu": "Apple ×30 480 EUs 3840 ALUs @1380MHz / Apple ×40 640 EUs 5120 ALUs @1380MHz",
+    "gpuModel": "Apple9 家族, Apple G15C",
+    "ane": "T603x_Erebus_Pc5x 16 核 @ 18TOPS (FP16) @2364MHz",
+    "cacheL3": "48MB System Level Cache",
+    "memory": "LPDDR5-6400 36/96GB 总位宽 384-bit 307.2GB/s; 48/64/128GB 总位宽 512-bit 409.6GB/s",
+    "devices": "MacBook Pro (14英寸,2023年11月)、MacBook Pro (16英寸,2023年11月)"
+  },
+  {
+    "id": "chip-m-011",
+    "series": {
+      "zh-CN": "M 系列",
+      "en-US": "M 系列"
+    },
+    "seriesCode": "m",
+    "name": {
+      "zh-CN": "M3 Pro",
+      "en-US": "M3 Pro"
+    },
+    "releaseDate": {
+      "zh-CN": "2023.10",
+      "en-US": "2023.10"
+    },
+    "processTech": "TSMC N3B",
+    "transistors": "37.0 billion",
+    "dieSize": "13.77×15.92 (219.22mm²)",
+    "cpu": "4.05GHz ×5 2.75GHz ×6 / 4.05GHz ×6 2.75GHz ×6",
+    "cpuArch": "64-bit ARMv8.6-A",
+    "microArch": "Lobos P + E Core (9-wide + 5-wide)",
+    "l1i": "5/6×192KB + 6×128KB",
+    "l1d": "5/6×128KB + 6×64KB",
+    "l2shared": "大核 16MB + 小核 4MB",
+    "gpu": "Apple ×14 224 EUs 1792 ALUs @1380MHz / Apple ×18 288 EUs 2304 ALUs @1380MHz",
+    "gpuModel": "Apple9 家族, Apple G15S",
+    "ane": "T603x_Erebus_Ls5x 16 核 @ 18TOPS (FP16) @2364MHz",
+    "cacheL3": "12MB System Level Cache",
+    "memory": "LPDDR5-6400 18/36GB 总位宽 192-bit 153.6GB/s",
+    "devices": "MacBook Pro (14英寸,2023年11月)、MacBook Pro (16英寸,2023年11月)"
+  },
+  {
+    "id": "chip-m-012",
+    "series": {
+      "zh-CN": "M 系列",
+      "en-US": "M 系列"
+    },
+    "seriesCode": "m",
+    "name": {
+      "zh-CN": "M3",
+      "en-US": "M3"
+    },
+    "releaseDate": {
+      "zh-CN": "2023.10",
+      "en-US": "2023.10"
+    },
+    "processTech": "TSMC N3B",
+    "transistors": "25.0 billion",
+    "dieSize": "11.24×13.57 (152.53mm²)",
+    "cpu": "4.05GHz ×4 2.75GHz ×4",
+    "cpuArch": "64-bit ARMv8.6-A",
+    "microArch": "Ibiza P + E Core (9-wide + 5-wide)",
+    "l1i": "4×192KB + 4×128KB",
+    "l1d": "4×128KB + 4×64KB",
+    "l2shared": "大核 16MB + 小核 4MB",
+    "gpu": "Apple ×8 128 EUs 1024 ALUs @1338MHz / Apple ×9 144 EUs 1152 ALUs @1338MHz / Apple ×10 160 EUs 1280 ALUs @1338MHz",
+    "gpuModel": "Apple9 家族, Apple G15G",
+    "ane": "H15_Themis_J51y 16 核 @ 18TOPS (FP16) @2364MHz",
+    "cacheL3": "8MB System Level Cache",
+    "memory": "LPDDR5-6400 8/16/24GB 总位宽 128-bit 102.4GB/s",
+    "devices": "iMac (24 英寸, 2023)、MacBook Air (13英寸,M3,2024年)、MacBook Air (15英寸,M3,2024年)、MacBook Pro (14英寸,M3,2023年11月)、iPad Air 11 英寸 (M3)、iPad Air 13 英寸 (M3)"
+  },
+  {
+    "id": "chip-m-013",
+    "series": {
+      "zh-CN": "M 系列",
+      "en-US": "M 系列"
+    },
+    "seriesCode": "m",
+    "name": {
+      "zh-CN": "M2 Ultra",
+      "en-US": "M2 Ultra"
+    },
+    "releaseDate": {
+      "zh-CN": "2023.06",
+      "en-US": "2023.06"
+    },
+    "processTech": "TSMC N5P",
+    "transistors": "134.0 billion",
+    "dieSize": "≈979mm²",
+    "cpu": "3.69GHz ×16 2.42GHz ×8",
+    "cpuArch": "64-bit ARMv8.6-A",
+    "microArch": "Avalanche + Blizzard (8-wide + 5-wide)",
+    "l1i": "16×192KB + 8×128KB",
+    "l1d": "16×128KB + 8×64KB",
+    "l2shared": "大核 64MB + 小核 8MB",
+    "gpu": "Apple ×60 960 EUs 7680 ALUs @1398MHz / Apple ×76 1216 EUs 9728 ALUs @1398MHz",
+    "gpuModel": "Apple8 家族, Apple G14D",
+    "ane": "T602x_Selene_Rc4x 32 核 31.6TOPS (FP16) @2100MHz",
+    "cacheL3": "96MB System Level Cache",
+    "memory": "LPDDR5-6400 64/128/192GB 总位宽 1024-bit 819.2GB/s",
+    "devices": "Mac Studio (2023 年)、Mac Pro (2023 年)"
+  },
+  {
+    "id": "chip-m-014",
+    "series": {
+      "zh-CN": "M 系列",
+      "en-US": "M 系列"
+    },
+    "seriesCode": "m",
+    "name": {
+      "zh-CN": "M2 Max",
+      "en-US": "M2 Max"
+    },
+    "releaseDate": {
+      "zh-CN": "2023.01",
+      "en-US": "2023.01"
+    },
+    "processTech": "TSMC N5P",
+    "transistors": "67.0 billion",
+    "dieSize": "20.86×23.28 (485.62mm²)",
+    "cpu": "3.69GHz ×8 2.42GHz ×4",
+    "cpuArch": "64-bit ARMv8.6-A",
+    "microArch": "Avalanche + Blizzard (8-wide + 5-wide)",
+    "l1i": "8×192KB + 4×128KB",
+    "l1d": "8×128KB + 4×64KB",
+    "l2shared": "大核 32MB + 小核 4MB",
+    "gpu": "Apple ×30 480 EUs 3840 ALUs @1398MHz / Apple ×38 608 EUs 4864 ALUs @1398MHz",
+    "gpuModel": "Apple8 家族, Apple G14C",
+    "ane": "T602x_Selene_Rc4x 16 核 @ 15.8TOPS (FP16) @2100MHz",
+    "cacheL3": "48MB System Level Cache",
+    "memory": "LPDDR5-6400 32/64/96GB 总位宽 512-bit 409.6GB/s",
+    "devices": "MacBook Pro (14 英寸, 2023 年)、MacBook Pro (16 英寸, 2023 年)、Mac Studio (2023 年)"
+  },
+  {
+    "id": "chip-m-015",
+    "series": {
+      "zh-CN": "M 系列",
+      "en-US": "M 系列"
+    },
+    "seriesCode": "m",
+    "name": {
+      "zh-CN": "M2 Pro",
+      "en-US": "M2 Pro"
+    },
+    "releaseDate": {
+      "zh-CN": "2023.01",
+      "en-US": "2023.01"
+    },
+    "processTech": "TSMC N5P",
+    "transistors": "40.0 billion",
+    "dieSize": "14.19×20.77 (294.73mm²)",
+    "cpu": "3.50GHz ×6 2.42GHz ×4 / 3.50GHz ×8 2.42GHz ×4",
+    "cpuArch": "64-bit ARMv8.6-A",
+    "microArch": "Avalanche + Blizzard (8-wide + 5-wide)",
+    "l1i": "6/8×192KB + 4×128KB",
+    "l1d": "6/8×128KB + 4×64KB",
+    "l2shared": "大核 32MB + 小核 4MB",
+    "gpu": "Apple ×16 256 EUs 2048 ALUs @1398MHz / Apple ×19 304 EUs 2432 ALUs @1398MHz",
+    "gpuModel": "Apple8 家族, Apple G14S",
+    "ane": "T602x_Selene_Rc4x 16 核 @ 15.8TOPS (FP16) @2100MHz",
+    "cacheL3": "24MB System Level Cache",
+    "memory": "LPDDR5-6400 16/32GB 总位宽 256-bit 204.8GB/s",
+    "devices": "MacBook Pro (14 英寸, 2023 年)、MacBook Pro (16 英寸, 2023 年)、Mac mini (2023 年)"
+  },
+  {
+    "id": "chip-m-016",
+    "series": {
+      "zh-CN": "M 系列",
+      "en-US": "M 系列"
+    },
+    "seriesCode": "m",
+    "name": {
+      "zh-CN": "M2",
+      "en-US": "M2"
+    },
+    "releaseDate": {
+      "zh-CN": "2022.06",
+      "en-US": "2022.06"
+    },
+    "processTech": "TSMC N5P",
+    "transistors": "20.1 billion",
+    "dieSize": "11.85×12.93 (153.22mm²)",
+    "cpu": "3.50GHz ×4 2.42GHz ×4",
+    "cpuArch": "64-bit ARMv8.6-A",
+    "microArch": "Avalanche + Blizzard (8-wide + 5-wide)",
+    "l1i": "4×192KB + 4×128KB",
+    "l1d": "4×128KB + 4×64KB",
+    "l2shared": "大核 16MB + 小核 4MB",
+    "gpu": "Apple ×8 128 EUs 1024 ALUs @1398MHz / Apple ×9 144 EUs 1152 ALUs @1398MHz / Apple ×10 160 EUs 1280 ALUs @1398MHz",
+    "gpuModel": "Apple8 家族, Apple G14G",
+    "ane": "H14_Bia_J6x (j4xx) 16 核 @ 15.8TOPS (FP16) @2100MHz",
+    "cacheL3": "8MB System Level Cache",
+    "memory": "LPDDR5-6400 8/16/24GB 总位宽 128-bit 102.4GB/s",
+    "devices": "MacBook Air (M2, 2022 年)、MacBook Air (15英寸,M2,2023年)、Mac mini (2023 年)、MacBook Pro (13英寸,M2,2022年)、iPad Pro 11 英寸 (第 4 代)、iPad Pro 12.9 英寸 (第 6 代)、Apple Vision Pro、iPad Air 11 英寸 (M2)、iPad Air 13 英寸 (M2)"
+  },
+  {
+    "id": "chip-m-017",
+    "series": {
+      "zh-CN": "M 系列",
+      "en-US": "M 系列"
+    },
+    "seriesCode": "m",
+    "name": {
+      "zh-CN": "M1 Ultra",
+      "en-US": "M1 Ultra"
+    },
+    "releaseDate": {
+      "zh-CN": "2022.03",
+      "en-US": "2022.03"
+    },
+    "processTech": "TSMC N5",
+    "transistors": "114.0 billion",
+    "dieSize": "864.7mm²",
+    "cpu": "3.23GHz ×16 2.06GHz ×4",
+    "cpuArch": "64-bit ARMv8.5-A",
+    "microArch": "Firestorm + Icestorm (8-wide + 4-wide)",
+    "l1i": "16×192KB + 4×128KB",
+    "l1d": "16×128KB + 4×64KB",
+    "l2shared": "大核 48MB + 小核 8MB",
+    "gpu": "Apple ×48 768 EUs 6144 ALUs @1296MHz / Apple ×64 1024 EUs 8192 ALUs @1296MHz",
+    "gpuModel": "Apple7 家族, Apple G13D",
+    "ane": "T600x_Eos_Jc3x 32 核 22TOPS (FP16) @1500MHz",
+    "cacheL3": "96MB System Level Cache",
+    "memory": "LPDDR5-6400 64/128GB 总位宽 1024-bit 819.2GB/s",
+    "devices": "Mac Studio (2022 年)"
+  },
+  {
+    "id": "chip-m-018",
+    "series": {
+      "zh-CN": "M 系列",
+      "en-US": "M 系列"
+    },
+    "seriesCode": "m",
+    "name": {
+      "zh-CN": "M1 Max",
+      "en-US": "M1 Max"
+    },
+    "releaseDate": {
+      "zh-CN": "2021.10",
+      "en-US": "2021.10"
+    },
+    "processTech": "TSMC N5",
+    "transistors": "57.0 billion",
+    "dieSize": "19.96×21.66 (432.35mm²)",
+    "cpu": "3.23GHz ×8 2.06GHz ×2",
+    "cpuArch": "64-bit ARMv8.5-A",
+    "microArch": "Firestorm + Icestorm (8-wide + 4-wide)",
+    "l1i": "8×192KB + 2×128KB",
+    "l1d": "8×128KB + 2×64KB",
+    "l2shared": "大核 24MB + 小核 4MB",
+    "gpu": "Apple ×24 384 EUs 3072 ALUs @1296MHz / Apple ×32 512 EUs 4096 ALUs @1296MHz",
+    "gpuModel": "Apple7 家族, Apple G13C",
+    "ane": "T600x_Eos_Jc3x 16 核 @ 11TOPS (FP16) @1500MHz",
+    "cacheL3": "48MB System Level Cache",
+    "memory": "LPDDR5-6400 32/64GB 总位宽 512-bit 409.6GB/s",
+    "devices": "MacBook Pro (14 英寸,2021 年)、MacBook Pro (16 英寸, 2021 年)、Mac Studio (2022 年)"
+  },
+  {
+    "id": "chip-m-019",
+    "series": {
+      "zh-CN": "M 系列",
+      "en-US": "M 系列"
+    },
+    "seriesCode": "m",
+    "name": {
+      "zh-CN": "M1 Pro",
+      "en-US": "M1 Pro"
+    },
+    "releaseDate": {
+      "zh-CN": "2021.10",
+      "en-US": "2021.10"
+    },
+    "processTech": "TSMC N5",
+    "transistors": "33.7 billion",
+    "dieSize": "18.95×13.36 (253.17mm²)",
+    "cpu": "3.23GHz ×6 2.06GHz ×2 / 3.23GHz ×8 2.06GHz ×2",
+    "cpuArch": "64-bit ARMv8.5-A",
+    "microArch": "Firestorm + Icestorm (8-wide + 4-wide)",
+    "l1i": "6/8×192KB + 2×128KB",
+    "l1d": "6/8×128KB + 2×64KB",
+    "l2shared": "大核 24MB + 小核 4MB",
+    "gpu": "Apple ×14 224 EUs 1792 ALUs @1296MHz / Apple ×16 256 EUs 2048 ALUs @1296MHz",
+    "gpuModel": "Apple7 家族, Apple G13S",
+    "ane": "T600x_Eos_Jc3x 16 核 @ 11TOPS (FP16) @1500MHz",
+    "cacheL3": "24MB System Level Cache",
+    "memory": "LPDDR5-6400 16/32GB 总位宽 256-bit 204.8GB/s",
+    "devices": "MacBook Pro (14 英寸,2021 年)、MacBook Pro (16 英寸,2021 年)"
+  },
+  {
+    "id": "chip-m-020",
+    "series": {
+      "zh-CN": "M 系列",
+      "en-US": "M 系列"
+    },
+    "seriesCode": "m",
+    "name": {
+      "zh-CN": "M1",
+      "en-US": "M1"
+    },
+    "releaseDate": {
+      "zh-CN": "2020.11",
+      "en-US": "2020.11"
+    },
+    "processTech": "TSMC N5",
+    "transistors": "16.0 billion",
+    "dieSize": "10.85×11.34 (123.04mm²)",
+    "cpu": "3.20GHz ×4 2.06GHz ×4",
+    "cpuArch": "64-bit ARMv8.5-A",
+    "microArch": "Firestorm + Icestorm (8-wide + 4-wide)",
+    "l1i": "4×192KB + 4×128KB",
+    "l1d": "4×128KB + 4×64KB",
+    "l2shared": "大核 12MB + 小核 4MB",
+    "gpu": "Apple ×7 112 EUs 896 ALUs @1278MHz / Apple ×8 128 EUs 1024 ALUs @1278MHz",
+    "gpuModel": "Apple7 家族, Apple G13G",
+    "ane": "H13_Styx_J5x 16 核 @ 11TOPS (FP16) @1464MHz",
+    "cacheL3": "8MB System Level Cache",
+    "memory": "LPDDR4X-4266 8/16GB 总位宽 128-bit 68.26GB/s",
+    "devices": "MacBook Air (M1, 2020 年)、MacBook Pro (13英寸,M1,2020年)、Mac mini (M1, 2020 年)、iMac (24 英寸, M1, 2021 年)、iPad Air (第 5 代)、iPad Pro 11 英寸 (第 3 代)、iPad Pro 12.9 英寸 (第 5 代)、Mellanox ConnectX-4 Lx 单端口 25Gb SFP HBA (Apple A2620)"
+  },
+  {
+    "id": "chip-s-001",
+    "series": {
+      "zh-CN": "S 系列",
+      "en-US": "S 系列"
+    },
+    "seriesCode": "s",
+    "name": {
+      "zh-CN": "Apple S11 SiP",
+      "en-US": "Apple S11 SiP"
+    },
+    "releaseDate": {
+      "zh-CN": "2026.09",
+      "en-US": "2026.09"
+    },
+    "processTech": "TSMC N2",
+    "cpu": "T8320 ？GHz ×2",
+    "cpuArch": "64-bit ARMv9.2-A",
+    "l1i": "2×160KB",
+    "l1d": "2×96KB",
+    "gpu": "Apple G18M Core 1 @？MHz",
+    "ane": "4 核",
+    "memory": "4GB",
+    "devices": "Apple Watch Series 12; Apple Watch Ultra 4"
+  },
+  {
+    "id": "chip-s-002",
+    "series": {
+      "zh-CN": "S 系列",
+      "en-US": "S 系列"
+    },
+    "seriesCode": "s",
+    "name": {
+      "zh-CN": "Apple S10 SiP",
+      "en-US": "Apple S10 SiP"
+    },
+    "releaseDate": {
+      "zh-CN": "2024.09",
+      "en-US": "2024.09"
+    },
+    "processTech": "TSMC N4",
+    "dieSize": "5.70×7.27 (41.44mm²)",
+    "cpu": "APL1W15-T8310 1.58GHz ×2",
+    "cpuArch": "64-bit ARMv8.6-A",
+    "microArch": "Sawtooth",
+    "l1i": "2×128KB",
+    "l1d": "2×64KB",
+    "l2shared": "4MB",
+    "gpu": "Apple G15M Core 1 @300MHz",
+    "ane": "H15_Crius_N2xx 4 核 @500MHz",
+    "cacheL3": "4MB System Level Cache",
+    "memory": "2GB LPDDR5",
+    "devices": "Apple Watch SE (第 3 代); Apple Watch Series 10; Apple Watch Series 11; Apple Watch Ultra 3"
+  },
+  {
+    "id": "chip-s-003",
+    "series": {
+      "zh-CN": "S 系列",
+      "en-US": "S 系列"
+    },
+    "seriesCode": "s",
+    "name": {
+      "zh-CN": "Apple S9 SiP",
+      "en-US": "Apple S9 SiP"
+    },
+    "releaseDate": {
+      "zh-CN": "2023.09",
+      "en-US": "2023.09"
+    },
+    "processTech": "TSMC N4",
+    "dieSize": "5.70×7.27 (41.44mm²)",
+    "cpu": "APL1W15-T8310 1.58GHz ×2",
+    "cpuArch": "64-bit ARMv8.6-A",
+    "microArch": "Sawtooth",
+    "l1i": "2×128KB",
+    "l1d": "2×64KB",
+    "l2shared": "4MB",
+    "gpu": "Apple G15M Core 1 @300MHz",
+    "ane": "H15_Crius_N2xx 4 核 @500MHz",
+    "cacheL3": "4MB System Level Cache",
+    "memory": "2GB LPDDR5",
+    "devices": "Apple Watch Series 9; Apple Watch Ultra 2"
+  },
+  {
+    "id": "chip-s-004",
+    "series": {
+      "zh-CN": "S 系列",
+      "en-US": "S 系列"
+    },
+    "seriesCode": "s",
+    "name": {
+      "zh-CN": "Apple S8 SiP",
+      "en-US": "Apple S8 SiP"
+    },
+    "releaseDate": {
+      "zh-CN": "2022.09",
+      "en-US": "2022.09"
+    },
+    "processTech": "TSMC N7P",
+    "dieSize": "5.40×7.37 (39.8mm²)",
+    "cpu": "T8301 1.58GHz ×2",
+    "cpuArch": "64-bit ARMv8.4-A",
+    "microArch": "Thunder",
+    "l1i": "2×96KB",
+    "l1d": "2×48KB",
+    "l2shared": "4MB",
+    "gpu": "Apple G11M Core 1 @300MHz",
+    "ane": "H11_Mercury 2 核 @300MHz",
+    "cacheL3": "1MB System Level Cache",
+    "memory": "1.5GB LPDDR4X",
+    "devices": "Apple Watch Series 8; Apple Watch SE (第 2 代); Apple Watch Ultra"
+  },
+  {
+    "id": "chip-s-005",
+    "series": {
+      "zh-CN": "S 系列",
+      "en-US": "S 系列"
+    },
+    "seriesCode": "s",
+    "name": {
+      "zh-CN": "Apple S7 SiP",
+      "en-US": "Apple S7 SiP"
+    },
+    "releaseDate": {
+      "zh-CN": "2021.09",
+      "en-US": "2021.09"
+    },
+    "processTech": "TSMC N7P",
+    "dieSize": "5.40×7.37 (39.8mm²)",
+    "cpu": "APL1W86-T8301 1.58GHz ×2",
+    "cpuArch": "64-bit ARMv8.4-A",
+    "microArch": "Thunder",
+    "l1i": "2×96KB",
+    "l1d": "2×48KB",
+    "l2shared": "4MB",
+    "gpu": "Apple G11M Core 1 @300MHz",
+    "ane": "H11_Mercury 2 核 @300MHz",
+    "cacheL3": "1MB System Level Cache",
+    "memory": "1.5GB LPDDR4X",
+    "devices": "Apple Watch Series 7; HomePod (第 2 代,仅使用SOC)"
+  },
+  {
+    "id": "chip-s-006",
+    "series": {
+      "zh-CN": "S 系列",
+      "en-US": "S 系列"
+    },
+    "seriesCode": "s",
+    "name": {
+      "zh-CN": "Apple S6 SiP",
+      "en-US": "Apple S6 SiP"
+    },
+    "releaseDate": {
+      "zh-CN": "2020.09",
+      "en-US": "2020.09"
+    },
+    "processTech": "TSMC N7P",
+    "dieSize": "5.40×7.37 (39.8mm²)",
+    "cpu": "TMLI30-T8301 1.58GHz ×2",
+    "cpuArch": "64-bit ARMv8.4-A",
+    "microArch": "Thunder",
+    "l1i": "2×96KB",
+    "l1d": "2×48KB",
+    "l2shared": "4MB",
+    "gpu": "Apple G11M Core 1 @300MHz",
+    "ane": "H11_Mercury 2 核 @300MHz",
+    "cacheL3": "1MB System Level Cache",
+    "memory": "1.5GB LPDDR4X",
+    "devices": "Apple Watch Series 6"
+  },
+  {
+    "id": "chip-s-007",
+    "series": {
+      "zh-CN": "S 系列",
+      "en-US": "S 系列"
+    },
+    "seriesCode": "s",
+    "name": {
+      "zh-CN": "Apple S5 SiP",
+      "en-US": "Apple S5 SiP"
+    },
+    "releaseDate": {
+      "zh-CN": "2019.09",
+      "en-US": "2019.09"
+    },
+    "processTech": "TSMC N7",
+    "dieSize": "6.0×6.4 (38.4mm²)",
+    "cpu": "APL1W82/TMJA65-T8006 1.58GHz ×2",
+    "cpuArch": "64-bit ARMv8.3-A",
+    "microArch": "Tempest",
+    "l1i": "2×32KB",
+    "l1d": "2×32KB",
+    "l2shared": "2MB",
+    "gpu": "Apple G11M Core 1 @300MHz",
+    "ane": "H11_Mercury 2 核 @300MHz",
+    "cacheL3": "1MB System Level Cache",
+    "memory": "1GB LPDDR4X",
+    "devices": "Apple Watch Series 5; Apple Watch SE (第 1 代); HomePod mini (仅使用SOC); Network Adapter A2282 (仅使用SOC)"
+  },
+  {
+    "id": "chip-s-008",
+    "series": {
+      "zh-CN": "S 系列",
+      "en-US": "S 系列"
+    },
+    "seriesCode": "s",
+    "name": {
+      "zh-CN": "Apple S4 SiP",
+      "en-US": "Apple S4 SiP"
+    },
+    "releaseDate": {
+      "zh-CN": "2018.09",
+      "en-US": "2018.09"
+    },
+    "processTech": "TSMC N7",
+    "dieSize": "6.0×6.4 (38.4mm²)",
+    "cpu": "TMJR65-T8006 1.58GHz ×2",
+    "cpuArch": "64-bit ARMv8.3-A",
+    "microArch": "Tempest",
+    "l1i": "2×32KB",
+    "l1d": "2×32KB",
+    "l2shared": "2MB",
+    "gpu": "Apple G11M Core 1 @300MHz",
+    "ane": "H11_Mercury 2 核 @300MHz",
+    "cacheL3": "1MB System Level Cache",
+    "memory": "1GB LPDDR4X",
+    "devices": "Apple Watch Series 4"
+  },
+  {
+    "id": "chip-s-009",
+    "series": {
+      "zh-CN": "S 系列",
+      "en-US": "S 系列"
+    },
+    "seriesCode": "s",
+    "name": {
+      "zh-CN": "Apple S3 SiP",
+      "en-US": "Apple S3 SiP"
+    },
+    "releaseDate": {
+      "zh-CN": "2017.09",
+      "en-US": "2017.09"
+    },
+    "processTech": "Samsung S.LSI 28nm HKMG",
+    "cpu": "TMHU50-T8004 780MHz ×2",
+    "cpuArch": "32-bit ARMv7k",
+    "gpu": "PowerVR Series",
+    "memory": "768MB LPDDR4",
+    "devices": "Apple Watch Series 3"
+  },
+  {
+    "id": "chip-s-010",
+    "series": {
+      "zh-CN": "S 系列",
+      "en-US": "S 系列"
+    },
+    "seriesCode": "s",
+    "name": {
+      "zh-CN": "Apple S2",
+      "en-US": "Apple S2"
+    },
+    "releaseDate": {
+      "zh-CN": "2016.09",
+      "en-US": "2016.09"
+    },
+    "processTech": "Samsung S.LSI 28nm HKMG",
+    "dieSize": "6.26×7.31 (45.76mm²)",
+    "cpu": "TMGK97-T8002 520MHz ×2",
+    "cpuArch": "32-bit ARMv7k",
+    "microArch": "Cortex-A7",
+    "gpu": "PowerVR Series 6",
+    "memory": "512MB LPDDR4",
+    "devices": "Apple Watch Series 2"
+  },
+  {
+    "id": "chip-s-011",
+    "series": {
+      "zh-CN": "S 系列",
+      "en-US": "S 系列"
+    },
+    "seriesCode": "s",
+    "name": {
+      "zh-CN": "Apple S1P",
+      "en-US": "Apple S1P"
+    },
+    "releaseDate": {
+      "zh-CN": "2016.09",
+      "en-US": "2016.09"
+    },
+    "processTech": "Samsung S.LSI 28nm HKMG",
+    "cpu": "T8002 520MHz ×2",
+    "cpuArch": "32-bit ARMv7k",
+    "microArch": "Cortex-A7",
+    "gpu": "PowerVR Series 6",
+    "memory": "512MB LPDDR4",
+    "devices": "Apple Watch Series 1"
+  },
+  {
+    "id": "chip-s-012",
+    "series": {
+      "zh-CN": "S 系列",
+      "en-US": "S 系列"
+    },
+    "seriesCode": "s",
+    "name": {
+      "zh-CN": "Apple S1",
+      "en-US": "Apple S1"
+    },
+    "releaseDate": {
+      "zh-CN": "2014.09",
+      "en-US": "2014.09"
+    },
+    "processTech": "Samsung S.LSI 28nm HKMG",
+    "transistors": "338 million",
+    "dieSize": "34mm²",
+    "cpu": "APL0778-S7002 520MHz ×1",
+    "cpuArch": "32-bit ARMv7k",
+    "microArch": "Cortex-A7",
+    "l1d": "32 KB",
+    "l2shared": "256 KB",
+    "gpu": "PowerVR Series 5",
+    "memory": "512MB LPDDR3",
+    "devices": "Apple Watch (第 1 代)"
+  },
+  {
+    "id": "chip-r-001",
+    "series": {
+      "zh-CN": "R 系列",
+      "en-US": "R 系列"
+    },
+    "seriesCode": "r",
+    "name": {
+      "zh-CN": "R1",
+      "en-US": "R1"
+    },
+    "releaseDate": {
+      "zh-CN": "2023.06",
+      "en-US": "2023.06"
+    },
+    "processTech": "TSMC N5",
+    "dieSize": "8.18×11.35 (92.84mm²)",
+    "cpu": "LPE-Core ×4",
+    "cpuArch": "64-bit ARMv8.4-A",
+    "l2shared": "共享 256KB ×2 组",
+    "cacheL3": "20MB System Level Cache",
+    "devices": "Apple Vision Pro; Apple Vision Pro (M5)"
+  },
+  {
+    "id": "chip-c-001",
+    "series": {
+      "zh-CN": "C 系列",
+      "en-US": "C 系列"
+    },
+    "seriesCode": "c",
+    "name": {
+      "zh-CN": "Apple C2",
+      "en-US": "Apple C2"
+    },
+    "releaseDate": {
+      "zh-CN": "2026.09",
+      "en-US": "2026.09"
+    },
+    "processTech": "TSMC N4",
+    "devices": "iPhone Duo; iPhone 18 Pro; iPhone 18 Pro Max"
+  },
+  {
+    "id": "chip-c-002",
+    "series": {
+      "zh-CN": "C 系列",
+      "en-US": "C 系列"
+    },
+    "seriesCode": "c",
+    "name": {
+      "zh-CN": "Apple C1X",
+      "en-US": "Apple C1X"
+    },
+    "releaseDate": {
+      "zh-CN": "2025.09",
+      "en-US": "2025.09"
+    },
+    "processTech": "TSMC N4",
+    "dieSize": "6.20×6.42 (39.80mm²)",
+    "devices": "iPhone Air; iPhone 17e; iPad Air 11 英寸 (M4); iPad Air 13 英寸 (M4); iPad Pro 11 英寸 (M5); iPad Pro 13 英寸 (M5)"
+  },
+  {
+    "id": "chip-c-003",
+    "series": {
+      "zh-CN": "C 系列",
+      "en-US": "C 系列"
+    },
+    "seriesCode": "c",
+    "name": {
+      "zh-CN": "Apple C1",
+      "en-US": "Apple C1"
+    },
+    "releaseDate": {
+      "zh-CN": "2025.02",
+      "en-US": "2025.02"
+    },
+    "processTech": "TSMC N4",
+    "dieSize": "6.20×6.42 (39.80mm²)",
+    "devices": "iPhone 16e"
+  },
+  {
+    "id": "chip-n-001",
+    "series": {
+      "zh-CN": "N 系列",
+      "en-US": "N 系列"
+    },
+    "seriesCode": "n",
+    "name": {
+      "zh-CN": "Apple N1",
+      "en-US": "Apple N1"
+    },
+    "releaseDate": {
+      "zh-CN": "2025.09",
+      "en-US": "2025.09"
+    },
+    "processTech": "TSMC N7",
+    "dieSize": "6.29×4.42 (27.80mm²)",
+    "devices": "iPhone Air; iPhone 17; iPhone 17 Pro; iPhone 17 Pro Max; iPhone 18 Pro; iPhone 18 Pro Max; iPhone Duo; iPad Air 11 英寸 (M4); iPad Air 13 英寸 (M4); iPad Pro 11 英寸 (M5); iPad Pro 13 英寸 (M5); MacBook Air (13英寸,M5,2026); MacBook Air (15英寸,M5,2026); MacBook Pro (14英寸,2026); MacBook Pro (16英寸,2026); Mac mini (2026); Mac Studio (2026)"
+  },
+  {
+    "id": "chip-u-001",
+    "series": {
+      "zh-CN": "U 系列",
+      "en-US": "U 系列"
+    },
+    "seriesCode": "u",
+    "name": {
+      "zh-CN": "Apple U2",
+      "en-US": "Apple U2"
+    },
+    "releaseDate": {
+      "zh-CN": "2023.09",
+      "en-US": "2023.09"
+    },
+    "devices": "iPhone 15 全系列; iPhone 16 全系列 (16e 除外); iPhone 17 全系列 (17e 除外); iPhone 17 全系列; iPhone Air; iPhone Duo; Apple Watch Series 9; Apple Watch Series 10; Apple Watch Series 11; Apple Watch Series 12; Apple Watch Ultra 2; Apple Watch Ultra 3; Apple Watch Ultra 4; AirPods Pro 3; AirTag (第 2 代)"
+  },
+  {
+    "id": "chip-u-002",
+    "series": {
+      "zh-CN": "U 系列",
+      "en-US": "U 系列"
+    },
+    "seriesCode": "u",
+    "name": {
+      "zh-CN": "Apple U1",
+      "en-US": "Apple U1"
+    },
+    "releaseDate": {
+      "zh-CN": "2019.09",
+      "en-US": "2019.09"
+    },
+    "processTech": "TSMC N16 FF",
+    "cpuArch": "ARMv7E-M Cortex-M4",
+    "devices": "iPhone 11 全系列; iPhone 12 全系列; iPhone 13 全系列; iPhone 14 全系列; Apple Watch Series 6; Apple Watch Series 7; Apple Watch Series 8; Apple Watch Ultra; AirPods Pro 2; HomePod mini; HomePod (第 2 代); AirTag"
+  },
+  {
+    "id": "chip-w-001",
+    "series": {
+      "zh-CN": "W 系列",
+      "en-US": "W 系列"
+    },
+    "seriesCode": "w",
+    "name": {
+      "zh-CN": "W3",
+      "en-US": "W3"
+    },
+    "releaseDate": {
+      "zh-CN": "2018.09",
+      "en-US": "2018.09"
+    },
+    "cpuArch": "ARM 兼容架构",
+    "devices": [
+      "Apple Watch SE (第 1 代)",
+      "Apple Watch SE (第 2 代)",
+      "Apple Watch SE (第 3 代)",
+      "Apple Watch Series 4",
+      "Apple Watch Series 5",
+      "Apple Watch Series 6",
+      "Apple Watch Series 7",
+      "Apple Watch Series 8",
+      "Apple Watch Series 9",
+      "Apple Watch Series 10",
+      "Apple Watch Series 11",
+      "Apple Watch Series 12",
+      "Apple Watch Ultra",
+      "Apple Watch Ultra 2",
+      "Apple Watch Ultra 3",
+      "Apple Watch Ultra 4"
+    ]
+  },
+  {
+    "id": "chip-w-002",
+    "series": {
+      "zh-CN": "W 系列",
+      "en-US": "W 系列"
+    },
+    "seriesCode": "w",
+    "name": {
+      "zh-CN": "W2",
+      "en-US": "W2"
+    },
+    "releaseDate": {
+      "zh-CN": "2017.09",
+      "en-US": "2017.09"
+    },
+    "cpuArch": "ARM 兼容架构",
+    "devices": [
+      "Apple Watch Series 3"
+    ]
+  },
+  {
+    "id": "chip-w-003",
+    "series": {
+      "zh-CN": "W 系列",
+      "en-US": "W 系列"
+    },
+    "seriesCode": "w",
+    "name": {
+      "zh-CN": "W1",
+      "en-US": "W1"
+    },
+    "releaseDate": {
+      "zh-CN": "2016.12",
+      "en-US": "2016.12"
+    },
+    "processTech": "65nm",
+    "transistors": "50 million",
+    "dieSize": "4.42x3.23 (14.3mm²)",
+    "cpuArch": "ARM 兼容架构",
+    "devices": [
+      "AirPods 1",
+      "Beats Solo3 Wireless",
+      "Beats Studio3 Wireless",
+      "BeatsX",
+      "Beats Flex",
+      "PowerBeats 3"
+    ]
+  },
+  {
+    "id": "chip-h-001",
+    "series": {
+      "zh-CN": "H 系列",
+      "en-US": "H 系列"
+    },
+    "seriesCode": "h",
+    "name": {
+      "zh-CN": "H2",
+      "en-US": "H2"
+    },
+    "releaseDate": {
+      "zh-CN": "2022.09",
+      "en-US": "2022.09"
+    },
+    "processTech": "TSMC N6 RF",
+    "cpuArch": "ARM 兼容架构",
+    "devices": [
+      "AirPods 4",
+      "AirPods 5",
+      "AirPods Pro 2",
+      "AirPods Pro 3",
+      "AirPods Max 2",
+      "Apple Vision Pro",
+      "Apple Vision Pro (M5)",
+      "PowerBeats Pro 2"
+    ]
+  },
+  {
+    "id": "chip-h-002",
+    "series": {
+      "zh-CN": "H 系列",
+      "en-US": "H 系列"
+    },
+    "seriesCode": "h",
+    "name": {
+      "zh-CN": "H1 SiP",
+      "en-US": "H1 SiP"
+    },
+    "processTech": "16nm",
+    "cpuArch": "ARM 兼容架构",
+    "devices": [
+      "AirPods 3",
+      "AirPods Pro 1",
+      "Beats Fit Pro"
+    ]
+  },
+  {
+    "id": "chip-h-003",
+    "series": {
+      "zh-CN": "H 系列",
+      "en-US": "H 系列"
+    },
+    "seriesCode": "h",
+    "name": {
+      "zh-CN": "H1",
+      "en-US": "H1"
+    },
+    "releaseDate": {
+      "zh-CN": "2019.03",
+      "en-US": "2019.03"
+    },
+    "processTech": "16nm",
+    "dieSize": "12mm²",
+    "cpuArch": "ARM 兼容架构",
+    "devices": [
+      "AirPods 2",
+      "AirPods Max",
+      "Powerbeats 4 (2020)",
+      "PowerBeats Pro",
+      "Beats Solo Pro"
+    ]
+  },
+  {
+    "id": "chip-t-001",
+    "series": {
+      "zh-CN": "T 系列",
+      "en-US": "T 系列"
+    },
+    "seriesCode": "t",
+    "name": {
+      "zh-CN": "T2",
+      "en-US": "T2"
+    },
+    "releaseDate": {
+      "zh-CN": "2017.06",
+      "en-US": "2017.06"
+    },
+    "processTech": "TSMC N16",
+    "dieSize": "104mm²",
+    "cpu": "2.34GHz ×2 1.09GHz ×2",
+    "cpuArch": "64-bit ARMv8.0-A",
+    "microArch": "Hurricane + Zephyr (6-wide + 3-wide)",
+    "gpu": "3 Core GPU",
+    "memory": "1G LPDDR4 (512G及以下) 2G LPDDR4 (1TB及以上)",
+    "devices": [
+      "MacBook Pro (13 英寸, 2018 年)",
+      "MacBook Pro (15 英寸, 2018 年)",
+      "MacBook Pro (13 英寸, 2019 年)",
+      "MacBook Pro (15 英寸, 2019 年)",
+      "MacBook Pro (16 英寸, 2019 年)",
+      "MacBook Pro (13 英寸, 2020 年)",
+      "MacBook Air (13 英寸, 2018 年)",
+      "MacBook Air (13 英寸, 2019 年)",
+      "MacBook Air (13 英寸, 2020 年)",
+      "iMac Pro (2017 年)",
+      "iMac (27 英寸, 2020 年)",
+      "Mac mini (2018 年)",
+      "Mac Pro (2019 年)",
+      "Mac Pro (机架式, 2019 年)",
+      "Mellanox ConnectX-4 Lx 单端口 25Gb SFP HBA (Apple A2336)"
+    ]
+  },
+  {
+    "id": "chip-t-002",
+    "series": {
+      "zh-CN": "T 系列",
+      "en-US": "T 系列"
+    },
+    "seriesCode": "t",
+    "name": {
+      "zh-CN": "T1",
+      "en-US": "T1"
+    },
+    "releaseDate": {
+      "zh-CN": "2016.10",
+      "en-US": "2016.10"
+    },
+    "cpu": "520MHz ×2",
+    "cpuArch": "32-bit ARMv7",
+    "microArch": "Cortex-A7 (2-wide)",
+    "gpu": "IT PowerVR Series 6 Rogue",
+    "memory": "512MB LPDDR4",
+    "devices": [
+      "MacBook Pro (13 英寸, 2016 年)",
+      "MacBook Pro (15 英寸, 2016 年)",
+      "MacBook Pro (13 英寸, 2017 年)",
+      "MacBook Pro (15 英寸, 2017 年)"
+    ]
+  },
+  {
+    "id": "chip-cop-001",
+    "series": {
+      "zh-CN": "协处理器",
+      "en-US": "协处理器"
+    },
+    "seriesCode": "cop",
+    "name": {
+      "zh-CN": "M8",
+      "en-US": "M8"
+    },
+    "processTech": "90nm",
+    "cpu": "150MHz",
+    "microArch": "ARMv7-M Cortex M3",
+    "devices": "iPhone 6 / iPhone 6 Plus / iPad mini 4 / iPod touch (第 6 代)"
+  },
+  {
+    "id": "chip-cop-002",
+    "series": {
+      "zh-CN": "协处理器",
+      "en-US": "协处理器"
+    },
+    "seriesCode": "cop",
+    "name": {
+      "zh-CN": "M7",
+      "en-US": "M7"
+    },
+    "processTech": "90nm",
+    "cpu": "150MHz",
+    "microArch": "ARMv7-M Cortex M3",
+    "devices": "iPhone 5s / iPad Air / iPad mini 2 / iPad mini 3"
+  }
+]

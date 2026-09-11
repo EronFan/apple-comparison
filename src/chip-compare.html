@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-lang-key="page.title">Apple TV 参数对比 - Apple参数大全</title>
+    <title data-lang-key="page.title">芯片参数对比 - Apple参数大全</title>
     <!-- 使用iconfont图标库 -->
     <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4356459_zg5dh7jkzx.css">
     <!-- 使用Remix Icon图标库 -->
@@ -1260,11 +1260,11 @@
                 <a href="/src/watch-compare.html" class="nav-link" data-lang-key="nav.watch">Apple Watch</a>
                 <a href="/src/mac-compare.html" class="nav-link" data-lang-key="nav.mac">Mac</a>
                 <a href="/src/airpods-compare.html" class="nav-link" data-lang-key="nav.airpods">AirPods</a>
-                <a href="/src/tv-compare.html" class="nav-link active" data-lang-key="nav.tv">Apple TV</a>
+                <a href="/src/tv-compare.html" class="nav-link" data-lang-key="nav.tv">Apple TV</a>
                 <a href="/src/vision-compare.html" class="nav-link" data-lang-key="nav.vision">Vision</a>
                 <a href="/src/homepod-compare.html" class="nav-link" data-lang-key="nav.homepod">HomePod</a>
                 <a href="/src/ipod-compare.html" class="nav-link" data-lang-key="nav.ipod">iPod</a>
-                <a href="/src/chip-compare.html" class="nav-link" data-lang-key="nav.chip">芯片库</a>
+                <a href="/src/chip-compare.html" class="nav-link active" data-lang-key="nav.chip">芯片库</a>
                 <div class="language-switcher">
                     <button class="language-btn active" data-lang="zh-CN">中</button>
                     <button class="language-btn" data-lang="en-US">EN</button>
@@ -1278,7 +1278,7 @@
         <div class="container">
             <!-- 操作栏 -->
             <div class="action-bar">
-                <h1 data-lang-key="compare.title.tv">Apple TV 参数对比</h1>
+                <h1 data-lang-key="compare.title.chip">芯片参数对比</h1>
                 <div class="action-buttons">
                     <button id="reset-button" class="btn btn-secondary" data-lang-key="compare.reset">
                         <i class="iconfont icon-refresh"></i>
@@ -1535,9 +1535,9 @@
                 };
                 
                 // 使用新的细化参数数据文件
-                // 开始加载Apple TV数据
+                // 开始加载芯片数据
                 console.log('开始加载数据文件...');
-                const response = await fetch('../public/data/tv_refined.json?v=' + new Date().getTime());
+                const response = await fetch('../public/data/chip_refined.json?v=' + new Date().getTime());
                 console.log('数据请求响应:', response.status, response.statusText);
                 
                 // 数据获取状态检查
@@ -1606,6 +1606,9 @@
                 
                 // 更新性能图表
                 updatePerformanceCharts();
+
+                // 无跑分数据时隐藏图表区
+                updateChartVisibility();
             } catch (error) {
                 console.error('加载产品数据失败:', error);
                 console.error(error.stack); // 显示完整错误堆栈
@@ -1683,32 +1686,26 @@
             // 清空现有表格内容
             tbody.innerHTML = '';
             
-            // 定义要显示的参数列表
+            // 定义要显示的参数列表（芯片）
             const params = [
-                { key: 'marketingSlogan', name: '宣传口号', langKey: 'param.marketingSlogan', icon: 'ri-advertisement-line' },
-                { key: 'releaseDate', name: '发布日期', langKey: 'param.releaseDate', icon: 'ri-calendar-line' },
-                { key: 'os', name: '支持系统', langKey: 'param.c.os', icon: 'ri-apple-line' },
-                { key: 'model', name: '型号标识', langKey: 'param.model', icon: 'ri-barcode-line' },
-                { key: 'chip', name: '芯片', langKey: 'param.c.chip', icon: 'ri-cpu-line' },
-                { key: 'ramStorage', name: '内存存储', langKey: 'param.c.ram', icon: 'ri-database-2-line' },
-                { key: 'remote', name: '遥控器', langKey: 'param.tv.remote', icon: 'ri-remote-control-line' },
-                { key: 'powerSupply', name: '充电供电', langKey: 'param.tv.power', icon: 'ri-plug-line' },
-                { key: 'airPlay', name: '隔空播放', langKey: 'param.tv.airplay', icon: 'ri-cast-line' },
-                { key: 'audioVideo', name: '音频视频', langKey: 'param.tv.av', icon: 'ri-clapperboard-line' },
-                { key: 'ethernet', name: '以太网', langKey: 'param.tv.ethernet', icon: 'ri-ethernet-line' },
-                { key: 'wirelessChip', name: '无线芯片', langKey: 'param.mac.wirelessChip', icon: 'ri-wifi-line' },
-                { key: 'wirelessSpec', name: '无线规格', langKey: 'param.mac.wirelessSpec', icon: 'ri-bluetooth-line' },
-                { key: 'dimensionsHost', name: '主机尺寸', langKey: 'param.tv.host', icon: 'ri-ruler-line' },
-                { key: 'dimensionsRemote', name: '遥控器尺寸', langKey: 'param.tv.remoteSize', icon: 'ri-ruler-2-line', formatter: val => tvRemoteLines(val) },
-                { key: 'price', name: '首发价格', langKey: 'param.c.price', icon: 'ri-price-tag-3-line', formatter: val => splitPriceTiers(val) },
-                { key: 'techLinks', name: '规格与手册', langKey: 'param.c.techLinks', formatter: val => {
-                    if (!val || !Array.isArray(val)) return '-';
-                    const lang = window.currentLanguage || document.querySelector('.language-btn.active')?.dataset.lang || 'zh-CN';
-                    return val.map(l => {
-                        const t = getLocalizedText(l.text, lang);
-                        return l.url ? `<a href="${l.url}" target="_blank" rel="noopener noreferrer">${t}</a>` : (t || '-');
-                    }).join(' / ');
-                }, icon: 'ri-links-line' },
+                { key: 'series', name: '产品系列', langKey: 'param.chip.series', icon: 'ri-layout-grid-line' },
+                { key: 'releaseDate', name: '发布时间', langKey: 'param.releaseDate', icon: 'ri-calendar-line' },
+                { key: 'processTech', name: '芯片工艺', langKey: 'param.chip.process', icon: 'ri-cpu-fill' },
+                { key: 'transistors', name: '晶体管数', langKey: 'param.chip.transistors', icon: 'ri-stack-line' },
+                { key: 'dieSize', name: '裸片尺寸', langKey: 'param.chip.die', icon: 'ri-focus-2-line' },
+                { key: 'cpu', name: 'CPU 规格', langKey: 'param.chip.cpu', icon: 'ri-cpu-line' },
+                { key: 'cpuArch', name: '内核架构', langKey: 'param.chip.arch', icon: 'ri-artboard-line' },
+                { key: 'microArch', name: '微架构', langKey: 'param.chip.micro', icon: 'ri-microscope-line' },
+                { key: 'l1i', name: 'L1 指令缓存', langKey: 'param.chip.l1i', icon: 'ri-database-line' },
+                { key: 'l1d', name: 'L1 数据缓存', langKey: 'param.chip.l1d', icon: 'ri-database-2-line' },
+                { key: 'l2shared', name: 'L2 共享缓存', langKey: 'param.chip.l2s', icon: 'ri-database-2-line' },
+                { key: 'l2private', name: 'L2 私有缓存', langKey: 'param.chip.l2p', icon: 'ri-database-2-line' },
+                { key: 'gpu', name: 'GPU 规格', langKey: 'param.chip.gpu', icon: 'ri-gamepad-line' },
+                { key: 'gpuModel', name: 'GPU 型号', langKey: 'param.chip.gpuModel', icon: 'ri-gamepad-line' },
+                { key: 'ane', name: '神经网络引擎', langKey: 'param.chip.ane', icon: 'ri-brain-line' },
+                { key: 'cacheL3', name: '三级缓存', langKey: 'param.chip.cache', icon: 'ri-archive-line' },
+                { key: 'memory', name: '内存规格', langKey: 'param.chip.memory', icon: 'ri-ram-line' },
+                { key: 'devices', name: '搭载设备', langKey: 'param.chip.devices', icon: 'ri-smartphone-line' },
             ];
             
             // 检查特定参数的图标配置
@@ -2116,13 +2113,14 @@
             console.log('移动端表格生成完成');
         }
 
-        // 移动端行高对齐：参数列与产品列按行取最大高度对齐
+        // 移动端行高对齐：参数列与产品列按行取最大高度对齐（长文本自动换行时保持对齐）
         function syncMobileRowHeights() {
             const paramsColumn = document.getElementById('mobileParamsColumn');
-            const productsContainer = document.getElementById('mobileProductsContainer') || document.querySelector('.mobile-products-container');
+            const productsContainer = document.getElementById('mobileProductsContainer');
             if (!paramsColumn || !productsContainer) return;
             const paramRows = paramsColumn.querySelectorAll(':scope > .mobile-table-row');
             const productColumns = productsContainer.querySelectorAll(':scope > .mobile-product-column');
+            // 先恢复自动高度再测量
             paramsColumn.querySelectorAll('.mobile-table-row, .mobile-cell').forEach(el => { el.style.height = 'auto'; });
             productColumns.forEach(col => {
                 col.querySelectorAll('.mobile-table-row, .mobile-cell').forEach(el => { el.style.height = 'auto'; });
@@ -2156,23 +2154,24 @@
         // 获取完整的参数定义（与PC端保持一致）
         function getCompleteParamDefinitions() {
             return [
-                { key: 'marketingSlogan', name: { 'zh-CN': '宣传口号', 'en-US': 'Marketing Slogan' }, langKey: 'param.marketingSlogan', icon: 'ri-advertisement-line' },
-                { key: 'releaseDate', name: { 'zh-CN': '发布日期', 'en-US': 'Release Date' }, langKey: 'param.releaseDate', icon: 'ri-calendar-line' },
-                { key: 'os', name: { 'zh-CN': '支持系统', 'en-US': 'Supported OS' }, langKey: 'param.c.os', icon: 'ri-apple-line' },
-                { key: 'model', name: { 'zh-CN': '型号标识', 'en-US': 'Model' }, langKey: 'param.model', icon: 'ri-barcode-line' },
-                { key: 'chip', name: { 'zh-CN': '芯片', 'en-US': 'Chip' }, langKey: 'param.c.chip', icon: 'ri-cpu-line' },
-                { key: 'ramStorage', name: { 'zh-CN': '内存存储', 'en-US': 'Memory & Storage' }, langKey: 'param.c.ram', icon: 'ri-database-2-line' },
-                { key: 'remote', name: { 'zh-CN': '遥控器', 'en-US': 'Remote' }, langKey: 'param.tv.remote', icon: 'ri-remote-control-line' },
-                { key: 'powerSupply', name: { 'zh-CN': '充电供电', 'en-US': 'Power' }, langKey: 'param.tv.power', icon: 'ri-plug-line' },
-                { key: 'airPlay', name: { 'zh-CN': '隔空播放', 'en-US': 'AirPlay' }, langKey: 'param.tv.airplay', icon: 'ri-cast-line' },
-                { key: 'audioVideo', name: { 'zh-CN': '音频视频', 'en-US': 'Audio & Video' }, langKey: 'param.tv.av', icon: 'ri-clapperboard-line' },
-                { key: 'ethernet', name: { 'zh-CN': '以太网', 'en-US': 'Ethernet' }, langKey: 'param.tv.ethernet', icon: 'ri-ethernet-line' },
-                { key: 'wirelessChip', name: { 'zh-CN': '无线芯片', 'en-US': 'Wireless Chip' }, langKey: 'param.mac.wirelessChip', icon: 'ri-wifi-line' },
-                { key: 'wirelessSpec', name: { 'zh-CN': '无线规格', 'en-US': 'Wireless Spec' }, langKey: 'param.mac.wirelessSpec', icon: 'ri-bluetooth-line' },
-                { key: 'dimensionsHost', name: { 'zh-CN': '主机尺寸', 'en-US': 'Host Size' }, langKey: 'param.tv.host', icon: 'ri-ruler-line' },
-                { key: 'dimensionsRemote', name: { 'zh-CN': '遥控器尺寸', 'en-US': 'Remote Size' }, langKey: 'param.tv.remoteSize', icon: 'ri-ruler-2-line' },
-                { key: 'price', name: { 'zh-CN': '首发价格', 'en-US': 'Launch Price' }, langKey: 'param.c.price', icon: 'ri-price-tag-3-line' },
-                { key: 'techLinks', name: { 'zh-CN': '规格与手册', 'en-US': 'Specs & Manuals' }, langKey: 'param.c.techLinks', icon: 'ri-links-line' },
+                { key: 'series', name: { 'zh-CN': '产品系列', 'en-US': 'Series' }, langKey: 'param.chip.series', icon: 'ri-layout-grid-line' },
+                { key: 'releaseDate', name: { 'zh-CN': '发布时间', 'en-US': 'Release Date' }, langKey: 'param.releaseDate', icon: 'ri-calendar-line' },
+                { key: 'processTech', name: { 'zh-CN': '芯片工艺', 'en-US': 'Process' }, langKey: 'param.chip.process', icon: 'ri-cpu-fill' },
+                { key: 'transistors', name: { 'zh-CN': '晶体管数', 'en-US': 'Transistors' }, langKey: 'param.chip.transistors', icon: 'ri-stack-line' },
+                { key: 'dieSize', name: { 'zh-CN': '裸片尺寸', 'en-US': 'Die Size' }, langKey: 'param.chip.die', icon: 'ri-focus-2-line' },
+                { key: 'cpu', name: { 'zh-CN': 'CPU 规格', 'en-US': 'CPU' }, langKey: 'param.chip.cpu', icon: 'ri-cpu-line' },
+                { key: 'cpuArch', name: { 'zh-CN': '内核架构', 'en-US': 'Architecture' }, langKey: 'param.chip.arch', icon: 'ri-artboard-line' },
+                { key: 'microArch', name: { 'zh-CN': '微架构', 'en-US': 'Microarchitecture' }, langKey: 'param.chip.micro', icon: 'ri-microscope-line' },
+                { key: 'l1i', name: { 'zh-CN': 'L1 指令缓存', 'en-US': 'L1I Cache' }, langKey: 'param.chip.l1i', icon: 'ri-database-line' },
+                { key: 'l1d', name: { 'zh-CN': 'L1 数据缓存', 'en-US': 'L1D Cache' }, langKey: 'param.chip.l1d', icon: 'ri-database-2-line' },
+                { key: 'l2shared', name: { 'zh-CN': 'L2 共享缓存', 'en-US': 'L2 Shared' }, langKey: 'param.chip.l2s', icon: 'ri-database-2-line' },
+                { key: 'l2private', name: { 'zh-CN': 'L2 私有缓存', 'en-US': 'L2 Private' }, langKey: 'param.chip.l2p', icon: 'ri-database-2-line' },
+                { key: 'gpu', name: { 'zh-CN': 'GPU 规格', 'en-US': 'GPU' }, langKey: 'param.chip.gpu', icon: 'ri-gamepad-line' },
+                { key: 'gpuModel', name: { 'zh-CN': 'GPU 型号', 'en-US': 'GPU Model' }, langKey: 'param.chip.gpuModel', icon: 'ri-gamepad-line' },
+                { key: 'ane', name: { 'zh-CN': '神经网络引擎', 'en-US': 'Neural Engine' }, langKey: 'param.chip.ane', icon: 'ri-brain-line' },
+                { key: 'cacheL3', name: { 'zh-CN': '三级缓存', 'en-US': 'L3 Cache' }, langKey: 'param.chip.cache', icon: 'ri-archive-line' },
+                { key: 'memory', name: { 'zh-CN': '内存规格', 'en-US': 'Memory' }, langKey: 'param.chip.memory', icon: 'ri-ram-line' },
+                { key: 'devices', name: { 'zh-CN': '搭载设备', 'en-US': 'Used In' }, langKey: 'param.chip.devices', icon: 'ri-smartphone-line' },
             ];
         }
 
@@ -2356,10 +2355,9 @@
                     // PPI格式化
                     paramValue = `${paramValue} PPI`;
                 } else if (param.formatter && typeof param.formatter === 'function') {
-                    // 自定义格式化函数（如分项换行展示）
+                    // 自定义格式化函数（如接口分项拆分）
                     try {
-                        const _raw = (paramValue !== undefined && paramValue !== null) ? paramValue : product[param.key];
-                        paramValue = param.formatter(_raw);
+                        paramValue = param.formatter(product[param.key]);
                     } catch (e) {
                         paramValue = 'N/A';
                     }
@@ -3075,6 +3073,35 @@
         }
         
         // 更新性能图表（页面底部的固定图表，独立于产品选择状态）
+        // 无跑分数据时隐藏性能图表区（避免全零柱状图）
+        function getMaxBenchmarkScore() {
+            let max = 0;
+            (window.allProducts || []).forEach(p => {
+                const nums = [];
+                if (p.cpuPerformance && typeof p.cpuPerformance === 'object') {
+                    nums.push(parseInt(p.cpuPerformance.singleCore, 10) || 0);
+                    nums.push(parseInt(p.cpuPerformance.multiCore, 10) || 0);
+                }
+                ['cpuSingleCore', 'cpuMultiCore'].forEach(k => {
+                    if (typeof p[k] === 'number') nums.push(p[k]);
+                });
+                if (p.gpuPerformance !== undefined && p.gpuPerformance !== null) {
+                    nums.push(typeof p.gpuPerformance === 'number' ? p.gpuPerformance : parseInt(p.gpuPerformance, 10) || 0);
+                }
+                if (p.benchmarks && typeof p.benchmarks === 'object') {
+                    ['singleCore', 'multiCore', 'gpu'].forEach(k => nums.push(parseInt(p.benchmarks[k], 10) || 0));
+                }
+                nums.forEach(n => { if (n > max) max = n; });
+            });
+            return max;
+        }
+        function updateChartVisibility() {
+            if (getMaxBenchmarkScore() > 0) return;
+            document.querySelectorAll('.performance-charts-section, #performance-chart-modal').forEach(el => {
+                el.style.display = 'none';
+            });
+        }
+
         function updatePerformanceCharts() {
             // 检查Chart对象是否已定义
             if (typeof Chart === 'undefined') {
@@ -3153,7 +3180,7 @@
                 
                 // 重新加载数据从原始源
                 // 重新从源加载数据文件
-                const response = await fetch('../public/data/tv_refined.json?v=' + new Date().getTime()); // 添加缓存破坏参数
+                const response = await fetch('../public/data/chip_refined.json?v=' + new Date().getTime()); // 添加缓存破坏参数
                 
                 if (!response.ok) {
                     throw new Error('网络响应不正常');
@@ -3426,23 +3453,55 @@
             return '';
         }
         
+
+        function variantLines(val) {
+            if (!val || typeof val !== 'string') return '-';
+            const parts = val.split(/\s+\/\s+/).map(s => s.trim()).filter(Boolean);
+            return parts.length ? parts.join('<br>') : '-';
+        }
+
+        // 长参数拆分展示：把复合接口值按分隔符拆成独立分项
+        const PORT_ITEM_START = 'M\\d+\\s*机型\\s*[:：]|最多|雷雳|雷电|Thunderbolt|USB|Mini\\s*DP|Mini\\s*DVI|Micro\\s*DVI|FireWire|HDMI|DisplayPort|千兆|\\d+\\s*Gb\\s*以太网|3\\.5\\s*毫米|SDXC|PCI\\s*Express';
+        function splitPortSegments(val) {
+            if (!val || typeof val !== 'string') return [];
+            const out = [];
+            const re = new RegExp('\\s+(?=' + PORT_ITEM_START + ')');
+            // 注意：斜杠分隔符前后必须有空格，避免误切 10Gb/s 这类单位
+            val.split(/\s+\/\s+|；/).forEach(p => {
+                p.split(re).forEach(s => {
+                    s = s.trim();
+                    if (s) out.push(s);
+                });
+            });
+            // 合并被孤立的机型前缀（如“M6 机型:”与其后分项）
+            const fixed = [];
+            out.forEach(s => {
+                const prev = fixed[fixed.length - 1];
+                if (prev !== undefined && /机型\s*[:：]\s*$/.test(prev)) {
+                    fixed[fixed.length - 1] = prev + ' ' + s;
+                } else {
+                    fixed.push(s);
+                }
+            });
+            return fixed;
+        }
+        function classifyPort(seg) {
+            if (/最多|^\d+路/.test(seg)) return 'display';
+            if (/雷雳|雷电|Thunderbolt/i.test(seg)) return 'tb';
+            if (/USB/i.test(seg)) return 'usb';
+            if (/以太网|以太网|千兆|LAN|网口/i.test(seg)) return 'net';
+            if (/HDMI|DisplayPort|Mini\s*DP|Micro\s*DVI|DVI|\bDP\b/i.test(seg)) return 'video';
+            if (/耳机|音频|麦克风/i.test(seg)) return 'audio';
+            if (/SDXC|\bSD\b/i.test(seg)) return 'card';
+            if (/PCI/i.test(seg)) return 'expansion';
+            return 'other';
+        }
+        function splitPorts(val, cat) {
+            const r = splitPortSegments(val).filter(s => classifyPort(s) === cat).join('；');
+            return r || '-';
+        }
+
         // 参数名称翻译映射表
-function normZh(val) {
-            let s = (val && typeof val === 'object') ? (val['zh-CN'] || val['en-US'] || '') : (val || '');
-            return String(s);
-        }
-        function splitPriceTiers(val) {
-            const s = normZh(val);
-            const parts = s.split(/\s+(?=\d+\s*(?:GB|TB|G|T|MB)\s*:)/).map(x => x.trim()).filter(Boolean);
-            return parts.length ? parts.join('<br>') : '-';
-        }
-
-        function tvRemoteLines(val) {
-            const s = normZh(val);
-            const parts = s.split(/\s+(?=\d+\.?\d*×)/).map(x => x.trim()).filter(Boolean);
-            return parts.length ? parts.join('<br>') : '-';
-        }
-
         const paramNameTranslations = {
             'param.releaseDate': { 'zh-CN': '发布日期', 'en-US': 'Release Date' },
             'param.model': { 'zh-CN': '型号标识', 'en-US': 'Model' },
@@ -3525,20 +3584,32 @@ function normZh(val) {
             'param.mac.keyboard': { 'zh-CN': '键盘', 'en-US': 'Keyboard' },
             'param.mac.chassisModel': { 'zh-CN': '模具型号', 'en-US': 'Chassis Model' },
             'param.mac.techLinks': { 'zh-CN': '规格与手册', 'en-US': 'Specs & Manuals' },
-            'param.c.os': { 'zh-CN': '支持系统', 'en-US': 'Supported OS' },
-            'param.c.chip': { 'zh-CN': '芯片', 'en-US': 'Chip' },
-            'param.c.sensors': { 'zh-CN': '传感器', 'en-US': 'Sensors' },
-            'param.c.price': { 'zh-CN': '首发价格', 'en-US': 'Launch Price' },
-            'param.c.techLinks': { 'zh-CN': '规格与手册', 'en-US': 'Specs & Manuals' },
-            'param.c.ram': { 'zh-CN': '内存存储', 'en-US': 'Memory & Storage' },
-            'param.tv.remote': { 'zh-CN': '遥控器', 'en-US': 'Remote' },
-            'param.tv.power': { 'zh-CN': '充电供电', 'en-US': 'Power' },
-            'param.tv.airplay': { 'zh-CN': '隔空播放', 'en-US': 'AirPlay' },
-            'param.tv.av': { 'zh-CN': '音频视频', 'en-US': 'Audio & Video' },
-            'param.tv.ethernet': { 'zh-CN': '以太网', 'en-US': 'Ethernet' },
-            'param.tv.host': { 'zh-CN': '主机尺寸', 'en-US': 'Host Size' },
-            'param.tv.remoteSize': { 'zh-CN': '遥控器尺寸', 'en-US': 'Remote Size' },
-            'param.ap.spatialAudio': { 'zh-CN': '空间音频', 'en-US': 'Spatial Audio' },
+            'param.chip.series': { 'zh-CN': '产品系列', 'en-US': 'Series' },
+            'param.chip.process': { 'zh-CN': '芯片工艺', 'en-US': 'Process' },
+            'param.chip.transistors': { 'zh-CN': '晶体管数', 'en-US': 'Transistors' },
+            'param.chip.die': { 'zh-CN': '裸片尺寸', 'en-US': 'Die Size' },
+            'param.chip.cpu': { 'zh-CN': 'CPU 规格', 'en-US': 'CPU' },
+            'param.chip.arch': { 'zh-CN': '内核架构', 'en-US': 'Architecture' },
+            'param.chip.micro': { 'zh-CN': '微架构', 'en-US': 'Microarchitecture' },
+            'param.chip.l1i': { 'zh-CN': 'L1 指令缓存', 'en-US': 'L1I Cache' },
+            'param.chip.l1d': { 'zh-CN': 'L1 数据缓存', 'en-US': 'L1D Cache' },
+            'param.chip.l2s': { 'zh-CN': 'L2 共享缓存', 'en-US': 'L2 Shared Cache' },
+            'param.chip.l2p': { 'zh-CN': 'L2 私有缓存', 'en-US': 'L2 Private Cache' },
+            'param.chip.gpu': { 'zh-CN': 'GPU 规格', 'en-US': 'GPU' },
+            'param.chip.gpuModel': { 'zh-CN': 'GPU 型号', 'en-US': 'GPU Model' },
+            'param.chip.ane': { 'zh-CN': '神经网络引擎', 'en-US': 'Neural Engine' },
+            'param.chip.cache': { 'zh-CN': '三级缓存', 'en-US': 'L3 Cache' },
+            'param.chip.memory': { 'zh-CN': '内存规格', 'en-US': 'Memory' },
+            'param.chip.devices': { 'zh-CN': '搭载设备', 'en-US': 'Used In Devices' },
+            'param.mac.portTb': { 'zh-CN': '接口 · 雷电', 'en-US': 'Thunderbolt' },
+            'param.mac.portUsb': { 'zh-CN': '接口 · USB', 'en-US': 'USB' },
+            'param.mac.portNet': { 'zh-CN': '接口 · 网络', 'en-US': 'Network' },
+            'param.mac.portVideo': { 'zh-CN': '接口 · 视频', 'en-US': 'Video Out' },
+            'param.mac.portAudio': { 'zh-CN': '接口 · 音频', 'en-US': 'Audio' },
+            'param.mac.portCard': { 'zh-CN': '接口 · 存储卡', 'en-US': 'Card Slot' },
+            'param.mac.portExp': { 'zh-CN': '接口 · 扩展', 'en-US': 'Expansion' },
+            'param.mac.portDisp': { 'zh-CN': '接口 · 显示支持', 'en-US': 'Display Support' },
+            'param.mac.portOther': { 'zh-CN': '接口 · 其他', 'en-US': 'Other Ports' }
         };
         
         // 获取本地化参数名称
@@ -3811,6 +3882,7 @@ function normZh(val) {
                     column.style.display = '';
                 }
             });
+            // 筛选后重新对齐移动端行高
             if (typeof syncMobileRowHeights === 'function') {
                 syncMobileRowHeights();
             }

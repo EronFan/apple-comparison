@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-key="page.title">跑分榜 - Apple参数大全</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 跑分榜页样式 */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f5f5f7; color: #1d1d1f; line-height: 1.5; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; border-bottom: 1px solid #d2d2d7; position: sticky; top: 0; background: rgba(245,245,247,0.9); backdrop-filter: blur(10px); z-index: 100; }
+        .logo { font-size: 20px; font-weight: 700; color: #1d1d1f; text-decoration: none; }
+        .logo i { color: #0071e3; margin-right: 6px; }
+        .nav { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+        .nav a { text-decoration: none; color: #1d1d1f; font-size: 14px; padding: 6px 10px; border-radius: 8px; }
+        .nav a:hover { background: rgba(0,0,0,0.05); }
+        .nav a.active { color: #0071e3; font-weight: 600; }
+        h1 { font-size: 32px; margin: 28px 0 6px; }
+        .subtitle { color: #86868b; margin-bottom: 20px; font-size: 15px; }
+        .tabs { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+        .tab { border: 1px solid #d2d2d7; background: #fff; padding: 8px 18px; border-radius: 20px; font-size: 15px; cursor: pointer; }
+        .tab.active { background: #0071e3; color: #fff; border-color: #0071e3; }
+        .rank-table { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        .rank-row { display: grid; grid-template-columns: 52px 1fr auto; gap: 12px; align-items: center; padding: 10px 16px; border-bottom: 1px solid #f0f0f0; }
+        .rank-row:last-child { border-bottom: none; }
+        .rank-num { font-weight: 700; color: #86868b; text-align: center; }
+        .rank-row:nth-child(1) .rank-num { color: #e8a13d; }
+        .rank-row:nth-child(2) .rank-num { color: #8e8e93; }
+        .rank-row:nth-child(3) .rank-num { color: #b0764a; }
+        .rank-name { font-weight: 600; font-size: 15px; }
+        .rank-sub { font-size: 13px; color: #86868b; }
+        .rank-bar { height: 8px; background: #f0f0f5; border-radius: 4px; margin-top: 6px; overflow: hidden; }
+        .rank-bar i { display: block; height: 100%; background: linear-gradient(90deg, #0071e3, #42a5f5); border-radius: 4px; }
+        .rank-score { font-weight: 700; font-variant-numeric: tabular-nums; }
+        .note { margin: 20px 0 40px; font-size: 13px; color: #86868b; }
+        footer { text-align: center; padding: 24px; font-size: 13px; color: #86868b; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a class="logo" href="/src/index.html"><i class="fas fa-apple-alt"></i> <span data-lang-key="site.name">Apple参数大全</span></a>
+            <div class="nav">
+                <a href="/src/index.html" data-lang-key="nav.home">首页</a>
+                <a href="/src/chip-compare.html" data-lang-key="nav.chip">芯片库</a>
+                <a href="/src/benchmarks.html" class="active" data-lang-key="nav.benchmarks">跑分榜</a>
+                <a href="/src/support.html" data-lang-key="nav.support">系统兼容</a>
+                <a href="/src/glossary.html" data-lang-key="nav.glossary">名词解读</a>
+            </div>
+        </header>
+        <h1 data-lang-key="compare.title.benchmarks">跑分榜</h1>
+        <p class="subtitle" data-lang-key="bench.subtitle">汇总站内已公开的 Geekbench 跑分，按分数排名</p>
+        <div class="tabs">
+            <button class="tab active" data-type="single" data-lang-key="bench.tab.single">CPU 单核</button>
+            <button class="tab" data-type="multi" data-lang-key="bench.tab.multi">CPU 多核</button>
+            <button class="tab" data-type="gpu" data-lang-key="bench.tab.gpu">GPU</button>
+        </div>
+        <div class="rank-table" id="rankTable"></div>
+        <p class="note" data-lang-key="bench.note">仅收录已公开跑分的 iPhone / iPad 机型；Mac / Watch 等暂无公开跑分数据，未列入。</p>
+        <footer data-lang-key="footer.copyright">&copy; 2025 Apple参数大全</footer>
+    </div>
+    <script src="../public/js/languages.js"></script>
+    <script src="../public/js/language-switcher.js"></script>
+    <script>
+        // 跑分榜：从 iPhone / iPad 数据文件提取跑分并排名
+        let currentType = 'single';
+        let allScores = { single: [], multi: [], gpu: [] };
+
+        // 取本地化文本
+        function loc(v) {
+            const lang = (window.currentLanguage || document.querySelector('.language-btn.active')?.dataset.lang) || 'zh-CN';
+            if (v && typeof v === 'object') return v[lang] || v['zh-CN'] || '';
+            return v || '';
+        }
+
+        // 提取单机型的三项分数
+        function extractScores(p) {
+            const out = { single: 0, multi: 0, gpu: 0 };
+            if (p.cpuPerformance && typeof p.cpuPerformance === 'object') {
+                out.single = parseInt(p.cpuPerformance.singleCore, 10) || 0;
+                out.multi = parseInt(p.cpuPerformance.multiCore, 10) || 0;
+            }
+            if (p.benchmarks && typeof p.benchmarks === 'object') {
+                out.single = out.single || parseInt(p.benchmarks.singleCore, 10) || 0;
+                out.multi = out.multi || parseInt(p.benchmarks.multiCore, 10) || 0;
+                out.gpu = parseInt(p.benchmarks.gpu, 10) || 0;
+            }
+            if (p.gpuPerformance !== undefined && p.gpuPerformance !== null) {
+                out.gpu = out.gpu || (typeof p.gpuPerformance === 'number' ? p.gpuPerformance : parseInt(p.gpuPerformance, 10) || 0);
+            }
+            return out;
+        }
+
+        // 加载数据
+        async function loadData() {
+            const files = ['../public/data/iphone_refined.json', '../public/data/ipad_refined.json'];
+            for (const f of files) {
+                try {
+                    const res = await fetch(f + '?v=' + Date.now());
+                    const list = await res.json();
+                    list.forEach(p => {
+                        const s = extractScores(p);
+                        const name = loc(p.name);
+                        const chip = loc(p.processor) || '';
+                        if (s.single > 0) allScores.single.push({ name, chip, score: s.single });
+                        if (s.multi > 0) allScores.multi.push({ name, chip, score: s.multi });
+                        if (s.gpu > 0) allScores.gpu.push({ name, chip, score: s.gpu });
+                    });
+                } catch (e) {
+                    console.error('加载失败:', f, e);
+                }
+            }
+            Object.keys(allScores).forEach(k => allScores[k].sort((a, b) => b.score - a.score));
+            render();
+        }
+
+        // 渲染榜单
+        function render() {
+            const list = allScores[currentType] || [];
+            const max = list.length ? list[0].score : 1;
+            const box = document.getElementById('rankTable');
+            box.innerHTML = list.map((item, i) => `
+                <div class="rank-row">
+                    <div class="rank-num">${i + 1}</div>
+                    <div>
+                        <div class="rank-name">${item.name}</div>
+                        <div class="rank-sub">${item.chip}</div>
+                        <div class="rank-bar"><i style="width:${Math.max(2, Math.round(item.score / max * 100))}%"></i></div>
+                    </div>
+                    <div class="rank-score">${item.score.toLocaleString()}</div>
+                </div>
+            `).join('');
+        }
+
+        document.querySelectorAll('.tab').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentType = btn.dataset.type;
+                render();
+            });
+        });
+
+        loadData();
+    </script>
+</body>
+</html>
