@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Apple参数大全 - iPhone、Mac、iPad、Watch 全系参数对比，跑分榜、芯片库、系统兼容查询">
+<title>首页原型 B2 · 数据门户优化版</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+/* 原型B2：数据门户优化版（静态原型，可交互演示） */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f5f5f7; color: #1d1d1f; line-height: 1.5; }
+.topbar { background: #1d1d1f; color: #a1a1a6; font-size: 12px; text-align: center; padding: 8px; }
+.topbar b { color: #fff; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+header { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; }
+.logo { font-size: 20px; font-weight: 700; }
+.logo i { color: #0071e3; margin-right: 6px; }
+.nav { display: flex; gap: 6px; flex-wrap: wrap; }
+.nav a { text-decoration: none; color: #1d1d1f; font-size: 14px; padding: 6px 12px; border-radius: 8px; }
+.nav a:hover { background: rgba(0,0,0,.05); }
+.hero { background: linear-gradient(135deg, #1d1d1f 0%, #3a3a3c 100%); color: #fff; border-radius: 18px; padding: 44px 36px; margin: 12px 0 18px; text-align: center; }
+.hero h1 { font-size: 38px; letter-spacing: -1px; margin-bottom: 8px; }
+.hero p { color: #a1a1a6; margin-bottom: 20px; }
+.hero .search { display: flex; max-width: 520px; margin: 0 auto; background: rgba(255,255,255,.12); border-radius: 22px; overflow: hidden; }
+.hero .search input { flex: 1; border: none; outline: none; background: transparent; color: #fff; padding: 12px 20px; font-size: 15px; }
+.hero .search input::placeholder { color: #86868b; }
+.hero .search button { border: none; background: #0071e3; color: #fff; padding: 0 24px; cursor: pointer; }
+.hot { margin-top: 12px; font-size: 13px; color: #86868b; }
+.hot button { background: none; border: 1px solid #555; color: #d2d2d7; border-radius: 14px; padding: 3px 12px; margin: 0 4px; font-size: 13px; cursor: pointer; }
+.hot button:hover { border-color: #0071e3; color: #fff; }
+.anchorbar { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin: 4px 0 8px; }
+.anchorbar a { font-size: 13px; color: #555; background: #fff; border-radius: 16px; padding: 5px 14px; text-decoration: none; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+.anchorbar a:hover { color: #0071e3; }
+.counters { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 22px 0 30px; }
+.counter { background: #fff; border-radius: 14px; padding: 18px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+.counter b { font-size: 30px; color: #0071e3; display: block; font-variant-numeric: tabular-nums; }
+.counter span { font-size: 13px; color: #86868b; }
+section { margin: 34px 0; scroll-margin-top: 20px; }
+.sec-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 14px; }
+.sec-head h2 { font-size: 22px; }
+.sec-head a { font-size: 14px; color: #0071e3; text-decoration: none; }
+.pk-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.pk { background: #fff; border-radius: 12px; padding: 14px 18px; display: flex; justify-content: space-between; align-items: center; text-decoration: none; color: inherit; border: 1px solid transparent; }
+.pk:hover { border-color: #0071e3; box-shadow: 0 4px 14px rgba(0,0,0,.1); }
+.pk .vs { color: #fff; background: #0071e3; font-size: 12px; border-radius: 10px; padding: 1px 8px; margin: 0 8px; white-space: nowrap; }
+.pk .go { color: #0071e3; font-size: 13px; white-space: nowrap; }
+.boards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.board { background: #fff; border-radius: 14px; padding: 18px; text-decoration: none; color: inherit; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+.board:hover { box-shadow: 0 8px 20px rgba(0,0,0,.12); }
+.board .k { font-size: 13px; color: #86868b; }
+.board .v { font-size: 30px; font-weight: 700; margin: 2px 0; font-variant-numeric: tabular-nums; }
+.board .n { font-size: 14px; }
+.board .bar { height: 6px; background: #f0f0f5; border-radius: 3px; margin-top: 10px; }
+.board .bar i { display: block; height: 100%; width: 100%; background: linear-gradient(90deg,#0071e3,#42a5f5); border-radius: 3px; }
+.chips { display: flex; flex-wrap: wrap; gap: 10px; }
+.chip { background: #fff; border: 1px solid #d2d2d7; border-radius: 20px; padding: 8px 18px; font-size: 14px; text-decoration: none; color: #1d1d1f; }
+.chip:hover { border-color: #0071e3; color: #0071e3; }
+.chip small { color: #86868b; margin-left: 4px; }
+.tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.tile { background: #fff; border-radius: 12px; padding: 16px 18px; display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; position: relative; }
+.tile:hover { box-shadow: 0 4px 14px rgba(0,0,0,.1); }
+.tile .icon { width: 40px; height: 40px; border-radius: 10px; background: #f0f5ff; color: #0071e3; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+.tile h3 { font-size: 15px; }
+.tile p { font-size: 12px; color: #86868b; }
+.tile .go { margin-left: auto; font-size: 12px; color: #0071e3; white-space: nowrap; }
+.dot { position: absolute; top: 12px; right: 12px; width: 8px; height: 8px; border-radius: 50%; background: #0071e3; }
+.dot[title] { cursor: help; }
+.timeline { background: #fff; border-radius: 14px; padding: 8px 22px; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+.tl-item { display: flex; gap: 14px; padding: 14px 0; border-bottom: 1px solid #f0f0f5; align-items: baseline; }
+.tl-item:last-child { border-bottom: none; }
+.tl-date { font-size: 13px; color: #fff; background: #0071e3; border-radius: 10px; padding: 2px 10px; white-space: nowrap; }
+.tl-item a { color: inherit; text-decoration: none; font-size: 14px; }
+.tl-item a:hover { color: #0071e3; }
+.tools { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.tool { background: #fff; border-radius: 14px; padding: 20px; text-align: center; text-decoration: none; color: inherit; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+.tool:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,.12); }
+.tool i { font-size: 26px; color: #0071e3; margin-bottom: 8px; }
+.tool h3 { font-size: 15px; }
+.tool p { font-size: 12px; color: #86868b; margin-top: 4px; }
+.faq details { background: #fff; border-radius: 12px; margin-bottom: 10px; padding: 16px 20px; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+.faq summary { font-size: 15px; font-weight: 600; cursor: pointer; }
+.faq p { font-size: 14px; color: #555; margin-top: 8px; }
+.faq a { color: #0071e3; text-decoration: none; }
+.empty-hint { text-align: center; color: #86868b; padding: 30px; display: none; }
+.hide { display: none !important; }
+footer { border-top: 1px solid #d2d2d7; margin-top: 40px; padding: 30px 0; }
+.foot-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 20px; }
+.foot-grid h4 { font-size: 14px; margin-bottom: 10px; }
+.foot-grid a { display: block; font-size: 13px; color: #555; text-decoration: none; margin-bottom: 6px; }
+.foot-grid a:hover { color: #0071e3; }
+.copyright { font-size: 12px; color: #86868b; text-align: center; border-top: 1px solid #e5e5ea; padding-top: 16px; }
+.back-top { position: fixed; bottom: 26px; right: 26px; width: 42px; height: 42px; border-radius: 50%; background: #0071e3; color: #fff; border: none; font-size: 16px; cursor: pointer; display: none; box-shadow: 0 4px 12px rgba(0,0,0,.2); }
+.back-top.show { display: block; }
+@media (max-width: 768px) {
+  .hero h1 { font-size: 26px; }
+  .counters { grid-template-columns: 1fr 1fr; }
+  .boards, .tiles, .pk-row { grid-template-columns: 1fr; }
+  .tools { grid-template-columns: 1fr 1fr; }
+  .foot-grid { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="topbar">数据更新至 2026 年 9 月 · 本月新增 <b>iPhone 18 系列 / Duo / Watch 新品</b></div>
+<div class="wrap">
+  <header>
+    <div class="logo"><i class="fas fa-apple-alt"></i>Apple参数大全</div>
+    <div class="nav"><a href="#">首页</a><a href="../src/iphone-compare.html">对比</a><a href="../src/benchmarks.html">跑分榜</a><a href="../src/news.html">资讯</a></div>
+  </header>
+
+  <div class="hero">
+    <h1>苹果全系参数，一站查全。</h1>
+    <p>273 款设备 · 82 颗芯片 · 跑分 / 兼容 / 术语全收录</p>
+    <div class="search">
+      <input id="q" placeholder="搜机型、芯片、榜单…">
+      <button onclick="doSearch(true)"><i class="fas fa-search"></i></button>
+    </div>
+    <div class="hot">热搜：
+      <button onclick="fill('iPhone 18 Pro')">iPhone 18 Pro</button>
+      <button onclick="fill('M5')">M5</button>
+      <button onclick="fill('续航')">续航最强</button>
+      <button onclick="fill('Watch')">Watch</button>
+    </div>
+  </div>
+
+  <div class="anchorbar">
+    <a href="#pk">热门PK</a><a href="#score">跑分榜</a><a href="#chip">芯片</a><a href="#lines">产品线</a><a href="#timeline">新品</a><a href="#faq">问答</a>
+  </div>
+
+  <div class="counters">
+    <div class="counter"><b data-count="273">0</b><span>收录机型</span></div>
+    <div class="counter"><b data-count="82">0</b><span>芯片</span></div>
+    <div class="counter"><b data-count="14">0</b><span>对比与工具页</span></div>
+    <div class="counter"><b data-count="162">0</b><span>术语</span></div>
+  </div>
+
+  <section id="pk">
+    <div class="sec-head"><h2>⚔️ 热门PK（一键直达）</h2></div>
+    <div class="pk-row" data-search="iphone 18 pro 17 pro 对比 pk">
+      <a class="pk" href="../src/iphone-compare.html"><span><b>iPhone 18 Pro</b><span class="vs">VS</span><b>iPhone 17 Pro</b></span><span class="go">去对比 →</span></a>
+      <a class="pk" href="../src/iphone-compare.html"><span><b>iPhone 17e</b><span class="vs">VS</span><b>iPhone 16e</b></span><span class="go">去对比 →</span></a>
+      <a class="pk" href="../src/mac-compare.html"><span><b>MacBook Air M5</b><span class="vs">VS</span><b>Pro M5</b></span><span class="go">去对比 →</span></a>
+      <a class="pk" href="../src/watch-compare.html"><span><b>Ultra 4</b><span class="vs">VS</span><b>Ultra 3</b></span><span class="go">去对比 →</span></a>
+    </div>
+  </section>
+
+  <section id="score">
+    <div class="sec-head"><h2>📊 跑分榜速览</h2><a href="../src/benchmarks.html">完整榜单 →</a></div>
+    <div class="boards" data-search="跑分 性能 cpu gpu">
+      <a class="board" href="../src/benchmarks.html"><div class="k">CPU 单核第一</div><div class="v">3,756</div><div class="n">iPhone 17 Pro Max</div><div class="bar"><i></i></div></a>
+      <a class="board" href="../src/benchmarks.html"><div class="k">CPU 多核第一</div><div class="v">13,393</div><div class="n">iPad Pro 13 (M4)</div><div class="bar"><i></i></div></a>
+      <a class="board" href="../src/benchmarks.html"><div class="k">GPU 第一</div><div class="v">54,110</div><div class="n">iPad Pro 13 (M4)</div><div class="bar"><i></i></div></a>
+    </div>
+  </section>
+
+  <section id="chip">
+    <div class="sec-head"><h2>🔍 芯片速查</h2><a href="../src/chip-compare.html">芯片库 →</a></div>
+    <div class="chips" data-search="芯片 a20 m5 s11 a19 m4 h2 r1 c2">
+      <a class="chip" href="../src/chip-compare.html">A20 Pro<small>2P+4E+7GPU</small></a>
+      <a class="chip" href="../src/chip-compare.html">M5<small>MacBook Pro</small></a>
+      <a class="chip" href="../src/chip-compare.html">S11 SiP<small>Watch</small></a>
+      <a class="chip" href="../src/chip-compare.html">A19 Pro<small>iPhone 17 Pro</small></a>
+      <a class="chip" href="../src/chip-compare.html">M4<small>iPad Pro</small></a>
+      <a class="chip" href="../src/chip-compare.html">H2<small>AirPods</small></a>
+      <a class="chip" href="../src/chip-compare.html">R1<small>Vision</small></a>
+      <a class="chip" href="../src/chip-compare.html">C2<small>基带</small></a>
+    </div>
+  </section>
+
+  <section id="lines">
+    <div class="sec-head"><h2>📦 产品线</h2></div>
+    <div class="tiles">
+      <a class="tile" href="../src/iphone-compare.html" data-search="iphone 手机"><span class="dot" title="9月刚更新"></span><div class="icon"><i class="fas fa-mobile-alt"></i></div><div><h3>iPhone · 55款</h3><p>性能 / 相机 / 电池</p></div><span class="go">去对比 →</span></a>
+      <a class="tile" href="../src/ipad-compare.html" data-search="ipad 平板"><div class="icon"><i class="fas fa-tablet-alt"></i></div><div><h3>iPad · 45款</h3><p>屏幕 / 芯片 / 手写笔</p></div><span class="go">去对比 →</span></a>
+      <a class="tile" href="../src/mac-compare.html" data-search="macbook mac 电脑"><span class="dot" title="8月刚更新"></span><div class="icon"><i class="fas fa-laptop"></i></div><div><h3>Mac · 123款</h3><p>芯片 / 内存 / 接口</p></div><span class="go">去对比 →</span></a>
+      <a class="tile" href="../src/watch-compare.html" data-search="watch 手表"><span class="dot" title="9月刚更新"></span><div class="icon"><i class="far fa-clock"></i></div><div><h3>Watch · 20款</h3><p>健康 / 续航</p></div><span class="go">去对比 →</span></a>
+      <a class="tile" href="../src/airpods-compare.html" data-search="airpods 耳机"><div class="icon"><i class="fas fa-headphones"></i></div><div><h3>AirPods · 11款</h3><p>降噪 / 续航</p></div><span class="go">去对比 →</span></a>
+      <a class="tile" href="../src/tv-compare.html" data-search="tv 电视"><div class="icon"><i class="fas fa-tv"></i></div><div><h3>TV · 7款</h3><p>芯片 / 遥控器</p></div><span class="go">去对比 →</span></a>
+      <a class="tile" href="../src/vision-compare.html" data-search="vision 头显"><div class="icon"><i class="fas fa-vr-cardboard"></i></div><div><h3>Vision · 2款</h3><p>显示 / 传感</p></div><span class="go">去对比 →</span></a>
+      <a class="tile" href="../src/homepod-compare.html" data-search="homepod 音箱"><div class="icon"><i class="fas fa-volume-up"></i></div><div><h3>HomePod · 3款</h3><p>音响 / 智能</p></div><span class="go">去对比 →</span></a>
+      <a class="tile" href="../src/ipod-compare.html" data-search="ipod 音乐"><div class="icon"><i class="fas fa-music"></i></div><div><h3>iPod · 7款</h3><p>经典回顾</p></div><span class="go">去对比 →</span></a>
+    </div>
+  </section>
+
+  <section id="timeline">
+    <div class="sec-head"><h2>🆕 新品时间线</h2><a href="../src/news.html">资讯 →</a></div>
+    <div class="timeline" data-search="新品 发布 2026">
+      <div class="tl-item"><span class="tl-date">2026.09</span><a href="../src/iphone-compare.html"><b>iPhone 18 Pro / Max、iPhone Duo、Watch Ultra 4 / Series 12</b> 发布</a></div>
+      <div class="tl-item"><span class="tl-date">2026.08</span><a href="../src/mac-compare.html"><b>Mac mini（M6）/ Mac Studio（M5 Max/Ultra）</b> 更新</a></div>
+      <div class="tl-item"><span class="tl-date">2026.03</span><a href="../src/iphone-compare.html"><b>iPhone 17e、iPad Air（M4）、MacBook Neo、AirPods Max 2</b> 上市</a></div>
+      <div class="tl-item"><span class="tl-date">2025.10</span><a href="../src/ipad-compare.html"><b>iPad Pro（M5）、Vision Pro（M5）</b> 换芯</a></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>🧰 工具</h2></div>
+    <div class="tools" data-search="工具 兼容 术语 系统 升级">
+      <a class="tool" href="../src/support.html"><i class="fas fa-shield-alt"></i><h3>系统兼容</h3><p>升级支持查询</p></a>
+      <a class="tool" href="../src/glossary.html"><i class="fas fa-book"></i><h3>名词解读</h3><p>162 条速查</p></a>
+      <a class="tool" href="../src/benchmarks.html"><i class="fas fa-chart-bar"></i><h3>跑分榜</h3><p>性能排名</p></a>
+      <a class="tool" href="../src/news.html"><i class="fas fa-newspaper"></i><h3>资讯</h3><p>新品动态</p></a>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <div class="sec-head"><h2>❓ 常见问题</h2></div>
+    <details open>
+      <summary>iPhone 18 Pro 和 17 Pro 主要区别是什么？</summary>
+      <p>芯片从 A19 Pro 升级到 <b>A20 Pro（2P+4E+7GPU）</b>，主摄光圈从 ƒ/1.78 变为 <b>ƒ/1.48~4.0 可变光圈</b>，电池从 3988mAh 提到 4056mAh。<a href="../src/iphone-compare.html">去逐项对比 →</a></p>
+    </details>
+    <details>
+      <summary>续航最强的 iPhone 是哪款？</summary>
+      <p>本站数据中视频播放最长的是 <b>iPhone Duo（44 小时）</b>，其次是 iPhone 18 Pro Max（43 小时）。<a href="../src/iphone-compare.html">去对比 →</a></p>
+    </details>
+    <details>
+      <summary>性能最强的设备是哪款？</summary>
+      <p>CPU 单核第一是 <b>iPhone 17 Pro Max（3756 分）</b>，多核与 GPU 第一都是 <b>iPad Pro 13（M4）</b>。<a href="../src/benchmarks.html">看完整榜单 →</a></p>
+    </details>
+    <details>
+      <summary>我的旧设备还能升级最新系统吗？</summary>
+      <p>在<a href="../src/support.html">系统兼容页</a>输入机型即可查到发布系统、最高支持版本与更新状态，覆盖 259 款机型。</p>
+    </details>
+    <details>
+      <summary>MacBook Air 和 Pro 该怎么选？</summary>
+      <p>看三点：芯片（Air 最高 M5，Pro 可到 M5 Pro/Max）、接口（Pro 雷电更多）、预算。<a href="../src/mac-compare.html">去对比同代机型 →</a></p>
+    </details>
+  </section>
+
+  <footer>
+    <div class="foot-grid">
+      <div><h4>产品对比</h4><a href="../src/iphone-compare.html">iPhone</a><a href="../src/ipad-compare.html">iPad</a><a href="../src/mac-compare.html">Mac</a><a href="../src/watch-compare.html">Watch</a></div>
+      <div><h4>更多设备</h4><a href="../src/airpods-compare.html">AirPods</a><a href="../src/tv-compare.html">TV</a><a href="../src/vision-compare.html">Vision</a><a href="../src/ipod-compare.html">iPod</a></div>
+      <div><h4>数据工具</h4><a href="../src/chip-compare.html">芯片库</a><a href="../src/benchmarks.html">跑分榜</a><a href="../src/support.html">系统兼容</a><a href="../src/glossary.html">名词解读</a></div>
+      <div><h4>关于</h4><a href="../src/news.html">资讯</a><a href="../src/feedback.html">反馈建议</a><a href="https://www.apple.com.cn" target="_blank">Apple 官网</a></div>
+    </div>
+    <div class="copyright">© 2025 Apple参数大全 · 本网站与 Apple Inc. 无任何关联 · 数据来源于公开资料整理</div>
+  </footer>
+</div>
+<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-arrow-up"></i></button>
+<script>
+// 实时搜索：过滤卡片/chips/时间线条目
+function doSearch(scroll) {
+  const q = document.getElementById('q').value.trim().toLowerCase();
+  let visible = 0;
+  document.querySelectorAll('.tile, .chip, .tl-item, .pk, .board, .tool').forEach(el => {
+    const hit = !q || el.textContent.toLowerCase().includes(q) || (el.dataset.search || '').includes(q);
+    el.classList.toggle('hide', !hit);
+    if (hit) visible++;
+  });
+  if (scroll && q) document.getElementById('lines').scrollIntoView({ behavior: 'smooth' });
+}
+function fill(w) { document.getElementById('q').value = w; doSearch(true); }
+document.getElementById('q').addEventListener('input', () => doSearch(false));
+// 计数器动画
+const io = new IntersectionObserver(es => {
+  es.forEach(e => {
+    if (!e.isIntersecting) return;
+    const b = e.target, target = +b.dataset.count;
+    const t0 = performance.now();
+    (function tick(t) {
+      const p = Math.min(1, (t - t0) / 900);
+      b.textContent = Math.round(target * (1 - Math.pow(1 - p, 3)));
+      if (p < 1) requestAnimationFrame(tick);
+    })(t0);
+    io.unobserve(b);
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('[data-count]').forEach(b => io.observe(b));
+// 返回顶部
+window.addEventListener('scroll', () => {
+  document.getElementById('backTop').classList.toggle('show', window.scrollY > 500);
+});
+</script>
+</body>
+</html>
