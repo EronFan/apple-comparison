@@ -1829,7 +1829,7 @@ function generateTable(products) {
             thumb.alt = getLocalizedValue(product.name, currentLang);
             thumb.loading = 'lazy';
             thumb.onerror = function() { this.remove(); };
-            productSelector.insertBefore(thumb, checkbox);
+            productSelector.appendChild(thumb);
         }
         const label = document.createElement('label');
         label.className = 'product-name';
