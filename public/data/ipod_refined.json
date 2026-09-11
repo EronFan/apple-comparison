@@ -43,7 +43,8 @@
         },
         "url": "https://support.apple.com/zh-cn/111961"
       }
-    ]
+    ],
+    "image": "ipod-001.webp"
   },
   {
     "id": "ipod-002",
@@ -90,7 +91,8 @@
         },
         "url": "https://support.apple.com/zh-cn/112023"
       }
-    ]
+    ],
+    "image": "ipod-002.webp"
   },
   {
     "id": "ipod-003",
@@ -137,7 +139,8 @@
         },
         "url": "https://support.apple.com/zh-cn/112021"
       }
-    ]
+    ],
+    "image": "ipod-003.webp"
   },
   {
     "id": "ipod-004",
@@ -184,7 +187,8 @@
         },
         "url": "https://support.apple.com/zh-cn/112431"
       }
-    ]
+    ],
+    "image": "ipod-004.webp"
   },
   {
     "id": "ipod-005",
@@ -227,7 +231,8 @@
         },
         "url": "https://support.apple.com/zh-cn/112461"
       }
-    ]
+    ],
+    "image": "ipod-005.webp"
   },
   {
     "id": "ipod-006",
@@ -266,7 +271,8 @@
         },
         "url": "https://support.apple.com/zh-cn/112319"
       }
-    ]
+    ],
+    "image": "ipod-006.webp"
   },
   {
     "id": "ipod-007",
@@ -304,6 +310,7 @@
         },
         "url": "https://support.apple.com/zh-cn/112532"
       }
-    ]
+    ],
+    "image": "ipod-007.webp"
   }
 ]

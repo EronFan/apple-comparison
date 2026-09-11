@@ -711,7 +711,8 @@
       "256GB",
       "512GB"
     ],
-    "ramType": "LPDDR5X"
+    "ramType": "LPDDR5X",
+    "image": "ipad-ipad-pro-13-inchm4.webp"
   },
   {
     "name": {
@@ -853,7 +854,8 @@
       "1TB",
       "512GB"
     ],
-    "ramType": "LPDDR4X"
+    "ramType": "LPDDR4X",
+    "image": "ipad-ipad-pro-11-inchm4.webp"
   },
   {
     "name": {
@@ -999,7 +1001,8 @@
       "128GB",
       "256GB"
     ],
-    "ramType": "LPDDR4"
+    "ramType": "LPDDR4",
+    "image": "ipad-ipad-pro-129-inch-6.webp"
   },
   {
     "name": {
@@ -1144,7 +1147,8 @@
       "1TB",
       "512GB"
     ],
-    "ramType": "LPDDR4X"
+    "ramType": "LPDDR4X",
+    "image": "ipad-ipad-pro-11-inch-4.webp"
   },
   {
     "name": {
@@ -1291,7 +1295,8 @@
       "128GB",
       "256GB"
     ],
-    "ramType": "LPDDR4"
+    "ramType": "LPDDR4",
+    "image": "ipad-ipad-pro-129-inch-5.webp"
   },
   {
     "name": {
@@ -1437,7 +1442,8 @@
       "1TB",
       "512GB"
     ],
-    "ramType": "LPDDR4X"
+    "ramType": "LPDDR4X",
+    "image": "ipad-ipad-pro-11-inch-3.webp"
   },
   {
     "name": {
@@ -1584,7 +1590,8 @@
       "128GB",
       "256GB"
     ],
-    "ramType": "LPDDR4"
+    "ramType": "LPDDR4",
+    "image": "ipad-ipad-pro-129-inch-4.webp"
   },
   {
     "name": {
@@ -1730,7 +1737,8 @@
       "1TB",
       "512GB"
     ],
-    "ramType": "LPDDR4X"
+    "ramType": "LPDDR4X",
+    "image": "ipad-ipad-pro-11-inch-2.webp"
   },
   {
     "name": {
@@ -1877,7 +1885,8 @@
       "128GB",
       "256GB"
     ],
-    "ramType": "LPDDR4"
+    "ramType": "LPDDR4",
+    "image": "ipad-ipad-pro-129-inch-3.webp"
   },
   {
     "name": {
@@ -2023,7 +2032,8 @@
       "1TB",
       "512GB"
     ],
-    "ramType": "LPDDR4X"
+    "ramType": "LPDDR4X",
+    "image": "ipad-ipad-pro-11-inch-1.webp"
   },
   {
     "name": {
@@ -2177,7 +2187,8 @@
       "128GB",
       "256GB"
     ],
-    "ramType": "LPDDR4"
+    "ramType": "LPDDR4",
+    "image": "ipad-ipad-pro-129-inch-2.webp"
   },
   {
     "name": {
@@ -2337,7 +2348,8 @@
       "256GB",
       "512GB"
     ],
-    "ramType": "LPDDR4"
+    "ramType": "LPDDR4",
+    "image": "ipad-ipad-pro-105-inch.webp"
   },
   {
     "name": {
@@ -2497,7 +2509,8 @@
       "128GB",
       "256GB"
     ],
-    "ramType": "LPDDR4"
+    "ramType": "LPDDR4",
+    "image": "ipad-ipad-pro-97-inch.webp"
   },
   {
     "name": {
@@ -2650,7 +2663,8 @@
       "128GB",
       "256GB"
     ],
-    "ramType": "LPDDR4"
+    "ramType": "LPDDR4",
+    "image": "ipad-ipad-pro-129-inch.webp"
   },
   {
     "name": {
@@ -2805,7 +2819,8 @@
       "singleCore": "2591",
       "multiCore": "9828",
       "gpu": "41995"
-    }
+    },
+    "image": "ipad-ipad-air-13-inchm3.png"
   },
   {
     "name": {
@@ -2960,7 +2975,8 @@
       "singleCore": "2586",
       "multiCore": "9795",
       "gpu": "42035"
-    }
+    },
+    "image": "ipad-ipad-air-11-inchm3.png"
   },
   {
     "name": {
@@ -3114,7 +3130,8 @@
       "512GB",
       "1TB"
     ],
-    "ramType": "LPDDR5"
+    "ramType": "LPDDR5",
+    "image": "ipad-ipad-air-13-inchm2.webp"
   },
   {
     "name": {
@@ -3268,7 +3285,8 @@
       "512GB",
       "1TB"
     ],
-    "ramType": "LPDDR5"
+    "ramType": "LPDDR5",
+    "image": "ipad-ipad-air-11-inchm2.webp"
   },
   {
     "name": {
@@ -3428,7 +3446,8 @@
       "64GB",
       "256GB"
     ],
-    "ramType": "LPDDR4X"
+    "ramType": "LPDDR4X",
+    "image": "ipad-ipad-air-5.webp"
   },
   {
     "name": {
@@ -3588,7 +3607,8 @@
       "64GB",
       "256GB"
     ],
-    "ramType": "LPDDR4X"
+    "ramType": "LPDDR4X",
+    "image": "ipad-ipad-air-4.webp"
   },
   {
     "name": {
@@ -3734,7 +3754,8 @@
       "64GB",
       "256GB"
     ],
-    "ramType": "LPDDR4X"
+    "ramType": "LPDDR4X",
+    "image": "ipad-ipad-air-3.webp"
   },
   {
     "name": {
@@ -3882,7 +3903,8 @@
       "64GB",
       "128GB"
     ],
-    "ramType": "LPDDR3"
+    "ramType": "LPDDR3",
+    "image": "ipad-ipad-air-2.webp"
   },
   {
     "name": {
@@ -4019,7 +4041,8 @@
       "128GB"
     ],
     "ramType": "LPDDR3",
-    "benchmarks": {}
+    "benchmarks": {},
+    "image": "ipad-ipad-air.webp"
   },
   {
     "name": {
@@ -4326,7 +4349,8 @@
       "256GB"
     ],
     "ram": "4GB",
-    "ramType": "LPDDR4X"
+    "ramType": "LPDDR4X",
+    "image": "ipad-ipad-mini-6.webp"
   },
   {
     "name": {
@@ -4472,7 +4496,8 @@
       "256GB"
     ],
     "ram": "3GB",
-    "ramType": "LPDDR4X"
+    "ramType": "LPDDR4X",
+    "image": "ipad-ipad-mini-5.webp"
   },
   {
     "name": {
@@ -4620,7 +4645,8 @@
       "128GB"
     ],
     "ram": "2GB",
-    "ramType": "LPDDR3"
+    "ramType": "LPDDR3",
+    "image": "ipad-ipad-mini-4.webp"
   },
   {
     "name": {
@@ -4763,7 +4789,8 @@
     ],
     "ram": "1GB",
     "ramType": "LPDDR3",
-    "benchmarks": {}
+    "benchmarks": {},
+    "image": "ipad-ipad-mini-3.webp"
   },
   {
     "name": {
@@ -4900,7 +4927,8 @@
     ],
     "ram": "1GB",
     "ramType": "LPDDR3",
-    "benchmarks": {}
+    "benchmarks": {},
+    "image": "ipad-ipad-mini-2.webp"
   },
   {
     "name": {
@@ -5017,7 +5045,8 @@
     ],
     "ram": "512MB",
     "ramType": "DDR2",
-    "benchmarks": {}
+    "benchmarks": {},
+    "image": "ipad-ipad-mini.webp"
   },
   {
     "name": "iPad(A16)",
@@ -5158,7 +5187,8 @@
       "256GB"
     ],
     "ram": "4GB",
-    "ramType": "LPDDR4X"
+    "ramType": "LPDDR4X",
+    "image": "ipad-ipad-10.webp"
   },
   {
     "name": {
@@ -5217,7 +5247,8 @@
     "batteryLife": {
       "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
-    }
+    },
+    "image": "ipad-ipad-9.webp"
   },
   {
     "name": {
@@ -5285,7 +5316,8 @@
       "128GB"
     ],
     "ram": "3GB",
-    "ramType": "LPDDR4X"
+    "ramType": "LPDDR4X",
+    "image": "ipad-ipad-8.webp"
   },
   {
     "name": "iPad(第 7 代)",
@@ -5350,7 +5382,8 @@
       "128GB"
     ],
     "ram": "3GB",
-    "ramType": "LPDDR4"
+    "ramType": "LPDDR4",
+    "image": "ipad-ipad-7.webp"
   },
   {
     "name": {
@@ -5418,7 +5451,8 @@
       "256GB"
     ],
     "ram": "4GB",
-    "ramType": "LPDDR4X"
+    "ramType": "LPDDR4X",
+    "image": "ipad-ipad-6.webp"
   },
   {
     "name": {
@@ -5486,7 +5520,8 @@
       "256GB"
     ],
     "ram": "3GB",
-    "ramType": "LPDDR4X"
+    "ramType": "LPDDR4X",
+    "image": "ipad-ipad-5.webp"
   },
   {
     "name": "iPad(第 4 代)",
@@ -5532,7 +5567,8 @@
     ],
     "ram": "1GB",
     "ramType": "LPDDR2",
-    "benchmarks": {}
+    "benchmarks": {},
+    "image": "ipad-ipad-4.webp"
   },
   {
     "name": "iPad(第 3 代)",
@@ -5577,7 +5613,8 @@
     ],
     "ram": "1GB",
     "ramType": "LPDDR2",
-    "benchmarks": {}
+    "benchmarks": {},
+    "image": "ipad-ipad-3.webp"
   },
   {
     "name": "iPad 2",
@@ -5622,7 +5659,8 @@
     ],
     "ram": "512MB",
     "ramType": "DDR2",
-    "benchmarks": {}
+    "benchmarks": {},
+    "image": "ipad-ipad-2.webp"
   },
   {
     "name": "iPad",
@@ -5666,6 +5704,7 @@
       "64GB"
     ],
     "ramType": "DDR",
-    "benchmarks": {}
+    "benchmarks": {},
+    "image": "ipad-ipad.webp"
   }
 ]

@@ -93,7 +93,8 @@
         },
         "url": "https://support.apple.com/zh-cn/121204"
       }
-    ]
+    ],
+    "image": "airpods-002.webp"
   },
   {
     "id": "airpods-003",
@@ -143,7 +144,8 @@
         },
         "url": "https://support.apple.com/zh-cn/111863"
       }
-    ]
+    ],
+    "image": "airpods-003.webp"
   },
   {
     "id": "airpods-004",
@@ -193,7 +195,8 @@
         },
         "url": "https://support.apple.com/zh-cn/111856"
       }
-    ]
+    ],
+    "image": "airpods-004.webp"
   },
   {
     "id": "airpods-005",
@@ -243,7 +246,8 @@
         },
         "url": "https://support.apple.com/zh-cn/111855"
       }
-    ]
+    ],
+    "image": "airpods-005.webp"
   },
   {
     "id": "airpods-006",
@@ -344,7 +348,8 @@
         },
         "url": "https://support.apple.com/zh-cn/111851"
       }
-    ]
+    ],
+    "image": "airpods-007.webp"
   },
   {
     "id": "airpods-008",
@@ -394,7 +399,8 @@
         },
         "url": "https://support.apple.com/zh-cn/111859"
       }
-    ]
+    ],
+    "image": "airpods-008.webp"
   },
   {
     "id": "airpods-009",
@@ -544,7 +550,8 @@
         },
         "url": "https://support.apple.com/zh-cn/121205"
       }
-    ]
+    ],
+    "image": "airpods-010.png"
   },
   {
     "id": "airpods-011",
@@ -620,6 +627,7 @@
         },
         "url": "https://support.apple.com/zh-cn/111858"
       }
-    ]
+    ],
+    "image": "airpods-011.webp"
   }
 ]

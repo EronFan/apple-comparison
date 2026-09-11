@@ -953,7 +953,8 @@
       "singleCore": "3751",
       "multiCore": "9710"
     },
-    "gpuPerformance": 45532
+    "gpuPerformance": 45532,
+    "image": "iphone-17-pro.webp"
   },
   {
     "id": "iphone-17-pro-max",
@@ -1091,7 +1092,8 @@
       "singleCore": "3756",
       "multiCore": "9711"
     },
-    "gpuPerformance": 45489
+    "gpuPerformance": 45489,
+    "image": "iphone-17-pro-max.webp"
   },
   {
     "id": "iphone-16-pro-max",
@@ -1257,7 +1259,8 @@
     "frameMaterial": "钛合金",
     "backPanelMaterial": "钛合金",
     "microphoneCount": "4个麦克风（录音棚级）",
-    "wifiStandard": "802.11be HT160 2x2 MIMO"
+    "wifiStandard": "802.11be HT160 2x2 MIMO",
+    "image": "iphone-16-pro-max.webp"
   },
   {
     "id": "iphone-16-pro",
@@ -1423,7 +1426,8 @@
     "frameMaterial": "钛合金",
     "backPanelMaterial": "钛合金",
     "microphoneCount": "4个麦克风（录音棚级）",
-    "wifiStandard": "802.11be HT160 2x2 MIMO"
+    "wifiStandard": "802.11be HT160 2x2 MIMO",
+    "image": "iphone-16-pro.webp"
   },
   {
     "id": "iphone-16-plus",
@@ -1599,7 +1603,8 @@
     "wifiStandard": "802.11be HT160 2x2 MIMO",
     "ultraWideCamera": "1200万像素 (f/2.4光圈)",
     "opticalZoom": "无",
-    "telephotoCamera": "无"
+    "telephotoCamera": "无",
+    "image": "iphone-16-plus.webp"
   },
   {
     "id": "iphone-16",
@@ -2028,7 +2033,8 @@
     "wifiStandard": {
       "zh-CN": "802.11ax HT160 2x2 MIMO",
       "en-US": "802.11ax HT160 2x2 MIMO"
-    }
+    },
+    "image": "iphone-15-pro-max.webp"
   },
   {
     "id": "iphone-15-pro",
@@ -2280,7 +2286,8 @@
     "wifiStandard": {
       "zh-CN": "802.11ax HT160 2x2 MIMO",
       "en-US": "802.11ax HT160 2x2 MIMO"
-    }
+    },
+    "image": "iphone-15-pro.webp"
   },
   {
     "id": "iphone-15-plus",
@@ -2536,7 +2543,8 @@
     "telephotoCamera": {
       "zh-CN": "无",
       "en-US": "无"
-    }
+    },
+    "image": "iphone-15-plus.webp"
   },
   {
     "id": "iphone-15",
@@ -2792,7 +2800,8 @@
     "telephotoCamera": {
       "zh-CN": "无",
       "en-US": "无"
-    }
+    },
+    "image": "iphone-15.webp"
   },
   {
     "id": "iphone-se-3",
@@ -3036,7 +3045,8 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "displayHdrBrightness": "无"
+    "displayHdrBrightness": "无",
+    "image": "iphone-se-3.webp"
   },
   {
     "id": "iphone-12-mini",
@@ -3296,7 +3306,8 @@
     "telephotoCamera": {
       "zh-CN": "无",
       "en-US": "无"
-    }
+    },
+    "image": "iphone-12-mini.webp"
   },
   {
     "id": "iphone-11",
@@ -3557,7 +3568,8 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "displayHdrBrightness": "无"
+    "displayHdrBrightness": "无",
+    "image": "iphone-11.webp"
   },
   {
     "id": "iphone-xr",
@@ -3815,7 +3827,8 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "displayHdrBrightness": "无"
+    "displayHdrBrightness": "无",
+    "image": "iphone-xr.webp"
   },
   {
     "id": "iphone-x",
@@ -4049,7 +4062,8 @@
     "ultraWideCamera": {
       "zh-CN": "无",
       "en-US": "无"
-    }
+    },
+    "image": "iphone-x.webp"
   },
   {
     "id": "iphone-7",
@@ -4304,7 +4318,8 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "displayHdrBrightness": "无"
+    "displayHdrBrightness": "无",
+    "image": "iphone-7.webp"
   },
   {
     "id": "iphone-16e",
@@ -4483,7 +4498,8 @@
     "processTechnology": "台积电第二代3纳米",
     "wiredChargingSpeed": "27W",
     "ultraWideCamera": "无",
-    "telephotoCamera": "无"
+    "telephotoCamera": "无",
+    "image": "iphone-16e.webp"
   },
   {
     "id": "iphone-12",
@@ -4740,7 +4756,8 @@
     "telephotoCamera": {
       "zh-CN": "无",
       "en-US": "无"
-    }
+    },
+    "image": "iphone-12.webp"
   },
   {
     "id": "iphone-12-pro",
@@ -4983,7 +5000,8 @@
       "zh-CN": "802.11ax HT80 2x2 MIMO",
       "en-US": "802.11ax HT80 2x2 MIMO"
     },
-    "displayPpi": 460
+    "displayPpi": 460,
+    "image": "iphone-12-pro.webp"
   },
   {
     "id": "iphone-12-pro-max",
@@ -5226,7 +5244,8 @@
       "zh-CN": "802.11ax HT80 2x2 MIMO",
       "en-US": "802.11ax HT80 2x2 MIMO"
     },
-    "displayPpi": 458
+    "displayPpi": 458,
+    "image": "iphone-12-pro-max.webp"
   },
   {
     "id": "iphone-11-pro",
@@ -5474,7 +5493,8 @@
     "mainCamera": {
       "zh-CN": "1200万像素广角 (f/1.8光圈)",
       "en-US": "1200万像素广角 (f/1.8光圈)"
-    }
+    },
+    "image": "iphone-11-pro.webp"
   },
   {
     "id": "iphone-11-pro-max",
@@ -5722,7 +5742,8 @@
     "mainCamera": {
       "zh-CN": "1200万像素广角 (f/1.8光圈)",
       "en-US": "1200万像素广角 (f/1.8光圈)"
-    }
+    },
+    "image": "iphone-11-pro-max.webp"
   },
   {
     "id": "iphone-xs",
@@ -5960,7 +5981,8 @@
     "ultraWideCamera": {
       "zh-CN": "无",
       "en-US": "无"
-    }
+    },
+    "image": "iphone-xs.webp"
   },
   {
     "id": "iphone-xs-max",
@@ -6198,7 +6220,8 @@
     "ultraWideCamera": {
       "zh-CN": "无",
       "en-US": "无"
-    }
+    },
+    "image": "iphone-xs-max.webp"
   },
   {
     "id": "iphone-se-2",
@@ -6442,7 +6465,8 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "displayHdrBrightness": "无"
+    "displayHdrBrightness": "无",
+    "image": "iphone-se-2.webp"
   },
   {
     "id": "iphone-se",
@@ -6678,7 +6702,8 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "displayHdrBrightness": "无"
+    "displayHdrBrightness": "无",
+    "image": "iphone-se.webp"
   },
   {
     "id": "iphone-8-plus",
@@ -6922,7 +6947,8 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "displayHdrBrightness": "无"
+    "displayHdrBrightness": "无",
+    "image": "iphone-8-plus.webp"
   },
   {
     "id": "iphone-8",
@@ -7166,7 +7192,8 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "displayHdrBrightness": "无"
+    "displayHdrBrightness": "无",
+    "image": "iphone-8.webp"
   },
   {
     "id": "iphone-7-plus",
@@ -7410,7 +7437,8 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "displayHdrBrightness": "无"
+    "displayHdrBrightness": "无",
+    "image": "iphone-7-plus.webp"
   },
   {
     "id": "iphone-6s",
@@ -7647,7 +7675,8 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "displayHdrBrightness": "无"
+    "displayHdrBrightness": "无",
+    "image": "iphone-6s.webp"
   },
   {
     "id": "iphone-6s-plus",
@@ -7884,7 +7913,8 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "displayHdrBrightness": "无"
+    "displayHdrBrightness": "无",
+    "image": "iphone-6s-plus.webp"
   },
   {
     "id": "iphone-6",
@@ -8110,7 +8140,8 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "displayHdrBrightness": "无"
+    "displayHdrBrightness": "无",
+    "image": "iphone-6.webp"
   },
   {
     "id": "iphone-6-plus",
@@ -8336,7 +8367,8 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "displayHdrBrightness": "无"
+    "displayHdrBrightness": "无",
+    "image": "iphone-6-plus.webp"
   },
   {
     "id": "iphone-5s",
@@ -8555,7 +8587,8 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "displayHdrBrightness": "无"
+    "displayHdrBrightness": "无",
+    "image": "iphone-5s.webp"
   },
   {
     "id": "iphone-5c",
@@ -8788,7 +8821,8 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "displayHdrBrightness": "无"
+    "displayHdrBrightness": "无",
+    "image": "iphone-5c.webp"
   },
   {
     "id": "iphone-5",
@@ -9000,7 +9034,8 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "displayHdrBrightness": "无"
+    "displayHdrBrightness": "无",
+    "image": "iphone-5.webp"
   },
   {
     "id": "iphone-4s",
@@ -9199,7 +9234,8 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "displayHdrBrightness": "无"
+    "displayHdrBrightness": "无",
+    "image": "iphone-4s.webp"
   },
   {
     "id": "iphone-4",
@@ -9404,7 +9440,8 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "displayHdrBrightness": "无"
+    "displayHdrBrightness": "无",
+    "image": "iphone-4.webp"
   },
   {
     "id": "iphone-3gs",
@@ -9604,7 +9641,8 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "displayHdrBrightness": "无"
+    "displayHdrBrightness": "无",
+    "image": "iphone-3gs.webp"
   },
   {
     "id": "iphone-3g",
@@ -9804,7 +9842,8 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "displayHdrBrightness": "无"
+    "displayHdrBrightness": "无",
+    "image": "iphone-3g.webp"
   },
   {
     "id": "iphone-1",
@@ -9998,7 +10037,8 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "displayHdrBrightness": "无"
+    "displayHdrBrightness": "无",
+    "image": "iphone-1.webp"
   },
   {
     "id": "iphone-14-pro-max",
@@ -10244,7 +10284,8 @@
     "opticalZoom": {
       "zh-CN": "3倍",
       "en-US": "3倍"
-    }
+    },
+    "image": "iphone-14-pro-max.webp"
   },
   {
     "id": "iphone-14-pro",
@@ -10490,7 +10531,8 @@
     "opticalZoom": {
       "zh-CN": "3倍",
       "en-US": "3倍"
-    }
+    },
+    "image": "iphone-14-pro.webp"
   },
   {
     "id": "iphone-14-plus",
@@ -10747,7 +10789,8 @@
     "telephotoCamera": {
       "zh-CN": "无",
       "en-US": "无"
-    }
+    },
+    "image": "iphone-14-plus.webp"
   },
   {
     "id": "iphone-14",
@@ -11004,7 +11047,8 @@
     "telephotoCamera": {
       "zh-CN": "无",
       "en-US": "无"
-    }
+    },
+    "image": "iphone-14.webp"
   },
   {
     "id": "iphone-13-pro-max",
@@ -11257,7 +11301,8 @@
     "opticalZoom": {
       "zh-CN": "3倍",
       "en-US": "3倍"
-    }
+    },
+    "image": "iphone-13-pro-max.webp"
   },
   {
     "id": "iphone-13-pro",
@@ -11510,7 +11555,8 @@
     "opticalZoom": {
       "zh-CN": "3倍",
       "en-US": "3倍"
-    }
+    },
+    "image": "iphone-13-pro.webp"
   },
   {
     "id": "iphone-13",
@@ -11767,7 +11813,8 @@
     "telephotoCamera": {
       "zh-CN": "无",
       "en-US": "无"
-    }
+    },
+    "image": "iphone-13.webp"
   },
   {
     "id": "iphone-13-mini",
@@ -12024,6 +12071,7 @@
     "telephotoCamera": {
       "zh-CN": "无",
       "en-US": "无"
-    }
+    },
+    "image": "iphone-13-mini.webp"
   }
 ]

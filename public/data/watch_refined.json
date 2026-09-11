@@ -105,7 +105,8 @@
     "depthGauge": {
       "zh-CN": "深度计",
       "en-US": "Depth gauge"
-    }
+    },
+    "image": "watch-apple-watch-ultra-4.png"
   },
   {
     "name": {
@@ -235,7 +236,8 @@
     "technicalSpecsLink": {
       "zh-CN": "https://support.apple.com/zh-cn/125095",
       "en-US": "https://support.apple.com/125095"
-    }
+    },
+    "image": "watch-apple-watch-ultra-3.webp"
   },
   {
     "name": {
@@ -497,7 +499,8 @@
     "technicalSpecsLink": {
       "zh-CN": "技术规格",
       "en-US": "Technical Specs"
-    }
+    },
+    "image": "watch-apple-watch-series-11.webp"
   },
   {
     "name": {
@@ -613,7 +616,8 @@
     "technicalSpecsLink": {
       "zh-CN": "技术规格",
       "en-US": "Technical Specs"
-    }
+    },
+    "image": "watch-apple-watch-se-3.webp"
   },
   {
     "name": "Apple Watch Series 10",
@@ -734,7 +738,8 @@
     "technicalSpecsLink": {
       "zh-CN": "技术规格",
       "en-US": "Technical Specs"
-    }
+    },
+    "image": "watch-apple-watch-series-10.webp"
   },
   {
     "name": "Apple Watch Series 9",
@@ -883,7 +888,8 @@
     "depthGauge": {
       "zh-CN": "不支持",
       "en-US": "Not supported"
-    }
+    },
+    "image": "watch-apple-watch-series-9.webp"
   },
   {
     "name": "Apple Watch Ultra 2",
@@ -997,7 +1003,8 @@
     "technicalSpecsLink": {
       "zh-CN": "技术规格",
       "en-US": "Technical Specs"
-    }
+    },
+    "image": "watch-apple-watch-ultra-2.webp"
   },
   {
     "name": "Apple Watch Series 8",
@@ -1125,7 +1132,8 @@
     "depthGauge": {
       "zh-CN": "不支持",
       "en-US": "Not supported"
-    }
+    },
+    "image": "watch-apple-watch-series-8.webp"
   },
   {
     "name": "Apple Watch Ultra",
@@ -1232,7 +1240,8 @@
     "technicalSpecsLink": {
       "zh-CN": "技术规格",
       "en-US": "Technical Specs"
-    }
+    },
+    "image": "watch-apple-watch-ultra.webp"
   },
   {
     "name": {
@@ -1350,7 +1359,8 @@
     "depthGauge": {
       "zh-CN": "不支持",
       "en-US": "Not supported"
-    }
+    },
+    "image": "watch-apple-watch-se---2---.webp"
   },
   {
     "name": {
@@ -1452,7 +1462,8 @@
     "depthGauge": {
       "zh-CN": "不支持",
       "en-US": "Not supported"
-    }
+    },
+    "image": "watch-apple-watch-series-7.webp"
   },
   {
     "name": {
@@ -1551,7 +1562,8 @@
     "depthGauge": {
       "zh-CN": "不支持",
       "en-US": "Not supported"
-    }
+    },
+    "image": "watch-apple-watch-series-6.webp"
   },
   {
     "name": {
@@ -1650,7 +1662,8 @@
     "depthGauge": {
       "zh-CN": "不支持",
       "en-US": "Not supported"
-    }
+    },
+    "image": "watch-apple-watch-se---1---.webp"
   },
   {
     "name": {
@@ -1752,7 +1765,8 @@
     "depthGauge": {
       "zh-CN": "不支持",
       "en-US": "Not supported"
-    }
+    },
+    "image": "watch-apple-watch-series-5.webp"
   },
   {
     "name": {
@@ -1851,7 +1865,8 @@
     "depthGauge": {
       "zh-CN": "不支持",
       "en-US": "Not supported"
-    }
+    },
+    "image": "watch-apple-watch-series-4.webp"
   },
   {
     "name": {
@@ -1950,7 +1965,8 @@
     "depthGauge": {
       "zh-CN": "不支持",
       "en-US": "Not supported"
-    }
+    },
+    "image": "watch-apple-watch-series-3.webp"
   },
   {
     "name": {
@@ -2052,7 +2068,8 @@
     "depthGauge": {
       "zh-CN": "不支持",
       "en-US": "Not supported"
-    }
+    },
+    "image": "watch-apple-watch-series-2.webp"
   },
   {
     "name": {
@@ -2154,7 +2171,8 @@
     "depthGauge": {
       "zh-CN": "不支持",
       "en-US": "Not supported"
-    }
+    },
+    "image": "watch-apple-watch-series-1.webp"
   },
   {
     "name": {
@@ -2259,6 +2277,7 @@
     "depthGauge": {
       "zh-CN": "不支持",
       "en-US": "Not supported"
-    }
+    },
+    "image": "watch-apple-watch---1---.webp"
   }
 ]

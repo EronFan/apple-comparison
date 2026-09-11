@@ -82,7 +82,8 @@
         },
         "url": "https://support.apple.com/en-us/111922"
       }
-    ]
+    ],
+    "image": "tv-002.webp"
   },
   {
     "id": "tv-003",
@@ -124,7 +125,8 @@
         },
         "url": "https://support.apple.com/en-us/111929"
       }
-    ]
+    ],
+    "image": "tv-003.webp"
   },
   {
     "id": "tv-004",
@@ -166,7 +168,8 @@
         },
         "url": "https://support.apple.com/en-us/111928"
       }
-    ]
+    ],
+    "image": "tv-004.webp"
   },
   {
     "id": "tv-005",
@@ -207,7 +210,8 @@
         },
         "url": "https://support.apple.com/en-us/112429"
       }
-    ]
+    ],
+    "image": "tv-005.webp"
   },
   {
     "id": "tv-006",
@@ -248,7 +252,8 @@
         },
         "url": "https://support.apple.com/en-us/112428"
       }
-    ]
+    ],
+    "image": "tv-006.webp"
   },
   {
     "id": "tv-007",
@@ -287,6 +292,7 @@
         },
         "url": "https://support.apple.com/en-us/112555"
       }
-    ]
+    ],
+    "image": "tv-007.webp"
   }
 ]
