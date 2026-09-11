@@ -109,7 +109,7 @@
       "en-US": "36.59Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -259,7 +259,7 @@
       "en-US": "28.93Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -400,8 +400,8 @@
       "en-US": "38.99Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h, 蜂窝网络浏览网页：9h",
-      "en-US": "Wi-Fi browsing: 10h, Cellular browsing: 9h"
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
       "zh-CN": "麦克风 ×4 + 扬声器系统 ×4",
@@ -531,8 +531,8 @@
       "en-US": "31.29Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h, 蜂窝网络浏览网页：9h",
-      "en-US": "Wi-Fi browsing: 10h, Cellular browsing: 9h"
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
       "zh-CN": "麦克风 ×4 + 扬声器 ×4",
@@ -662,7 +662,7 @@
       "en-US": "38.99Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -806,7 +806,7 @@
       "en-US": "31.29Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -951,7 +951,7 @@
       "en-US": "40.88Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -1097,7 +1097,7 @@
       "en-US": "28.65Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -1243,7 +1243,7 @@
       "en-US": "40.88Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -1390,7 +1390,7 @@
       "en-US": "28.65Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -1536,7 +1536,7 @@
       "en-US": "36.71Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -1683,7 +1683,7 @@
       "en-US": "28.65Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -1829,7 +1829,7 @@
       "en-US": "36.71Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -1976,7 +1976,7 @@
       "en-US": "29.37Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -2129,7 +2129,7 @@
       "en-US": "41Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -2290,7 +2290,7 @@
       "en-US": "30.4Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -2450,7 +2450,7 @@
       "en-US": "27.5Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -2603,7 +2603,7 @@
       "en-US": "38.5Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -2758,7 +2758,7 @@
       "en-US": "36.59Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -2913,7 +2913,7 @@
       "en-US": "28.93Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -3068,7 +3068,7 @@
       "en-US": "36.59Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -3222,7 +3222,7 @@
       "en-US": "28.93Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -3384,7 +3384,7 @@
       "en-US": "28.6Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -3544,7 +3544,7 @@
       "en-US": "28.6Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -3690,7 +3690,7 @@
       "en-US": "30.2Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -3836,7 +3836,7 @@
       "en-US": "27.3Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -3977,7 +3977,7 @@
       "en-US": "32.4Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -4127,7 +4127,7 @@
       "en-US": "19.3Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -4281,7 +4281,7 @@
       "en-US": "19.3Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -4427,7 +4427,7 @@
       "en-US": "19.1Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -4573,7 +4573,7 @@
       "en-US": "19.1Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -4721,7 +4721,7 @@
       "en-US": "23.8Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -4857,7 +4857,7 @@
       "en-US": "23.8Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -4975,7 +4975,7 @@
       "en-US": "16.3Wh"
     },
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
@@ -5055,8 +5055,8 @@
     "security": "触控 ID",
     "batteryCapacity": "28.93Wh",
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
-      "en-US": "Wi-Fi web browsing: 10h Cellular web browsing: 9h"
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
       "zh-CN": "麦克风 ×2 + 扬声器 ×2",
@@ -5127,8 +5127,8 @@
     "security": "触控 ID",
     "batteryCapacity": "28.6Wh",
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
-      "en-US": "Wi-Fi web browsing: 10h Cellular web browsing: 9h"
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
       "zh-CN": "麦克风 ×2 + 扬声器 ×2",
@@ -5203,6 +5203,14 @@
         "en-US": "Technical Specifications"
       },
       "url": "https://support.apple.com/zh-cn/111898"
+    },
+    "batteryCapacity": {
+      "zh-CN": "32.4Wh",
+      "en-US": "32.4Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     }
   },
   {
@@ -5246,8 +5254,8 @@
     "security": "触控 ID",
     "batteryCapacity": "32.4Wh",
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
-      "en-US": "Wi-Fi web browsing: 10h, Cellular web browsing: 9h"
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
       "zh-CN": "麦克风 ×2 + 扬声器 ×2",
@@ -5311,8 +5319,8 @@
     "security": "触控 ID",
     "batteryCapacity": "32.4Wh",
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
-      "en-US": "Wi-Fi web browsing: 10h, Cellular web browsing: 9h"
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
       "zh-CN": "麦克风 ×2 + 扬声器 ×2",
@@ -5379,8 +5387,8 @@
     "security": "触控 ID",
     "batteryCapacity": "32.4Wh",
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
-      "en-US": "Wi-Fi web browsing: 10h Cellular web browsing: 9h"
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
       "zh-CN": "麦克风 ×2 + 扬声器 ×2",
@@ -5447,8 +5455,8 @@
     "security": "触控 ID",
     "batteryCapacity": "32.4Wh",
     "batteryLife": {
-      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
-      "en-US": "Wi-Fi web browsing: 10h Cellular web browsing: 9h"
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
     "audioFeatures": {
       "zh-CN": "麦克风 ×2 + 扬声器 ×2",
@@ -5497,7 +5505,10 @@
     "bluetoothVersion": "Bluetooth 4.0",
     "security": "/",
     "batteryCapacity": "42.5Wh",
-    "batteryLife": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
     "audioFeatures": "麦克风 ×1 + 扬声器 ×1",
     "dimensions": "241.2×185.7×9.4, 652/662g",
     "technicalSpecsLink": {
@@ -5540,7 +5551,10 @@
     "bluetoothVersion": "Bluetooth 4.0",
     "security": "/",
     "batteryCapacity": "42.5Wh",
-    "batteryLife": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
     "audioFeatures": "麦克风 ×1 + 扬声器 ×1",
     "dimensions": "241.2×185.7×9.4, 652/662g",
     "technicalSpecsLink": {
@@ -5582,7 +5596,10 @@
     "bluetoothVersion": "Bluetooth 2.1",
     "security": "/",
     "batteryCapacity": "25Wh",
-    "batteryLife": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
     "audioFeatures": "麦克风 ×1 + 扬声器 ×1",
     "dimensions": "241.2×185.7×8.8, 601/613g",
     "technicalSpecsLink": {
@@ -5623,7 +5640,10 @@
     "bluetoothVersion": "Bluetooth 2.1",
     "security": "/",
     "batteryCapacity": "25Wh",
-    "batteryLife": "无线局域网浏览网页：10h",
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h",
+      "en-US": "Web browsing on Wi-Fi: 10h"
+    },
     "audioFeatures": "麦克风 ×1 + 扬声器 ×1",
     "dimensions": "242.8×189.7×13.4, 680/730g",
     "technicalSpecsLink": {

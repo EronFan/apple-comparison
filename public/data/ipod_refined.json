@@ -206,8 +206,8 @@
       "en-US": "iPhone OS 3 ~ iOS 4/5"
     },
     "model": "iPod3,1",
-    "chip": "S5L8720 (1P+1GPU) S5L8922 (1P+1GPU)",
-    "ramStorage": "128MB LPDDR 8G 256MB LPDDR 32G、64G",
+    "chip": "8GB版：S5L8720 / 32GB、64GB版：S5L8922",
+    "ramStorage": "8GB版：128MB LPDDR / 32GB、64GB版：256MB LPDDR",
     "audioChip": "Cirrus Logic 338S0559",
     "displaySize": "3.5\"",
     "displayResolution": "480×320, 163ppi",
