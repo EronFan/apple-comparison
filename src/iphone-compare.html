@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="iPhone全系列参数对比：A系列芯片、相机、屏幕、电池续航逐项比较，覆盖初代到最新iPhone 18。">
     <title data-lang-key="page.title">产品参数对比 - Apple参数大全</title>
     <!-- 使用iconfont图标库 -->
     <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4356459_zg5dh7jkzx.css">
@@ -16,7 +17,6 @@
     <script>
         window.addEventListener('error', function(e) {
             if (e.target.src && e.target.src.includes('chart.js')) {
-                console.log('Chart.js 从主要CDN加载失败，尝试备用源...');
                 var script = document.createElement('script');
                 script.src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js";
                 document.head.appendChild(script);
@@ -1510,22 +1510,15 @@
         // 检查并初始化移动端表格
         function checkAndInitMobileTable() {
             if (window.innerWidth <= 768) {
-                console.log('最终检查移动端表格状态...');
                 const mobileContainer = document.getElementById('mobileTableContainer');
                 const paramsColumn = document.getElementById('mobileParamsColumn');
                 const productsContainer = document.getElementById('mobileProductsContainer');
                 
-                console.log('移动端容器存在:', !!mobileContainer);
-                console.log('参数列容器存在:', !!paramsColumn);
-                console.log('产品容器存在:', !!productsContainer);
-                console.log('产品数据可用:', window.allProducts ? window.allProducts.length : 0);
                 
                 if (mobileContainer && paramsColumn && productsContainer && window.allProducts && window.allProducts.length > 0) {
                     if (paramsColumn.children.length === 0 || productsContainer.children.length === 0) {
-                        console.log('移动端表格为空，重新生成...');
                         generateMobileTable();
                     } else {
-                        console.log('移动端表格已存在，参数行数:', paramsColumn.children.length, '产品列数:', productsContainer.children.length);
                     }
                 }
             }
@@ -1565,9 +1558,7 @@
                 
                 // 使用新的细化参数数据文件
                 // 开始加载iPhone数据
-                console.log('开始加载数据文件...');
                 const response = await fetch('../public/data/iphone_refined.json?v=' + new Date().getTime());
-                console.log('数据请求响应:', response.status, response.statusText);
                 
                 // 数据获取状态检查
                 if (!response.ok) {
@@ -1575,7 +1566,6 @@
                     throw new Error('网络响应不正常');
                 }
                 const jsonData = await response.json();
-                console.log('数据解析成功，产品数量:', jsonData ? jsonData.length : 0);
                 // 数据解析完成
                 
                 // 检查数据结构
@@ -1584,7 +1574,6 @@
                 }
                 
                 window.allProducts = jsonData;
-                console.log('全局产品数据已设置，数量:', window.allProducts.length);
                 
                 // 按发布日期从新到旧排序
                 window.allProducts.sort((a, b) => {
@@ -1624,7 +1613,6 @@
                 });
                 
                 // 生成表格
-                console.log('调用generateTable，产品数量:', window.allProducts.length);
                 generateTable(window.allProducts);
                 
                 // 默认选择所有产品
@@ -1971,7 +1959,6 @@
             // 生成移动端表格
             setTimeout(() => {
                 if (window.innerWidth <= 768) {
-                    console.log('桌面表格生成后，检查移动端表格...');
                     generateMobileTable();
                 }
             }, 300);
@@ -2169,8 +2156,6 @@
             // 确保移动端表格在数据加载后生成
             setTimeout(() => {
                 if (window.innerWidth <= 768) {
-                    console.log('延迟初始化移动端表格...');
-                    console.log('当前产品数据:', window.allProducts ? window.allProducts.length : 0);
                     generateMobileTable();
                 }
             }, 800);
@@ -2207,12 +2192,9 @@
 
         // 生成移动端滑动表格
         function generateMobileTable() {
-            console.log('开始生成移动端表格...');
-            console.log('产品数据:', window.allProducts ? window.allProducts.length : 0, '个产品');
             
             // 确保有产品数据
             if (!window.allProducts || !Array.isArray(window.allProducts) || window.allProducts.length === 0) {
-                console.log('等待产品数据加载...');
                 return;
             }
 
@@ -2221,12 +2203,10 @@
                 state.products = window.allProducts;
             }
 
-            console.log('开始生成移动端组件...');
             generateMobileParamsColumn();
             generateMobileProductColumns();
             generateScrollIndicators();
             updateNavigationButtons();
-            console.log('移动端表格生成完成');
         }
 
         // 获取完整的参数定义（与PC端保持一致）
@@ -2314,7 +2294,6 @@
                 console.error('未找到移动端参数列容器');
                 return;
             }
-            console.log('开始生成移动端参数列...');
 
             paramsColumn.innerHTML = '';
 
@@ -2365,16 +2344,13 @@
                 console.error('未找到移动端产品容器');
                 return;
             }
-            console.log('开始生成移动端产品列...');
 
             productsContainer.innerHTML = '';
 
             // 使用全局产品数据
             const displayProducts = window.allProducts || [];
-            console.log('可用产品数据:', displayProducts.length, '个');
             
             if (displayProducts.length === 0) {
-                console.log('没有可用的产品数据');
                 return;
             }
 
@@ -2383,7 +2359,6 @@
                 productsContainer.appendChild(productColumn);
             });
             
-            console.log('移动端产品列生成完成，共', displayProducts.length, '列');
         }
 
         // 创建移动端产品列
@@ -2750,7 +2725,6 @@
                 window.AppState.selectedProducts = Array.from(selectedIds);
             }
             
-            console.log('产品选择状态已更新:', Array.from(selectedIds));
         }
 
         // 获取本地化值
@@ -2764,7 +2738,6 @@
         
         // 重置按钮点击事件处理函数
         function handleResetButtonClick() {
-            console.log('重置按钮被点击');
             
             // 获取所有产品复选框（桌面端和移动端）
             const desktopCheckboxes = document.querySelectorAll('.product-checkbox');
@@ -2812,7 +2785,6 @@
             // 重置产品选择状态
                 AppState.selectedProducts = [];
             
-            console.log('重置完成，所有产品已显示');
         }
         
         // 对比按钮点击事件处理函数
@@ -3294,7 +3266,6 @@
                 
                 // 更新全局数据
                 window.allProducts = jsonData;
-                console.log('window.allProducts已更新，数量:', window.allProducts.length);
                 
                 // 按发布日期排序
                 window.allProducts.sort((a, b) => {
@@ -3818,7 +3789,6 @@
 
         // 查看对比按钮点击事件处理
         function handleCompareButtonClick() {
-            console.log('查看对比按钮被点击');
             
             // 获取所有选中的产品（包括桌面端和移动端）
             const desktopCheckboxes = document.querySelectorAll('input[type="checkbox"].product-checkbox:checked');
@@ -3830,7 +3800,6 @@
             mobileCheckboxes.forEach(cb => selectedIds.add(cb.dataset.productId));
             
             const selectedProducts = Array.from(selectedIds);
-            console.log('选中的产品:', selectedProducts);
             
             if (selectedProducts.length === 0) {
                 alert('请至少选择一个产品进行对比');

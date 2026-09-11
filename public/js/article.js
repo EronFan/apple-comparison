@@ -86,6 +86,162 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             ]
         },
+        {
+            id: '002',
+            title: 'iPad Air M4 vs M3：是否值得升级？',
+            content: '<p>2026 年 3 月，苹果将 iPad Air 升级到 M4 芯片。新款 Air 11 英寸搭载 M4（3 性能核 + 5 能效核 + 9 核 GPU），内存也从上代的 8GB 提升到 12GB，电池保持 28.93Wh，官方续航仍为无线局域网 10 小时。</p><p>对比上一代 M3（4 性能核 + 4 能效核 + 9 核 GPU，8GB 内存），M4 的变化在于 CPU 架构更新与内存翻倍，常驻后台应用和分屏体验会有可感知的提升。如果你手持 M3 版且主要用于笔记、阅读和轻度创作，没有必须换机的理由；从 M1 或更早机型过来，M4 版是更稳妥的选择。</p><p>两代屏幕、刷新率（60Hz）、Apple Pencil Pro 支持完全一致，选购时优先看存储容量与价格即可。</p>',
+            category: 'comparisons',
+            date: '2024-10-10',
+            author: 'Apple Compare 编辑部',
+            image: '../public/images/news/article1.jpg',
+            imageCaption: 'iPad Air M4 与 M3 主要差异在芯片与内存',
+            tags: ['iPad Air', 'M4', 'M3', '选购指南'],
+            relatedProducts: [
+                { id: 'ipad-ipad-air-11-inchm4', name: 'iPad Air 11 英寸(M4)', image: '../public/images/products/ipad-ipad-air-11-inchm4.png' },
+                { id: 'ipad-ipad-air-11-inchm3', name: 'iPad Air 11 英寸(M3)', image: '../public/images/products/ipad-ipad-air-11-inchm3.png' }
+            ],
+            relatedArticles: [
+                { id: '001', title: 'iPhone 16 Pro性能测试：A18 Pro芯片提升幅度惊人', date: '2024-10-15', image: '../public/images/news/featured-article.jpg' },
+                { id: '009', title: 'M4芯片跑分曝光：性能提升超预期，Mac产品线或将全面更新', date: '2024-10-03', image: '../public/images/news/related3.jpg' }
+            ],
+            comments: [
+                { author: '果粉小李', date: '2024-10-11 10:20', content: '刚从 M1 换到 M4，分屏确实流畅很多，内存加大效果明显。', likes: 6, avatar: '../public/images/user-avatar4.jpg' }
+            ]
+        },
+        {
+            id: '003',
+            title: 'Apple Watch Series 10深度评测：更大的屏幕，更强的续航',
+            content: '<p>Apple Watch Series 10 搭载 S10 SiP，屏幕亮度最高 2000 尼特，官方续航为 18 小时。与前代相比，表壳更薄，充电速度也有提升，官方称 30 分钟可充至约 80%。</p><p>健康功能延续血氧、心电图、体温 sensing 与睡眠监测，新增的潮汐 App 与深度计让它更适合水上运动。如果你是 Series 6 及更早用户，屏幕与充电体验的提升值得考虑；Series 8/9 用户则可以等下一代。</p><p>选购建议参考本站参数对比，重点看表壳尺寸、材质与蜂窝版需求。</p>',
+            category: 'reviews',
+            date: '2024-10-05',
+            author: 'Apple Compare 编辑部',
+            image: '../public/images/news/article2.jpg',
+            imageCaption: 'Series 10 更大的显示面积与更薄的表壳',
+            tags: ['Apple Watch', 'Series 10', '评测'],
+            relatedProducts: [
+                { id: 'watch-apple-watch-series-10', name: 'Apple Watch Series 10', image: '../public/images/products/watch-apple-watch-series-10.webp' }
+            ],
+            relatedArticles: [
+                { id: '001', title: 'iPhone 16 Pro性能测试：A18 Pro芯片提升幅度惊人', date: '2024-10-15', image: '../public/images/news/featured-article.jpg' }
+            ],
+            comments: [
+                { author: '跑步达人', date: '2024-10-06 08:15', content: '充电速度提升是真的，早上洗漱的时间就能补不少电。', likes: 4, avatar: '../public/images/user-avatar5.jpg' }
+            ]
+        },
+        {
+            id: '004',
+            title: '消息称MacBook Pro M4有望年底发布，将搭载M4 Pro和M4 Max芯片',
+            content: '<p>据供应链消息，苹果计划推出搭载 M4 Pro 与 M4 Max 芯片的新款 MacBook Pro。按照苹果近年节奏，Pro 系芯片通常在基础版之后约一年更新，传闻与这一节奏吻合。</p><p>需要提醒的是，以上均为传闻，配置与发布时间以苹果官方为准。持币观望的用户可以先参考本站 Mac 对比页，了解现款 M3 Pro/Max 机型的参数与定位。</p>',
+            category: 'rumors',
+            date: '2024-09-30',
+            author: 'Apple Compare 编辑部',
+            image: '../public/images/news/article3.jpg',
+            imageCaption: '传闻汇总，仅供参考',
+            tags: ['MacBook Pro', 'M4', '传闻'],
+            relatedProducts: [
+                { id: 'mac-pro-006', name: 'MacBook Pro (14 英寸, M4, 2024 年)', image: '../public/images/products/mac-pro-006.webp' }
+            ],
+            relatedArticles: [
+                { id: '009', title: 'M4芯片跑分曝光：性能提升超预期，Mac产品线或将全面更新', date: '2024-10-03', image: '../public/images/news/related3.jpg' }
+            ],
+            comments: []
+        },
+        {
+            id: '005',
+            title: 'iOS 18.1正式版新功能详解：Apple Intelligence全面体验',
+            content: '<p>iOS 18.1 带来了 Apple Intelligence 的首批功能，包括写作工具、通知摘要、照片清理以及更自然的 Siri。需要注意的是，Apple Intelligence 仅支持 iPhone 15 Pro 及更新机型，旧机型升级后无法使用这些 AI 功能。</p><p>开启方式：升级到 iOS 18.1 后，进入设置，找到 Apple Intelligence 与 Siri，按提示加入候补名单并下载模型。建议在 Wi-Fi 环境下完成下载，模型体积较大。</p><p>使用建议：写作工具目前对中文的支持有限，英文场景体验更好；通知摘要适合信息过载的用户，但重要通知建议逐条确认。</p>',
+            category: 'guides',
+            date: '2024-09-25',
+            author: 'Apple Compare 编辑部',
+            image: '../public/images/news/article4.jpg',
+            imageCaption: 'iOS 18.1 设置 Apple Intelligence 入口',
+            tags: ['iOS 18', 'Apple Intelligence', '使用指南'],
+            relatedProducts: [
+                { id: 'iphone-16e', name: 'iPhone 16e', image: '../public/images/products/iphone-16e.webp' },
+                { id: 'iphone-16e', name: 'iPhone 16e', image: '../public/images/products/iphone-16e.webp' }
+            ],
+            relatedArticles: [
+                { id: '008', title: 'iOS 18.1新功能详解：Apple Intelligence体验报告', date: '2024-10-08', image: '../public/images/news/related2.jpg' }
+            ],
+            comments: [
+                { author: '升级先锋', date: '2024-09-26 12:40', content: '按教程开了写作工具，英文邮件确实好用，中文再等等。', likes: 3, avatar: '../public/images/user-avatar4.jpg' }
+            ]
+        },
+        {
+            id: '006',
+            title: '苹果收购AI初创公司，为Apple Intelligence添加更多功能',
+            content: '<p>据报道，苹果收购了一家专注于自然语言处理的 AI 初创公司。分析普遍认为，这笔收购旨在补强 Apple Intelligence 的文本生成与理解能力。</p><p>结合苹果一贯的端侧优先策略，新增能力大概率以端侧小模型形式落地，先覆盖写作、摘要、Siri 理解等场景。高阶功能仍需等待后续系统版本，短期内不必为此专门换机。</p>',
+            category: 'news',
+            date: '2024-09-20',
+            author: 'Apple Compare 编辑部',
+            image: '../public/images/news/article5.jpg',
+            imageCaption: '苹果持续加码端侧 AI',
+            tags: ['苹果', 'AI', 'Apple Intelligence'],
+            relatedProducts: [],
+            relatedArticles: [
+                { id: '005', title: 'iOS 18.1正式版新功能详解：Apple Intelligence全面体验', date: '2024-09-25', image: '../public/images/news/article4.jpg' }
+            ],
+            comments: []
+        },
+        {
+            id: '007',
+            title: 'iPhone 16系列摄像头全面评测：Ultra新增变焦功能',
+            content: '<p>从参数看，iPhone 16 延续 4800 万像素主摄（f/1.6 光圈）加 1200 万像素超广角（f/2.2 光圈）的组合，主摄支持 2 倍长焦等效裁切。Pro 系列则在此基础上增加独立长焦，远摄能力拉开差距。</p><p>选购建议：如果常拍远景或演出，直接看 Pro 系列；日常记录、扫街与视频，标准版的主摄表现已经足够，差价可以留给存储容量。</p><p>具体各机型摄像头配置差异见本站 iPhone 对比页。</p>',
+            category: 'reviews',
+            date: '2024-10-12',
+            author: 'Apple Compare 编辑部',
+            image: '../public/images/news/related1.jpg',
+            imageCaption: 'iPhone 16 系列影像配置一览',
+            tags: ['iPhone 16', '摄像头', '评测'],
+            relatedProducts: [
+                { id: 'iphone-16-pro', name: 'iPhone 16 Pro', image: '../public/images/products/iphone16pro.jpg' },
+                { id: 'iphone-16-pro-max', name: 'iPhone 16 Pro Max', image: '../public/images/products/iphone16promax.jpg' },
+                { id: 'iphone-15-pro', name: 'iPhone 15 Pro', image: '../public/images/products/iphone15pro.jpg' }
+            ],
+            relatedArticles: [
+                { id: '001', title: 'iPhone 16 Pro性能测试：A18 Pro芯片提升幅度惊人', date: '2024-10-15', image: '../public/images/news/featured-article.jpg' }
+            ],
+            comments: [
+                { author: '扫街爱好者', date: '2024-10-13 17:05', content: '主摄的 2 倍裁切很实用， Pro 的长焦留给真的需要的人吧。', likes: 5, avatar: '../public/images/user-avatar5.jpg' }
+            ]
+        },
+        {
+            id: '008',
+            title: 'iOS 18.1新功能详解：Apple Intelligence体验报告',
+            content: '<p>Apple Intelligence 的首批能力集中在三件事：帮你写（写作工具）、帮你看（通知摘要与邮件摘要）、帮你找（照片自然语言搜索与清理）。Siri 的理解能力也有提升，口误、自我修正基本能正确处理。</p><p>局限同样明显：需要 iPhone 15 Pro 及更新机型，中文场景能力弱于英文，部分功能仍需排队。结论是值得升级体验，但不值得为此换机——等中文成熟再说。</p><p>想自己动手的可以看本站 iOS 18.1 设置指南。</p>',
+            category: 'reviews',
+            date: '2024-10-08',
+            author: 'Apple Compare 编辑部',
+            image: '../public/images/news/related2.jpg',
+            imageCaption: 'Apple Intelligence 首批功能体验',
+            tags: ['iOS 18', 'Apple Intelligence', '体验'],
+            relatedProducts: [
+                { id: 'iphone-16e', name: 'iPhone 16e', image: '../public/images/products/iphone-16e.webp' }
+            ],
+            relatedArticles: [
+                { id: '005', title: 'iOS 18.1正式版新功能详解：Apple Intelligence全面体验', date: '2024-09-25', image: '../public/images/news/article4.jpg' }
+            ],
+            comments: []
+        },
+        {
+            id: '009',
+            title: 'M4芯片跑分曝光：性能提升超预期，Mac产品线或将全面更新',
+            content: '<p>本站收录的跑分数据显示，搭载 M4 的 iPad Pro 11 英寸单核约 3650 分、多核约 13073 分，GPU 约 54066 分，相比 M3 有明显提升，能效表现延续苹果一贯水准。</p><p>随着 M4 在 iPad 上先行落地，Mac 产品线全面换芯只是时间问题。已有机型用户无需着急，M1 至今仍能胜任绝大多数工作；打算换机的可以等新品发布后再比价。</p><p>完整排名见本站跑分榜。</p>',
+            category: 'news',
+            date: '2024-10-03',
+            author: 'Apple Compare 编辑部',
+            image: '../public/images/news/related3.jpg',
+            imageCaption: 'M4 跑分数据来自本站收录',
+            tags: ['M4', '跑分', 'Mac'],
+            relatedProducts: [
+                { id: 'mac-pro-006', name: 'MacBook Pro (14 英寸, M4, 2024 年)', image: '../public/images/products/mac-pro-006.webp' },
+                { id: 'ipad-ipad-air-11-inchm4', name: 'iPad Air 11 英寸(M4)', image: '../public/images/products/ipad-ipad-air-11-inchm4.png' }
+            ],
+            relatedArticles: [
+                { id: '002', title: 'iPad Air M4 vs M3：是否值得升级？', date: '2024-10-10', image: '../public/images/news/article1.jpg' }
+            ],
+            comments: []
+        },
         // 更多文章数据...
     ];
     
@@ -197,6 +353,21 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     /**
+     * 根据机型ID推导所属对比页
+     */
+    function comparePageFor(id) {
+        const prefix = String(id || '').split('-')[0];
+        const map = {
+            iphone: 'iphone-compare.html', ipad: 'ipad-compare.html',
+            watch: 'watch-compare.html', mac: 'mac-compare.html',
+            airpods: 'airpods-compare.html', tv: 'tv-compare.html',
+            vision: 'vision-compare.html', homepod: 'homepod-compare.html',
+            ipod: 'ipod-compare.html'
+        };
+        return map[prefix] || 'iphone-compare.html';
+    }
+
+    /**
      * 更新相关产品
      */
     function updateRelatedProducts(products) {
@@ -215,7 +386,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <img src="${product.image}" alt="${product.name}">
                 <div class="product-info">
                     <h4>${product.name}</h4>
-                    <a href="compare.html?type=iphone&highlight=${product.id}" data-lang-key="article.viewSpecs">查看详细参数</a>
+                    <a href="${comparePageFor(product.id)}?highlight=${product.id}" data-lang-key="article.viewSpecs">查看详细参数</a>
                 </div>
             `;
             

@@ -173,6 +173,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 renderArticles();
             }
         });
+
+        // 支持从文章标签跳转带搜索词进入
+        const urlSearch = new URLSearchParams(window.location.search).get('search');
+        if (urlSearch) {
+            searchInput.value = urlSearch;
+            searchQuery = urlSearch.trim().toLowerCase();
+            currentPage = 1;
+            renderArticles();
+        }
         
         // 分页
         document.querySelector('.pagination').addEventListener('click', function(event) {

@@ -33,7 +33,7 @@ function applyLanguage(lang) {
     const key = el.getAttribute('data-lang-key');
     if (resources[key]) {
       // 根据元素类型设置文本
-      if (el.tagName === 'INPUT' && el.getAttribute('type') === 'placeholder') {
+      if (el.tagName === 'INPUT' && el.hasAttribute('placeholder')) {
         el.placeholder = resources[key];
       } else {
         el.textContent = resources[key];
@@ -105,7 +105,6 @@ document.addEventListener('DOMContentLoaded', function() {
       // 添加直接调用重新加载数据的支持
       // 如果页面有loadProductData函数，尝试调用它重新加载数据
       if (typeof window.reloadDataWithLanguage === 'function') {
-        console.log('检测到reloadDataWithLanguage函数，调用重新加载数据...');
         window.reloadDataWithLanguage(lang);
       }
     });

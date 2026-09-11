@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="iPad全系列参数对比：Pro/Air/mini/数字系列屏幕、芯片、续航与配件支持一览。">
     <title data-lang-key="page.title">iPad 参数对比 - Apple参数大全</title>
     <!-- 使用iconfont图标库 -->
     <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4356459_zg5dh7jkzx.css">
@@ -1517,7 +1518,6 @@
                 const firstProduct = jsonData[0];
                 const productName = getLocalizedText(firstProduct.name, language);
                 const processor = getLocalizedText(firstProduct.processor, language);
-                console.log('第一个产品数据示例:', productName, processor);
                 
                 // 定义产品系列的优先级
                 const seriesPriority = {
@@ -1643,23 +1643,19 @@
         // 加载产品数据
         async function loadProductData() {
             try {
-                console.log('开始加载iPad数据...');
                 // 开始加载 iPad 参数数据文件
                 // 使用iPad参数数据文件
                 const response = await fetch('../public/data/ipad_refined.json');
-                console.log('数据请求响应状态:', response.status);
                 if (!response.ok) {
                     throw new Error('网络响应不正常');
                 }
                 const data = await response.json();
-                console.log('成功加载iPad数据，产品数量:', data.length);
                 // 成功加载 iPad 型号数据
                 
                 // 处理双语数据
                 const firstProduct = data[0];
                 const productName = getLocalizedText(firstProduct.name, currentLanguage);
                 const processor = getLocalizedText(firstProduct.processor, currentLanguage);
-                console.log('第一个产品数据示例:', productName, processor);
                 
                 // 定义产品系列的优先级
                 const seriesPriority = {
@@ -1715,7 +1711,6 @@
 
         // 生成表格
         function generateTable(products) {
-            console.log('开始生成iPad表格，产品数量:', products ? products.length : 0);
             // 开始生成iPad产品参数表格
             // 处理产品数量信息
             const tableContainer = document.querySelector('.params-table');
@@ -1847,7 +1842,6 @@
                     const items = pencilItems(val, currentLanguage);
                     return items.length ? items.join('<br>') : '/';
                 } },
-                { key: 'keyboardSupport', name: '键盘支持', langKey: 'param.keyboardSupport', icon: 'ri-keyboard-box-line', hidden: true },
                 
                 // 连接和接口
                 { key: 'ports', name: '接口类型', langKey: 'param.ports', icon: 'ri-usb-line' },
@@ -2275,8 +2269,6 @@
             // 确保移动端表格在数据加载后生成
             setTimeout(() => {
                 if (window.innerWidth <= 768) {
-                    console.log('延迟初始化移动端表格...');
-                    console.log('当前产品数据:', window.allProducts ? window.allProducts.length : 0);
                     generateMobileTable();
                 }
             }, 800);
@@ -2313,12 +2305,9 @@
 
         // 生成移动端滑动表格
         function generateMobileTable() {
-            console.log('开始生成移动端表格...');
-            console.log('产品数据:', window.allProducts ? window.allProducts.length : 0, '个产品');
             
             // 确保有产品数据
             if (!window.allProducts || !Array.isArray(window.allProducts) || window.allProducts.length === 0) {
-                console.log('等待产品数据加载...');
                 return;
             }
 
@@ -2327,13 +2316,11 @@
                 state.products = window.allProducts;
             }
 
-            console.log('开始生成移动端组件...');
             generateMobileParamsColumn();
             generateMobileProductColumns();
             generateScrollIndicators();
             updateNavigationButtons();
             syncMobileRowHeights();
-            console.log('移动端表格生成完成');
         }
 
         // 移动端行高对齐：参数列与产品列按行取最大高度对齐
@@ -2855,18 +2842,12 @@
             const paramsColumn = document.querySelector('.mobile-params-column');
             const productsContainer = document.querySelector('.mobile-products-container');
             
-            console.log('最终检查移动端表格状态...');
-            console.log('移动端容器存在:', !!mobileContainer);
-            console.log('参数列容器存在:', !!paramsColumn);
-            console.log('产品容器存在:', !!productsContainer);
-            console.log('产品数据可用:', window.allProducts ? window.allProducts.length : 0);
             
             if (mobileContainer && paramsColumn && productsContainer && window.allProducts && window.allProducts.length > 0) {
                 const paramsRows = paramsColumn.querySelectorAll('.mobile-table-row');
                 const productColumns = productsContainer.querySelectorAll('.mobile-product-column');
                 
                 if (paramsRows.length === 0 || productColumns.length === 0) {
-                    console.log('移动端表格为空，重新生成...');
                     generateMobileTable();
                 }
             }
@@ -2893,12 +2874,10 @@
                 window.AppState.selectedProducts = Array.from(selectedIds);
             }
             
-            console.log('产品选择状态已更新:', Array.from(selectedIds));
         }
 
         // 重置按钮点击事件处理函数
         function handleResetButtonClick() {
-            console.log('重置按钮被点击');
             
             // 获取所有产品复选框（桌面端和移动端）
             const desktopCheckboxes = document.querySelectorAll('.product-checkbox');
@@ -2946,12 +2925,10 @@
             // 重置产品选择状态
             AppState.selectedProducts = [];
             
-            console.log('重置完成，所有产品已显示');
         }
 
         // 查看对比按钮点击事件处理
         function handleCompareButtonClick() {
-            console.log('查看对比按钮被点击');
             
             // 获取所有选中的产品（包括桌面端和移动端）
             const desktopCheckboxes = document.querySelectorAll('input[type="checkbox"].product-checkbox:checked');
@@ -2963,7 +2940,6 @@
             mobileCheckboxes.forEach(cb => selectedIds.add(cb.dataset.productId));
             
             const selectedProducts = Array.from(selectedIds);
-            console.log('选中的产品:', selectedProducts);
             
             if (selectedProducts.length === 0) {
                 alert('请至少选择一个产品进行对比');

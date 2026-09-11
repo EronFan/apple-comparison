@@ -13,3 +13,5 @@ backup_scripts/
 *.bak2
 *.orig
 *~
+*backup*.json
+*_before_fix.json

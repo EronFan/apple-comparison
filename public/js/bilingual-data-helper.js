@@ -62,7 +62,6 @@ function processLocalizedObject(obj, lang) {
 // 监听语言变更事件，更新产品数据显示
 document.addEventListener('languageChanged', function(e) {
   const currentLang = e.detail.language;
-  console.log(`语言已切换为: ${currentLang}，正在更新产品数据显示...`);
   
   // 触发产品数据重新渲染
   if (typeof updateProductDisplay === 'function') {
