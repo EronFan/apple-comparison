@@ -1,0 +1,110 @@
+/* 夜间模式覆盖层：通过 html[data-theme="dark"] 生效，由 theme.js 切换 */
+html[data-theme="dark"] {
+  /* 对比页变量体系 */
+  --color-background: #1c1c1e;
+  --color-surface: #2c2c2e;
+  --color-text-primary: #f5f5f7;
+  --color-text-secondary: #a1a1a6;
+  --color-border: #38383a;
+  --color-border-light: #2e2e30;
+  --color-hover: #3a3a3c;
+  --color-primary: #0a84ff;
+  --color-primary-dark: #409cff;
+  /* 首页 / feedback 变量体系 */
+  --primary-color: #0a84ff;
+  --secondary-color: #0a84ff;
+  --text-color: #f5f5f7;
+  --text-secondary: #a1a1a6;
+  --background-color: #1c1c1e;
+  --card-background: #2c2c2e;
+  --border-color: #38383a;
+  --hover-color: #0a84ff;
+  color-scheme: dark;
+}
+
+/* 对比页硬编码浅色 */
+html[data-theme="dark"] tbody tr:nth-child(odd) {
+  background-color: #232326;
+}
+html[data-theme="dark"] .product-checkbox:not(:checked) + .product-name,
+html[data-theme="dark"] td[data-product]:not([data-selected="true"]) {
+  color: #a1a1a6;
+}
+
+/* 工具页与首页硬编码浅色 */
+html[data-theme="dark"] body {
+  background-color: #1c1c1e;
+  color: #f5f5f7;
+}
+html[data-theme="dark"] .counter,
+html[data-theme="dark"] .board,
+html[data-theme="dark"] .tile,
+html[data-theme="dark"] .tool,
+html[data-theme="dark"] .timeline,
+html[data-theme="dark"] .rank-table,
+html[data-theme="dark"] .pk,
+html[data-theme="dark"] table,
+html[data-theme="dark"] .faq details,
+html[data-theme="dark"] .chip,
+html[data-theme="dark"] .anchorbar a,
+html[data-theme="dark"] input.search,
+html[data-theme="dark"] .info-box {
+  background-color: #2c2c2e;
+}
+html[data-theme="dark"] th {
+  background-color: #232326;
+  color: #a1a1a6;
+}
+html[data-theme="dark"] th,
+html[data-theme="dark"] td,
+html[data-theme="dark"] .rank-row,
+html[data-theme="dark"] .tl-item,
+html[data-theme="dark"] .counter,
+html[data-theme="dark"] .board {
+  border-color: #38383a;
+}
+html[data-theme="dark"] .rank-bar,
+html[data-theme="dark"] .board .bar {
+  background-color: #38383a;
+}
+html[data-theme="dark"] .tab {
+  background-color: #2c2c2e;
+  color: #f5f5f7;
+  border-color: #38383a;
+}
+html[data-theme="dark"] .tag {
+  background-color: #38383a;
+  color: #d2d2d7;
+}
+html[data-theme="dark"] .product-image,
+html[data-theme="dark"] .tile .icon {
+  background-color: #1e3a5f;
+}
+html[data-theme="dark"] .rule,
+html[data-theme="dark"] hr {
+  border-color: #38383a;
+}
+html[data-theme="dark"] .site-footer,
+html[data-theme="dark"] footer {
+  background-color: #1c1c1e;
+}
+html[data-theme="dark"] .copyright {
+  border-color: #38383a;
+}
+html[data-theme="dark"] input.search,
+html[data-theme="dark"] .form-textarea {
+  background-color: #2c2c2e;
+  color: #f5f5f7;
+  border-color: #38383a;
+}
+html[data-theme="dark"] .k,
+html[data-theme="dark"] .rank-sub,
+html[data-theme="dark"] .rank-num {
+  color: #a1a1a6;
+}
+
+/* 主题切换悬浮按钮（深色下适配） */
+html[data-theme="dark"] #themeToggle {
+  background: rgba(44, 44, 46, 0.92) !important;
+  border-color: rgba(160, 160, 160, 0.4) !important;
+}

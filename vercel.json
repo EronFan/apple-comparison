@@ -96,14 +96,6 @@
       "destination": "/public/robots.txt"
     },
     {
-      "source": "/news",
-      "destination": "/src/news.html"
-    },
-    {
-      "source": "/article",
-      "destination": "/src/article.html"
-    },
-    {
       "source": "/feedback",
       "destination": "/src/feedback.html"
     }
