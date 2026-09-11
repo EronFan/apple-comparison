@@ -117,7 +117,8 @@
         },
         "code": "#394452"
       }
-    ]
+    ],
+    "image": "iphone-duo.png"
   },
   {
     "releaseDate": {
@@ -253,7 +254,8 @@
         },
         "code": "#3C3C3C"
       }
-    ]
+    ],
+    "image": "iphone-18-pro-max.png"
   },
   {
     "releaseDate": {
@@ -389,7 +391,8 @@
         },
         "code": "#3C3C3C"
       }
-    ]
+    ],
+    "image": "iphone-18-pro.png"
   },
   {
     "id": "iphone-17e",
@@ -517,7 +520,8 @@
       "zh-CN": "碰撞检测，拍照按钮",
       "en-US": "碰撞检测，拍照按钮"
     },
-    "technicalSpecsLink": "https://support.apple.com/zh-cn/126470"
+    "technicalSpecsLink": "https://support.apple.com/zh-cn/126470",
+    "image": "iphone-17e.png"
   },
   {
     "id": "iphone-17",
@@ -667,7 +671,8 @@
       "singleCore": "3593",
       "multiCore": "9125"
     },
-    "gpuPerformance": 37118
+    "gpuPerformance": 37118,
+    "image": "iphone-17.png"
   },
   {
     "id": "iphone-air",
@@ -809,7 +814,8 @@
       "singleCore": "3624",
       "multiCore": "9239"
     },
-    "gpuPerformance": 37693
+    "gpuPerformance": 37693,
+    "image": "iphone-air.png"
   },
   {
     "id": "iphone-17-pro",
@@ -1769,7 +1775,8 @@
     "wifiStandard": "802.11be HT160 2x2 MIMO",
     "ultraWideCamera": "1200万像素 (f/2.4光圈)",
     "opticalZoom": "无",
-    "telephotoCamera": "无"
+    "telephotoCamera": "无",
+    "image": "iphone-16.png"
   },
   {
     "id": "iphone-15-pro-max",

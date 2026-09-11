@@ -147,7 +147,8 @@
       "1TB"
     ],
     "ramType": "LPDDR5X",
-    "baseband": "Apple C1X"
+    "baseband": "Apple C1X",
+    "image": "ipad-ipad-air-13-inchm4.png"
   },
   {
     "name": {
@@ -297,7 +298,8 @@
       "1TB"
     ],
     "ramType": "LPDDR5X",
-    "baseband": "Apple C1X"
+    "baseband": "Apple C1X",
+    "image": "ipad-ipad-air-11-inchm4.png"
   },
   {
     "name": {
@@ -428,7 +430,8 @@
       "zh-CN": "256GB、512GB、1TB、2TB",
       "en-US": "256GB, 512GB, 1TB, 2TB"
     },
-    "technicalSpecsLink": "https://support.apple.com/zh-cn/125407"
+    "technicalSpecsLink": "https://support.apple.com/zh-cn/125407",
+    "image": "ipad-pro-13-inch-m5.png"
   },
   {
     "name": {
@@ -559,7 +562,8 @@
       "zh-CN": "256GB、512GB、1TB、2TB",
       "en-US": "256GB, 512GB, 1TB, 2TB"
     },
-    "technicalSpecsLink": "https://support.apple.com/zh-cn/125406"
+    "technicalSpecsLink": "https://support.apple.com/zh-cn/125406",
+    "image": "ipad-pro-11-inch-m5.png"
   },
   {
     "name": {
@@ -4168,7 +4172,8 @@
       "singleCore": "2979",
       "multiCore": "7408",
       "gpu": "29173"
-    }
+    },
+    "image": "ipad-ipad-minia17-pro.webp"
   },
   {
     "name": {
@@ -5081,7 +5086,8 @@
       "512GB"
     ],
     "ram": "6GB",
-    "ramType": "LPDDR5"
+    "ramType": "LPDDR5",
+    "image": "ipad-ipada16.png"
   },
   {
     "name": {

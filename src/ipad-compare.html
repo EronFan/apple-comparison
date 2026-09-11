@@ -487,6 +487,20 @@
             letter-spacing: -0.01em;
         }
 
+        /* 产品缩略图 */
+        .product-thumb {
+            max-height: 72px;
+            max-width: 120px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 6px;
+        }
+        .mobile-thumb {
+            max-height: 56px;
+            max-width: 90px;
+            object-fit: contain;
+        }
+
         /* 参数值单元格 */
         .param-value {
             min-width: 120px;
@@ -1709,6 +1723,15 @@
                 checkbox.setAttribute('data-product', product.name);
                 checkbox.checked = false; // 默认不勾选
                 
+                if (product.image) {
+                    const thumb = document.createElement('img');
+                    thumb.className = 'product-thumb';
+                    thumb.src = '../public/images/products/' + product.image;
+                    thumb.alt = localizedName;
+                    thumb.loading = 'lazy';
+                    thumb.onerror = function() { this.remove(); };
+                    productSelector.insertBefore(thumb, checkbox);
+                }
                 const label = document.createElement('label');
                 label.className = 'product-name';
                 label.setAttribute('for', product.id);
@@ -2417,6 +2440,10 @@
                     型号
                 </div>
             `;
+            // 产品图占位行（与产品列图片行对齐，无内容）
+            const imgHeaderRow = document.createElement('div');
+            imgHeaderRow.className = 'mobile-table-row mobile-image-row';
+            imgHeaderRow.style.display = 'none';
             paramsColumn.appendChild(headerRow);
 
             // 获取参数定义
@@ -2478,6 +2505,18 @@
                     </div>
                 </div>
             `;
+            // 产品图行（无图时隐藏占位，保持列对齐）
+            const imgRow = document.createElement('div');
+            imgRow.className = 'mobile-table-row mobile-image-row';
+            if (product.image) {
+                imgRow.innerHTML = `
+                    <div class="mobile-cell" style="height: auto; justify-content: center;">
+                        <img class="mobile-thumb" src="../public/images/products/${product.image}" alt="${productName}" loading="lazy" onerror="this.closest('.mobile-table-row').style.display='none'">
+                    </div>
+                `;
+            } else {
+                imgRow.style.display = 'none';
+            }
             column.appendChild(headerRow);
 
             // 添加参数行

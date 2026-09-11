@@ -36,7 +36,8 @@
         },
         "url": "https://support.apple.com/zh-cn/111843"
       }
-    ]
+    ],
+    "image": "homepod-001.png"
   },
   {
     "id": "homepod-002",
@@ -119,7 +120,8 @@
         },
         "url": "https://support.apple.com/zh-cn/111914"
       }
-    ]
+    ],
+    "image": "homepod-002.png"
   },
   {
     "id": "homepod-003",

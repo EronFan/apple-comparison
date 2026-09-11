@@ -35,7 +35,8 @@
     "dimensions": "单耳机: 30.2×18.3×18.1mm, 4.3g; 充电盒: 50.1×46.2×21.2mm, 32.3/34.7g",
     "waterResistance": "IP54",
     "sensors": "双波束成形麦克风、内向式麦克风、入耳检测传感器(光学)、运动加速感应器、语音加速感应器、力度感应器",
-    "price": "标准版 ¥999; 配无线充电盒版 ¥1,149"
+    "price": "标准版 ¥999; 配无线充电盒版 ¥1,149",
+    "image": "airpods-001.svg"
   },
   {
     "id": "airpods-002",
@@ -292,7 +293,8 @@
         },
         "url": "https://support.apple.com/zh-cn/125135"
       }
-    ]
+    ],
+    "image": "airpods-006.svg"
   },
   {
     "id": "airpods-007",
@@ -466,7 +468,8 @@
         },
         "url": "https://support.apple.com/zh-cn/126620"
       }
-    ]
+    ],
+    "image": "airpods-009.svg"
   },
   {
     "id": "airpods-010",

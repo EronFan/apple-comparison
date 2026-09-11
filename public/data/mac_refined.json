@@ -933,7 +933,8 @@
         },
         "url": "https://support.apple.com/en-us/125764"
       }
-    ]
+    ],
+    "image": "mac-air-001.webp"
   },
   {
     "id": "mac-air-002",
@@ -1046,7 +1047,8 @@
         },
         "url": "https://support.apple.com/en-us/125721"
       }
-    ]
+    ],
+    "image": "mac-air-002.webp"
   },
   {
     "id": "mac-air-003",
@@ -3432,7 +3434,8 @@
         },
         "url": "https://support.apple.com/en-us/125836"
       }
-    ]
+    ],
+    "image": "mac-pro-001.png"
   },
   {
     "id": "mac-pro-002",
@@ -3531,7 +3534,8 @@
         },
         "url": "https://support.apple.com/en-us/125819"
       }
-    ]
+    ],
+    "image": "mac-pro-002.png"
   },
   {
     "id": "mac-pro-003",
@@ -6904,7 +6908,8 @@
         },
         "url": "https://support.apple.com/en-us/121518"
       }
-    ]
+    ],
+    "image": "mac-imac-001.png"
   },
   {
     "id": "mac-imac-002",
@@ -7030,7 +7035,8 @@
         },
         "url": "https://support.apple.com/en-us/121510"
       }
-    ]
+    ],
+    "image": "mac-imac-002.png"
   },
   {
     "id": "mac-imac-003",
@@ -8248,7 +8254,8 @@
     "wirelessChip": "Apple N1",
     "wirelessSpec": "802.11be + 蓝牙 6.0",
     "dimensions": "4.97×12.70×12.70cm,0.67/0.73kg",
-    "chassisModel": "A3534 (M6)；A3535 (M5 Pro)"
+    "chassisModel": "A3534 (M6)；A3535 (M5 Pro)",
+    "image": "mac-mini-001.jpg"
   },
   {
     "id": "mac-mini-002",
@@ -8959,7 +8966,8 @@
     "wirelessSpec": "802.11be + 蓝牙 6.0",
     "charging": "480 瓦",
     "dimensions": "9.5×19.7×19.7cm, 2.74/3.64kg",
-    "chassisModel": "A3545 (M5 Max) / A3546 (M5 Ultra)"
+    "chassisModel": "A3545 (M5 Max) / A3546 (M5 Ultra)",
+    "image": "mac-studio-001.png"
   },
   {
     "id": "mac-studio-002",
