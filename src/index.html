@@ -30,6 +30,8 @@ header { display: flex; justify-content: space-between; align-items: center; pad
 .hero h1 { font-size: 38px; letter-spacing: -1px; margin-bottom: 8px; }
 .hero p { color: #a1a1a6; margin-bottom: 20px; }
 .hero .search { display: flex; max-width: 520px; margin: 0 auto; background: rgba(255,255,255,.12); border-radius: 22px; overflow: hidden; }
+/* 首页搜索模块暂时隐藏（保留代码以便恢复） */
+.hero .search, .hero .hot { display: none; }
 .hero .search input { flex: 1; border: none; outline: none; background: transparent; color: #fff; padding: 12px 20px; font-size: 15px; }
 .hero .search input::placeholder { color: #86868b; }
 .hero .search button { border: none; background: #0071e3; color: #fff; padding: 0 24px; cursor: pointer; font-size: 15px; }
@@ -40,7 +42,8 @@ header { display: flex; justify-content: space-between; align-items: center; pad
 .anchorbar a { font-size: 13px; color: #555; background: #fff; border-radius: 16px; padding: 5px 14px; text-decoration: none; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
 .anchorbar a:hover { color: #0071e3; }
 .counters { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 22px 0 30px; }
-.counter { background: #fff; border-radius: 14px; padding: 18px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+.counter { background: #fff; border-radius: 14px; padding: 18px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,.06); text-decoration: none; color: inherit; display: block; }
+.counter:hover { box-shadow: 0 8px 20px rgba(0,0,0,.12); }
 .counter b { font-size: 30px; color: #0071e3; display: block; font-variant-numeric: tabular-nums; }
 .counter span { font-size: 13px; color: #86868b; }
 section { margin: 34px 0; scroll-margin-top: 20px; }
@@ -154,10 +157,10 @@ footer { border-top: 1px solid #d2d2d7; margin-top: 40px; padding: 30px 0; }
   </div>
 
   <div class="counters">
-    <div class="counter"><b data-count="273">0</b><span data-lang-key="home.stat.models">收录机型</span></div>
-    <div class="counter"><b data-count="82">0</b><span data-lang-key="home.stat.chips">芯片</span></div>
-    <div class="counter"><b data-count="14">0</b><span data-lang-key="home.stat.pages">对比与工具页</span></div>
-    <div class="counter"><b data-count="162">0</b><span data-lang-key="home.stat.terms">术语</span></div>
+    <a class="counter" href="#lines"><b data-count="273">0</b><span data-lang-key="home.stat.models">收录机型</span></a>
+    <a class="counter" href="/src/chip-compare.html"><b data-count="82">0</b><span data-lang-key="home.stat.chips">芯片</span></a>
+    <a class="counter" href="#sitemap"><b data-count="14">0</b><span data-lang-key="home.stat.pages">对比与工具页</span></a>
+    <a class="counter" href="/src/glossary.html"><b data-count="162">0</b><span data-lang-key="home.stat.terms">术语</span></a>
   </div>
 
   <section id="pk">
@@ -254,7 +257,7 @@ footer { border-top: 1px solid #d2d2d7; margin-top: 40px; padding: 30px 0; }
   </section>
 
   <footer>
-    <div class="foot-grid">
+    <div class="foot-grid" id="sitemap">
       <div><h4 data-lang-key="home.foot.compare">产品对比</h4><a href="/src/iphone-compare.html" data-lang-key="product.iphone.title">iPhone</a><a href="/src/ipad-compare.html" data-lang-key="product.ipad.title">iPad</a><a href="/src/mac-compare.html" data-lang-key="product.mac.title">Mac</a><a href="/src/watch-compare.html" data-lang-key="product.watch.title">Watch</a></div>
       <div><h4 data-lang-key="home.foot.devices">更多设备</h4><a href="/src/airpods-compare.html" data-lang-key="product.airpods.title">AirPods</a><a href="/src/tv-compare.html" data-lang-key="product.tv.title">TV</a><a href="/src/vision-compare.html" data-lang-key="product.vision.title">Vision</a><a href="/src/ipod-compare.html" data-lang-key="product.ipod.title">iPod</a></div>
       <div><h4 data-lang-key="home.foot.tools">数据工具</h4><a href="/src/chip-compare.html" data-lang-key="product.chip.title">芯片库</a><a href="/src/benchmarks.html" data-lang-key="product.benchmarks.title">跑分榜</a><a href="/src/support.html" data-lang-key="product.support.title">系统兼容</a><a href="/src/glossary.html" data-lang-key="product.glossary.title">名词解读</a></div>
