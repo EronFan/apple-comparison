@@ -344,12 +344,15 @@
             border-collapse: separate;
             border-spacing: 0;
             text-align: left;
+            table-layout: fixed;
         }
 
         th, td {
             padding: 14px 16px; /* 调整单元格内边距，保证呼吸感 */
             border-bottom: 1px solid var(--color-border-light);
-            white-space: nowrap;
+            white-space: normal;
+            overflow-wrap: break-word;
+            word-break: break-word;
             background-color: var(--color-surface);
             transition: background-color var(--transition-fast);
         }
@@ -482,10 +485,12 @@
             text-align: center;
             transition: color var(--transition-normal), font-weight var(--transition-normal);
             margin-top: var(--spacing-xs);
-            max-width: 120px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
+            min-width: 150px;
+        }
+
+        /* 参数名称列 - 固定宽度，与产品等宽列对齐 */
+        thead th:first-child {
+            width: 150px;
         }
 
         /* 参数名称列 - 增强视觉区分 */
@@ -495,7 +500,7 @@
             background-color: var(--color-background);
             font-weight: 500;
             z-index: 2;
-            min-width: 140px;
+            min-width: 150px;
             border-right: 1px solid var(--color-border-light);
             color: var(--color-text-primary);
             letter-spacing: -0.01em;
@@ -503,7 +508,7 @@
 
         /* 参数值单元格 */
         .param-value {
-            min-width: 120px;
+            min-width: 150px;
             text-align: center;
             transition: all var(--transition-normal);
             color: var(--color-text-primary);
