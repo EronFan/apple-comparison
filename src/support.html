@@ -137,7 +137,17 @@
                 latest[f] = Math.max(LATEST_BASE[f], dataMax[f] || 0);
             });
             loaded.forEach(({ line, list }) => {
-                const rows = list.map(p => {
+                // 按发布日期倒序（新机在前；日期缺失或无法解析的保持原相对顺序）
+                const dated = list.map((p, i) => {
+                    let t = 0;
+                    const rd = p.releaseDate;
+                    const s = rd && typeof rd === 'object' ? (rd['zh-CN'] || rd['en-US'] || '') : (rd || '');
+                    const m = String(s).match(/(\d{4})\.(\d{1,2})\.(\d{1,2})/) || String(s).match(/(\d{4})年(\d{1,2})月/);
+                    if (m) t = new Date(+m[1], +m[2] - 1, +(m[3] || 1)).getTime();
+                    return { p, i, t };
+                });
+                dated.sort((a, b) => (b.t - a.t) || (a.i - b.i));
+                const rows = dated.map(({ p }) => {
                     const s = supportOf(p);
                     const wasLatest = /^(最新|Latest)$/i.test(s.max);
                     let max = s.max;
