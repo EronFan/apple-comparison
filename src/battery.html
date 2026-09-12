@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍎</text></svg>">
-    <meta name="description" content="iPhone 电池容量天梯图：历代 iPhone 电池容量排名，按梯队划分，谁是大电池一目了然。">
-    <title data-lang-key="page.title">iPhone 电池容量天梯图 - Apple参数大全</title>
+    <meta name="description" content="苹果设备电池容量天梯图：iPhone / iPad 历代电池容量排名，按梯队划分，谁是大电池一目了然。">
+    <title data-lang-key="page.title">电池容量天梯图 - Apple参数大全</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* 电池天梯图页样式（参考跑分榜页） */
@@ -24,6 +24,7 @@
         .tabs { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
         .tab { border: 1px solid #d2d2d7; background: #fff; padding: 8px 18px; border-radius: 20px; font-size: 15px; cursor: pointer; }
         .tab.active { background: #0071e3; color: #fff; border-color: #0071e3; }
+        .tab.device-tab { font-weight: 600; padding: 9px 26px; }
         .rank-table { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
         .tier-head { padding: 6px 16px; color: #86868b; font-size: 12px; font-weight: 600; border-bottom: 1px solid #f0f0f0; }
         .rank-row { display: grid; grid-template-columns: 52px 1fr auto; gap: 12px; align-items: center; padding: 10px 16px; border-bottom: 1px solid #f0f0f0; }
@@ -55,29 +56,25 @@
                 <a href="/src/glossary.html" data-lang-key="nav.glossary">名词解读</a>
             </div>
         </header>
-        <h1 data-lang-key="battery.title">iPhone 电池容量天梯图</h1>
-        <p class="subtitle" data-lang-key="battery.subtitle">历代 iPhone 电池容量排名，按梯队划分，谁是大电池一目了然</p>
+        <h1 data-lang-key="battery.title">电池容量天梯图</h1>
+        <p class="subtitle" data-lang-key="battery.subtitle">iPhone / iPad 历代电池容量排名，按梯队划分，谁是大电池一目了然</p>
         <div class="tabs">
-            <button class="tab series-tab active" data-series="all" data-lang-key="battery.tab.all">全部</button>
-            <button class="tab series-tab" data-series="pro" data-lang-key="battery.tab.pro">Pro 系列</button>
-            <button class="tab series-tab" data-series="standard" data-lang-key="battery.tab.standard">标准系列</button>
-            <button class="tab series-tab" data-series="plus" data-lang-key="battery.tab.plus">Plus 系列</button>
-            <button class="tab series-tab" data-series="mini" data-lang-key="battery.tab.mini">mini 系列</button>
-            <button class="tab series-tab" data-series="air" data-lang-key="battery.tab.air">Air 系列</button>
-            <button class="tab series-tab" data-series="se" data-lang-key="battery.tab.se">SE 系列</button>
-            <button class="tab series-tab" data-series="e" data-lang-key="battery.tab.e">e 系列</button>
+            <button class="tab device-tab active" data-device="iphone" data-lang-key="battery.device.iphone">iPhone</button>
+            <button class="tab device-tab" data-device="ipad" data-lang-key="battery.device.ipad">iPad</button>
         </div>
+        <div class="tabs" id="seriesTabs"></div>
         <div class="rank-table" id="rankTable"></div>
-        <p class="note" data-lang-key="battery.note">电池容量为官方标称典型值（mAh），同时标注瓦时（Wh）与发布年份；仅收录 iPhone 机型。</p>
+        <p class="note" data-lang-key="battery.note">电池容量为官方标称典型值：iPhone 以 mAh 计，iPad 以 Wh 计，并标注发布年份。</p>
         <footer data-lang-key="footer.copyright">&copy; 2025 Apple参数大全</footer>
     </div>
     <script src="../public/js/languages.js"></script>
     <script src="../public/js/language-switcher.js"></script>
     <script src="../public/js/theme.js"></script>
     <script>
-        // 电池天梯图：从 iPhone 数据提取电池容量并按梯队排名
+        // 电池天梯图：iPhone 按 mAh、iPad 按 Wh 排名，设备切换 + 系列筛选
+        let currentDevice = 'iphone';
         let currentSeries = 'all';
-        let allBatteries = [];
+        const batteries = { iphone: [], ipad: [] };
 
         // 当前语言
         function lang() {
@@ -94,23 +91,38 @@
             return (res && res[key]) || languageResources['zh-CN'][key] || '';
         }
 
-        // 提取单机型电池数据
-        function extractBattery(p) {
+        // 提取 iPhone 电池数据（mAh 为主指标）
+        function extractPhone(p) {
             const mah = parseFloat(p.batteryCapacityMah);
             const wh = parseFloat(p.batteryCapacityWh);
-            const year = (loc(p.releaseDate).match(/\d{4}/) || [])[0] || '';
             return {
                 raw: p,
                 name: loc(p.name),
                 chip: loc(p.processor) || '',
-                mah: isNaN(mah) ? 0 : mah,
+                year: (loc(p.releaseDate).match(/\d{4}/) || [])[0] || '',
+                score: isNaN(mah) ? 0 : mah,
                 wh: isNaN(wh) ? 0 : wh,
-                year
+                unit: 'mAh'
             };
         }
 
-        // 按名称归类系列
-        function seriesOf(name) {
+        // 提取 iPad 电池数据（batteryCapacity 文本中的 Wh 为主指标）
+        function extractIpad(p) {
+            const m = /([\d.]+)\s*Wh/i.exec(loc(p.batteryCapacity) || '');
+            const wh = m ? parseFloat(m[1]) : 0;
+            return {
+                raw: p,
+                name: loc(p.name),
+                chip: loc(p.processor) || '',
+                year: (loc(p.releaseDate).match(/\d{4}/) || [])[0] || '',
+                score: wh,
+                wh,
+                unit: 'Wh'
+            };
+        }
+
+        // iPhone 按名称归类系列
+        function seriesOfPhone(name) {
             if (/air/i.test(name)) return 'air';
             if (/se/i.test(name)) return 'se';
             if (/\d+e$/i.test(name.trim())) return 'e';
@@ -120,82 +132,139 @@
             return 'standard';
         }
 
-        // 梯队定义（全局阈值，不随筛选变化）
-        const TIERS = [
-            { key: 'battery.tier1', min: 5000 },
-            { key: 'battery.tier2', min: 4000 },
-            { key: 'battery.tier3', min: 3000 },
-            { key: 'battery.tier4', min: 2000 },
-            { key: 'battery.tier5', min: 0 }
-        ];
-        function tierOf(mah) { return TIERS.find(tr => mah >= tr.min); }
+        // iPad 按名称归类系列（mini / air 需在 pro 之前判断，避免 A17 Pro 等芯片名干扰）
+        function seriesOfIpad(name) {
+            if (/mini/i.test(name)) return 'mini';
+            if (/air/i.test(name)) return 'air';
+            if (/pro/i.test(name)) return 'pro';
+            return 'standard';
+        }
 
-        // 加载数据
-        async function loadData() {
-            try {
-                const res = await fetch('../public/data/iphone_refined.json?v=' + Date.now());
-                const list = await res.json();
-                list.forEach(p => {
-                    const b = extractBattery(p);
-                    if (b.mah > 0) {
-                        b.series = seriesOf(b.name);
-                        allBatteries.push(b);
-                    }
+        function seriesOf(b, dev) {
+            return dev === 'iphone' ? seriesOfPhone(b.name) : seriesOfIpad(b.name);
+        }
+
+        // 系列筛选标签定义
+        const SERIES_TABS = {
+            iphone: ['all', 'pro', 'standard', 'plus', 'mini', 'air', 'se', 'e'],
+            ipad: ['all', 'pro', 'air', 'mini', 'standard']
+        };
+
+        // 梯队定义（按设备区分阈值，不随筛选变化）
+        const TIERS = {
+            iphone: [
+                { key: 'battery.tier1', min: 5000 },
+                { key: 'battery.tier2', min: 4000 },
+                { key: 'battery.tier3', min: 3000 },
+                { key: 'battery.tier4', min: 2000 },
+                { key: 'battery.tier5', min: 0 }
+            ],
+            ipad: [
+                { key: 'battery.tier1', min: 35 },
+                { key: 'battery.tier2', min: 30 },
+                { key: 'battery.tier3', min: 25 },
+                { key: 'battery.tier4', min: 20 },
+                { key: 'battery.tier5', min: 0 }
+            ]
+        };
+        function tierOf(score) { return TIERS[currentDevice].find(tr => score >= tr.min); }
+
+        // 渲染系列筛选标签
+        function renderSeriesTabs() {
+            const box = document.getElementById('seriesTabs');
+            box.innerHTML = SERIES_TABS[currentDevice].map(s =>
+                `<button class="tab series-tab${s === currentSeries ? ' active' : ''}" data-series="${s}" data-lang-key="battery.tab.${s}">${t('battery.tab.' + s)}</button>`
+            ).join('');
+            box.querySelectorAll('.tab.series-tab').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    currentSeries = btn.dataset.series;
+                    renderSeriesTabs();
+                    render();
                 });
-                allBatteries.sort((a, b) => b.mah - a.mah);
-                render();
-            } catch (e) {
-                console.error('加载失败:', e);
-            }
+            });
         }
 
         // 渲染梯队榜单
         function render() {
-            const list = currentSeries === 'all' ? allBatteries : allBatteries.filter(b => b.series === currentSeries);
-            const max = list.length ? list[0].mah : 1;
-            const globalRank = new Map(allBatteries.map((b, i) => [b, i + 1]));
+            const all = batteries[currentDevice];
+            const list = currentSeries === 'all' ? all : all.filter(b => b.series === currentSeries);
+            const max = list.length ? list[0].score : 1;
+            const globalRank = new Map(all.map((b, i) => [b, i + 1]));
             let html = '';
-            TIERS.forEach(tr => {
-                const group = list.filter(b => tierOf(b.mah) === tr);
+            TIERS[currentDevice].forEach(tr => {
+                const group = list.filter(b => tierOf(b.score) === tr);
                 if (!group.length) return;
                 html += `<div class="tier-head"><span>${t(tr.key)}</span></div>`;
                 group.forEach(b => {
                     const rank = globalRank.get(b);
                     const medal = rank <= 3 ? ` top${rank}` : '';
-                    const wh = b.wh ? ` · ${b.wh} Wh` : '';
+                    const wh = currentDevice === 'iphone' && b.wh ? ` · ${b.wh} Wh` : '';
                     const year = b.year ? ` · ${t('battery.released').replace('%s', b.year)}` : '';
+                    const score = b.score.toLocaleString(undefined, { maximumFractionDigits: 2 });
                     html += `
                         <div class="rank-row">
                             <div class="rank-num${medal}">${rank}</div>
                             <div>
                                 <div class="rank-name">${b.name}</div>
                                 <div class="rank-sub">${b.chip}${wh}${year}</div>
-                                <div class="rank-bar"><i style="width:${Math.max(2, Math.round(b.mah / max * 100))}%"></i></div>
+                                <div class="rank-bar"><i style="width:${Math.max(2, Math.round(b.score / max * 100))}%"></i></div>
                             </div>
-                            <div class="rank-score">${b.mah.toLocaleString()}<small>mAh</small></div>
+                            <div class="rank-score">${score}<small>${b.unit}</small></div>
                         </div>`;
                 });
             });
             document.getElementById('rankTable').innerHTML = html || `<div class="rank-row"><div class="rank-sub">${t('battery.empty')}</div></div>`;
         }
 
-        document.querySelectorAll('.tab.series-tab').forEach(btn => {
+        // 加载数据
+        async function loadData() {
+            const sources = [
+                ['iphone', '../public/data/iphone_refined.json', extractPhone],
+                ['ipad', '../public/data/ipad_refined.json', extractIpad]
+            ];
+            await Promise.all(sources.map(async ([dev, file, extract]) => {
+                try {
+                    const res = await fetch(file + '?v=' + Date.now());
+                    const raw = await res.json();
+                    raw.forEach(p => {
+                        const b = extract(p);
+                        if (b.score > 0) {
+                            b.series = seriesOf(b, dev);
+                            batteries[dev].push(b);
+                        }
+                    });
+                    batteries[dev].sort((a, b) => b.score - a.score);
+                } catch (e) {
+                    console.error('加载失败:', file, e);
+                }
+            }));
+            renderSeriesTabs();
+            render();
+        }
+
+        // 设备切换
+        document.querySelectorAll('.tab.device-tab').forEach(btn => {
             btn.addEventListener('click', () => {
-                document.querySelectorAll('.tab.series-tab').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab.device-tab').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
-                currentSeries = btn.dataset.series;
+                currentDevice = btn.dataset.device;
+                currentSeries = 'all';
+                renderSeriesTabs();
                 render();
             });
         });
 
         // 语言切换后重渲染（名称、系列归类与梯队文案随语言更新）
         document.addEventListener('languageChanged', () => {
-            allBatteries.forEach(b => {
-                b.name = loc(b.raw.name);
-                b.chip = loc(b.raw.processor) || '';
-                b.year = (loc(b.raw.releaseDate).match(/\d{4}/) || [])[0] || '';
-                b.series = seriesOf(b.name);
+            Object.keys(batteries).forEach(dev => {
+                batteries[dev].forEach(b => {
+                    b.name = loc(b.raw.name);
+                    b.chip = loc(b.raw.processor) || '';
+                    b.year = (loc(b.raw.releaseDate).match(/\d{4}/) || [])[0] || '';
+                    b.series = seriesOf(b, dev);
+                });
             });
+            renderSeriesTabs();
             render();
         });
 
