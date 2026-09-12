@@ -50,6 +50,7 @@
         <p class="subtitle" data-lang-key="support.subtitle">各机型发布时系统与最高支持系统一览</p>
         <div id="sections"></div>
         <p class="note" data-lang-key="support.note">数据来源于本站参数库；“持续更新”指最高支持为当前最新系统。AirPods / HomePod 无操作系统概念，未列入。</p>
+        <p class="note" id="latestLine"></p>
         <footer data-lang-key="footer.copyright">&copy; 2025 Apple参数大全</footer>
     </div>
     <script src="../public/js/languages.js"></script>
@@ -74,6 +75,10 @@
             return v || '';
         }
 
+        // 各平台当前最新大版本号（每年 9 月新系统发布后更新此处基准；
+        // 实际取值 = max(基准, 参数库中出现的最大值)，只增不减）
+        const LATEST_BASE = { iOS: 27, iPadOS: 27, macOS: 27, watchOS: 27, tvOS: 27, visionOS: 27 };
+
         // 推导单机型的发布系统与最高支持
         function supportOf(p) {
             let initial = loc(p.initialOS);
@@ -92,28 +97,71 @@
             return { initial: initial || '-', max: max || '-' };
         }
 
+        // 从系统名提取“家族 + 主版本号”，如 "macOS 26" -> ["macOS", 26]
+        function parseFamily(osText) {
+            const m = String(osText || '').match(/^(iOS|iPadOS|macOS|watchOS|tvOS|visionOS)\s*(\d+)/i);
+            if (!m) return null;
+            const fam = m[1].charAt(0).toUpperCase() + m[1].slice(1).toLowerCase().replace('os', 'OS');
+            const canon = { Ios: 'iOS', Ipados: 'iPadOS', Macos: 'macOS', Watchos: 'watchOS', Tvos: 'tvOS', Visionos: 'visionOS' };
+            return { family: canon[fam] || m[1], major: parseInt(m[2], 10) };
+        }
+
         // 渲染
         async function loadAll() {
             const box = document.getElementById('sections');
             const lang = (window.currentLanguage || 'zh-CN');
+            // 先收齐数据，再算出各平台实际最新版
+            const loaded = [];
             for (const line of LINES) {
                 try {
                     const res = await fetch(line.file + '?v=' + Date.now());
-                    const list = await res.json();
-                    const rows = list.map(p => {
-                        const s = supportOf(p);
-                        const current = /最新|Latest/i.test(s.max);
-                        const badge = current
-                            ? '<span class="badge current">持续更新</span>'
-                            : '<span class="badge eol">已停更</span>';
-                        return `<tr><td>${loc(p.name)}</td><td>${s.initial}</td><td>${s.max}</td><td>${badge}</td></tr>`;
-                    }).join('');
-                    const title = lang === 'en-US' ? line.en : line.zh;
-                    box.innerHTML += `<div class="line-section"><h2>${title}</h2>
-                        <table><tr><th>机型</th><th>发布系统</th><th>最高支持</th><th>状态</th></tr>${rows}</table></div>`;
+                    loaded.push({ line, list: await res.json() });
                 } catch (e) {
                     console.error('加载失败:', line.file, e);
                 }
+            }
+            const dataMax = {};
+            loaded.forEach(({ list }) => {
+                list.forEach(p => {
+                    const s = supportOf(p);
+                    [s.initial, s.max].forEach(t => {
+                        const parsed = parseFamily(t);
+                        if (parsed && (!dataMax[parsed.family] || parsed.major > dataMax[parsed.family])) {
+                            dataMax[parsed.family] = parsed.major;
+                        }
+                    });
+                });
+            });
+            const latest = {};
+            Object.keys(LATEST_BASE).forEach(f => {
+                latest[f] = Math.max(LATEST_BASE[f], dataMax[f] || 0);
+            });
+            loaded.forEach(({ line, list }) => {
+                const rows = list.map(p => {
+                    const s = supportOf(p);
+                    const wasLatest = /^(最新|Latest)$/i.test(s.max);
+                    let max = s.max;
+                    if (wasLatest) {
+                        const fam = parseFamily(s.initial) || parseFamily(loc(p.os));
+                        const family = fam ? fam.family : ({ iphone: 'iOS', ipad: 'iPadOS', mac: 'macOS', watch: 'watchOS', tv: 'tvOS', vision: 'visionOS', ipod: 'iOS' }[line.file.match(/(\w+)_refined/)[1]] || 'iOS');
+                        max = `${family} ${latest[family] || ''}`.trim();
+                    }
+                    const badge = wasLatest
+                        ? '<span class="badge current">持续更新</span>'
+                        : '<span class="badge eol">已停更</span>';
+                    return `<tr><td>${loc(p.name)}</td><td>${s.initial}</td><td>${max}</td><td>${badge}</td></tr>`;
+                }).join('');
+                const title = lang === 'en-US' ? line.en : line.zh;
+                box.innerHTML += `<div class="line-section"><h2>${title}</h2>
+                    <table><tr><th>机型</th><th>发布系统</th><th>最高支持</th><th>状态</th></tr>${rows}</table></div>`;
+            });
+            // 页脚注明当前各平台最新版
+            const order = ['iOS', 'iPadOS', 'macOS', 'watchOS', 'tvOS', 'visionOS'];
+            const lineEl = document.getElementById('latestLine');
+            if (lineEl) {
+                lineEl.textContent = lang === 'en-US'
+                    ? `Current: ${order.map(f => `${f} ${latest[f]}`).join(' · ')}`
+                    : `当前最新：${order.map(f => `${f} ${latest[f]}`).join(' · ')}`;
             }
         }
 
