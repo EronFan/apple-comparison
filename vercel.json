@@ -72,6 +72,10 @@
       "destination": "/src/benchmarks.html"
     },
     {
+      "source": "/battery",
+      "destination": "/src/battery.html"
+    },
+    {
       "source": "/support",
       "destination": "/src/support.html"
     },
