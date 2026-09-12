@@ -2637,8 +2637,8 @@
       "en-US": "8GB LPDDR5"
     },
     "battery": {
-      "zh-CN": "4006 mAh (15.49Wh)，最长视频播放时间29小时",
-      "en-US": "4006 mAh (15.49Wh)，最长视频播放时间29小时"
+      "zh-CN": "4674 mAh (18.11Wh)，最长视频播放时间29小时",
+      "en-US": "4674 mAh (18.11Wh)，最长视频播放时间29小时"
     },
     "batteryLife": {
       "zh-CN": "视频播放：最长29小时，流媒体：最长24小时，音频播放：最长100小时",
@@ -2754,7 +2754,7 @@
       "zh-CN": "台积电第二代3纳米",
       "en-US": "TSMC second-generation 3nm"
     },
-    "batteryCapacityWh": "15.49",
+    "batteryCapacityWh": "18.11",
     "videoPlaybackTime": {
       "zh-CN": "最长29小时",
       "en-US": "Up to 29 hours"
@@ -2795,7 +2795,7 @@
       "zh-CN": "Apple Intelligence, 实况照片",
       "en-US": "Apple Intelligence, Live Photos"
     },
-    "batteryCapacityMah": 4006,
+    "batteryCapacityMah": 4674,
     "bluetoothVersion": {
       "zh-CN": "Bluetooth 5.3",
       "en-US": "Bluetooth 5.3"
