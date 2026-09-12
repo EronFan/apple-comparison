@@ -453,7 +453,12 @@
         "code": "#3C3C3C"
       }
     ],
-    "image": "iphone-18-pro-max.png"
+    "image": "iphone-18-pro-max.png",
+    "cpuPerformance": {
+      "singleCore": "4725",
+      "multiCore": "12575"
+    },
+    "gpuPerformance": 62898
   },
   {
     "releaseDate": {
@@ -692,7 +697,12 @@
         "code": "#3C3C3C"
       }
     ],
-    "image": "iphone-18-pro.png"
+    "image": "iphone-18-pro.png",
+    "cpuPerformance": {
+      "singleCore": "4719",
+      "multiCore": "12677"
+    },
+    "gpuPerformance": 62898
   },
   {
     "id": "iphone-17e",
@@ -917,7 +927,11 @@
       "en-US": "碰撞检测，拍照按钮"
     },
     "technicalSpecsLink": "https://support.apple.com/zh-cn/126470",
-    "image": "iphone-17e.png"
+    "image": "iphone-17e.png",
+    "cpuPerformance": {
+      "singleCore": "3565",
+      "multiCore": "8770"
+    }
   },
   {
     "id": "iphone-17",
@@ -1664,10 +1678,10 @@
     },
     "technicalSpecsLink": "https://www.apple.com.cn/iphone-17-pro/specs/",
     "cpuPerformance": {
-      "singleCore": "3751",
-      "multiCore": "9710"
+      "singleCore": "3844",
+      "multiCore": "9977"
     },
-    "gpuPerformance": 45532,
+    "gpuPerformance": 46557,
     "image": "iphone-17-pro.webp"
   },
   {
@@ -1914,8 +1928,8 @@
     },
     "technicalSpecsLink": "https://www.apple.com.cn/iphone-17-pro/specs/",
     "cpuPerformance": {
-      "singleCore": "3756",
-      "multiCore": "9711"
+      "singleCore": "4010",
+      "multiCore": "10468"
     },
     "gpuPerformance": 45489,
     "image": "iphone-17-pro-max.webp"

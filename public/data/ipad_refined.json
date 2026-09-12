@@ -148,7 +148,12 @@
     ],
     "ramType": "LPDDR5X",
     "baseband": "Apple C1X",
-    "image": "ipad-ipad-air-13-inchm4.png"
+    "image": "ipad-ipad-air-13-inchm4.png",
+    "benchmarks": {
+      "singleCore": "3741",
+      "multiCore": "13106",
+      "gpu": "52804"
+    }
   },
   {
     "name": {
@@ -431,7 +436,12 @@
       "en-US": "256GB, 512GB, 1TB, 2TB"
     },
     "technicalSpecsLink": "https://support.apple.com/zh-cn/125407",
-    "image": "ipad-pro-13-inch-m5.png"
+    "image": "ipad-pro-13-inch-m5.png",
+    "benchmarks": {
+      "singleCore": "4142",
+      "multiCore": "16484",
+      "gpu": "71034"
+    }
   },
   {
     "name": {
@@ -563,7 +573,12 @@
       "en-US": "256GB, 512GB, 1TB, 2TB"
     },
     "technicalSpecsLink": "https://support.apple.com/zh-cn/125406",
-    "image": "ipad-pro-11-inch-m5.png"
+    "image": "ipad-pro-11-inch-m5.png",
+    "benchmarks": {
+      "singleCore": "3552",
+      "multiCore": "15197",
+      "gpu": "70867"
+    }
   },
   {
     "name": {
@@ -2816,9 +2831,9 @@
     "ramType": "LPDDR5",
     "baseband": "Qualcomm X65M",
     "benchmarks": {
-      "singleCore": "2591",
-      "multiCore": "9828",
-      "gpu": "41995"
+      "singleCore": "2744",
+      "multiCore": "11977",
+      "gpu": "44322"
     },
     "image": "ipad-ipad-air-13-inchm3.png"
   },
@@ -2972,9 +2987,9 @@
     "ramType": "LPDDR5",
     "baseband": "Qualcomm X65M",
     "benchmarks": {
-      "singleCore": "2586",
-      "multiCore": "9795",
-      "gpu": "42035"
+      "singleCore": "2751",
+      "multiCore": "11897",
+      "gpu": "45367"
     },
     "image": "ipad-ipad-air-11-inchm3.png"
   },
