@@ -1951,11 +1951,6 @@
                     tdValue.setAttribute('data-product', product.id);
                     
                     // 支持嵌套属性访问（如cpuPerformance.singleCore）
-                    function getNestedProperty(obj, path) {
-                        return path.split('.').reduce((prev, curr) => 
-                            prev && prev[curr] !== undefined ? prev[curr] : null, obj);
-                    }
-                    
                     // 获取参数值，支持嵌套属性
                     let value = getNestedProperty(product, param.key);
                     
@@ -1996,6 +1991,12 @@
             if (typeof initLanguage === 'function') {
                 initLanguage();
             }
+        }
+
+        // 支持嵌套属性访问（如cpuPerformance.singleCore），供表格生成与语言切换共用
+        function getNestedProperty(obj, path) {
+            return path.split('.').reduce((prev, curr) =>
+                prev && prev[curr] !== undefined ? prev[curr] : null, obj);
         }
 
         // 初始化产品选择 - 拆分为初始化和事件绑定两个独立函数
@@ -2092,11 +2093,13 @@
                 const product = allProducts.find(p => p.id === productId);
                 if (!product) return;
                 
-                // 找到对应的参数名称
+                // 找到对应的参数名称（名称为中英对象，按当前语言比对）
                 const row = cell.closest('tr');
                 const paramNameCell = row.querySelector('.param-name');
                 const paramText = paramNameCell.querySelector('.param-text')?.textContent || paramNameCell.textContent;
-                const param = params.find(p => p.name === paramText);
+                const param = getCompleteParamDefinitions().find(p =>
+                    p.name === paramText || p.name[lang] === paramText || p.name['zh-CN'] === paramText
+                );
                 
                 if (param && param.key) {
                     // 获取参数值
@@ -2299,7 +2302,20 @@
         }
 
         // 初始化移动端视图
+        // 当前对比选中的机型（重建移动端表格后据此恢复勾选与显隐）
+        let currentSelectedIds = [];
+
+        // 初始化移动端视图
         function initializeMobileView() {
+            // 已构建过则不再重建：手机端滚动会收起地址栏触发 resize，
+            // 若在此重建表格会丢失对比选择，恢复为全部机型
+            const container = document.getElementById('mobileProductsContainer');
+            const paramsColumn = document.getElementById('mobileParamsColumn');
+            if (container && container.children.length > 0 && paramsColumn && paramsColumn.children.length > 0) {
+                updateScrollIndicators();
+                updateNavigationButtons();
+                return;
+            }
             generateMobileTable();
             updateScrollIndicators();
             updateNavigationButtons();
@@ -2486,6 +2502,18 @@
                 const column = createMobileProductColumn(product);
                 productsContainer.appendChild(column);
             });
+
+            // 重建后恢复对比选择（勾选状态 + 列显隐），避免丢失已选机型
+            if (currentSelectedIds.length > 0) {
+                window.allProducts.forEach(product => {
+                    const selected = currentSelectedIds.includes(product.id);
+                    const mobileCheckbox = productsContainer.querySelector(`.mobile-product-checkbox[data-product-id="${product.id}"]`);
+                    if (mobileCheckbox) mobileCheckbox.checked = selected;
+                    const desktopCheckbox = document.querySelector(`input[type="checkbox"][id="${product.id}"]`);
+                    if (desktopCheckbox) desktopCheckbox.checked = selected;
+                });
+                hideUnselectedProducts(currentSelectedIds);
+            }
         }
 
         // 创建移动端产品列
@@ -2880,6 +2908,7 @@
 
         // 重置按钮点击事件处理函数
         function handleResetButtonClick() {
+            currentSelectedIds = [];
             
             // 获取所有产品复选框（桌面端和移动端）
             const desktopCheckboxes = document.querySelectorAll('.product-checkbox');
@@ -2942,6 +2971,7 @@
             mobileCheckboxes.forEach(cb => selectedIds.add(cb.dataset.productId));
             
             const selectedProducts = Array.from(selectedIds);
+            currentSelectedIds = selectedProducts;
             
             if (selectedProducts.length === 0) {
                 alert('请至少选择一个产品进行对比');
