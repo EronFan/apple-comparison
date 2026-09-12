@@ -120,9 +120,9 @@
             };
         }
 
-        // iPhone 按名称归类系列（Duo / XS Max 按产品定位归入 Pro 系列）
+        // iPhone 按名称归类系列（Duo / XS / XS Max 按产品定位归入 Pro 系列）
         function seriesOfPhone(name) {
-            if (/duo/i.test(name) || /xs\s*max/i.test(name)) return 'pro';
+            if (/duo/i.test(name) || /xs/i.test(name)) return 'pro';
             if (/air/i.test(name)) return 'air';
             if (/se/i.test(name)) return 'se';
             if (/\d+e$/i.test(name.trim())) return 'e';
