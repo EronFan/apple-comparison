@@ -103,8 +103,105 @@ html[data-theme="dark"] .rank-num {
   color: #a1a1a6;
 }
 
-/* 主题切换悬浮按钮（深色下适配） */
+/* 顶部导航（首页/工具页/反馈页硬编码浅色导航） */
+html[data-theme="dark"] header {
+  background-color: rgba(28, 28, 30, 0.92) !important;
+  border-color: #38383a;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+html[data-theme="dark"] .navbar {
+  background-color: #1c1c1e !important;
+  border-color: #38383a;
+}
+html[data-theme="dark"] .logo,
+html[data-theme="dark"] .logo span {
+  color: #f5f5f7;
+}
+html[data-theme="dark"] .nav a,
+html[data-theme="dark"] .nav-link {
+  color: #d2d2d7;
+}
+html[data-theme="dark"] .nav a:hover,
+html[data-theme="dark"] .nav-link:hover,
+html[data-theme="dark"] .nav a.active,
+html[data-theme="dark"] .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #409cff;
+}
+html[data-theme="dark"] .language-switcher {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+html[data-theme="dark"] .language-btn {
+  color: #d2d2d7;
+}
+html[data-theme="dark"] .language-btn.active {
+  background-color: #3a3a3c;
+  color: #409cff;
+  box-shadow: none;
+}
+html[data-theme="dark"] .topbar {
+  background-color: #111113;
+}
+
+/* 首页细节：锚点条 / 热搜 / 链接色 */
+html[data-theme="dark"] .anchorbar a {
+  color: #d2d2d7;
+  box-shadow: none;
+}
+html[data-theme="dark"] .anchorbar a:hover {
+  color: #409cff;
+}
+html[data-theme="dark"] .hot button {
+  border-color: #4a4a4e;
+  color: #d2d2d7;
+}
+html[data-theme="dark"] .hot button:hover {
+  color: #fff;
+}
+html[data-theme="dark"] .sec-head a,
+html[data-theme="dark"] .pk .go,
+html[data-theme="dark"] .tile .go,
+html[data-theme="dark"] .faq a,
+html[data-theme="dark"] .counter b,
+html[data-theme="dark"] .board .bar i,
+html[data-theme="dark"] .rank-bar i {
+  color: #409cff;
+}
+html[data-theme="dark"] .board .bar i,
+html[data-theme="dark"] .rank-bar i {
+  color: initial;
+}
+html[data-theme="dark"] .faq p,
+html[data-theme="dark"] .foot-grid a,
+html[data-theme="dark"] .tile p,
+html[data-theme="dark"] .tool p {
+  color: #a1a1a6;
+}
+html[data-theme="dark"] .empty-hint {
+  color: #a1a1a6;
+}
+
+/* 主题切换按钮（置于导航栏内） */
+#themeToggle {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid rgba(128, 128, 128, 0.35);
+  background-color: var(--card-background, #fff);
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  margin-left: 10px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#themeToggle:hover {
+  border-color: #0071e3;
+}
 html[data-theme="dark"] #themeToggle {
-  background: rgba(44, 44, 46, 0.92) !important;
-  border-color: rgba(160, 160, 160, 0.4) !important;
+  background-color: #2c2c2e;
+  border-color: #4a4a4e;
 }

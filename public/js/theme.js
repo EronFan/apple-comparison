@@ -51,16 +51,37 @@
       saved = 'dark';
     }
     apply(saved === 'dark' ? 'dark' : 'light');
-    // 左下悬浮切换按钮（避开右下返回顶部）
+    // 切换按钮放入顶部导航栏（各页头容器通用兜底）
     if (!document.getElementById('themeToggle')) {
       var b = document.createElement('button');
       b.id = 'themeToggle';
+      b.type = 'button';
       b.setAttribute('aria-label', '切换夜间模式');
-      b.style.cssText = 'position:fixed;left:26px;bottom:26px;width:42px;height:42px;border-radius:50%;border:1px solid rgba(128,128,128,.35);background:rgba(245,245,247,.92);font-size:18px;line-height:1;cursor:pointer;z-index:99;box-shadow:0 4px 12px rgba(0,0,0,.15);';
+      b.textContent = current() === 'dark' ? '☀️' : '🌙';
       b.addEventListener('click', function() {
         apply(current() === 'dark' ? 'light' : 'dark');
       });
-      document.body.appendChild(b);
+      var placed = false;
+      // 语言切换器在导航右侧，插到它前面最自然
+      var sw = document.querySelector('.language-switcher');
+      if (sw && sw.parentNode) {
+        sw.parentNode.insertBefore(b, sw);
+        placed = true;
+      } else {
+        var host = document.querySelector('.nav-links') || document.querySelector('.nav') || document.querySelector('header');
+        if (host) {
+          host.appendChild(b);
+          placed = true;
+        }
+      }
+      if (!placed) {
+        // 极端兜底：悬浮右上角
+        b.style.position = 'fixed';
+        b.style.top = '14px';
+        b.style.right = '20px';
+        b.style.zIndex = '999';
+        document.body.appendChild(b);
+      }
     }
   }
 
