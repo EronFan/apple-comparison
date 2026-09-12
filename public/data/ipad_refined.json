@@ -441,6 +441,10 @@
       "singleCore": "4142",
       "multiCore": "16484",
       "gpu": "71034"
+    },
+    "benchmarksAvg": {
+      "singleCore": "3559",
+      "multiCore": "15295"
     }
   },
   {
@@ -577,6 +581,11 @@
     "benchmarks": {
       "singleCore": "3552",
       "multiCore": "15197",
+      "gpu": "70867"
+    },
+    "benchmarksAvg": {
+      "singleCore": "3532",
+      "multiCore": "15052",
       "gpu": "70867"
     }
   },
@@ -727,7 +736,11 @@
       "512GB"
     ],
     "ramType": "LPDDR5X",
-    "image": "ipad-ipad-pro-13-inchm4.webp"
+    "image": "ipad-ipad-pro-13-inchm4.webp",
+    "benchmarksAvg": {
+      "singleCore": "3214",
+      "multiCore": "13847"
+    }
   },
   {
     "name": {
@@ -870,7 +883,12 @@
       "512GB"
     ],
     "ramType": "LPDDR4X",
-    "image": "ipad-ipad-pro-11-inchm4.webp"
+    "image": "ipad-ipad-pro-11-inchm4.webp",
+    "benchmarksAvg": {
+      "singleCore": "3209",
+      "multiCore": "13718",
+      "gpu": "53445"
+    }
   },
   {
     "name": {
@@ -1017,7 +1035,11 @@
       "256GB"
     ],
     "ramType": "LPDDR4",
-    "image": "ipad-ipad-pro-129-inch-6.webp"
+    "image": "ipad-ipad-pro-129-inch-6.webp",
+    "benchmarksAvg": {
+      "singleCore": "2343",
+      "multiCore": "9869"
+    }
   },
   {
     "name": {
@@ -1163,7 +1185,11 @@
       "512GB"
     ],
     "ramType": "LPDDR4X",
-    "image": "ipad-ipad-pro-11-inch-4.webp"
+    "image": "ipad-ipad-pro-11-inch-4.webp",
+    "benchmarksAvg": {
+      "singleCore": "2358",
+      "multiCore": "9950"
+    }
   },
   {
     "name": {
@@ -1311,7 +1337,12 @@
       "256GB"
     ],
     "ramType": "LPDDR4",
-    "image": "ipad-ipad-pro-129-inch-5.webp"
+    "image": "ipad-ipad-pro-129-inch-5.webp",
+    "benchmarksAvg": {
+      "singleCore": "2158",
+      "multiCore": "8673",
+      "gpu": "27447"
+    }
   },
   {
     "name": {
@@ -1458,7 +1489,11 @@
       "512GB"
     ],
     "ramType": "LPDDR4X",
-    "image": "ipad-ipad-pro-11-inch-3.webp"
+    "image": "ipad-ipad-pro-11-inch-3.webp",
+    "benchmarksAvg": {
+      "singleCore": "2189",
+      "multiCore": "8747"
+    }
   },
   {
     "name": {
@@ -1606,7 +1641,10 @@
       "256GB"
     ],
     "ramType": "LPDDR4",
-    "image": "ipad-ipad-pro-129-inch-4.webp"
+    "image": "ipad-ipad-pro-129-inch-4.webp",
+    "benchmarksAvg": {
+      "singleCore": "1382"
+    }
   },
   {
     "name": {
@@ -1753,7 +1791,10 @@
       "512GB"
     ],
     "ramType": "LPDDR4X",
-    "image": "ipad-ipad-pro-11-inch-2.webp"
+    "image": "ipad-ipad-pro-11-inch-2.webp",
+    "benchmarksAvg": {
+      "singleCore": "1388"
+    }
   },
   {
     "name": {
@@ -1901,7 +1942,10 @@
       "256GB"
     ],
     "ramType": "LPDDR4",
-    "image": "ipad-ipad-pro-129-inch-3.webp"
+    "image": "ipad-ipad-pro-129-inch-3.webp",
+    "benchmarksAvg": {
+      "singleCore": "1379"
+    }
   },
   {
     "name": {
@@ -2048,7 +2092,10 @@
       "512GB"
     ],
     "ramType": "LPDDR4X",
-    "image": "ipad-ipad-pro-11-inch-1.webp"
+    "image": "ipad-ipad-pro-11-inch-1.webp",
+    "benchmarksAvg": {
+      "singleCore": "1341"
+    }
   },
   {
     "name": {
@@ -2835,7 +2882,12 @@
       "multiCore": "11977",
       "gpu": "44322"
     },
-    "image": "ipad-ipad-air-13-inchm3.png"
+    "image": "ipad-ipad-air-13-inchm3.png",
+    "benchmarksAvg": {
+      "singleCore": "2745",
+      "multiCore": "11977",
+      "gpu": "44322"
+    }
   },
   {
     "name": {
@@ -2991,7 +3043,12 @@
       "multiCore": "11897",
       "gpu": "45367"
     },
-    "image": "ipad-ipad-air-11-inchm3.png"
+    "image": "ipad-ipad-air-11-inchm3.png",
+    "benchmarksAvg": {
+      "singleCore": "2753",
+      "multiCore": "11897",
+      "gpu": "45367"
+    }
   },
   {
     "name": {
@@ -3146,7 +3203,11 @@
       "1TB"
     ],
     "ramType": "LPDDR5",
-    "image": "ipad-ipad-air-13-inchm2.webp"
+    "image": "ipad-ipad-air-13-inchm2.webp",
+    "benchmarksAvg": {
+      "singleCore": "2361",
+      "multiCore": "9901"
+    }
   },
   {
     "name": {
@@ -3301,7 +3362,11 @@
       "1TB"
     ],
     "ramType": "LPDDR5",
-    "image": "ipad-ipad-air-11-inchm2.webp"
+    "image": "ipad-ipad-air-11-inchm2.webp",
+    "benchmarksAvg": {
+      "singleCore": "2355",
+      "multiCore": "9979"
+    }
   },
   {
     "name": {
@@ -3462,7 +3527,12 @@
       "256GB"
     ],
     "ramType": "LPDDR4X",
-    "image": "ipad-ipad-air-5.webp"
+    "image": "ipad-ipad-air-5.webp",
+    "benchmarksAvg": {
+      "singleCore": "2145",
+      "multiCore": "8498",
+      "gpu": "25829"
+    }
   },
   {
     "name": {
@@ -3623,7 +3693,11 @@
       "256GB"
     ],
     "ramType": "LPDDR4X",
-    "image": "ipad-ipad-air-4.webp"
+    "image": "ipad-ipad-air-4.webp",
+    "benchmarksAvg": {
+      "singleCore": "1920",
+      "gpu": "16569"
+    }
   },
   {
     "name": {
@@ -3770,7 +3844,10 @@
       "256GB"
     ],
     "ramType": "LPDDR4X",
-    "image": "ipad-ipad-air-3.webp"
+    "image": "ipad-ipad-air-3.webp",
+    "benchmarksAvg": {
+      "singleCore": "1234"
+    }
   },
   {
     "name": {
@@ -4211,7 +4288,11 @@
       "multiCore": "7408",
       "gpu": "21437"
     },
-    "image": "ipad-ipad-minia17-pro.webp"
+    "image": "ipad-ipad-minia17-pro.webp",
+    "benchmarksAvg": {
+      "singleCore": "2597",
+      "multiCore": "6937"
+    }
   },
   {
     "name": {
@@ -4365,7 +4446,10 @@
     ],
     "ram": "4GB",
     "ramType": "LPDDR4X",
-    "image": "ipad-ipad-mini-6.webp"
+    "image": "ipad-ipad-mini-6.webp",
+    "benchmarksAvg": {
+      "singleCore": "1912"
+    }
   },
   {
     "name": {
@@ -4512,7 +4596,10 @@
     ],
     "ram": "3GB",
     "ramType": "LPDDR4X",
-    "image": "ipad-ipad-mini-5.webp"
+    "image": "ipad-ipad-mini-5.webp",
+    "benchmarksAvg": {
+      "singleCore": "1091"
+    }
   },
   {
     "name": {
@@ -5131,7 +5218,10 @@
     ],
     "ram": "6GB",
     "ramType": "LPDDR5",
-    "image": "ipad-ipada16.png"
+    "image": "ipad-ipada16.png",
+    "benchmarksAvg": {
+      "singleCore": "2356"
+    }
   },
   {
     "name": {
@@ -5203,7 +5293,10 @@
     ],
     "ram": "4GB",
     "ramType": "LPDDR4X",
-    "image": "ipad-ipad-10.webp"
+    "image": "ipad-ipad-10.webp",
+    "benchmarksAvg": {
+      "singleCore": "1859"
+    }
   },
   {
     "name": {
@@ -5263,7 +5356,10 @@
       "zh-CN": "无线局域网浏览网页：10h，蜂窝网络浏览网页：9h",
       "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
     },
-    "image": "ipad-ipad-9.webp"
+    "image": "ipad-ipad-9.webp",
+    "benchmarksAvg": {
+      "singleCore": "1463"
+    }
   },
   {
     "name": {
@@ -5332,7 +5428,10 @@
     ],
     "ram": "3GB",
     "ramType": "LPDDR4X",
-    "image": "ipad-ipad-8.webp"
+    "image": "ipad-ipad-8.webp",
+    "benchmarksAvg": {
+      "singleCore": "1171"
+    }
   },
   {
     "name": "iPad(第 7 代)",

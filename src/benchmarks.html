@@ -54,13 +54,18 @@
         </header>
         <h1 data-lang-key="compare.title.benchmarks">跑分榜</h1>
         <p class="subtitle" data-lang-key="bench.subtitle">汇总已公开的 Geekbench 6 跑分，按分数排名</p>
+        <div class="tabs mode-tabs">
+            <button class="tab mode-tab active" data-mode="peak" data-lang-key="bench.mode.peak">峰值</button>
+            <button class="tab mode-tab" data-mode="avg" data-lang-key="bench.mode.avg">均值</button>
+        </div>
         <div class="tabs">
-            <button class="tab active" data-type="single" data-lang-key="bench.tab.single">CPU 单核</button>
-            <button class="tab" data-type="multi" data-lang-key="bench.tab.multi">CPU 多核</button>
-            <button class="tab" data-type="gpu" data-lang-key="bench.tab.gpu">GPU</button>
+            <button class="tab type-tab active" data-type="single" data-lang-key="bench.tab.single">CPU 单核</button>
+            <button class="tab type-tab" data-type="multi" data-lang-key="bench.tab.multi">CPU 多核</button>
+            <button class="tab type-tab" data-type="gpu" data-lang-key="bench.tab.gpu">GPU</button>
         </div>
         <div class="rank-table" id="rankTable"></div>
-        <p class="note" data-lang-key="bench.note">仅收录已公开跑分的 iPhone / iPad 机型；Mac / Watch 等暂无公开跑分数据，未列入。</p>
+        <p class="note" id="peakNote" data-lang-key="bench.note">仅收录已公开跑分的 iPhone / iPad 机型；Mac / Watch 等暂无公开跑分数据，未列入。</p>
+        <p class="note" id="avgNote" data-lang-key="bench.avgNote" style="display:none">均值来自 Geekbench 榜单聚合（≥5 次提交）；暂无均值的机型仅显示于峰值榜。</p>
         <footer data-lang-key="footer.copyright">&copy; 2025 Apple参数大全</footer>
     </div>
     <script src="../public/js/languages.js"></script>
@@ -69,7 +74,9 @@
     <script>
         // 跑分榜：从 iPhone / iPad 数据文件提取跑分并排名
         let currentType = 'single';
+        let currentMode = 'peak';
         let allScores = { single: [], multi: [], gpu: [] };
+        let avgScores = { single: [], multi: [], gpu: [] };
 
         // 取本地化文本
         function loc(v) {
@@ -90,8 +97,23 @@
                 out.multi = out.multi || parseInt(p.benchmarks.multiCore, 10) || 0;
                 out.gpu = parseInt(p.benchmarks.gpu, 10) || 0;
             }
-            if (p.gpuPerformance !== undefined && p.gpuPerformance !== null) {
+            if (p.gpuPerformance !== undefined && p.gpuPerformance !== null && typeof p.gpuPerformance !== 'object') {
                 out.gpu = out.gpu || (typeof p.gpuPerformance === 'number' ? p.gpuPerformance : parseInt(p.gpuPerformance, 10) || 0);
+            }
+            return out;
+        }
+
+        // 提取单机型的榜单均值（缺失即不计入均值榜）
+        function extractAvgScores(p) {
+            const out = { single: 0, multi: 0, gpu: 0 };
+            const c = p.cpuAverage || p.benchmarksAvg;
+            if (c && typeof c === 'object') {
+                out.single = parseInt(c.singleCore, 10) || 0;
+                out.multi = parseInt(c.multiCore, 10) || 0;
+                out.gpu = parseInt(c.gpu, 10) || 0;
+            }
+            if (typeof p.gpuAverage === 'number') {
+                out.gpu = out.gpu || p.gpuAverage;
             }
             return out;
         }
@@ -105,23 +127,31 @@
                     const list = await res.json();
                     list.forEach(p => {
                         const s = extractScores(p);
+                        const a = extractAvgScores(p);
                         const name = loc(p.name);
                         const chip = loc(p.processor) || '';
                         if (s.single > 0) allScores.single.push({ name, chip, score: s.single });
                         if (s.multi > 0) allScores.multi.push({ name, chip, score: s.multi });
                         if (s.gpu > 0) allScores.gpu.push({ name, chip, score: s.gpu });
+                        if (a.single > 0) avgScores.single.push({ name, chip, score: a.single });
+                        if (a.multi > 0) avgScores.multi.push({ name, chip, score: a.multi });
+                        if (a.gpu > 0) avgScores.gpu.push({ name, chip, score: a.gpu });
                     });
                 } catch (e) {
                     console.error('加载失败:', f, e);
                 }
             }
             Object.keys(allScores).forEach(k => allScores[k].sort((a, b) => b.score - a.score));
+            Object.keys(avgScores).forEach(k => avgScores[k].sort((a, b) => b.score - a.score));
             render();
         }
 
         // 渲染榜单
         function render() {
-            const list = allScores[currentType] || [];
+            const pool = currentMode === 'avg' ? avgScores : allScores;
+            const list = pool[currentType] || [];
+            document.getElementById('peakNote').style.display = currentMode === 'peak' ? '' : 'none';
+            document.getElementById('avgNote').style.display = currentMode === 'avg' ? '' : 'none';
             const max = list.length ? list[0].score : 1;
             const box = document.getElementById('rankTable');
             box.innerHTML = list.map((item, i) => `
@@ -137,11 +167,20 @@
             `).join('');
         }
 
-        document.querySelectorAll('.tab').forEach(btn => {
+        document.querySelectorAll('.tab.type-tab').forEach(btn => {
             btn.addEventListener('click', () => {
-                document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab.type-tab').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 currentType = btn.dataset.type;
+                render();
+            });
+        });
+
+        document.querySelectorAll('.tab.mode-tab').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.tab.mode-tab').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentMode = btn.dataset.mode;
                 render();
             });
         });

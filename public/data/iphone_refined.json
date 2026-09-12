@@ -1187,7 +1187,12 @@
       "multiCore": "9125"
     },
     "gpuPerformance": 37118,
-    "image": "iphone-17.png"
+    "image": "iphone-17.png",
+    "cpuAverage": {
+      "singleCore": "2995",
+      "multiCore": "8269"
+    },
+    "gpuAverage": 35120
   },
   {
     "id": "iphone-air",
@@ -1432,7 +1437,12 @@
       "multiCore": "9239"
     },
     "gpuPerformance": 37693,
-    "image": "iphone-air.png"
+    "image": "iphone-air.png",
+    "cpuAverage": {
+      "singleCore": "3042",
+      "multiCore": "8456"
+    },
+    "gpuAverage": 36850
   },
   {
     "id": "iphone-17-pro",
@@ -1682,7 +1692,12 @@
       "multiCore": "9977"
     },
     "gpuPerformance": 46557,
-    "image": "iphone-17-pro.webp"
+    "image": "iphone-17-pro.webp",
+    "cpuAverage": {
+      "singleCore": "3153",
+      "multiCore": "8755"
+    },
+    "gpuAverage": 42433
   },
   {
     "id": "iphone-17-pro-max",
@@ -1932,7 +1947,12 @@
       "multiCore": "10468"
     },
     "gpuPerformance": 45489,
-    "image": "iphone-17-pro-max.webp"
+    "image": "iphone-17-pro-max.webp",
+    "cpuAverage": {
+      "singleCore": "3166",
+      "multiCore": "8794"
+    },
+    "gpuAverage": 42670
   },
   {
     "id": "iphone-16-pro-max",
@@ -2222,7 +2242,10 @@
       "zh-CN": "802.11be HT160 2x2 MIMO",
       "en-US": "802.11be HT160 2x2 MIMO"
     },
-    "image": "iphone-16-pro-max.webp"
+    "image": "iphone-16-pro-max.webp",
+    "cpuAverage": {
+      "singleCore": "2867"
+    }
   },
   {
     "id": "iphone-16-pro",
@@ -2512,7 +2535,11 @@
       "zh-CN": "802.11be HT160 2x2 MIMO",
       "en-US": "802.11be HT160 2x2 MIMO"
     },
-    "image": "iphone-16-pro.webp"
+    "image": "iphone-16-pro.webp",
+    "cpuAverage": {
+      "singleCore": "2892",
+      "multiCore": "7782"
+    }
   },
   {
     "id": "iphone-16-plus",
@@ -2809,7 +2836,10 @@
       "zh-CN": "无",
       "en-US": "None"
     },
-    "image": "iphone-16-plus.webp"
+    "image": "iphone-16-plus.webp",
+    "cpuAverage": {
+      "singleCore": "2799"
+    }
   },
   {
     "id": "iphone-16",
@@ -3106,7 +3136,12 @@
       "zh-CN": "无",
       "en-US": "None"
     },
-    "image": "iphone-16.png"
+    "image": "iphone-16.png",
+    "cpuAverage": {
+      "singleCore": "2789",
+      "multiCore": "7554"
+    },
+    "gpuAverage": 26012
   },
   {
     "id": "iphone-15-pro-max",
@@ -3395,7 +3430,12 @@
       "zh-CN": "802.11ax HT160 2x2 MIMO",
       "en-US": "802.11ax HT160 2x2 MIMO"
     },
-    "image": "iphone-15-pro-max.webp"
+    "image": "iphone-15-pro-max.webp",
+    "cpuAverage": {
+      "singleCore": "2529",
+      "multiCore": "6872"
+    },
+    "gpuAverage": 23313
   },
   {
     "id": "iphone-15-pro",
@@ -3684,7 +3724,12 @@
       "zh-CN": "802.11ax HT160 2x2 MIMO",
       "en-US": "802.11ax HT160 2x2 MIMO"
     },
-    "image": "iphone-15-pro.webp"
+    "image": "iphone-15-pro.webp",
+    "cpuAverage": {
+      "singleCore": "2500",
+      "multiCore": "6815"
+    },
+    "gpuAverage": 23022
   },
   {
     "id": "iphone-15-plus",
@@ -3980,7 +4025,11 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "image": "iphone-15-plus.webp"
+    "image": "iphone-15-plus.webp",
+    "cpuAverage": {
+      "singleCore": "2265",
+      "multiCore": "5969"
+    }
   },
   {
     "id": "iphone-15",
@@ -4276,7 +4325,12 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "image": "iphone-15.webp"
+    "image": "iphone-15.webp",
+    "cpuAverage": {
+      "singleCore": "2237",
+      "multiCore": "5960"
+    },
+    "gpuAverage": 18506
   },
   {
     "id": "iphone-se-3",
@@ -4554,7 +4608,10 @@
       "zh-CN": "无",
       "en-US": "None"
     },
-    "image": "iphone-se-3.webp"
+    "image": "iphone-se-3.webp",
+    "cpuAverage": {
+      "singleCore": "2024"
+    }
   },
   {
     "id": "iphone-12-mini",
@@ -4857,7 +4914,10 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "image": "iphone-12-mini.webp"
+    "image": "iphone-12-mini.webp",
+    "cpuAverage": {
+      "singleCore": "1842"
+    }
   },
   {
     "id": "iphone-11",
@@ -5152,7 +5212,10 @@
       "zh-CN": "无",
       "en-US": "None"
     },
-    "image": "iphone-11.webp"
+    "image": "iphone-11.webp",
+    "cpuAverage": {
+      "singleCore": "1528"
+    }
   },
   {
     "id": "iphone-xr",
@@ -5447,7 +5510,10 @@
       "zh-CN": "无",
       "en-US": "None"
     },
-    "image": "iphone-xr.webp"
+    "image": "iphone-xr.webp",
+    "cpuAverage": {
+      "singleCore": "1036"
+    }
   },
   {
     "id": "iphone-x",
@@ -6304,7 +6370,12 @@
       "zh-CN": "无",
       "en-US": "None"
     },
-    "image": "iphone-16e.webp"
+    "image": "iphone-16e.webp",
+    "cpuAverage": {
+      "singleCore": "2692",
+      "multiCore": "7190"
+    },
+    "gpuAverage": 22438
   },
   {
     "id": "iphone-12",
@@ -6607,7 +6678,10 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "image": "iphone-12.webp"
+    "image": "iphone-12.webp",
+    "cpuAverage": {
+      "singleCore": "1795"
+    }
   },
   {
     "id": "iphone-12-pro",
@@ -6896,7 +6970,10 @@
       "zh-CN": "460",
       "en-US": "460"
     },
-    "image": "iphone-12-pro.webp"
+    "image": "iphone-12-pro.webp",
+    "cpuAverage": {
+      "singleCore": "1881"
+    }
   },
   {
     "id": "iphone-12-pro-max",
@@ -7185,7 +7262,10 @@
       "zh-CN": "458",
       "en-US": "458"
     },
-    "image": "iphone-12-pro-max.webp"
+    "image": "iphone-12-pro-max.webp",
+    "cpuAverage": {
+      "singleCore": "1931"
+    }
   },
   {
     "id": "iphone-11-pro",
@@ -7470,7 +7550,12 @@
       "zh-CN": "1200万像素广角 (f/1.8光圈)",
       "en-US": "1200万像素广角 (f/1.8光圈)"
     },
-    "image": "iphone-11-pro.webp"
+    "image": "iphone-11-pro.webp",
+    "cpuAverage": {
+      "singleCore": "1494",
+      "multiCore": "3444"
+    },
+    "gpuAverage": 10357
   },
   {
     "id": "iphone-11-pro-max",
@@ -7755,7 +7840,12 @@
       "zh-CN": "1200万像素广角 (f/1.8光圈)",
       "en-US": "1200万像素广角 (f/1.8光圈)"
     },
-    "image": "iphone-11-pro-max.webp"
+    "image": "iphone-11-pro-max.webp",
+    "cpuAverage": {
+      "singleCore": "1569",
+      "multiCore": "3597"
+    },
+    "gpuAverage": 10311
   },
   {
     "id": "iphone-xs",
@@ -8033,7 +8123,10 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "image": "iphone-xs.webp"
+    "image": "iphone-xs.webp",
+    "cpuAverage": {
+      "singleCore": "1294"
+    }
   },
   {
     "id": "iphone-xs-max",
@@ -8311,7 +8404,10 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "image": "iphone-xs-max.webp"
+    "image": "iphone-xs-max.webp",
+    "cpuAverage": {
+      "singleCore": "1270"
+    }
   },
   {
     "id": "iphone-se-2",
@@ -8589,7 +8685,10 @@
       "zh-CN": "无",
       "en-US": "None"
     },
-    "image": "iphone-se-2.webp"
+    "image": "iphone-se-2.webp",
+    "cpuAverage": {
+      "singleCore": "1369"
+    }
   },
   {
     "id": "iphone-se",
@@ -13029,7 +13128,10 @@
       "zh-CN": "3倍",
       "en-US": "3倍"
     },
-    "image": "iphone-14-pro-max.webp"
+    "image": "iphone-14-pro-max.webp",
+    "cpuAverage": {
+      "singleCore": "2359"
+    }
   },
   {
     "id": "iphone-14-pro",
@@ -13318,7 +13420,12 @@
       "zh-CN": "3倍",
       "en-US": "3倍"
     },
-    "image": "iphone-14-pro.webp"
+    "image": "iphone-14-pro.webp",
+    "cpuAverage": {
+      "singleCore": "2373",
+      "multiCore": "6403"
+    },
+    "gpuAverage": 20226
   },
   {
     "id": "iphone-14-plus",
@@ -13621,7 +13728,10 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "image": "iphone-14-plus.webp"
+    "image": "iphone-14-plus.webp",
+    "cpuAverage": {
+      "singleCore": "2092"
+    }
   },
   {
     "id": "iphone-14",
@@ -13924,7 +14034,12 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "image": "iphone-14.webp"
+    "image": "iphone-14.webp",
+    "cpuAverage": {
+      "singleCore": "2083",
+      "multiCore": "5399"
+    },
+    "gpuAverage": 16388
   },
   {
     "id": "iphone-13-pro-max",
@@ -14220,7 +14335,10 @@
       "zh-CN": "3倍",
       "en-US": "3倍"
     },
-    "image": "iphone-13-pro-max.webp"
+    "image": "iphone-13-pro-max.webp",
+    "cpuAverage": {
+      "singleCore": "2118"
+    }
   },
   {
     "id": "iphone-13-pro",
@@ -14516,7 +14634,10 @@
       "zh-CN": "3倍",
       "en-US": "3倍"
     },
-    "image": "iphone-13-pro.webp"
+    "image": "iphone-13-pro.webp",
+    "cpuAverage": {
+      "singleCore": "2104"
+    }
   },
   {
     "id": "iphone-13",
@@ -14819,7 +14940,12 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "image": "iphone-13.webp"
+    "image": "iphone-13.webp",
+    "cpuAverage": {
+      "singleCore": "1960",
+      "multiCore": "4954"
+    },
+    "gpuAverage": 14582
   },
   {
     "id": "iphone-13-mini",
@@ -15122,6 +15248,9 @@
       "zh-CN": "无",
       "en-US": "无"
     },
-    "image": "iphone-13-mini.webp"
+    "image": "iphone-13-mini.webp",
+    "cpuAverage": {
+      "singleCore": "1972"
+    }
   }
 ]
