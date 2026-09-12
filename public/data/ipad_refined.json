@@ -4209,7 +4209,7 @@
     "benchmarks": {
       "singleCore": "2979",
       "multiCore": "7408",
-      "gpu": "29173"
+      "gpu": "21437"
     },
     "image": "ipad-ipad-minia17-pro.webp"
   },
