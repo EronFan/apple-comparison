@@ -5122,7 +5122,7 @@
     "benchmarks": {
       "singleCore": "2572",
       "multiCore": "5928",
-      "gpu": "19767"
+      "gpu": "16341"
     },
     "storage": [
       "128GB",
@@ -5193,7 +5193,7 @@
     "waterResistance": "无官方防水等级",
     "connectivity": "802.11ax HT80 2x2 MIMO, 蓝牙 Bluetooth 5.2",
     "benchmarks": {
-      "singleCore": "1564",
+      "singleCore": "1859",
       "multiCore": "4027",
       "gpu": "15536"
     },
@@ -5457,8 +5457,8 @@
     "waterResistance": "无官方防水等级",
     "connectivity": "802.11ac HT80 2x2 MIMO, 蓝牙 Bluetooth 4.2",
     "benchmarks": {
-      "singleCore": "829",
-      "multiCore": "1140",
+      "singleCore": "861",
+      "multiCore": "1266",
       "gpu": "4310"
     },
     "storage": [
