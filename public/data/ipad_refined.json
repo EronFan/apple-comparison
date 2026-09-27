@@ -443,8 +443,8 @@
       "gpu": "71034"
     },
     "benchmarksAvg": {
-      "singleCore": "3559",
-      "multiCore": "15295"
+      "singleCore": "4190",
+      "multiCore": "16066"
     }
   },
   {
@@ -579,13 +579,13 @@
     "technicalSpecsLink": "https://support.apple.com/zh-cn/125406",
     "image": "ipad-pro-11-inch-m5.png",
     "benchmarks": {
-      "singleCore": "3552",
-      "multiCore": "15197",
+      "singleCore": "4298",
+      "multiCore": "16207",
       "gpu": "70867"
     },
     "benchmarksAvg": {
-      "singleCore": "3532",
-      "multiCore": "15052",
+      "singleCore": "4278",
+      "multiCore": "16155",
       "gpu": "70867"
     }
   },

@@ -6,7 +6,7 @@
     },
     "os": {
       "zh-CN": "iOS 27 ~ 最新",
-      "en-US": "iOS 27 ~ 最新"
+      "en-US": "iOS 27 ~ Latest"
     },
     "arSupport": {
       "zh-CN": "当前浏览器不支持查看",
@@ -163,8 +163,8 @@
       "en-US": "19.073Wh (4883mAh)"
     },
     "batteryLife": {
-      "zh-CN": "视频44小时 流媒体37小时",
-      "en-US": "视频44小时 流媒体37小时"
+      "zh-CN": "视频44小时(外屏)/31小时(内屏) 流媒体37小时(外屏)/26小时(内屏)",
+      "en-US": "Video playback: Up to 44 hours (outer display) / 31 hours (inner display), Streamed: Up to 37 hours (outer display) / 26 hours (inner display)"
     },
     "dimensions": "117.8×164.6×5.2mm",
     "weight": "254g",
@@ -191,8 +191,8 @@
     "batteryCapacityMah": 4883,
     "batteryCapacityWh": "19.073",
     "videoPlaybackTime": {
-      "zh-CN": "最长44小时",
-      "en-US": "Up to 44 hours"
+      "zh-CN": "最长44小时(外屏)/31小时(内屏)",
+      "en-US": "Up to 44 hours (outer display) / 31 hours (inner display)"
     },
     "simCardSupport": {
       "zh-CN": "双 eSIM",
@@ -202,14 +202,14 @@
       {
         "name": {
           "zh-CN": "星光白色",
-          "en-US": "星光白色"
+          "en-US": "Star White"
         },
         "code": "#F7F6F5"
       },
       {
         "name": {
           "zh-CN": "夜空色",
-          "en-US": "夜空色"
+          "en-US": "Night Sky"
         },
         "code": "#394452"
       }
@@ -223,7 +223,7 @@
     },
     "os": {
       "zh-CN": "iOS 27 ~ 最新",
-      "en-US": "iOS 27 ~ 最新"
+      "en-US": "iOS 27 ~ Latest"
     },
     "arSupport": {
       "zh-CN": "当前浏览器不支持查看",
@@ -384,8 +384,8 @@
       "en-US": "21.063Wh (5391mAh)"
     },
     "batteryLife": {
-      "zh-CN": "视频43小时 流媒体38小时",
-      "en-US": "视频43小时 流媒体38小时"
+      "zh-CN": "视频45小时 流媒体40小时",
+      "en-US": "Video playback: Up to 45 hours, Video playback (streamed): Up to 40 hours"
     },
     "dimensions": "78.0×163.4×8.75mm",
     "weight": "249g",
@@ -416,8 +416,8 @@
     "batteryCapacityMah": 5391,
     "batteryCapacityWh": "21.063",
     "videoPlaybackTime": {
-      "zh-CN": "最长43小时",
-      "en-US": "Up to 43 hours"
+      "zh-CN": "最长45小时",
+      "en-US": "Up to 45 hours"
     },
     "simCardSupport": {
       "zh-CN": "双物理SIM",
@@ -427,28 +427,28 @@
       {
         "name": {
           "zh-CN": "勃艮第酒红色",
-          "en-US": "勃艮第酒红色"
+          "en-US": "Burgundy"
         },
         "code": "#4D1821"
       },
       {
         "name": {
           "zh-CN": "冰川蓝色",
-          "en-US": "冰川蓝色"
+          "en-US": "Glacier"
         },
         "code": "#E8F2FF"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#F7F7F7"
       },
       {
         "name": {
           "zh-CN": "黑色",
-          "en-US": "黑色"
+          "en-US": "Black"
         },
         "code": "#3C3C3C"
       }
@@ -467,7 +467,7 @@
     },
     "os": {
       "zh-CN": "iOS 27 ~ 最新",
-      "en-US": "iOS 27 ~ 最新"
+      "en-US": "iOS 27 ~ Latest"
     },
     "arSupport": {
       "zh-CN": "当前浏览器不支持查看",
@@ -628,8 +628,8 @@
       "en-US": "15.855Wh (4056mAh)"
     },
     "batteryLife": {
-      "zh-CN": "视频34小时 流媒体31小时",
-      "en-US": "视频34小时 流媒体31小时"
+      "zh-CN": "视频36小时 流媒体33小时",
+      "en-US": "Video playback: Up to 36 hours, Video playback (streamed): Up to 33 hours"
     },
     "dimensions": "71.9×150.0×8.75mm",
     "weight": "211g",
@@ -660,8 +660,8 @@
     "batteryCapacityMah": 4056,
     "batteryCapacityWh": "15.855",
     "videoPlaybackTime": {
-      "zh-CN": "最长34小时",
-      "en-US": "Up to 34 hours"
+      "zh-CN": "最长36小时",
+      "en-US": "Up to 36 hours"
     },
     "simCardSupport": {
       "zh-CN": "双物理SIM",
@@ -671,28 +671,28 @@
       {
         "name": {
           "zh-CN": "勃艮第酒红色",
-          "en-US": "勃艮第酒红色"
+          "en-US": "Burgundy"
         },
         "code": "#4D1821"
       },
       {
         "name": {
           "zh-CN": "冰川蓝色",
-          "en-US": "冰川蓝色"
+          "en-US": "Glacier"
         },
         "code": "#E8F2FF"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#F7F7F7"
       },
       {
         "name": {
           "zh-CN": "黑色",
-          "en-US": "黑色"
+          "en-US": "Black"
         },
         "code": "#3C3C3C"
       }
@@ -720,28 +720,28 @@
     },
     "os": {
       "zh-CN": "iOS 26 ~ 最新",
-      "en-US": "iOS 26 ~ 最新"
+      "en-US": "iOS 26 ~ Latest"
     },
     "model": "iPhone18,5",
     "colors": [
       {
         "name": {
           "zh-CN": "黑色",
-          "en-US": "黑色"
+          "en-US": "Black"
         },
         "code": "#3C4042"
       },
       {
         "name": {
           "zh-CN": "白色",
-          "en-US": "白色"
+          "en-US": "White"
         },
         "code": "#FAFAFA"
       },
       {
         "name": {
           "zh-CN": "浅粉色",
-          "en-US": "浅粉色"
+          "en-US": "Soft Pink"
         },
         "code": "#FCE7E6"
       }
@@ -949,42 +949,42 @@
     },
     "os": {
       "zh-CN": "iOS 26 ~ 最新",
-      "en-US": "iOS 26 ~ 最新"
+      "en-US": "iOS 26 ~ Latest"
     },
     "model": "iPhone18,3",
     "colors": [
       {
         "name": {
           "zh-CN": "薰衣草紫色",
-          "en-US": "薰衣草紫色"
+          "en-US": "Lavender"
         },
         "code": "#DCCFE8"
       },
       {
         "name": {
           "zh-CN": "鼠尾草绿色",
-          "en-US": "鼠尾草绿色"
+          "en-US": "Sage"
         },
         "code": "#ABB68D"
       },
       {
         "name": {
           "zh-CN": "青雾蓝色",
-          "en-US": "青雾蓝色"
+          "en-US": "Mist Blue"
         },
         "code": "#9BADCE"
       },
       {
         "name": {
           "zh-CN": "白色",
-          "en-US": "白色"
+          "en-US": "White"
         },
         "code": "#F5F5F5"
       },
       {
         "name": {
           "zh-CN": "黑色",
-          "en-US": "黑色"
+          "en-US": "Black"
         },
         "code": "#363839"
       }
@@ -1210,35 +1210,35 @@
     },
     "os": {
       "zh-CN": "iOS 26 ~ 最新",
-      "en-US": "iOS 26 ~ 最新"
+      "en-US": "iOS 26 ~ Latest"
     },
     "model": "iPhone18,4",
     "colors": [
       {
         "name": {
           "zh-CN": "天蓝色",
-          "en-US": "天蓝色"
+          "en-US": "Sky Blue"
         },
         "code": "#87CEEB"
       },
       {
         "name": {
           "zh-CN": "浅金色",
-          "en-US": "浅金色"
+          "en-US": "Light Gold"
         },
         "code": "#F5E6D3"
       },
       {
         "name": {
           "zh-CN": "云白色",
-          "en-US": "云白色"
+          "en-US": "Cloud White"
         },
         "code": "#F8F8FF"
       },
       {
         "name": {
           "zh-CN": "深空黑色",
-          "en-US": "深空黑色"
+          "en-US": "Space Black"
         },
         "code": "#1C1C1E"
       }
@@ -1460,28 +1460,28 @@
     },
     "os": {
       "zh-CN": "iOS 26 ~ 最新",
-      "en-US": "iOS 26 ~ 最新"
+      "en-US": "iOS 26 ~ Latest"
     },
     "model": "iPhone18,1",
     "colors": [
       {
         "name": {
           "zh-CN": "星宇橙色",
-          "en-US": "星宇橙色"
+          "en-US": "Cosmic Orange"
         },
         "code": "#E67B34"
       },
       {
         "name": {
           "zh-CN": "深蓝色",
-          "en-US": "深蓝色"
+          "en-US": "Deep Blue"
         },
         "code": "#2C3143"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#F5F5F5"
       }
@@ -1559,8 +1559,8 @@
       "en-US": "USB-C/MagSafe/Qi/Qi2"
     },
     "batteryLife": {
-      "zh-CN": "视频31小时 流媒体28小时",
-      "en-US": "视频31小时 流媒体28小时"
+      "zh-CN": "视频33小时 流媒体30小时",
+      "en-US": "Video playback: Up to 33 hours, Video playback (streamed): Up to 30 hours"
     },
     "audioFeatures": {
       "zh-CN": "麦克风 ×4 + 扬声器 ×2",
@@ -1651,8 +1651,8 @@
     "batteryCapacityMah": 3988,
     "batteryCapacityWh": "15.534",
     "videoPlaybackTime": {
-      "zh-CN": "最长31小时",
-      "en-US": "Up to 31 hours"
+      "zh-CN": "最长33小时",
+      "en-US": "Up to 33 hours"
     },
     "simCardSupport": {
       "zh-CN": "双物理SIM",
@@ -1715,28 +1715,28 @@
     },
     "os": {
       "zh-CN": "iOS 26 ~ 最新",
-      "en-US": "iOS 26 ~ 最新"
+      "en-US": "iOS 26 ~ Latest"
     },
     "model": "iPhone18,2",
     "colors": [
       {
         "name": {
           "zh-CN": "星宇橙色",
-          "en-US": "星宇橙色"
+          "en-US": "Cosmic Orange"
         },
         "code": "#E67B34"
       },
       {
         "name": {
           "zh-CN": "深蓝色",
-          "en-US": "深蓝色"
+          "en-US": "Deep Blue"
         },
         "code": "#2C3143"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#F5F5F5"
       }
@@ -1814,8 +1814,8 @@
       "en-US": "USB-C/MagSafe/Qi/Qi2"
     },
     "batteryLife": {
-      "zh-CN": "视频37小时 流媒体33小时",
-      "en-US": "视频37小时 流媒体33小时"
+      "zh-CN": "视频39小时 流媒体35小时",
+      "en-US": "Video playback: Up to 39 hours, Video playback (streamed): Up to 35 hours"
     },
     "audioFeatures": {
       "zh-CN": "麦克风 ×4 + 扬声器 ×2",
@@ -1906,8 +1906,8 @@
     "batteryCapacityMah": 4823,
     "batteryCapacityWh": "18.748",
     "videoPlaybackTime": {
-      "zh-CN": "最长37小时",
-      "en-US": "Up to 37 hours"
+      "zh-CN": "最长39小时",
+      "en-US": "Up to 39 hours"
     },
     "simCardSupport": {
       "zh-CN": "双物理SIM",
@@ -1963,34 +1963,34 @@
     "model": "iPhone17,2",
     "releaseDate": {
       "zh-CN": "2024年9月",
-      "en-US": "2024年9月"
+      "en-US": "2024-09"
     },
     "colors": [
       {
         "name": {
           "zh-CN": "钛原色",
-          "en-US": "钛原色"
+          "en-US": "Natural Titanium"
         },
         "code": "#D4AF37"
       },
       {
         "name": {
           "zh-CN": "白色",
-          "en-US": "白色"
+          "en-US": "White"
         },
         "code": "#F5F5F5"
       },
       {
         "name": {
           "zh-CN": "黑色",
-          "en-US": "黑色"
+          "en-US": "Black"
         },
         "code": "#363839"
       },
       {
         "name": {
           "zh-CN": "沙金色",
-          "en-US": "沙金色"
+          "en-US": "Desert Titanium"
         },
         "code": "#F4A460"
       }
@@ -2256,34 +2256,34 @@
     "model": "iPhone17,1",
     "releaseDate": {
       "zh-CN": "2024年9月",
-      "en-US": "2024年9月"
+      "en-US": "2024-09"
     },
     "colors": [
       {
         "name": {
           "zh-CN": "钛原色",
-          "en-US": "钛原色"
+          "en-US": "Natural Titanium"
         },
         "code": "#D4AF37"
       },
       {
         "name": {
           "zh-CN": "白色",
-          "en-US": "白色"
+          "en-US": "White"
         },
         "code": "#F5F5F5"
       },
       {
         "name": {
           "zh-CN": "黑色",
-          "en-US": "黑色"
+          "en-US": "Black"
         },
         "code": "#363839"
       },
       {
         "name": {
           "zh-CN": "沙金色",
-          "en-US": "沙金色"
+          "en-US": "Desert Titanium"
         },
         "code": "#F4A460"
       }
@@ -2550,41 +2550,41 @@
     "model": "iPhone17,0",
     "releaseDate": {
       "zh-CN": "2024年9月",
-      "en-US": "2024年9月"
+      "en-US": "2024-09"
     },
     "colors": [
       {
         "name": {
           "zh-CN": "黑色",
-          "en-US": "黑色"
+          "en-US": "Black"
         },
         "code": "#363839"
       },
       {
         "name": {
           "zh-CN": "白色",
-          "en-US": "白色"
+          "en-US": "White"
         },
         "code": "#F5F5F5"
       },
       {
         "name": {
           "zh-CN": "粉色",
-          "en-US": "粉色"
+          "en-US": "Pink"
         },
         "code": "#FFB6C1"
       },
       {
         "name": {
           "zh-CN": "超级蓝",
-          "en-US": "超级蓝"
+          "en-US": "Ultramarine"
         },
         "code": "#0080FF"
       },
       {
         "name": {
           "zh-CN": "绿色",
-          "en-US": "绿色"
+          "en-US": "Green"
         },
         "code": "#32CD32"
       }
@@ -2850,41 +2850,41 @@
     "model": "iPhone17,1",
     "releaseDate": {
       "zh-CN": "2024年9月",
-      "en-US": "2024年9月"
+      "en-US": "2024-09"
     },
     "colors": [
       {
         "name": {
           "zh-CN": "黑色",
-          "en-US": "黑色"
+          "en-US": "Black"
         },
         "code": "#363839"
       },
       {
         "name": {
           "zh-CN": "白色",
-          "en-US": "白色"
+          "en-US": "White"
         },
         "code": "#F5F5F5"
       },
       {
         "name": {
           "zh-CN": "粉色",
-          "en-US": "粉色"
+          "en-US": "Pink"
         },
         "code": "#FFB6C1"
       },
       {
         "name": {
           "zh-CN": "超级蓝",
-          "en-US": "超级蓝"
+          "en-US": "Ultramarine"
         },
         "code": "#0080FF"
       },
       {
         "name": {
           "zh-CN": "绿色",
-          "en-US": "绿色"
+          "en-US": "Green"
         },
         "code": "#32CD32"
       }
@@ -3158,28 +3158,28 @@
       {
         "name": {
           "zh-CN": "黑色钛金属",
-          "en-US": "黑色钛金属"
+          "en-US": "Black Titanium"
         },
         "code": "#1b1b1b"
       },
       {
         "name": {
           "zh-CN": "白色钛金属",
-          "en-US": "白色钛金属"
+          "en-US": "White Titanium"
         },
         "code": "#dddddd"
       },
       {
         "name": {
           "zh-CN": "蓝色钛金属",
-          "en-US": "蓝色钛金属"
+          "en-US": "Blue Titanium"
         },
         "code": "#2f4452"
       },
       {
         "name": {
           "zh-CN": "原色钛金属",
-          "en-US": "原色钛金属"
+          "en-US": "Natural Titanium"
         },
         "code": "#837f7d"
       }
@@ -3452,28 +3452,28 @@
       {
         "name": {
           "zh-CN": "黑色钛金属",
-          "en-US": "黑色钛金属"
+          "en-US": "Black Titanium"
         },
         "code": "#1b1b1b"
       },
       {
         "name": {
           "zh-CN": "白色钛金属",
-          "en-US": "白色钛金属"
+          "en-US": "White Titanium"
         },
         "code": "#dddddd"
       },
       {
         "name": {
           "zh-CN": "蓝色钛金属",
-          "en-US": "蓝色钛金属"
+          "en-US": "Blue Titanium"
         },
         "code": "#2f4452"
       },
       {
         "name": {
           "zh-CN": "原色钛金属",
-          "en-US": "原色钛金属"
+          "en-US": "Natural Titanium"
         },
         "code": "#837f7d"
       }
@@ -3862,35 +3862,35 @@
       {
         "name": {
           "zh-CN": "黑色",
-          "en-US": "黑色"
+          "en-US": "Black"
         },
         "code": "#35393B"
       },
       {
         "name": {
           "zh-CN": "蓝色",
-          "en-US": "蓝色"
+          "en-US": "Blue"
         },
         "code": "#CED5D9"
       },
       {
         "name": {
           "zh-CN": "绿色",
-          "en-US": "绿色"
+          "en-US": "Green"
         },
         "code": "#CAD4C5"
       },
       {
         "name": {
           "zh-CN": "黄色",
-          "en-US": "黄色"
+          "en-US": "Yellow"
         },
         "code": "#E6E0C1"
       },
       {
         "name": {
           "zh-CN": "粉色",
-          "en-US": "粉色"
+          "en-US": "Pink"
         },
         "code": "#E3C8CA"
       }
@@ -4162,35 +4162,35 @@
       {
         "name": {
           "zh-CN": "黑色",
-          "en-US": "黑色"
+          "en-US": "Black"
         },
         "code": "#35393B"
       },
       {
         "name": {
           "zh-CN": "蓝色",
-          "en-US": "蓝色"
+          "en-US": "Blue"
         },
         "code": "#CED5D9"
       },
       {
         "name": {
           "zh-CN": "绿色",
-          "en-US": "绿色"
+          "en-US": "Green"
         },
         "code": "#CAD4C5"
       },
       {
         "name": {
           "zh-CN": "黄色",
-          "en-US": "黄色"
+          "en-US": "Yellow"
         },
         "code": "#E6E0C1"
       },
       {
         "name": {
           "zh-CN": "粉色",
-          "en-US": "粉色"
+          "en-US": "Pink"
         },
         "code": "#E3C8CA"
       }
@@ -4744,42 +4744,42 @@
       {
         "name": {
           "zh-CN": "黑色",
-          "en-US": "黑色"
+          "en-US": "Black"
         },
         "code": "#25212b"
       },
       {
         "name": {
           "zh-CN": "白色",
-          "en-US": "白色"
+          "en-US": "White"
         },
         "code": "#f6f2ef"
       },
       {
         "name": {
           "zh-CN": "红色",
-          "en-US": "红色"
+          "en-US": "(PRODUCT)RED"
         },
         "code": "#d82e2e"
       },
       {
         "name": {
           "zh-CN": "绿色",
-          "en-US": "绿色"
+          "en-US": "Green"
         },
         "code": "#d8efd5"
       },
       {
         "name": {
           "zh-CN": "蓝色",
-          "en-US": "蓝色"
+          "en-US": "Blue"
         },
         "code": "#023b63"
       },
       {
         "name": {
           "zh-CN": "紫色",
-          "en-US": "紫色"
+          "en-US": "Purple"
         },
         "code": "#b7afe6"
       }
@@ -5050,42 +5050,42 @@
       {
         "name": {
           "zh-CN": "紫色",
-          "en-US": "紫色"
+          "en-US": "Purple"
         },
         "code": "#d1cdda"
       },
       {
         "name": {
           "zh-CN": "黄色",
-          "en-US": "黄色"
+          "en-US": "Yellow"
         },
         "code": "#ffe681"
       },
       {
         "name": {
           "zh-CN": "绿色",
-          "en-US": "绿色"
+          "en-US": "Green"
         },
         "code": "#aee1cd"
       },
       {
         "name": {
           "zh-CN": "红色",
-          "en-US": "红色"
+          "en-US": "(PRODUCT)RED"
         },
         "code": "#ba0c2e"
       },
       {
         "name": {
           "zh-CN": "黑色",
-          "en-US": "黑色"
+          "en-US": "Black"
         },
         "code": "#1f2020"
       },
       {
         "name": {
           "zh-CN": "白色",
-          "en-US": "白色"
+          "en-US": "White"
         },
         "code": "#f9f6ef"
       }
@@ -5348,42 +5348,42 @@
       {
         "name": {
           "zh-CN": "蓝色",
-          "en-US": "蓝色"
+          "en-US": "Blue"
         },
         "code": "#48aee6"
       },
       {
         "name": {
           "zh-CN": "黄色",
-          "en-US": "黄色"
+          "en-US": "Yellow"
         },
         "code": "#f9d045"
       },
       {
         "name": {
           "zh-CN": "珊瑚色",
-          "en-US": "珊瑚色"
+          "en-US": "Coral"
         },
         "code": "#ff6e5a"
       },
       {
         "name": {
           "zh-CN": "红色",
-          "en-US": "红色"
+          "en-US": "(PRODUCT)RED"
         },
         "code": "#b41325"
       },
       {
         "name": {
           "zh-CN": "黑色",
-          "en-US": "黑色"
+          "en-US": "Black"
         },
         "code": "#2e3034"
       },
       {
         "name": {
           "zh-CN": "白色",
-          "en-US": "白色"
+          "en-US": "White"
         },
         "code": "#f3f3f3"
       }
@@ -5646,14 +5646,14 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e4e4e2"
       },
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#262529"
       }
@@ -5917,35 +5917,35 @@
       {
         "name": {
           "zh-CN": "玫瑰金色",
-          "en-US": "玫瑰金色"
+          "en-US": "Rose Gold"
         },
         "code": "#ecc6c1"
       },
       {
         "name": {
           "zh-CN": "金色",
-          "en-US": "金色"
+          "en-US": "Gold"
         },
         "code": "#e3ccb4"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e2e3e4"
       },
       {
         "name": {
           "zh-CN": "黑色",
-          "en-US": "黑色"
+          "en-US": "Black"
         },
         "code": "#2e3034"
       },
       {
         "name": {
           "zh-CN": "红色",
-          "en-US": "红色"
+          "en-US": "(PRODUCT)RED"
         },
         "code": "#b41325"
       }
@@ -6083,7 +6083,7 @@
     },
     "releaseDate": {
       "zh-CN": "2025年2月",
-      "en-US": "2025年2月"
+      "en-US": "2025-02"
     },
     "processor": {
       "zh-CN": "A18 (2P+4E+4GPU)",
@@ -6207,35 +6207,35 @@
       {
         "name": {
           "zh-CN": "黑色",
-          "en-US": "黑色"
+          "en-US": "Black"
         },
         "code": "#363839"
       },
       {
         "name": {
           "zh-CN": "白色",
-          "en-US": "白色"
+          "en-US": "White"
         },
         "code": "#F5F5F5"
       },
       {
         "name": {
           "zh-CN": "粉色",
-          "en-US": "粉色"
+          "en-US": "Pink"
         },
         "code": "#FFB6C1"
       },
       {
         "name": {
           "zh-CN": "蓝色",
-          "en-US": "蓝色"
+          "en-US": "Blue"
         },
         "code": "#4169E1"
       },
       {
         "name": {
           "zh-CN": "绿色",
-          "en-US": "绿色"
+          "en-US": "Green"
         },
         "code": "#32CD32"
       }
@@ -6508,42 +6508,42 @@
       {
         "name": {
           "zh-CN": "黑色",
-          "en-US": "黑色"
+          "en-US": "Black"
         },
         "code": "#25212b"
       },
       {
         "name": {
           "zh-CN": "白色",
-          "en-US": "白色"
+          "en-US": "White"
         },
         "code": "#f6f2ef"
       },
       {
         "name": {
           "zh-CN": "红色",
-          "en-US": "红色"
+          "en-US": "(PRODUCT)RED"
         },
         "code": "#d82e2e"
       },
       {
         "name": {
           "zh-CN": "绿色",
-          "en-US": "绿色"
+          "en-US": "Green"
         },
         "code": "#d8efd5"
       },
       {
         "name": {
           "zh-CN": "蓝色",
-          "en-US": "蓝色"
+          "en-US": "Blue"
         },
         "code": "#023b63"
       },
       {
         "name": {
           "zh-CN": "紫色",
-          "en-US": "紫色"
+          "en-US": "Purple"
         },
         "code": "#b7afe6"
       }
@@ -6814,28 +6814,28 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e3e4df"
       },
       {
         "name": {
           "zh-CN": "石墨色",
-          "en-US": "石墨色"
+          "en-US": "Graphite"
         },
         "code": "#52514d"
       },
       {
         "name": {
           "zh-CN": "金色",
-          "en-US": "金色"
+          "en-US": "Gold"
         },
         "code": "#fcebd3"
       },
       {
         "name": {
           "zh-CN": "海蓝色",
-          "en-US": "海蓝色"
+          "en-US": "Pacific Blue"
         },
         "code": "#2d4e5c"
       }
@@ -7106,28 +7106,28 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e3e4df"
       },
       {
         "name": {
           "zh-CN": "石墨色",
-          "en-US": "石墨色"
+          "en-US": "Graphite"
         },
         "code": "#52514d"
       },
       {
         "name": {
           "zh-CN": "金色",
-          "en-US": "金色"
+          "en-US": "Gold"
         },
         "code": "#fcebd3"
       },
       {
         "name": {
           "zh-CN": "海蓝色",
-          "en-US": "海蓝色"
+          "en-US": "Pacific Blue"
         },
         "code": "#2d4e5c"
       }
@@ -7398,28 +7398,28 @@
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#535150"
       },
       {
         "name": {
           "zh-CN": "暗夜绿色",
-          "en-US": "暗夜绿色"
+          "en-US": "Midnight Green"
         },
         "code": "#4e5851"
       },
       {
         "name": {
           "zh-CN": "金色",
-          "en-US": "金色"
+          "en-US": "Gold"
         },
         "code": "#fad7bd"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#ebebe3"
       }
@@ -7688,28 +7688,28 @@
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#535150"
       },
       {
         "name": {
           "zh-CN": "暗夜绿色",
-          "en-US": "暗夜绿色"
+          "en-US": "Midnight Green"
         },
         "code": "#4e5851"
       },
       {
         "name": {
           "zh-CN": "金色",
-          "en-US": "金色"
+          "en-US": "Gold"
         },
         "code": "#fad7bd"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#ebebe3"
       }
@@ -7978,21 +7978,21 @@
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#262529"
       },
       {
         "name": {
           "zh-CN": "金色",
-          "en-US": "金色"
+          "en-US": "Gold"
         },
         "code": "#fadcc2"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e4e4e2"
       }
@@ -8259,21 +8259,21 @@
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#262529"
       },
       {
         "name": {
           "zh-CN": "金色",
-          "en-US": "金色"
+          "en-US": "Gold"
         },
         "code": "#fadcc2"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e4e4e2"
       }
@@ -9091,28 +9091,28 @@
       {
         "name": {
           "zh-CN": "金色",
-          "en-US": "金色"
+          "en-US": "Gold"
         },
         "code": "#f7e8dd"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e2e3e4"
       },
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#272729"
       },
       {
         "name": {
           "zh-CN": "红色特别版",
-          "en-US": "红色特别版"
+          "en-US": "(PRODUCT)RED"
         },
         "code": "#b41325"
       }
@@ -9372,28 +9372,28 @@
       {
         "name": {
           "zh-CN": "金色",
-          "en-US": "金色"
+          "en-US": "Gold"
         },
         "code": "#f7e8dd"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e2e3e4"
       },
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#272729"
       },
       {
         "name": {
           "zh-CN": "红色特别版",
-          "en-US": "红色特别版"
+          "en-US": "(PRODUCT)RED"
         },
         "code": "#b41325"
       }
@@ -9653,35 +9653,35 @@
       {
         "name": {
           "zh-CN": "玫瑰金色",
-          "en-US": "玫瑰金色"
+          "en-US": "Rose Gold"
         },
         "code": "#ecc6c1"
       },
       {
         "name": {
           "zh-CN": "金色",
-          "en-US": "金色"
+          "en-US": "Gold"
         },
         "code": "#e3ccb4"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e2e3e4"
       },
       {
         "name": {
           "zh-CN": "黑色",
-          "en-US": "黑色"
+          "en-US": "Black"
         },
         "code": "#2e3034"
       },
       {
         "name": {
           "zh-CN": "红色",
-          "en-US": "红色"
+          "en-US": "(PRODUCT)RED"
         },
         "code": "#b41325"
       }
@@ -9934,28 +9934,28 @@
       {
         "name": {
           "zh-CN": "玫瑰金色",
-          "en-US": "玫瑰金色"
+          "en-US": "Rose Gold"
         },
         "code": "#ecc6c1"
       },
       {
         "name": {
           "zh-CN": "金色",
-          "en-US": "金色"
+          "en-US": "Gold"
         },
         "code": "#e3ccb4"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e2e3e4"
       },
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#b1b2b7"
       }
@@ -10208,28 +10208,28 @@
       {
         "name": {
           "zh-CN": "玫瑰金色",
-          "en-US": "玫瑰金色"
+          "en-US": "Rose Gold"
         },
         "code": "#ecc6c1"
       },
       {
         "name": {
           "zh-CN": "金色",
-          "en-US": "金色"
+          "en-US": "Gold"
         },
         "code": "#e3ccb4"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e2e3e4"
       },
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#b1b2b7"
       }
@@ -10481,21 +10481,21 @@
       {
         "name": {
           "zh-CN": "金色",
-          "en-US": "金色"
+          "en-US": "Gold"
         },
         "code": "#e3ccb4"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e2e3e4"
       },
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#b1b2b7"
       }
@@ -10744,21 +10744,21 @@
       {
         "name": {
           "zh-CN": "金色",
-          "en-US": "金色"
+          "en-US": "Gold"
         },
         "code": "#e3ccb4"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e2e3e4"
       },
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#b1b2b7"
       }
@@ -11007,21 +11007,21 @@
       {
         "name": {
           "zh-CN": "金色",
-          "en-US": "金色"
+          "en-US": "Gold"
         },
         "code": "rgb(205, 188, 168)"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "rgb(201, 203, 202)"
       },
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "rgb(117, 117, 119)"
       }
@@ -11263,35 +11263,35 @@
       {
         "name": {
           "zh-CN": "绿色",
-          "en-US": "绿色"
+          "en-US": "Green"
         },
         "code": "rgb(152, 228, 103)"
       },
       {
         "name": {
           "zh-CN": "蓝色",
-          "en-US": "蓝色"
+          "en-US": "Blue"
         },
         "code": "rgb(64, 176, 234)"
       },
       {
         "name": {
           "zh-CN": "黄色",
-          "en-US": "黄色"
+          "en-US": "Yellow"
         },
         "code": "rgb(255, 239, 111)"
       },
       {
         "name": {
           "zh-CN": "粉色",
-          "en-US": "粉色"
+          "en-US": "Pink"
         },
         "code": "rgb(255, 108, 108)"
       },
       {
         "name": {
           "zh-CN": "白色",
-          "en-US": "白色"
+          "en-US": "White"
         },
         "code": "rgb(240, 240, 242)"
       }
@@ -11533,14 +11533,14 @@
       {
         "name": {
           "zh-CN": "白色和银色",
-          "en-US": "白色和银色"
+          "en-US": "White and Silver"
         },
         "code": "rgb(203, 205, 204)"
       },
       {
         "name": {
           "zh-CN": "黑色和灰蓝色",
-          "en-US": "黑色和灰蓝色"
+          "en-US": "Black and Slate"
         },
         "code": "rgb(39, 48, 55)"
       }
@@ -12021,14 +12021,14 @@
       {
         "name": {
           "zh-CN": "白色",
-          "en-US": "白色"
+          "en-US": "White"
         },
         "code": "rgb(237, 237, 237)"
       },
       {
         "name": {
           "zh-CN": "黑色",
-          "en-US": "黑色"
+          "en-US": "Black"
         },
         "code": "rgb(0, 0, 0)"
       }
@@ -12266,14 +12266,14 @@
       {
         "name": {
           "zh-CN": "白色",
-          "en-US": "白色"
+          "en-US": "White"
         },
         "code": "rgb(237, 237, 237)"
       },
       {
         "name": {
           "zh-CN": "黑色",
-          "en-US": "黑色"
+          "en-US": "Black"
         },
         "code": "rgb(0, 0, 0)"
       }
@@ -12503,14 +12503,14 @@
       {
         "name": {
           "zh-CN": "白色",
-          "en-US": "白色"
+          "en-US": "White"
         },
         "code": "rgb(237, 237, 237)"
       },
       {
         "name": {
           "zh-CN": "黑色",
-          "en-US": "黑色"
+          "en-US": "Black"
         },
         "code": "rgb(0, 0, 0)"
       }
@@ -12972,28 +12972,28 @@
       {
         "name": {
           "zh-CN": "深空黑色",
-          "en-US": "深空黑色"
+          "en-US": "Space Black"
         },
         "code": "#403e3d"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#f0f2f2"
       },
       {
         "name": {
           "zh-CN": "金色",
-          "en-US": "金色"
+          "en-US": "Gold"
         },
         "code": "#f4e8ce"
       },
       {
         "name": {
           "zh-CN": "暗紫色",
-          "en-US": "暗紫色"
+          "en-US": "Deep Purple"
         },
         "code": "#594f63"
       }
@@ -13264,28 +13264,28 @@
       {
         "name": {
           "zh-CN": "深空黑色",
-          "en-US": "深空黑色"
+          "en-US": "Space Black"
         },
         "code": "#403e3d"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#f0f2f2"
       },
       {
         "name": {
           "zh-CN": "金色",
-          "en-US": "金色"
+          "en-US": "Gold"
         },
         "code": "#f4e8ce"
       },
       {
         "name": {
           "zh-CN": "暗紫色",
-          "en-US": "暗紫色"
+          "en-US": "Deep Purple"
         },
         "code": "#594f63"
       }
@@ -13558,42 +13558,42 @@
       {
         "name": {
           "zh-CN": "午夜色",
-          "en-US": "午夜色"
+          "en-US": "Midnight"
         },
         "code": "#222930"
       },
       {
         "name": {
           "zh-CN": "紫色",
-          "en-US": "紫色"
+          "en-US": "Purple"
         },
         "code": "#e6ddeb"
       },
       {
         "name": {
           "zh-CN": "星光色",
-          "en-US": "星光色"
+          "en-US": "Starlight"
         },
         "code": "#faf6f2"
       },
       {
         "name": {
           "zh-CN": "红色",
-          "en-US": "红色"
+          "en-US": "(PRODUCT)RED"
         },
         "code": "#fc0324"
       },
       {
         "name": {
           "zh-CN": "蓝色",
-          "en-US": "蓝色"
+          "en-US": "Blue"
         },
         "code": "#a0b4c7"
       },
       {
         "name": {
           "zh-CN": "黄色",
-          "en-US": "黄色"
+          "en-US": "Yellow"
         },
         "code": "#f5e488"
       }
@@ -13864,42 +13864,42 @@
       {
         "name": {
           "zh-CN": "午夜色",
-          "en-US": "午夜色"
+          "en-US": "Midnight"
         },
         "code": "#222930"
       },
       {
         "name": {
           "zh-CN": "紫色",
-          "en-US": "紫色"
+          "en-US": "Purple"
         },
         "code": "#e6ddeb"
       },
       {
         "name": {
           "zh-CN": "星光色",
-          "en-US": "星光色"
+          "en-US": "Starlight"
         },
         "code": "#faf6f2"
       },
       {
         "name": {
           "zh-CN": "红色",
-          "en-US": "红色"
+          "en-US": "(PRODUCT)RED"
         },
         "code": "#fc0324"
       },
       {
         "name": {
           "zh-CN": "蓝色",
-          "en-US": "蓝色"
+          "en-US": "Blue"
         },
         "code": "#a0b4c7"
       },
       {
         "name": {
           "zh-CN": "黄色",
-          "en-US": "黄色"
+          "en-US": "Yellow"
         },
         "code": "#f5e488"
       }
@@ -14172,35 +14172,35 @@
       {
         "name": {
           "zh-CN": "远峰蓝色",
-          "en-US": "远峰蓝色"
+          "en-US": "Sierra Blue"
         },
         "code": "#a7c1d9"
       },
       {
         "name": {
           "zh-CN": "石墨色",
-          "en-US": "石墨色"
+          "en-US": "Graphite"
         },
         "code": "#54524f"
       },
       {
         "name": {
           "zh-CN": "金色",
-          "en-US": "金色"
+          "en-US": "Gold"
         },
         "code": "#fae7cf"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#f1f2ed"
       },
       {
         "name": {
           "zh-CN": "苍岭绿色",
-          "en-US": "苍岭绿色"
+          "en-US": "Alpine Green"
         },
         "code": "#576856"
       }
@@ -14471,35 +14471,35 @@
       {
         "name": {
           "zh-CN": "远峰蓝色",
-          "en-US": "远峰蓝色"
+          "en-US": "Sierra Blue"
         },
         "code": "#a7c1d9"
       },
       {
         "name": {
           "zh-CN": "石墨色",
-          "en-US": "石墨色"
+          "en-US": "Graphite"
         },
         "code": "#54524f"
       },
       {
         "name": {
           "zh-CN": "金色",
-          "en-US": "金色"
+          "en-US": "Gold"
         },
         "code": "#fae7cf"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#f1f2ed"
       },
       {
         "name": {
           "zh-CN": "苍岭绿色",
-          "en-US": "苍岭绿色"
+          "en-US": "Alpine Green"
         },
         "code": "#576856"
       }
@@ -14770,42 +14770,42 @@
       {
         "name": {
           "zh-CN": "红色",
-          "en-US": "红色"
+          "en-US": "(PRODUCT)RED"
         },
         "code": "#bf0013"
       },
       {
         "name": {
           "zh-CN": "星光色",
-          "en-US": "星光色"
+          "en-US": "Starlight"
         },
         "code": "#faf6f2"
       },
       {
         "name": {
           "zh-CN": "午夜色",
-          "en-US": "午夜色"
+          "en-US": "Midnight"
         },
         "code": "#232a31"
       },
       {
         "name": {
           "zh-CN": "蓝色",
-          "en-US": "蓝色"
+          "en-US": "Blue"
         },
         "code": "#276787"
       },
       {
         "name": {
           "zh-CN": "粉色",
-          "en-US": "粉色"
+          "en-US": "Pink"
         },
         "code": "#faddd7"
       },
       {
         "name": {
           "zh-CN": "绿色",
-          "en-US": "绿色"
+          "en-US": "Green"
         },
         "code": "#394c38"
       }
@@ -15078,42 +15078,42 @@
       {
         "name": {
           "zh-CN": "红色",
-          "en-US": "红色"
+          "en-US": "(PRODUCT)RED"
         },
         "code": "#bf0013"
       },
       {
         "name": {
           "zh-CN": "星光色",
-          "en-US": "星光色"
+          "en-US": "Starlight"
         },
         "code": "#faf6f2"
       },
       {
         "name": {
           "zh-CN": "午夜色",
-          "en-US": "午夜色"
+          "en-US": "Midnight"
         },
         "code": "#232a31"
       },
       {
         "name": {
           "zh-CN": "蓝色",
-          "en-US": "蓝色"
+          "en-US": "Blue"
         },
         "code": "#276787"
       },
       {
         "name": {
           "zh-CN": "粉色",
-          "en-US": "粉色"
+          "en-US": "Pink"
         },
         "code": "#faddd7"
       },
       {
         "name": {
           "zh-CN": "绿色",
-          "en-US": "绿色"
+          "en-US": "Green"
         },
         "code": "#394c38"
       }

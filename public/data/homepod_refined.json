@@ -4,7 +4,7 @@
     "series": "homepod",
     "name": {
       "zh-CN": "HomePod (第 2 代)",
-      "en-US": "HomePod (第 2 代)"
+      "en-US": "HomePod (2nd generation)"
     },
     "marketingSlogan": {
       "zh-CN": "声声有天地",
@@ -59,42 +59,42 @@
       {
         "name": {
           "zh-CN": "白色",
-          "en-US": "白色"
+          "en-US": "White"
         },
         "code": null
       },
       {
         "name": {
           "zh-CN": "蓝色",
-          "en-US": "蓝色"
+          "en-US": "Blue"
         },
         "code": null
       },
       {
         "name": {
           "zh-CN": "橙色",
-          "en-US": "橙色"
+          "en-US": "Orange"
         },
         "code": null
       },
       {
         "name": {
           "zh-CN": "黄色",
-          "en-US": "黄色"
+          "en-US": "Yellow"
         },
         "code": null
       },
       {
         "name": {
           "zh-CN": "午夜色",
-          "en-US": "午夜色"
+          "en-US": "Midnight"
         },
         "code": null
       },
       {
         "name": {
           "zh-CN": "深空灰",
-          "en-US": "深空灰"
+          "en-US": "Space Gray"
         },
         "code": null
       }
@@ -128,7 +128,7 @@
     "series": "homepod",
     "name": {
       "zh-CN": "HomePod (第 1 代)",
-      "en-US": "HomePod (第 1 代)"
+      "en-US": "HomePod (1st generation)"
     },
     "marketingSlogan": {
       "zh-CN": "家的新声。",

@@ -8,7 +8,7 @@
     "seriesCode": "macbook",
     "name": {
       "zh-CN": "MacBook (Retina, 12 英寸, 2017 年)",
-      "en-US": "MacBook (Retina, 12 英寸, 2017 年)"
+      "en-US": "MacBook (Retina, 12-inch, 2017)"
     },
     "marketingSlogan": {
       "zh-CN": "轻于时代，先于时代。",
@@ -27,28 +27,28 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#E2E3E6"
       },
       {
         "name": {
           "zh-CN": "金色",
-          "en-US": "金色"
+          "en-US": "Gold"
         },
         "code": "#F8E4D2"
       },
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#9EA2A5"
       },
       {
         "name": {
           "zh-CN": "玫瑰金色",
-          "en-US": "玫瑰金色"
+          "en-US": "Rose Gold"
         },
         "code": "#FDE0DC"
       }
@@ -108,7 +108,7 @@
     "seriesCode": "macbook",
     "name": {
       "zh-CN": "MacBook (Retina, 12 英寸, 2016 年)",
-      "en-US": "MacBook (Retina, 12 英寸, 2016 年)"
+      "en-US": "MacBook (Retina, 12-inch, 2016)"
     },
     "marketingSlogan": {
       "zh-CN": "轻于时代，先于时代。",
@@ -127,28 +127,28 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#E2E3E6"
       },
       {
         "name": {
           "zh-CN": "金色",
-          "en-US": "金色"
+          "en-US": "Gold"
         },
         "code": "#F8E4D2"
       },
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#9EA2A5"
       },
       {
         "name": {
           "zh-CN": "玫瑰金色",
-          "en-US": "玫瑰金色"
+          "en-US": "Rose Gold"
         },
         "code": "#FDE0DC"
       }
@@ -208,7 +208,7 @@
     "seriesCode": "macbook",
     "name": {
       "zh-CN": "MacBook (Retina, 12 英寸, 2015 年初)",
-      "en-US": "MacBook (Retina, 12 英寸, 2015 年初)"
+      "en-US": "MacBook (Retina, 12-inch, Early 2015)"
     },
     "marketingSlogan": {
       "zh-CN": "全新 MacBook",
@@ -227,21 +227,21 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#E2E3E6"
       },
       {
         "name": {
           "zh-CN": "金色",
-          "en-US": "金色"
+          "en-US": "Gold"
         },
         "code": "#F8E4D2"
       },
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#9EA2A5"
       }
@@ -301,7 +301,7 @@
     "seriesCode": "macbook",
     "name": {
       "zh-CN": "MacBook (13 英寸, 2010 年中)",
-      "en-US": "MacBook (13 英寸, 2010 年中)"
+      "en-US": "MacBook (13-inch, Mid 2010)"
     },
     "marketingSlogan": {
       "zh-CN": "人人适用的笔记本电脑",
@@ -320,7 +320,7 @@
       {
         "name": {
           "zh-CN": "白色",
-          "en-US": "白色"
+          "en-US": "White"
         },
         "code": "#FFFFFF"
       }
@@ -372,7 +372,7 @@
     "seriesCode": "macbook",
     "name": {
       "zh-CN": "MacBook (13 英寸, 2009 年末)",
-      "en-US": "MacBook (13 英寸, 2009 年末)"
+      "en-US": "MacBook (13-inch, Late 2009)"
     },
     "marketingSlogan": {
       "zh-CN": "从头到尾，全新打造",
@@ -391,7 +391,7 @@
       {
         "name": {
           "zh-CN": "白色",
-          "en-US": "白色"
+          "en-US": "White"
         },
         "code": "#FFFFFF"
       }
@@ -443,7 +443,7 @@
     "seriesCode": "macbook",
     "name": {
       "zh-CN": "MacBook (13 英寸, 2009 年中)",
-      "en-US": "MacBook (13 英寸, 2009 年中)"
+      "en-US": "MacBook (13-inch, Mid 2009)"
     },
     "marketingSlogan": {
       "zh-CN": "更快速的处理器, 更广阔的存储空间",
@@ -462,7 +462,7 @@
       {
         "name": {
           "zh-CN": "白色",
-          "en-US": "白色"
+          "en-US": "White"
         },
         "code": "#FFFFFF"
       }
@@ -514,7 +514,7 @@
     "seriesCode": "macbook",
     "name": {
       "zh-CN": "MacBook (13 英寸, 2009 年初)",
-      "en-US": "MacBook (13 英寸, 2009 年初)"
+      "en-US": "MacBook (13-inch, Early 2009)"
     },
     "marketingSlogan": {
       "zh-CN": "奠定笔记本前所未有的全新标准",
@@ -533,7 +533,7 @@
       {
         "name": {
           "zh-CN": "白色",
-          "en-US": "白色"
+          "en-US": "White"
         },
         "code": "#FFFFFF"
       }
@@ -585,7 +585,7 @@
     "seriesCode": "macbook",
     "name": {
       "zh-CN": "MacBook (13 英寸, 2008 年末)",
-      "en-US": "MacBook (13 英寸, 2008 年末)"
+      "en-US": "MacBook (13-inch, Late 2008)"
     },
     "marketingSlogan": {
       "zh-CN": "奠定笔记本前所未有的全新标准",
@@ -604,7 +604,7 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#E2E3E6"
       }
@@ -656,7 +656,7 @@
     "seriesCode": "macbook",
     "name": {
       "zh-CN": "MacBook (2008 年初)",
-      "en-US": "MacBook (2008 年初)"
+      "en-US": "MacBook (Early 2008)"
     },
     "marketingSlogan": {
       "zh-CN": "全新 MacBook，魅力倍增",
@@ -675,7 +675,7 @@
       {
         "name": {
           "zh-CN": "白色",
-          "en-US": "白色"
+          "en-US": "White"
         },
         "code": "#FFFFFF"
       }
@@ -727,7 +727,7 @@
     "seriesCode": "neo",
     "name": {
       "zh-CN": "MacBook Neo (13 英寸, A18 Pro)",
-      "en-US": "MacBook Neo (13 英寸, A18 Pro)"
+      "en-US": "MacBook Neo (13-inch, A18 Pro)"
     },
     "marketingSlogan": {
       "zh-CN": "你好，Neo",
@@ -746,28 +746,28 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#E3E4E5"
       },
       {
         "name": {
           "zh-CN": "桃粉色",
-          "en-US": "桃粉色"
+          "en-US": "Blush"
         },
         "code": "#E8D0D0"
       },
       {
         "name": {
           "zh-CN": "柑橘黄色",
-          "en-US": "柑橘黄色"
+          "en-US": "Citrus"
         },
         "code": "#DDDC8C"
       },
       {
         "name": {
           "zh-CN": "靛蓝色",
-          "en-US": "靛蓝色"
+          "en-US": "Indigo"
         },
         "code": "#596680"
       }
@@ -841,7 +841,7 @@
     "seriesCode": "air",
     "name": {
       "zh-CN": "MacBook Air (15 英寸, M5, 2026 年)",
-      "en-US": "MacBook Air (15 英寸, M5, 2026 年)"
+      "en-US": "MacBook Air (15-inch, M5, 2026)"
     },
     "marketingSlogan": {
       "zh-CN": "实力高飞",
@@ -860,28 +860,28 @@
       {
         "name": {
           "zh-CN": "午夜色",
-          "en-US": "午夜色"
+          "en-US": "Midnight"
         },
         "code": "#2e3642"
       },
       {
         "name": {
           "zh-CN": "星光色",
-          "en-US": "星光色"
+          "en-US": "Starlight"
         },
         "code": "#f0e4d3"
       },
       {
         "name": {
           "zh-CN": "天蓝色",
-          "en-US": "天蓝色"
+          "en-US": "Sky Blue"
         },
         "code": "#c8d8e0"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e3e4e6"
       }
@@ -955,7 +955,7 @@
     "seriesCode": "air",
     "name": {
       "zh-CN": "MacBook Air (13 英寸, M5, 2026 年)",
-      "en-US": "MacBook Air (13 英寸, M5, 2026 年)"
+      "en-US": "MacBook Air (13-inch, M5, 2026)"
     },
     "marketingSlogan": {
       "zh-CN": "实力高飞",
@@ -974,28 +974,28 @@
       {
         "name": {
           "zh-CN": "午夜色",
-          "en-US": "午夜色"
+          "en-US": "Midnight"
         },
         "code": "#2e3642"
       },
       {
         "name": {
           "zh-CN": "星光色",
-          "en-US": "星光色"
+          "en-US": "Starlight"
         },
         "code": "#f0e4d3"
       },
       {
         "name": {
           "zh-CN": "天蓝色",
-          "en-US": "天蓝色"
+          "en-US": "Sky Blue"
         },
         "code": "#c8d8e0"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e3e4e6"
       }
@@ -1069,7 +1069,7 @@
     "seriesCode": "air",
     "name": {
       "zh-CN": "MacBook Air (15 英寸, M4, 2025 年)",
-      "en-US": "MacBook Air (15 英寸, M4, 2025 年)"
+      "en-US": "MacBook Air (15-inch, M4, 2025)"
     },
     "marketingSlogan": {
       "zh-CN": "身轻身手快",
@@ -1088,28 +1088,28 @@
       {
         "name": {
           "zh-CN": "午夜色",
-          "en-US": "午夜色"
+          "en-US": "Midnight"
         },
         "code": "#2e3642"
       },
       {
         "name": {
           "zh-CN": "星光色",
-          "en-US": "星光色"
+          "en-US": "Starlight"
         },
         "code": "#f0e4d3"
       },
       {
         "name": {
           "zh-CN": "天蓝色",
-          "en-US": "天蓝色"
+          "en-US": "Sky Blue"
         },
         "code": "#c8d8e0"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e3e4e6"
       }
@@ -1183,7 +1183,7 @@
     "seriesCode": "air",
     "name": {
       "zh-CN": "MacBook Air (13 英寸, M4, 2025 年)",
-      "en-US": "MacBook Air (13 英寸, M4, 2025 年)"
+      "en-US": "MacBook Air (13-inch, M4, 2025)"
     },
     "marketingSlogan": {
       "zh-CN": "身轻身手快",
@@ -1202,28 +1202,28 @@
       {
         "name": {
           "zh-CN": "午夜色",
-          "en-US": "午夜色"
+          "en-US": "Midnight"
         },
         "code": "#2e3642"
       },
       {
         "name": {
           "zh-CN": "星光色",
-          "en-US": "星光色"
+          "en-US": "Starlight"
         },
         "code": "#f0e4d3"
       },
       {
         "name": {
           "zh-CN": "天蓝色",
-          "en-US": "天蓝色"
+          "en-US": "Sky Blue"
         },
         "code": "#c8d8e0"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e3e4e6"
       }
@@ -1297,7 +1297,7 @@
     "seriesCode": "air",
     "name": {
       "zh-CN": "MacBook Air (15 英寸, M3, 2024 年)",
-      "en-US": "MacBook Air (15 英寸, M3, 2024 年)"
+      "en-US": "MacBook Air (15-inch, M3, 2024)"
     },
     "marketingSlogan": {
       "zh-CN": "轻装重拳 M3",
@@ -1316,28 +1316,28 @@
       {
         "name": {
           "zh-CN": "午夜色",
-          "en-US": "午夜色"
+          "en-US": "Midnight"
         },
         "code": "#2e3642"
       },
       {
         "name": {
           "zh-CN": "星光色",
-          "en-US": "星光色"
+          "en-US": "Starlight"
         },
         "code": "#f0e4d3"
       },
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#7d7e80"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e3e4e6"
       }
@@ -1411,7 +1411,7 @@
     "seriesCode": "air",
     "name": {
       "zh-CN": "MacBook Air (13 英寸, M3, 2024 年)",
-      "en-US": "MacBook Air (13 英寸, M3, 2024 年)"
+      "en-US": "MacBook Air (13-inch, M3, 2024)"
     },
     "marketingSlogan": {
       "zh-CN": "轻装重拳 M3",
@@ -1430,28 +1430,28 @@
       {
         "name": {
           "zh-CN": "午夜色",
-          "en-US": "午夜色"
+          "en-US": "Midnight"
         },
         "code": "#2e3642"
       },
       {
         "name": {
           "zh-CN": "星光色",
-          "en-US": "星光色"
+          "en-US": "Starlight"
         },
         "code": "#f0e4d3"
       },
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#7d7e80"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e3e4e6"
       }
@@ -1525,7 +1525,7 @@
     "seriesCode": "air",
     "name": {
       "zh-CN": "MacBook Air (15 英寸, M2, 2023 年)",
-      "en-US": "MacBook Air (15 英寸, M2, 2023 年)"
+      "en-US": "MacBook Air (15-inch, M2, 2023)"
     },
     "marketingSlogan": {
       "zh-CN": "巨给力、巨纤薄。",
@@ -1544,28 +1544,28 @@
       {
         "name": {
           "zh-CN": "午夜色",
-          "en-US": "午夜色"
+          "en-US": "Midnight"
         },
         "code": "#2e3642"
       },
       {
         "name": {
           "zh-CN": "星光色",
-          "en-US": "星光色"
+          "en-US": "Starlight"
         },
         "code": "#f0e4d3"
       },
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#7d7e80"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e3e4e6"
       }
@@ -1639,7 +1639,7 @@
     "seriesCode": "air",
     "name": {
       "zh-CN": "MacBook Air (M2, 2022 年)",
-      "en-US": "MacBook Air (M2, 2022 年)"
+      "en-US": "MacBook Air (M2, 2022)"
     },
     "marketingSlogan": {
       "zh-CN": "超薄进化新形态",
@@ -1658,28 +1658,28 @@
       {
         "name": {
           "zh-CN": "午夜色",
-          "en-US": "午夜色"
+          "en-US": "Midnight"
         },
         "code": "#2e3642"
       },
       {
         "name": {
           "zh-CN": "星光色",
-          "en-US": "星光色"
+          "en-US": "Starlight"
         },
         "code": "#f0e4d3"
       },
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#7d7e80"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e3e4e6"
       }
@@ -1753,7 +1753,7 @@
     "seriesCode": "air",
     "name": {
       "zh-CN": "MacBook Air (M1, 2020 年)",
-      "en-US": "MacBook Air (M1, 2020 年)"
+      "en-US": "MacBook Air (M1, 2020)"
     },
     "marketingSlogan": {
       "zh-CN": "实力，来的轻巧。",
@@ -1772,21 +1772,21 @@
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#7d7e80"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       },
       {
         "name": {
           "zh-CN": "金色",
-          "en-US": "金色"
+          "en-US": "Gold"
         },
         "code": "#E7BCA9"
       }
@@ -1860,7 +1860,7 @@
     "seriesCode": "air",
     "name": {
       "zh-CN": "MacBook Air (13 英寸, 2020 年)",
-      "en-US": "MacBook Air (13 英寸, 2020 年)"
+      "en-US": "MacBook Air (13-inch, 2020)"
     },
     "marketingSlogan": {
       "zh-CN": "够轻，够轻快。",
@@ -1879,21 +1879,21 @@
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#abaeb3"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       },
       {
         "name": {
           "zh-CN": "金色",
-          "en-US": "金色"
+          "en-US": "Gold"
         },
         "code": "#E7BCA9"
       }
@@ -1958,7 +1958,7 @@
     "seriesCode": "air",
     "name": {
       "zh-CN": "MacBook Air (13 英寸, 2019 年)",
-      "en-US": "MacBook Air (13 英寸, 2019 年)"
+      "en-US": "MacBook Air (13-inch, 2019)"
     },
     "marketingSlogan": {
       "zh-CN": "轻轻地，再次倾心。",
@@ -1977,21 +1977,21 @@
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#abaeb3"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       },
       {
         "name": {
           "zh-CN": "金色",
-          "en-US": "金色"
+          "en-US": "Gold"
         },
         "code": "#E7BCA9"
       }
@@ -2056,7 +2056,7 @@
     "seriesCode": "air",
     "name": {
       "zh-CN": "MacBook Air (Retina, 13 英寸, 2018 年)",
-      "en-US": "MacBook Air (Retina, 13 英寸, 2018 年)"
+      "en-US": "MacBook Air (Retina, 13-inch, 2018)"
     },
     "marketingSlogan": {
       "zh-CN": "轻轻地，再次倾心。",
@@ -2075,21 +2075,21 @@
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#abaeb3"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       },
       {
         "name": {
           "zh-CN": "金色",
-          "en-US": "金色"
+          "en-US": "Gold"
         },
         "code": "#E7BCA9"
       }
@@ -2154,7 +2154,7 @@
     "seriesCode": "air",
     "name": {
       "zh-CN": "MacBook Air (13.3 英寸, 2017 年)",
-      "en-US": "MacBook Air (13.3 英寸, 2017 年)"
+      "en-US": "MacBook Air (13-inch, 2017)"
     },
     "marketingSlogan": {
       "zh-CN": "能力胜任大小事, 电力满足一天所需",
@@ -2173,7 +2173,7 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -2233,7 +2233,7 @@
     "seriesCode": "air",
     "name": {
       "zh-CN": "MacBook Air (13 英寸, 2015 年初)",
-      "en-US": "MacBook Air (13 英寸, 2015 年初)"
+      "en-US": "MacBook Air (13-inch, Early 2015)"
     },
     "marketingSlogan": {
       "zh-CN": "满足一天所需的电池使用时间",
@@ -2252,7 +2252,7 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -2312,7 +2312,7 @@
     "seriesCode": "air",
     "name": {
       "zh-CN": "MacBook Air (11 英寸, 2015 年初)",
-      "en-US": "MacBook Air (11 英寸, 2015 年初)"
+      "en-US": "MacBook Air (11-inch, Early 2015)"
     },
     "marketingSlogan": {
       "zh-CN": "满足一天所需的电池使用时间",
@@ -2331,7 +2331,7 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -2391,7 +2391,7 @@
     "seriesCode": "air",
     "name": {
       "zh-CN": "MacBook Air (13 英寸, 2014 年初)",
-      "en-US": "MacBook Air (13 英寸, 2014 年初)"
+      "en-US": "MacBook Air (13-inch, Early 2014)"
     },
     "marketingSlogan": {
       "zh-CN": "满载动力，满足你的一天。",
@@ -2410,7 +2410,7 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -2470,7 +2470,7 @@
     "seriesCode": "air",
     "name": {
       "zh-CN": "MacBook Air (11 英寸, 2014 年初)",
-      "en-US": "MacBook Air (11 英寸, 2014 年初)"
+      "en-US": "MacBook Air (11-inch, Early 2014)"
     },
     "marketingSlogan": {
       "zh-CN": "满载动力，满足你的一天。",
@@ -2489,7 +2489,7 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -2549,7 +2549,7 @@
     "seriesCode": "air",
     "name": {
       "zh-CN": "MacBook Air (13英寸, 2013 年中)",
-      "en-US": "MacBook Air (13英寸, 2013 年中)"
+      "en-US": "MacBook Air (13-inch, Mid 2013)"
     },
     "marketingSlogan": {
       "zh-CN": "满载动力，满足你的一天。",
@@ -2568,7 +2568,7 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -2628,7 +2628,7 @@
     "seriesCode": "air",
     "name": {
       "zh-CN": "MacBook Air (11 英寸, 2013 年中)",
-      "en-US": "MacBook Air (11 英寸, 2013 年中)"
+      "en-US": "MacBook Air (11-inch, Mid 2013)"
     },
     "marketingSlogan": {
       "zh-CN": "满载动力，满足你的一天。",
@@ -2647,7 +2647,7 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -2707,7 +2707,7 @@
     "seriesCode": "air",
     "name": {
       "zh-CN": "MacBook Air (13 英寸, 2012 年中)",
-      "en-US": "MacBook Air (13 英寸, 2012 年中)"
+      "en-US": "MacBook Air (13-inch, Mid 2012)"
     },
     "marketingSlogan": {
       "zh-CN": "看起来快，动起来更快。",
@@ -2726,7 +2726,7 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -2786,7 +2786,7 @@
     "seriesCode": "air",
     "name": {
       "zh-CN": "MacBook Air (11 英寸, 2012 年中)",
-      "en-US": "MacBook Air (11 英寸, 2012 年中)"
+      "en-US": "MacBook Air (11-inch, Mid 2012)"
     },
     "marketingSlogan": {
       "zh-CN": "看起来快，动起来更快。",
@@ -2805,7 +2805,7 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -2865,7 +2865,7 @@
     "seriesCode": "air",
     "name": {
       "zh-CN": "MacBook Air (13 英寸, 2011 年中)",
-      "en-US": "MacBook Air (13 英寸, 2011 年中)"
+      "en-US": "MacBook Air (13-inch, Mid 2011)"
     },
     "marketingSlogan": {
       "zh-CN": "是人人早该拥有的先进笔记本电脑",
@@ -2884,7 +2884,7 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -2939,7 +2939,7 @@
     "seriesCode": "air",
     "name": {
       "zh-CN": "MacBook Air (11 英寸, 2011 年中)",
-      "en-US": "MacBook Air (11 英寸, 2011 年中)"
+      "en-US": "MacBook Air (11-inch, Mid 2011)"
     },
     "marketingSlogan": {
       "zh-CN": "是人人早该拥有的先进笔记本电脑",
@@ -2958,7 +2958,7 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -3013,7 +3013,7 @@
     "seriesCode": "air",
     "name": {
       "zh-CN": "MacBook Air (13 英寸, 2010 年末)",
-      "en-US": "MacBook Air (13 英寸, 2010 年末)"
+      "en-US": "MacBook Air (13-inch, Late 2010)"
     },
     "marketingSlogan": {
       "zh-CN": "未来一代 MacBook 诞生",
@@ -3032,7 +3032,7 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -3087,7 +3087,7 @@
     "seriesCode": "air",
     "name": {
       "zh-CN": "MacBook Air (11 英寸, 2010 年末)",
-      "en-US": "MacBook Air (11 英寸, 2010 年末)"
+      "en-US": "MacBook Air (11-inch, Late 2010)"
     },
     "marketingSlogan": {
       "zh-CN": "未来一代 MacBook 诞生",
@@ -3106,7 +3106,7 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -3161,7 +3161,7 @@
     "seriesCode": "air",
     "name": {
       "zh-CN": "MacBook Air (2009 年中)",
-      "en-US": "MacBook Air (2009 年中)"
+      "en-US": "MacBook Air (Mid 2009)"
     },
     "marketingSlogan": {
       "zh-CN": "更大存储空间，更快图形性能",
@@ -3180,7 +3180,7 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -3235,7 +3235,7 @@
     "seriesCode": "air",
     "name": {
       "zh-CN": "MacBook Air (2008 年末)",
-      "en-US": "MacBook Air (2008 年末)"
+      "en-US": "MacBook Air (Late 2008)"
     },
     "marketingSlogan": {
       "zh-CN": "更大存储空间，更快图形性能",
@@ -3254,7 +3254,7 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -3328,7 +3328,7 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -3382,7 +3382,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (16 英寸, 2026 年)",
-      "en-US": "MacBook Pro (16 英寸, 2026 年)"
+      "en-US": "MacBook Pro (16-inch, 2026)"
     },
     "marketingSlogan": {
       "zh-CN": "全员疾速派",
@@ -3401,14 +3401,14 @@
       {
         "name": {
           "zh-CN": "深空黑色",
-          "en-US": "深空黑色"
+          "en-US": "Space Black"
         },
         "code": "#404040"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e3e4e5"
       }
@@ -3482,7 +3482,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (14 英寸, M5 Pro/Max, 2026 年)",
-      "en-US": "MacBook Pro (14 英寸, M5 Pro/Max, 2026 年)"
+      "en-US": "MacBook Pro (14-inch, M5 Pro/Max, 2026)"
     },
     "marketingSlogan": {
       "zh-CN": "全员疾速派",
@@ -3501,14 +3501,14 @@
       {
         "name": {
           "zh-CN": "深空黑色",
-          "en-US": "深空黑色"
+          "en-US": "Space Black"
         },
         "code": "#404040"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e3e4e5"
       }
@@ -3582,7 +3582,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (14 英寸, M5)",
-      "en-US": "MacBook Pro (14 英寸, M5)"
+      "en-US": "MacBook Pro (14-inch, M5)"
     },
     "marketingSlogan": {
       "zh-CN": "14 英寸机型，强势动力现来自 M5。",
@@ -3601,14 +3601,14 @@
       {
         "name": {
           "zh-CN": "深空黑色",
-          "en-US": "深空黑色"
+          "en-US": "Space Black"
         },
         "code": "#404040"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e3e4e5"
       }
@@ -3682,7 +3682,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (16 英寸, 2024 年)",
-      "en-US": "MacBook Pro (16 英寸, 2024 年)"
+      "en-US": "MacBook Pro (16-inch, 2024)"
     },
     "marketingSlogan": {
       "zh-CN": "强势动力来自 M4",
@@ -3701,14 +3701,14 @@
       {
         "name": {
           "zh-CN": "深空黑色",
-          "en-US": "深空黑色"
+          "en-US": "Space Black"
         },
         "code": "#404040"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e3e4e5"
       }
@@ -3782,7 +3782,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (14 英寸, M4 Pro/Max, 2024 年)",
-      "en-US": "MacBook Pro (14 英寸, M4 Pro/Max, 2024 年)"
+      "en-US": "MacBook Pro (14-inch, M4 Pro/Max, 2024)"
     },
     "marketingSlogan": {
       "zh-CN": "强势动力来自 M4",
@@ -3801,14 +3801,14 @@
       {
         "name": {
           "zh-CN": "深空黑色",
-          "en-US": "深空黑色"
+          "en-US": "Space Black"
         },
         "code": "#404040"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e3e4e5"
       }
@@ -3882,7 +3882,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (14 英寸, M4, 2024 年)",
-      "en-US": "MacBook Pro (14 英寸, M4, 2024 年)"
+      "en-US": "MacBook Pro (14-inch, M4, 2024)"
     },
     "marketingSlogan": {
       "zh-CN": "强势动力来自 M4",
@@ -3901,14 +3901,14 @@
       {
         "name": {
           "zh-CN": "深空黑色",
-          "en-US": "深空黑色"
+          "en-US": "Space Black"
         },
         "code": "#404040"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e3e4e5"
       }
@@ -3982,7 +3982,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (16 英寸, 2023 年 11 月)",
-      "en-US": "MacBook Pro (16 英寸, 2023 年 11 月)"
+      "en-US": "MacBook Pro (16-inch, Nov 2023)"
     },
     "marketingSlogan": {
       "zh-CN": "狠角色，很绝色。",
@@ -4001,14 +4001,14 @@
       {
         "name": {
           "zh-CN": "深空黑色",
-          "en-US": "深空黑色"
+          "en-US": "Space Black"
         },
         "code": "#404040"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e3e4e5"
       }
@@ -4082,7 +4082,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (14 英寸, M3 Pro/Max, 2023 年 11 月)",
-      "en-US": "MacBook Pro (14 英寸, M3 Pro/Max, 2023 年 11 月)"
+      "en-US": "MacBook Pro (14-inch, M3 Pro/Max, Nov 2023)"
     },
     "marketingSlogan": {
       "zh-CN": "狠角色，很绝色。",
@@ -4101,14 +4101,14 @@
       {
         "name": {
           "zh-CN": "深空黑色",
-          "en-US": "深空黑色"
+          "en-US": "Space Black"
         },
         "code": "#404040"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e3e4e5"
       }
@@ -4182,7 +4182,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (14 英寸, M3, 2023 年 11 月)",
-      "en-US": "MacBook Pro (14 英寸, M3, 2023 年 11 月)"
+      "en-US": "MacBook Pro (14-inch, M3, Nov 2023)"
     },
     "marketingSlogan": {
       "zh-CN": "狠角色，很绝色。",
@@ -4201,14 +4201,14 @@
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#7d7e80"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e3e4e5"
       }
@@ -4282,7 +4282,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (16 英寸, 2023 年)",
-      "en-US": "MacBook Pro (16 英寸, 2023 年)"
+      "en-US": "MacBook Pro (16-inch, 2023)"
     },
     "marketingSlogan": {
       "zh-CN": "行走的突破力",
@@ -4301,14 +4301,14 @@
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#7d7e80"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e3e4e5"
       }
@@ -4382,7 +4382,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (14 英寸, 2023 年)",
-      "en-US": "MacBook Pro (14 英寸, 2023 年)"
+      "en-US": "MacBook Pro (14-inch, 2023)"
     },
     "marketingSlogan": {
       "zh-CN": "行走的突破力",
@@ -4401,14 +4401,14 @@
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#7d7e80"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#e3e4e5"
       }
@@ -4482,7 +4482,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (13 英寸, M2, 2022 年)",
-      "en-US": "MacBook Pro (13 英寸, M2, 2022 年)"
+      "en-US": "MacBook Pro (13-inch, M2, 2022)"
     },
     "marketingSlogan": {
       "zh-CN": "超机动，硬实力。",
@@ -4501,14 +4501,14 @@
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#7d7e80"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -4582,7 +4582,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (16 英寸, 2021 年)",
-      "en-US": "MacBook Pro (16 英寸, 2021 年)"
+      "en-US": "MacBook Pro (16-inch, 2021)"
     },
     "marketingSlogan": {
       "zh-CN": "强者的强",
@@ -4601,14 +4601,14 @@
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#7d7e80"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -4682,7 +4682,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (14 英寸, 2021 年)",
-      "en-US": "MacBook Pro (14 英寸, 2021 年)"
+      "en-US": "MacBook Pro (14-inch, 2021)"
     },
     "marketingSlogan": {
       "zh-CN": "强者的强",
@@ -4701,14 +4701,14 @@
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#7d7e80"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -4782,7 +4782,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (13 英寸, M1, 2020 年)",
-      "en-US": "MacBook Pro (13 英寸, M1, 2020 年)"
+      "en-US": "MacBook Pro (13-inch, M1, 2020)"
     },
     "marketingSlogan": {
       "zh-CN": "一 Pro 到位。",
@@ -4801,14 +4801,14 @@
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#7d7e80"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -4882,7 +4882,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (13 英寸, 2020 年, 雷雳×4)",
-      "en-US": "MacBook Pro (13 英寸, 2020 年, 雷雳×4)"
+      "en-US": "MacBook Pro (13-inch, 2020, Four Thunderbolt 3 ports)"
     },
     "marketingSlogan": {
       "zh-CN": "动力，行动力。",
@@ -4901,14 +4901,14 @@
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#abaeb3"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -4973,7 +4973,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (13 英寸, 2020 年, 雷雳×2)",
-      "en-US": "MacBook Pro (13 英寸, 2020 年, 雷雳×2)"
+      "en-US": "MacBook Pro (13-inch, 2020, Two Thunderbolt 3 ports)"
     },
     "marketingSlogan": {
       "zh-CN": "动力，行动力。",
@@ -4992,14 +4992,14 @@
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#abaeb3"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -5064,7 +5064,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (16 英寸, 2019 年)",
-      "en-US": "MacBook Pro (16 英寸, 2019 年)"
+      "en-US": "MacBook Pro (16-inch, 2019)"
     },
     "marketingSlogan": {
       "zh-CN": "高能，召唤高手。",
@@ -5083,14 +5083,14 @@
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#abaeb3"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -5155,7 +5155,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (13 英寸, 2019 年, 雷雳×2)",
-      "en-US": "MacBook Pro (13 英寸, 2019 年, 雷雳×2)"
+      "en-US": "MacBook Pro (13-inch, 2019, Two Thunderbolt 3 ports)"
     },
     "marketingSlogan": {
       "zh-CN": "更强劲，更专业的强劲。",
@@ -5174,14 +5174,14 @@
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#abaeb3"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -5246,7 +5246,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (15 英寸, 2019 年)",
-      "en-US": "MacBook Pro (15 英寸, 2019 年)"
+      "en-US": "MacBook Pro (15-inch, 2019)"
     },
     "marketingSlogan": {
       "zh-CN": "更强劲，更专业的强劲。",
@@ -5265,14 +5265,14 @@
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#abaeb3"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -5337,7 +5337,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (13 英寸, 2019 年, 雷雳×4)",
-      "en-US": "MacBook Pro (13 英寸, 2019 年, 雷雳×4)"
+      "en-US": "MacBook Pro (13-inch, 2019, Four Thunderbolt 3 ports)"
     },
     "marketingSlogan": {
       "zh-CN": "更强劲，更专业的强劲。",
@@ -5356,14 +5356,14 @@
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#abaeb3"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -5428,7 +5428,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (15 英寸, 2018 年)",
-      "en-US": "MacBook Pro (15 英寸, 2018 年)"
+      "en-US": "MacBook Pro (15-inch, 2018)"
     },
     "marketingSlogan": {
       "zh-CN": "更强劲，更专业的强劲。",
@@ -5447,14 +5447,14 @@
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#abaeb3"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -5519,7 +5519,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (13 英寸, 2018 年, 雷雳×4)",
-      "en-US": "MacBook Pro (13 英寸, 2018 年, 雷雳×4)"
+      "en-US": "MacBook Pro (13-inch, 2018, Four Thunderbolt 3 ports)"
     },
     "marketingSlogan": {
       "zh-CN": "更强劲，更专业的强劲。",
@@ -5538,14 +5538,14 @@
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#abaeb3"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -5610,7 +5610,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (15 英寸, 2017 年)",
-      "en-US": "MacBook Pro (15 英寸, 2017 年)"
+      "en-US": "MacBook Pro (15-inch, 2017)"
     },
     "marketingSlogan": {
       "zh-CN": "一身才华，一触，即发。",
@@ -5629,14 +5629,14 @@
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#abaeb3"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -5701,7 +5701,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (13 英寸, 2017 年, 雷雳×4)",
-      "en-US": "MacBook Pro (13 英寸, 2017 年, 雷雳×4)"
+      "en-US": "MacBook Pro (13-inch, 2017, Four Thunderbolt 3 ports)"
     },
     "marketingSlogan": {
       "zh-CN": "一身才华，一触，即发。",
@@ -5720,14 +5720,14 @@
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#abaeb3"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -5792,7 +5792,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (13 英寸, 2017 年, 雷雳×2)",
-      "en-US": "MacBook Pro (13 英寸, 2017 年, 雷雳×2)"
+      "en-US": "MacBook Pro (13-inch, 2017, Two Thunderbolt 3 ports)"
     },
     "releaseDate": {
       "zh-CN": "2017.06.06",
@@ -5807,14 +5807,14 @@
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#abaeb3"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -5878,7 +5878,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (15 英寸, 2016 年)",
-      "en-US": "MacBook Pro (15 英寸, 2016 年)"
+      "en-US": "MacBook Pro (15-inch, 2016)"
     },
     "marketingSlogan": {
       "zh-CN": "一身才华，一触，即发。",
@@ -5897,14 +5897,14 @@
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#abaeb3"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -5969,7 +5969,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (13 英寸, 2016 年, 雷雳×4)",
-      "en-US": "MacBook Pro (13 英寸, 2016 年, 雷雳×4)"
+      "en-US": "MacBook Pro (13-inch, 2016, Four Thunderbolt 3 ports)"
     },
     "marketingSlogan": {
       "zh-CN": "一身才华，一触，即发。",
@@ -5988,14 +5988,14 @@
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#abaeb3"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -6060,7 +6060,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (13 英寸, 2016 年, 雷雳×2)",
-      "en-US": "MacBook Pro (13 英寸, 2016 年, 雷雳×2)"
+      "en-US": "MacBook Pro (13-inch, 2016, Two Thunderbolt 3 ports)"
     },
     "releaseDate": {
       "zh-CN": "2016.10.28",
@@ -6075,14 +6075,14 @@
       {
         "name": {
           "zh-CN": "深空灰色",
-          "en-US": "深空灰色"
+          "en-US": "Space Gray"
         },
         "code": "#abaeb3"
       },
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -6146,7 +6146,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (Retina, 15 英寸, 2015 年中)",
-      "en-US": "MacBook Pro (Retina, 15 英寸, 2015 年中)"
+      "en-US": "MacBook Pro (Retina, 15-inch, Mid 2015)"
     },
     "marketingSlogan": {
       "zh-CN": "每一像素颗粒，尽显澎湃动力。",
@@ -6165,7 +6165,7 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -6229,7 +6229,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (Retina, 13 英寸, 2015 年初)",
-      "en-US": "MacBook Pro (Retina, 13 英寸, 2015 年初)"
+      "en-US": "MacBook Pro (Retina, 13-inch, Early 2015)"
     },
     "marketingSlogan": {
       "zh-CN": "每一像素颗粒，尽显澎湃动力。",
@@ -6248,7 +6248,7 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -6312,7 +6312,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (Retina, 15 英寸, 2014 年中)",
-      "en-US": "MacBook Pro (Retina, 15 英寸, 2014 年中)"
+      "en-US": "MacBook Pro (Retina, 15-inch, Mid 2014)"
     },
     "marketingSlogan": {
       "zh-CN": "每一像素颗粒，尽显澎湃动力。",
@@ -6331,7 +6331,7 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -6391,7 +6391,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (Retina, 13 英寸, 2014 年中)",
-      "en-US": "MacBook Pro (Retina, 13 英寸, 2014 年中)"
+      "en-US": "MacBook Pro (Retina, 13-inch, Mid 2014)"
     },
     "marketingSlogan": {
       "zh-CN": "每一像素颗粒，尽显澎湃动力。",
@@ -6410,7 +6410,7 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -6470,7 +6470,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (Retina, 15 英寸, 2013 年末)",
-      "en-US": "MacBook Pro (Retina, 15 英寸, 2013 年末)"
+      "en-US": "MacBook Pro (Retina, 15-inch, Late 2013)"
     },
     "marketingSlogan": {
       "zh-CN": "每一像素颗粒，尽显澎湃动力。",
@@ -6489,7 +6489,7 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -6549,7 +6549,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (Retina, 13 英寸, 2013 年末)",
-      "en-US": "MacBook Pro (Retina, 13 英寸, 2013 年末)"
+      "en-US": "MacBook Pro (Retina, 13-inch, Late 2013)"
     },
     "marketingSlogan": {
       "zh-CN": "每一像素颗粒，尽显澎湃动力。",
@@ -6568,7 +6568,7 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -6628,7 +6628,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (Retina, 15英寸, 2013 年初)",
-      "en-US": "MacBook Pro (Retina, 15英寸, 2013 年初)"
+      "en-US": "MacBook Pro (Retina, 15-inch, Early 2013)"
     },
     "marketingSlogan": {
       "zh-CN": "超高笔记本电脑分辨率, 超越你所见",
@@ -6647,7 +6647,7 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -6707,7 +6707,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (Retina, 13 英寸, 2013 年初)",
-      "en-US": "MacBook Pro (Retina, 13 英寸, 2013 年初)"
+      "en-US": "MacBook Pro (Retina, 13-inch, Early 2013)"
     },
     "marketingSlogan": {
       "zh-CN": "超高笔记本电脑分辨率, 超越你所见",
@@ -6726,7 +6726,7 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -6786,7 +6786,7 @@
     "seriesCode": "pro",
     "name": {
       "zh-CN": "MacBook Pro (Retina, 13 英寸, 2012 年末)",
-      "en-US": "MacBook Pro (Retina, 13 英寸, 2012 年末)"
+      "en-US": "MacBook Pro (Retina, 13-inch, Late 2012)"
     },
     "marketingSlogan": {
       "zh-CN": "前所未有的超高分辨率, 数一, 数二",
@@ -6805,7 +6805,7 @@
       {
         "name": {
           "zh-CN": "银色",
-          "en-US": "银色"
+          "en-US": "Silver"
         },
         "code": "#c7c8ca"
       }
@@ -6865,7 +6865,7 @@
     "seriesCode": "imac",
     "name": {
       "zh-CN": "iMac (24 英寸, 2024 年, 端口×4)",
-      "en-US": "iMac (24 英寸, 2024 年, 端口×4)"
+      "en-US": "iMac (24-inch, 2024, Four ports)"
     },
     "marketingSlogan": {
       "zh-CN": "多彩多出彩",
@@ -6884,49 +6884,49 @@
       {
         "name": {
           "zh-CN": "蓝",
-          "en-US": "蓝"
+          "en-US": "Blue"
         },
         "code": null
       },
       {
         "name": {
           "zh-CN": "紫",
-          "en-US": "紫"
+          "en-US": "Purple"
         },
         "code": null
       },
       {
         "name": {
           "zh-CN": "粉",
-          "en-US": "粉"
+          "en-US": "Pink"
         },
         "code": null
       },
       {
         "name": {
           "zh-CN": "橙",
-          "en-US": "橙"
+          "en-US": "Orange"
         },
         "code": null
       },
       {
         "name": {
           "zh-CN": "黄",
-          "en-US": "黄"
+          "en-US": "Yellow"
         },
         "code": null
       },
       {
         "name": {
           "zh-CN": "绿",
-          "en-US": "绿"
+          "en-US": "Green"
         },
         "code": null
       },
       {
         "name": {
           "zh-CN": "银",
-          "en-US": "银"
+          "en-US": "Silver"
         },
         "code": null
       }
@@ -6992,7 +6992,7 @@
     "seriesCode": "imac",
     "name": {
       "zh-CN": "iMac (24 英寸, 2024 年, 端口×2)",
-      "en-US": "iMac (24 英寸, 2024 年, 端口×2)"
+      "en-US": "iMac (24-inch, 2024, Two ports)"
     },
     "marketingSlogan": {
       "zh-CN": "多彩多出彩",
@@ -7011,49 +7011,49 @@
       {
         "name": {
           "zh-CN": "蓝",
-          "en-US": "蓝"
+          "en-US": "Blue"
         },
         "code": null
       },
       {
         "name": {
           "zh-CN": "紫",
-          "en-US": "紫"
+          "en-US": "Purple"
         },
         "code": null
       },
       {
         "name": {
           "zh-CN": "粉",
-          "en-US": "粉"
+          "en-US": "Pink"
         },
         "code": null
       },
       {
         "name": {
           "zh-CN": "橙",
-          "en-US": "橙"
+          "en-US": "Orange"
         },
         "code": null
       },
       {
         "name": {
           "zh-CN": "黄",
-          "en-US": "黄"
+          "en-US": "Yellow"
         },
         "code": null
       },
       {
         "name": {
           "zh-CN": "绿",
-          "en-US": "绿"
+          "en-US": "Green"
         },
         "code": null
       },
       {
         "name": {
           "zh-CN": "银",
-          "en-US": "银"
+          "en-US": "Silver"
         },
         "code": null
       }
@@ -7119,7 +7119,7 @@
     "seriesCode": "imac",
     "name": {
       "zh-CN": "iMac (24 英寸, 2023 年, 端口×4)",
-      "en-US": "iMac (24 英寸, 2023 年, 端口×4)"
+      "en-US": "iMac (24-inch, 2023, Four ports)"
     },
     "marketingSlogan": {
       "zh-CN": "超能力暴涨",
@@ -7195,7 +7195,7 @@
     "seriesCode": "imac",
     "name": {
       "zh-CN": "iMac (24 英寸, 2023 年, 端口×2)",
-      "en-US": "iMac (24 英寸, 2023 年, 端口×2)"
+      "en-US": "iMac (24-inch, 2023, Two ports)"
     },
     "marketingSlogan": {
       "zh-CN": "超能力暴涨",
@@ -7271,7 +7271,7 @@
     "seriesCode": "imac",
     "name": {
       "zh-CN": "iMac (24 英寸, M1, 2021 年)",
-      "en-US": "iMac (24 英寸, M1, 2021 年)"
+      "en-US": "iMac (24-inch, M1, 2021)"
     },
     "marketingSlogan": {
       "zh-CN": "新开篇",
@@ -7347,7 +7347,7 @@
     "seriesCode": "imac",
     "name": {
       "zh-CN": "iMac (Retina 5K, 27 英寸, 2020 年)",
-      "en-US": "iMac (Retina 5K, 27 英寸, 2020 年)"
+      "en-US": "iMac (Retina 5K, 27-inch, 2020)"
     },
     "marketingSlogan": {
       "zh-CN": "一体式，多面手。",
@@ -7414,7 +7414,7 @@
     "seriesCode": "imac",
     "name": {
       "zh-CN": "iMac (Retina 5K, 27 英寸, 2019 年)",
-      "en-US": "iMac (Retina 5K, 27 英寸, 2019 年)"
+      "en-US": "iMac (Retina 5K, 27-inch, 2019)"
     },
     "marketingSlogan": {
       "zh-CN": "外形过人，实力过分。",
@@ -7481,7 +7481,7 @@
     "seriesCode": "imac",
     "name": {
       "zh-CN": "iMac (Retina 4K, 21.5 英寸, 2019 年)",
-      "en-US": "iMac (Retina 4K, 21.5 英寸, 2019 年)"
+      "en-US": "iMac (Retina 4K, 21.5-inch, 2019)"
     },
     "marketingSlogan": {
       "zh-CN": "外形过人，实力过分。",
@@ -7548,7 +7548,7 @@
     "seriesCode": "imac",
     "name": {
       "zh-CN": "iMac Pro (2017 年)",
-      "en-US": "iMac Pro (2017 年)"
+      "en-US": "iMac Pro (2017)"
     },
     "marketingSlogan": {
       "zh-CN": "强大，大有专业风范。",
@@ -7615,7 +7615,7 @@
     "seriesCode": "imac",
     "name": {
       "zh-CN": "iMac (Retina 5K, 27 英寸, 2017 年)",
-      "en-US": "iMac (Retina 5K, 27 英寸, 2017 年)"
+      "en-US": "iMac (Retina 5K, 27-inch, 2017)"
     },
     "marketingSlogan": {
       "zh-CN": "目光所及，更显锋芒。",
@@ -7682,7 +7682,7 @@
     "seriesCode": "imac",
     "name": {
       "zh-CN": "iMac (Retina 4K, 21.5 英寸, 2017 年)",
-      "en-US": "iMac (Retina 4K, 21.5 英寸, 2017 年)"
+      "en-US": "iMac (Retina 4K, 21.5-inch, 2017)"
     },
     "marketingSlogan": {
       "zh-CN": "目光所及，更显锋芒。",
@@ -7749,7 +7749,7 @@
     "seriesCode": "imac",
     "name": {
       "zh-CN": "iMac (21.5 英寸, 2017 年)",
-      "en-US": "iMac (21.5 英寸, 2017 年)"
+      "en-US": "iMac (21.5-inch, 2017)"
     },
     "marketingSlogan": {
       "zh-CN": "目光所及，更显锋芒。",
@@ -7816,7 +7816,7 @@
     "seriesCode": "imac",
     "name": {
       "zh-CN": "iMac (Retina 5K, 27 英寸, 2015 年末)",
-      "en-US": "iMac (Retina 5K, 27 英寸, 2015 年末)"
+      "en-US": "iMac (Retina 5K, 27-inch, Late 2015)"
     },
     "marketingSlogan": {
       "zh-CN": "Retina 的大作，一款又一款。",
@@ -7878,8 +7878,8 @@
     },
     "seriesCode": "imac",
     "name": {
-      "zh-CN": "iMac (Retine 4K, 21.5 英寸, 2015 年末)",
-      "en-US": "iMac (Retine 4K, 21.5 英寸, 2015 年末)"
+      "zh-CN": "iMac (Retina 4K, 21.5 英寸, 2015 年末)",
+      "en-US": "iMac (Retina 4K, 21.5-inch, Late 2015)"
     },
     "marketingSlogan": {
       "zh-CN": "Retina 的大作，一款又一款。",
@@ -7942,7 +7942,7 @@
     "seriesCode": "imac",
     "name": {
       "zh-CN": "iMac (21.5 英寸, 2015 年末)",
-      "en-US": "iMac (21.5 英寸, 2015 年末)"
+      "en-US": "iMac (21.5-inch, Late 2015)"
     },
     "releaseDate": {
       "zh-CN": "2015.10.14",
@@ -8001,7 +8001,7 @@
     "seriesCode": "imac",
     "name": {
       "zh-CN": "iMac (Retina 5K, 27 英寸, 2015 年中)",
-      "en-US": "iMac (Retina 5K, 27 英寸, 2015 年中)"
+      "en-US": "iMac (Retina 5K, 27-inch, Mid 2015)"
     },
     "marketingSlogan": {
       "zh-CN": "配备 Retina 5K 显示屏",
@@ -8064,7 +8064,7 @@
     "seriesCode": "imac",
     "name": {
       "zh-CN": "iMac (Retina 5K, 27 英寸, 2014 年末)",
-      "en-US": "iMac (Retina 5K, 27 英寸, 2014 年末)"
+      "en-US": "iMac (Retina 5K, 27-inch, Late 2014)"
     },
     "marketingSlogan": {
       "zh-CN": "配备 Retina 5K 显示屏",
@@ -8127,7 +8127,7 @@
     "seriesCode": "imac",
     "name": {
       "zh-CN": "iMac (21.5 英寸, 2014 年中)",
-      "en-US": "iMac (21.5 英寸, 2014 年中)"
+      "en-US": "iMac (21.5-inch, Mid 2014)"
     },
     "marketingSlogan": {
       "zh-CN": "锋锐设计，锋芒表现。",
@@ -8190,7 +8190,7 @@
     "seriesCode": "imac",
     "name": {
       "zh-CN": "iMac (27 英寸, 2013 年中)",
-      "en-US": "iMac (27 英寸, 2013 年中)"
+      "en-US": "iMac (27-inch, Mid 2013)"
     },
     "marketingSlogan": {
       "zh-CN": "锋锐设计，锋芒表现。",
@@ -8253,7 +8253,7 @@
     "seriesCode": "imac",
     "name": {
       "zh-CN": "iMac (21.5 英寸, 2013 年中)",
-      "en-US": "iMac (21.5 英寸, 2013 年中)"
+      "en-US": "iMac (21.5-inch, Mid 2013)"
     },
     "marketingSlogan": {
       "zh-CN": "锋锐设计，锋芒表现。",
@@ -8316,7 +8316,7 @@
     "seriesCode": "mini",
     "name": {
       "zh-CN": "Mac mini (2026 年)",
-      "en-US": "Mac mini (2026 年)"
+      "en-US": "Mac mini (2026)"
     },
     "marketingSlogan": {
       "zh-CN": "小码大神。",
@@ -8356,7 +8356,7 @@
     "seriesCode": "mini",
     "name": {
       "zh-CN": "Mac mini (2024 年)",
-      "en-US": "Mac mini (2024 年)"
+      "en-US": "Mac mini (2024)"
     },
     "marketingSlogan": {
       "zh-CN": "尺寸暴减，实力却暴涨。",
@@ -8412,7 +8412,7 @@
     "seriesCode": "mini",
     "name": {
       "zh-CN": "Mac mini (2023 年)",
-      "en-US": "Mac mini (2023 年)"
+      "en-US": "Mac mini (2023)"
     },
     "marketingSlogan": {
       "zh-CN": "涨内力，添迅猛。",
@@ -8468,7 +8468,7 @@
     "seriesCode": "mini",
     "name": {
       "zh-CN": "Mac mini (M1, 2020 年)",
-      "en-US": "Mac mini (M1, 2020 年)"
+      "en-US": "Mac mini (M1, 2020)"
     },
     "marketingSlogan": {
       "zh-CN": "平添内力，更霸气。",
@@ -8524,7 +8524,7 @@
     "seriesCode": "mini",
     "name": {
       "zh-CN": "Mac mini (2018 年)",
-      "en-US": "Mac mini (2018 年)"
+      "en-US": "Mac mini (2018)"
     },
     "marketingSlogan": {
       "zh-CN": "全身大改造。",
@@ -8571,7 +8571,7 @@
     "seriesCode": "mini",
     "name": {
       "zh-CN": "Mac mini (2014 年末)",
-      "en-US": "Mac mini (2014 年末)"
+      "en-US": "Mac mini (Late 2014)"
     },
     "marketingSlogan": {
       "zh-CN": "小身材，大作为。",
@@ -8618,7 +8618,7 @@
     "seriesCode": "mini",
     "name": {
       "zh-CN": "Mac mini Server (2012 年末)",
-      "en-US": "Mac mini Server (2012 年末)"
+      "en-US": "Mac mini Server (Late 2012)"
     },
     "marketingSlogan": {
       "zh-CN": "操作 DIY，台面随便摆。",
@@ -8665,7 +8665,7 @@
     "seriesCode": "mini",
     "name": {
       "zh-CN": "Mac mini (2012 年末)",
-      "en-US": "Mac mini (2012 年末)"
+      "en-US": "Mac mini (Late 2012)"
     },
     "marketingSlogan": {
       "zh-CN": "不变强，只变强。",
@@ -8712,7 +8712,7 @@
     "seriesCode": "mini",
     "name": {
       "zh-CN": "Mac mini Server (2011 年中)",
-      "en-US": "Mac mini Server (2011 年中)"
+      "en-US": "Mac mini Server (Mid 2011)"
     },
     "marketingSlogan": {
       "zh-CN": "小小服务器，四核威力重拳出击。",
@@ -8759,7 +8759,7 @@
     "seriesCode": "mini",
     "name": {
       "zh-CN": "Mac mini (2011 年中)",
-      "en-US": "Mac mini (2011 年中)"
+      "en-US": "Mac mini (Mid 2011)"
     },
     "marketingSlogan": {
       "zh-CN": "小的仅是身材而已。",
@@ -8806,7 +8806,7 @@
     "seriesCode": "mini",
     "name": {
       "zh-CN": "Mac mini Server (2010 年中)",
-      "en-US": "Mac mini Server (2010 年中)"
+      "en-US": "Mac mini Server (Mid 2010)"
     },
     "marketingSlogan": {
       "zh-CN": "服务器虽小，本事却大。",
@@ -8853,7 +8853,7 @@
     "seriesCode": "mini",
     "name": {
       "zh-CN": "Mac mini (2010 年中)",
-      "en-US": "Mac mini (2010 年中)"
+      "en-US": "Mac mini (Mid 2010)"
     },
     "marketingSlogan": {
       "zh-CN": "小个子，大改变。",
@@ -8900,7 +8900,7 @@
     "seriesCode": "mini",
     "name": {
       "zh-CN": "Mac mini (2009 年末)",
-      "en-US": "Mac mini (2009 年末)"
+      "en-US": "Mac mini (Late 2009)"
     },
     "marketingSlogan": {
       "zh-CN": "更大内存，更快处理器。",
@@ -8947,7 +8947,7 @@
     "seriesCode": "mini",
     "name": {
       "zh-CN": "Mac mini (2009 年初)",
-      "en-US": "Mac mini (2009 年初)"
+      "en-US": "Mac mini (Early 2009)"
     },
     "marketingSlogan": {
       "zh-CN": "能效最高的苹果桌面式电脑。",
@@ -8994,7 +8994,7 @@
     "seriesCode": "mini",
     "name": {
       "zh-CN": "Mac mini (2007 年中)",
-      "en-US": "Mac mini (2007 年中)"
+      "en-US": "Mac mini (Mid 2007)"
     },
     "marketingSlogan": {
       "zh-CN": "小即是美",
@@ -9041,7 +9041,7 @@
     "seriesCode": "studio",
     "name": {
       "zh-CN": "Mac Studio (2026 年)",
-      "en-US": "Mac Studio (2026 年)"
+      "en-US": "Mac Studio (2026)"
     },
     "marketingSlogan": {
       "zh-CN": "硬核新世代",
@@ -9082,7 +9082,7 @@
     "seriesCode": "studio",
     "name": {
       "zh-CN": "Mac Studio (2025 年)",
-      "en-US": "Mac Studio (2025 年)"
+      "en-US": "Mac Studio (2025)"
     },
     "marketingSlogan": {
       "zh-CN": "硬核加载",
@@ -9139,7 +9139,7 @@
     "seriesCode": "studio",
     "name": {
       "zh-CN": "Mac Studio (2023 年)",
-      "en-US": "Mac Studio (2023 年)"
+      "en-US": "Mac Studio (2023)"
     },
     "marketingSlogan": {
       "zh-CN": "动力动真格",
@@ -9196,7 +9196,7 @@
     "seriesCode": "studio",
     "name": {
       "zh-CN": "Mac Studio (2022 年)",
-      "en-US": "Mac Studio (2022 年)"
+      "en-US": "Mac Studio (2022)"
     },
     "marketingSlogan": {
       "zh-CN": "造梦引擎",
@@ -9253,7 +9253,7 @@
     "seriesCode": "macpro",
     "name": {
       "zh-CN": "Mac Pro (机架式, 2023 年)",
-      "en-US": "Mac Pro (机架式, 2023 年)"
+      "en-US": "Mac Pro (Rack, 2023)"
     },
     "marketingSlogan": {
       "zh-CN": "逆天性能，纯标配。",
@@ -9310,7 +9310,7 @@
     "seriesCode": "macpro",
     "name": {
       "zh-CN": "Mac Pro (2023 年)",
-      "en-US": "Mac Pro (2023 年)"
+      "en-US": "Mac Pro (2023)"
     },
     "marketingSlogan": {
       "zh-CN": "逆天性能，纯标配。",
@@ -9367,7 +9367,7 @@
     "seriesCode": "macpro",
     "name": {
       "zh-CN": "Mac Pro (机架式, 2019 年)",
-      "en-US": "Mac Pro (机架式, 2019 年)"
+      "en-US": "Mac Pro (Rack, 2019)"
     },
     "marketingSlogan": {
       "zh-CN": "以实力刷新一切。",
@@ -9415,7 +9415,7 @@
     "seriesCode": "macpro",
     "name": {
       "zh-CN": "Mac Pro (2019 年)",
-      "en-US": "Mac Pro (2019 年)"
+      "en-US": "Mac Pro (2019)"
     },
     "marketingSlogan": {
       "zh-CN": "以实力刷新一切。",
@@ -9463,7 +9463,7 @@
     "seriesCode": "macpro",
     "name": {
       "zh-CN": "Mac Pro (2013 年末)",
-      "en-US": "Mac Pro (2013 年末)"
+      "en-US": "Mac Pro (Late 2013)"
     },
     "marketingSlogan": {
       "zh-CN": "专业台式电脑的未来，先睹为快。",
@@ -9511,7 +9511,7 @@
     "seriesCode": "macpro",
     "name": {
       "zh-CN": "Mac Pro (2012 年中)",
-      "en-US": "Mac Pro (2012 年中)"
+      "en-US": "Mac Pro (Mid 2012)"
     },
     "releaseDate": {
       "zh-CN": "2012.06.12",
@@ -9554,7 +9554,7 @@
     "seriesCode": "macpro",
     "name": {
       "zh-CN": "Mac Pro (2010 年中)",
-      "en-US": "Mac Pro (2010 年中)"
+      "en-US": "Mac Pro (Mid 2010)"
     },
     "releaseDate": {
       "zh-CN": "2010.07",
@@ -9597,7 +9597,7 @@
     "seriesCode": "macpro",
     "name": {
       "zh-CN": "Mac Pro (2009 年初)",
-      "en-US": "Mac Pro (2009 年初)"
+      "en-US": "Mac Pro (Early 2009)"
     },
     "releaseDate": {
       "zh-CN": "2009.03",
