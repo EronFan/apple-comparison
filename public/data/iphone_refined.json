@@ -214,7 +214,7 @@
         "code": "#394452"
       }
     ],
-    "image": "iphone-duo.png"
+    "image": "iphone-duo.webp"
   },
   {
     "releaseDate": {
@@ -453,7 +453,7 @@
         "code": "#3C3C3C"
       }
     ],
-    "image": "iphone-18-pro-max.png",
+    "image": "iphone-18-pro-max.webp",
     "cpuPerformance": {
       "singleCore": "4725",
       "multiCore": "12575"
@@ -697,7 +697,7 @@
         "code": "#3C3C3C"
       }
     ],
-    "image": "iphone-18-pro.png",
+    "image": "iphone-18-pro.webp",
     "cpuPerformance": {
       "singleCore": "4719",
       "multiCore": "12677"
@@ -927,7 +927,7 @@
       "en-US": "碰撞检测，拍照按钮"
     },
     "technicalSpecsLink": "https://support.apple.com/zh-cn/126470",
-    "image": "iphone-17e.png",
+    "image": "iphone-17e.webp",
     "cpuPerformance": {
       "singleCore": "3565",
       "multiCore": "8770"
@@ -1187,7 +1187,7 @@
       "multiCore": "9125"
     },
     "gpuPerformance": 37118,
-    "image": "iphone-17.png",
+    "image": "iphone-17.webp",
     "cpuAverage": {
       "singleCore": "2995",
       "multiCore": "8269"
@@ -1437,7 +1437,7 @@
       "multiCore": "9239"
     },
     "gpuPerformance": 37693,
-    "image": "iphone-air.png",
+    "image": "iphone-air.webp",
     "cpuAverage": {
       "singleCore": "3042",
       "multiCore": "8456"
@@ -3136,7 +3136,7 @@
       "zh-CN": "无",
       "en-US": "None"
     },
-    "image": "iphone-16.png",
+    "image": "iphone-16.webp",
     "cpuAverage": {
       "singleCore": "2789",
       "multiCore": "7554"

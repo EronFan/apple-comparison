@@ -830,7 +830,7 @@
         "url": "https://support.apple.com/en-us/126520"
       }
     ],
-    "image": "mac-neo-001.png"
+    "image": "mac-neo-001.webp"
   },
   {
     "id": "mac-air-001",
@@ -3471,7 +3471,7 @@
         "url": "https://support.apple.com/en-us/125836"
       }
     ],
-    "image": "mac-pro-001.png"
+    "image": "mac-pro-001.webp"
   },
   {
     "id": "mac-pro-002",
@@ -3571,7 +3571,7 @@
         "url": "https://support.apple.com/en-us/125819"
       }
     ],
-    "image": "mac-pro-002.png"
+    "image": "mac-pro-002.webp"
   },
   {
     "id": "mac-pro-003",
@@ -6981,7 +6981,7 @@
         "url": "https://support.apple.com/en-us/121518"
       }
     ],
-    "image": "mac-imac-001.png"
+    "image": "mac-imac-001.webp"
   },
   {
     "id": "mac-imac-002",
@@ -7108,7 +7108,7 @@
         "url": "https://support.apple.com/en-us/121510"
       }
     ],
-    "image": "mac-imac-002.png"
+    "image": "mac-imac-002.webp"
   },
   {
     "id": "mac-imac-003",
@@ -8345,7 +8345,7 @@
     "wirelessSpec": "802.11be + 蓝牙 6.0",
     "dimensions": "4.97×12.70×12.70cm,0.67/0.73kg",
     "chassisModel": "A3534 (M6)；A3535 (M5 Pro)",
-    "image": "mac-mini-001.jpg"
+    "image": "mac-mini-001.webp"
   },
   {
     "id": "mac-mini-002",
@@ -9071,7 +9071,7 @@
     "charging": "480 瓦",
     "dimensions": "9.5×19.7×19.7cm, 2.74/3.64kg",
     "chassisModel": "A3545 (M5 Max) / A3546 (M5 Ultra)",
-    "image": "mac-studio-001.png"
+    "image": "mac-studio-001.webp"
   },
   {
     "id": "mac-studio-002",
