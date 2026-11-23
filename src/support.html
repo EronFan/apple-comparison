@@ -6,7 +6,15 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍎</text></svg>">
     <meta name="description" content="苹果设备系统兼容查询：各机型发布系统与最高支持版本。">
     <title data-lang-key="page.title">系统兼容 - Apple参数大全</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="canonical" href="https://applecompare.com/support">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Apple参数大全">
+    <meta property="og:title" content="系统兼容 - Apple参数大全">
+    <meta property="og:description" content="苹果设备系统兼容查询：各机型发布系统与最高支持版本。">
+    <meta property="og:url" content="https://applecompare.com/support">
+    <meta name="twitter:card" content="summary">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"系统兼容 - Apple参数大全","description":"苹果设备系统兼容查询：各机型发布系统与最高支持版本。","url":"https://applecompare.com/support","isPartOf":{"@type":"WebSite","name":"Apple参数大全","url":"https://applecompare.com/"}}</script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <style>
         /* 系统兼容页样式 */
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -37,14 +45,14 @@
 <body>
     <div class="container">
         <header>
-            <a class="logo" href="/src/index.html"><i class="fas fa-apple-alt"></i> <span data-lang-key="site.name">Apple参数大全</span></a>
+            <a class="logo" href="/"><i class="ri-apple-fill"></i> <span data-lang-key="site.name">Apple参数大全</span></a>
             <div class="nav">
-                <a href="/src/index.html" data-lang-key="nav.home">首页</a>
-                <a href="/src/chip-compare.html" data-lang-key="nav.chip">芯片库</a>
-                <a href="/src/benchmarks.html" data-lang-key="nav.benchmarks">跑分榜</a>
-                <a href="/src/battery.html" data-lang-key="nav.battery">电池榜</a>
-                <a href="/src/support.html" class="active" data-lang-key="nav.support">系统兼容</a>
-                <a href="/src/glossary.html" data-lang-key="nav.glossary">名词解读</a>
+                <a href="/" data-lang-key="nav.home">首页</a>
+                <a href="/chip-compare" data-lang-key="nav.chip">芯片库</a>
+                <a href="/benchmarks" data-lang-key="nav.benchmarks">跑分榜</a>
+                <a href="/battery" data-lang-key="nav.battery">电池榜</a>
+                <a href="/support" class="active" data-lang-key="nav.support">系统兼容</a>
+                <a href="/glossary" data-lang-key="nav.glossary">名词解读</a>
             </div>
         </header>
         <h1 data-lang-key="compare.title.support">系统兼容</h1>
@@ -54,19 +62,19 @@
         <p class="note" id="latestLine"></p>
         <footer data-lang-key="footer.copyright">&copy; 2025 Apple参数大全</footer>
     </div>
-    <script src="../public/js/languages.js?v=20260912"></script>
-    <script src="../public/js/language-switcher.js?v=20260912"></script>
-<script src="../public/js/theme.js?v=20260912"></script>
+    <script src="/public/js/languages.js?v=20260912"></script>
+    <script src="/public/js/language-switcher.js?v=20260912"></script>
+<script src="/public/js/theme.js?v=20260912"></script>
     <script>
         // 系统兼容矩阵：从各产品线数据文件推导发布系统与最高支持
         const LINES = [
-            { file: '../public/data/iphone_refined.json', zh: 'iPhone', en: 'iPhone' },
-            { file: '../public/data/ipad_refined.json', zh: 'iPad', en: 'iPad' },
-            { file: '../public/data/mac_refined.json', zh: 'Mac', en: 'Mac' },
-            { file: '../public/data/watch_refined.json', zh: 'Apple Watch', en: 'Apple Watch' },
-            { file: '../public/data/tv_refined.json', zh: 'Apple TV', en: 'Apple TV' },
-            { file: '../public/data/vision_refined.json', zh: 'Vision', en: 'Vision' },
-            { file: '../public/data/ipod_refined.json', zh: 'iPod', en: 'iPod' },
+            { file: '/public/data/iphone_refined.json', zh: 'iPhone', en: 'iPhone' },
+            { file: '/public/data/ipad_refined.json', zh: 'iPad', en: 'iPad' },
+            { file: '/public/data/mac_refined.json', zh: 'Mac', en: 'Mac' },
+            { file: '/public/data/watch_refined.json', zh: 'Apple Watch', en: 'Apple Watch' },
+            { file: '/public/data/tv_refined.json', zh: 'Apple TV', en: 'Apple TV' },
+            { file: '/public/data/vision_refined.json', zh: 'Vision', en: 'Vision' },
+            { file: '/public/data/ipod_refined.json', zh: 'iPod', en: 'iPod' },
         ];
 
         // 取本地化文本
@@ -115,7 +123,7 @@
             const loaded = [];
             for (const line of LINES) {
                 try {
-                    const res = await fetch(line.file + '?v=' + Date.now());
+                    const res = await fetch(line.file + '?v=20261123');
                     loaded.push({ line, list: await res.json() });
                 } catch (e) {
                     console.error('加载失败:', line.file, e);

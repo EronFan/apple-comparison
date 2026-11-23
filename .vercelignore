@@ -1,0 +1,7 @@
+prototype/
+docs/
+tools/
+.venv/
+update_sensors.sh
+public/data/iphone.json
+**/.DS_Store

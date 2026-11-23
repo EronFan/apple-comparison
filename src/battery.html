@@ -6,7 +6,15 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍎</text></svg>">
     <meta name="description" content="苹果设备电池容量天梯图：iPhone / iPad 历代电池容量排名，谁是大电池一目了然。">
     <title data-lang-key="page.title">电池容量天梯图 - Apple参数大全</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="canonical" href="https://applecompare.com/battery">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Apple参数大全">
+    <meta property="og:title" content="电池容量天梯图 - Apple参数大全">
+    <meta property="og:description" content="苹果设备电池容量天梯图：iPhone / iPad 历代电池容量排名，谁是大电池一目了然。">
+    <meta property="og:url" content="https://applecompare.com/battery">
+    <meta name="twitter:card" content="summary">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"电池容量天梯图 - Apple参数大全","description":"苹果设备电池容量天梯图：iPhone / iPad 历代电池容量排名，谁是大电池一目了然。","url":"https://applecompare.com/battery","isPartOf":{"@type":"WebSite","name":"Apple参数大全","url":"https://applecompare.com/"}}</script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <style>
         /* 电池天梯图页样式（参考跑分榜页） */
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -45,14 +53,14 @@
 <body>
     <div class="container">
         <header>
-            <a class="logo" href="/src/index.html"><i class="fas fa-apple-alt"></i> <span data-lang-key="site.name">Apple参数大全</span></a>
+            <a class="logo" href="/"><i class="ri-apple-fill"></i> <span data-lang-key="site.name">Apple参数大全</span></a>
             <div class="nav">
-                <a href="/src/index.html" data-lang-key="nav.home">首页</a>
-                <a href="/src/chip-compare.html" data-lang-key="nav.chip">芯片库</a>
-                <a href="/src/benchmarks.html" data-lang-key="nav.benchmarks">跑分榜</a>
-                <a href="/src/battery.html" class="active" data-lang-key="nav.battery">电池榜</a>
-                <a href="/src/support.html" data-lang-key="nav.support">系统兼容</a>
-                <a href="/src/glossary.html" data-lang-key="nav.glossary">名词解读</a>
+                <a href="/" data-lang-key="nav.home">首页</a>
+                <a href="/chip-compare" data-lang-key="nav.chip">芯片库</a>
+                <a href="/benchmarks" data-lang-key="nav.benchmarks">跑分榜</a>
+                <a href="/battery" class="active" data-lang-key="nav.battery">电池榜</a>
+                <a href="/support" data-lang-key="nav.support">系统兼容</a>
+                <a href="/glossary" data-lang-key="nav.glossary">名词解读</a>
             </div>
         </header>
         <h1 data-lang-key="battery.title">电池容量天梯图</h1>
@@ -66,9 +74,9 @@
         <p class="note" data-lang-key="battery.note">电池容量为官方标称典型值：iPhone 以 mAh 计，iPad 以 Wh 计，并标注发布年份。</p>
         <footer data-lang-key="footer.copyright">&copy; 2025 Apple参数大全</footer>
     </div>
-    <script src="../public/js/languages.js?v=20260912"></script>
-    <script src="../public/js/language-switcher.js?v=20260912"></script>
-    <script src="../public/js/theme.js?v=20260912"></script>
+    <script src="/public/js/languages.js?v=20260912"></script>
+    <script src="/public/js/language-switcher.js?v=20260912"></script>
+    <script src="/public/js/theme.js?v=20260912"></script>
     <script>
         // 电池天梯图：iPhone 按 mAh、iPad 按 Wh 排名，设备切换 + 系列筛选
         let currentDevice = 'iphone';
@@ -194,12 +202,12 @@
         // 加载数据
         async function loadData() {
             const sources = [
-                ['iphone', '../public/data/iphone_refined.json', extractPhone],
-                ['ipad', '../public/data/ipad_refined.json', extractIpad]
+                ['iphone', '/public/data/iphone_refined.json', extractPhone],
+                ['ipad', '/public/data/ipad_refined.json', extractIpad]
             ];
             await Promise.all(sources.map(async ([dev, file, extract]) => {
                 try {
-                    const res = await fetch(file + '?v=' + Date.now());
+                    const res = await fetch(file + '?v=20261123');
                     const raw = await res.json();
                     raw.forEach(p => {
                         const b = extract(p);
